@@ -13,6 +13,12 @@
         touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
+.slick-slider.slider-info .right{
+    -webkit-user-select:all;
+       -moz-user-select: all;
+        -ms-user-select: all;
+            user-select: all;
+}
 .slick-list{
     position: relative;
     display: block;
