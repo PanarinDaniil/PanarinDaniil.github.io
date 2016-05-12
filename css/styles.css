@@ -718,7 +718,11 @@ label.error{
   margin:0 auto;
 }
 .image-table{
-
+  overflow-x:auto; 
+}
+.image-table img{
+  display: block;
+  margin: 0 auto;
 }
 /*END School-page*/
 
