@@ -56,9 +56,9 @@ textarea{
   min-height: 117px;
 }
 ul{
-  padding: 0 0 0 25px;
+  padding: 0px;
   margin: 10px 0;
-  list-style: outside;
+  list-style: inside;
   list-style-image: url(../images/ul.png);
 }
 li{
@@ -90,7 +90,8 @@ fieldset{
   padding: 0 15px;
   margin: 0 auto;
 }
-.content:after, .menu-white:after, .footer-wrap:after{
+.content:after, .menu-white:after, 
+.school-top:after, .footer-wrap:after{
   display: block;
   content: "";
   clear:both;
@@ -670,6 +671,57 @@ label.error{
   font-size: 14px;
 }
 /*END MAP BOTTOM*/
+/*School-page*/
+.school-page{
+  padding:35px 0 40px;
+  background:#fff;
+}
+.school-top{
+  max-width:1070px;
+  margin: 0 auto 15px;
+  border-bottom:1px solid #ffb400;
+}
+.img-logo{
+  float:left;
+  width:48%;
+  margin-right:2%;
+}
+.img-logo img{
+  display: block;
+  margin:0 auto;
+  max-width:100%;
+}
+.school-description{
+  float:right;
+  width:50%;
+  display:block;
+  list-style:none;
+  margin:0 0 10px;
+}
+.school-description li{
+  font:400 14px/18px "Roboto", sans-serif;
+  color:#221100;
+  margin:0 0 10px;
+}
+.school-description span{
+  display: inline-block;
+  vertical-align: top;
+  font:400 14px/18px "Roboto", sans-serif;
+  color:#221100;
+}
+.school-description span.orange{
+  color:#ffb400;
+}
+.image-full img{
+  display:block;
+  max-width:100%;
+  margin:0 auto;
+}
+.image-table{
+
+}
+/*END School-page*/
+
 .text-page{
   padding:10px 0 100px;
 }
@@ -1561,6 +1613,12 @@ label.error{
   .footer-wrap > *{
     width:48%;
     margin:0 1% 10px;
+  }
+  .img-logo, 
+  .school-description{
+    float:none;
+    width:100%;
+    margin:0 auto 10px;
   }
 }
 @media screen and (min-width:441px) and (max-width:696px){
