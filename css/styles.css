@@ -75,6 +75,9 @@ fieldset{
   padding:0;
   border-style:none;
 }
+form{
+  position:relative;
+}
 .wrapper{
   margin: 0 auto;
   padding: 0 0 287px 0;
@@ -730,10 +733,17 @@ label.error{
   font-size:14px;
   text-decoration:none;
 }
-/*.image-table img{
-  display: block;
-  margin: 0 auto;
-}*/
+.success{
+  display:none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0px;
+  background: url(../images/done.png) 50% 50% no-repeat;
+  background-size: contain;
+}
 /*END School-page*/
 
 .text-page{
