@@ -720,10 +720,20 @@ label.error{
 .image-table{
   overflow-x:auto; 
 }
-.image-table img{
+.center{
+  text-align:center;
+}
+.download-btn{
+  margin:40px 0;
+  padding:0 30px 0;
+  line-height:43px;
+  font-size:14px;
+  text-decoration:none;
+}
+/*.image-table img{
   display: block;
   margin: 0 auto;
-}
+}*/
 /*END School-page*/
 
 .text-page{
