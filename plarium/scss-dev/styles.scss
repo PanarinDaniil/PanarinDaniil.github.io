@@ -413,6 +413,10 @@ body {
     @include flex();
     flex-wrap: nowrap;
     justify-content: center;
+    margin-top:92px;
+    h2, .h2{
+        margin-bottom:47px;
+    }
     a{
         display: block;
     }

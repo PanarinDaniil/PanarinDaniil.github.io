@@ -604,6 +604,10 @@ body {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+  margin-top: 92px;
+}
+.gallery h2, .gallery .h2 {
+  margin-bottom: 47px;
 }
 .gallery a {
   display: block;
