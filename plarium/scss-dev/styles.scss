@@ -96,11 +96,11 @@ body {
 .gallery-wrapper,
 .list-wrapper,
 .footer{
-    margin-top:106px;
+    margin-top:93px;
 }
 .h2, h2{
     color:$textColor;
-    margin:0 0 50px;
+    margin:0 0 43px;
     padding:0;
     font:40px/1.4 font(700);
     letter-spacing:0.75px;
@@ -113,9 +113,9 @@ body {
     justify-content:center;
 }
 .item-3{
-    padding:0 12px 30px;
+    padding:0 12px 5px;
     width:33.3%;
-    min-height:650px;
+    min-height:649px;
     @include bp(l) {
         min-height:665px;
     }
@@ -190,7 +190,7 @@ body {
 }
 .logo{
     float:left;
-    margin: 0 27px 0 10px;
+    margin: 0 35px 0 10px;
     display:block;
     max-width:58px;/*IE-fix*/
     img{
@@ -209,7 +209,7 @@ body {
     li{
         display:inline-block;
         vertical-align:top;
-        padding:0 22px;   
+        padding:0 19px 0 21px;   
         @include bp(m) {
             padding:0 5px;
         }
@@ -217,7 +217,7 @@ body {
 }
 .register-header-wrapper{
     float:right;
-    padding-right:16px;
+    padding-right:22px;
     padding-top:9px;
     @include bp(m) {
         padding-right:0;
@@ -251,25 +251,25 @@ body {
 .top-block{
     color:$topHeaderLinks;
     text-align:center;
+    background:url(#{$imgPath}top-bg.png) no-repeat;
+    background-size:cover;
+    padding:263px 0 41px;
+    margin-top:-66px;
     @include bp(m) {
         margin-top:-87px;
     }
 }
-.top-block{
-    background:url(#{$imgPath}top-bg.png) no-repeat;
-    background-size:cover;
-    padding:260px 0 43px;
-    margin-top:-66px;
-}
 .top-title{
     text-transform:uppercase;
     font:44px/1 font(700);
+    letter-spacing:.95px;
+    margin-bottom:13px;
 }
 .top-subtitle{
     text-transform:uppercase;
     font:24px/1 font(300);
-    letter-spacing:1.5px;
-    margin-bottom:125px;
+    letter-spacing:3.7px;
+    margin-bottom:130px;
 }
 .icon-wrapper{
     @include flex();
@@ -349,7 +349,8 @@ body {
 }
 /*grid-wrapper*/
 .grid-wrapper{
-    padding-bottom:58px;
+    padding-bottom:60px;
+    margin-bottom:12px;
 }
 .more-inf{
     display:none;
@@ -383,7 +384,7 @@ body {
         top:0;
         margin:0 35px 0 0;
         background:#fff;
-        padding:30px 0 15px 0;
+        padding:31px 0 15px 0;
         letter-spacing: .25px;
         p{
             margin:0;
@@ -393,7 +394,7 @@ body {
 
     &:hover{
         .preview-info{
-            top:-48px;
+            top:-44px;
         }
         .more-inf{
             display:block;
@@ -405,7 +406,7 @@ body {
     line-height:30px;
     text-transform:capitalize;
     color:$textColor;
-    margin-bottom:8px;
+    margin-bottom:4px;
 }
 /*Gallery*/
 .gallery{
@@ -499,9 +500,13 @@ body {
 }
 /*List wrapper*/
 .list-wrapper{
+    margin-top:99px;
+    .h2, h2{
+        margin-bottom:44px;
+    }
     .item-2{
         border:2px solid $item2Back;
-        padding:26px 25px 25px 125px;
+        padding:25px 25px 21px 125px;
         background:$item2Back;
         position:relative;
 
@@ -520,14 +525,14 @@ body {
             color:$supText;
             font:14px/20px font(300);
             letter-spacing:0;
-            margin-bottom:6px;
+            margin-bottom:2px;
         }
         .main-text{
             color:$textColor;
             font-size:20px;
             letter-spacing:0;
             text-transform:uppercase;
-            margin-bottom:5px;;
+            margin-bottom:1px;
         }
         .sub-text{
             color:$subText;
@@ -586,9 +591,10 @@ body {
 .footer{
     background:url(#{$imgPath}bottom-bg.png) no-repeat;
     background-size:cover;
-    padding:74px 0 139px;
+    padding:75px 0 139px;
     color:$footerText;
     text-align:center;
+    margin-top:105px;
 }
 .footer-title{
     text-transform:uppercase;
@@ -597,9 +603,9 @@ body {
     margin-bottom:13px;
 }
 .footer-sub-title{
-    font-style: font(300);
+    font-family: font(300);
     letter-spacing:0;
-    margin-bottom:43px;
+    margin-bottom:40px;
 }
 .footer-form{
     width:456px;

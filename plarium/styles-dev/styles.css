@@ -217,12 +217,12 @@ body {
 .gallery-wrapper,
 .list-wrapper,
 .footer {
-  margin-top: 106px;
+  margin-top: 93px;
 }
 
 .h2, h2 {
   color: #000;
-  margin: 0 0 50px;
+  margin: 0 0 43px;
   padding: 0;
   font: 40px/1.4 "Museo 700", Arial, sans-serif;
   letter-spacing: 0.75px;
@@ -241,9 +241,9 @@ body {
 }
 
 .item-3 {
-  padding: 0 12px 30px;
+  padding: 0 12px 5px;
   width: 33.3%;
-  min-height: 650px;
+  min-height: 649px;
 }
 @media (max-width: 1440px) {
   .item-3 {
@@ -349,7 +349,7 @@ body {
 
 .logo {
   float: left;
-  margin: 0 27px 0 10px;
+  margin: 0 35px 0 10px;
   display: block;
   max-width: 58px;
   /*IE-fix*/
@@ -372,7 +372,7 @@ body {
 .header-menu li {
   display: inline-block;
   vertical-align: top;
-  padding: 0 22px;
+  padding: 0 19px 0 21px;
 }
 @media (max-width: 959px) {
   .header-menu li {
@@ -382,7 +382,7 @@ body {
 
 .register-header-wrapper {
   float: right;
-  padding-right: 16px;
+  padding-right: 22px;
   padding-top: 9px;
 }
 @media (max-width: 959px) {
@@ -421,6 +421,10 @@ body {
 .top-block {
   color: #fff;
   text-align: center;
+  background: url(../images/top-bg.png) no-repeat;
+  background-size: cover;
+  padding: 263px 0 41px;
+  margin-top: -66px;
 }
 @media (max-width: 959px) {
   .top-block {
@@ -428,23 +432,18 @@ body {
   }
 }
 
-.top-block {
-  background: url(../images/top-bg.png) no-repeat;
-  background-size: cover;
-  padding: 260px 0 43px;
-  margin-top: -66px;
-}
-
 .top-title {
   text-transform: uppercase;
   font: 44px/1 "Museo 700", Arial, sans-serif;
+  letter-spacing: .95px;
+  margin-bottom: 13px;
 }
 
 .top-subtitle {
   text-transform: uppercase;
   font: 24px/1 "Museo 300", Arial, sans-serif;
-  letter-spacing: 1.5px;
-  margin-bottom: 125px;
+  letter-spacing: 3.7px;
+  margin-bottom: 130px;
 }
 
 .icon-wrapper {
@@ -528,7 +527,8 @@ body {
 
 /*grid-wrapper*/
 .grid-wrapper {
-  padding-bottom: 58px;
+  padding-bottom: 60px;
+  margin-bottom: 12px;
 }
 
 .more-inf {
@@ -573,7 +573,7 @@ body {
   top: 0;
   margin: 0 35px 0 0;
   background: #fff;
-  padding: 30px 0 15px 0;
+  padding: 31px 0 15px 0;
   letter-spacing: .25px;
 }
 .article-preview .preview-info p {
@@ -581,7 +581,7 @@ body {
   font-size: 18px;
 }
 .article-preview:hover .preview-info {
-  top: -48px;
+  top: -44px;
 }
 .article-preview:hover .more-inf {
   display: block;
@@ -592,7 +592,7 @@ body {
   line-height: 30px;
   text-transform: capitalize;
   color: #000;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 /*Gallery*/
@@ -707,9 +707,15 @@ body {
 }
 
 /*List wrapper*/
+.list-wrapper {
+  margin-top: 99px;
+}
+.list-wrapper .h2, .list-wrapper h2 {
+  margin-bottom: 44px;
+}
 .list-wrapper .item-2 {
   border: 2px solid #f2f2f2;
-  padding: 26px 25px 25px 125px;
+  padding: 25px 25px 21px 125px;
   background: #f2f2f2;
   position: relative;
 }
@@ -728,14 +734,14 @@ body {
   color: #787878;
   font: 14px/20px "Museo 300", Arial, sans-serif;
   letter-spacing: 0;
-  margin-bottom: 6px;
+  margin-bottom: 2px;
 }
 .list-wrapper .item-2 .main-text {
   color: #000;
   font-size: 20px;
   letter-spacing: 0;
   text-transform: uppercase;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 }
 .list-wrapper .item-2 .sub-text {
   color: #7d7d7d;
@@ -792,9 +798,10 @@ body {
 .footer {
   background: url(../images/bottom-bg.png) no-repeat;
   background-size: cover;
-  padding: 74px 0 139px;
+  padding: 75px 0 139px;
   color: #fff;
   text-align: center;
+  margin-top: 105px;
 }
 
 .footer-title {
@@ -805,9 +812,9 @@ body {
 }
 
 .footer-sub-title {
-  font-style: "Museo 300", Arial, sans-serif;
+  font-family: "Museo 300", Arial, sans-serif;
   letter-spacing: 0;
-  margin-bottom: 43px;
+  margin-bottom: 40px;
 }
 
 .footer-form {
