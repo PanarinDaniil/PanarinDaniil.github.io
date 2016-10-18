@@ -1,0 +1,16 @@
+{
+  "name": "Rebus",
+  "version": "1.0.0",
+  "description": "test task",
+  "main": "index.js",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-watch": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dan Panarin",
+  "license": "ISC"
+}
