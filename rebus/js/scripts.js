@@ -71,6 +71,28 @@ $(document).ready(function() {
         ]
     });
     
+    (function() {
+        "use strict";
+        var toggles = document.querySelectorAll(".js_tog");
+        for (var i = toggles.length - 1; i >= 0; i--) {
+          var toggle = toggles[i];
+          toggleHandler(toggle);
+        };
+        $('.faq-close').click(function() {
+            if ( $(".faq-info").hasClass("active") ) {
+                $(".faq-info").removeClass("active");
+                $(".faq-info").hide('wiggle');
+            }
+        });
+        function toggleHandler(toggle) {
+          toggle.addEventListener( "click", function(e) {
+            e.preventDefault();
+            ( $(".faq-info").hasClass("active") === true ) ? $(".faq-info").hide('wiggle') : $(".faq-info").toggle('wiggle');
+            ( $(".faq-info").hasClass("active") === true ) ? $(".faq-info").removeClass("active") : $(".faq-info").addClass("active");
+          });
+        }
+    })();
+
     var counter = false;
     if ( $(".min-carusel").width() > 0) {
         if ( window.matchMedia("(max-width:800px)").matches && counter == false ) {

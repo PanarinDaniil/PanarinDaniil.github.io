@@ -1260,32 +1260,9 @@ body {
   }
 }
 .faq-wrap .faq-box {
+  position: relative;
   flex-wrap: wrap;
   justify-content: center;
-}
-.faq-wrap .faq-box .first {
-  background: url(../images/faq1.png) no-repeat;
-  background-size: cover;
-}
-.faq-wrap .faq-box .second {
-  background: url(../images/faq2.png) no-repeat;
-  background-size: cover;
-}
-.faq-wrap .faq-box .third {
-  background: url(../images/faq3.png) no-repeat;
-  background-size: cover;
-}
-.faq-wrap .faq-box .fourth {
-  background: url(../images/faq4.png) no-repeat;
-  background-size: cover;
-}
-.faq-wrap .faq-box .fifth {
-  background: url(../images/faq5.png) no-repeat;
-  background-size: cover;
-}
-.faq-wrap .faq-box .sixth {
-  background: url(../images/faq6.png) no-repeat;
-  background-size: cover;
 }
 .faq-wrap .faq-box a {
   flex-direction: column;
@@ -1302,7 +1279,10 @@ body {
   text-transform: uppercase;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.55);
   position: relative;
-  background-size: cover;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 @media (max-width: 800px) {
   .faq-wrap .faq-box a {
@@ -1313,11 +1293,198 @@ body {
 }
 .faq-wrap .faq-box a:after {
   position: absolute;
-  display: block;
   content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  z-index: 1;
+  border-style: solid;
+}
+@media (max-width: 800px) {
+  .faq-wrap .faq-box a:after {
+    display: none;
+  }
 }
 .faq-wrap .faq-box a:nth-child(even) {
   color: #fff;
+}
+.faq-wrap .faq-box a:hover {
+  text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.55);
+}
+.faq-wrap .first {
+  background: url(../images/faq1.png) no-repeat;
+  background-size: cover;
+}
+.faq-wrap .first:after {
+  bottom: -12px;
+  left: 50%;
+  margin-left: -12px;
+  border-width: 13px 12px 0 12px;
+  border-color: #dfe3e6 transparent transparent transparent;
+}
+.faq-wrap .second {
+  background: url(../images/faq2.png) no-repeat;
+  background-size: cover;
+}
+.faq-wrap .second:after {
+  left: -12px;
+  top: 50%;
+  margin-top: -12px;
+  border-width: 12px 13px 12px 0;
+  border-color: transparent #63BB27 transparent transparent;
+}
+.faq-wrap .third {
+  background: url(../images/faq3.png) no-repeat;
+  background-size: cover;
+}
+.faq-wrap .third:after {
+  left: -12px;
+  top: 50%;
+  margin-top: -12px;
+  border-width: 12px 13px 12px 0;
+  border-color: transparent #D7DEE1 transparent transparent;
+}
+.faq-wrap .fourth {
+  background: url(../images/faq4.png) no-repeat;
+  background-size: cover;
+}
+.faq-wrap .fourth:after {
+  right: -12px;
+  top: 50%;
+  margin-top: -12px;
+  border-width: 12px 0 12px 13px;
+  border-color: transparent transparent transparent #63bb27;
+}
+.faq-wrap .fifth {
+  background: url(../images/faq5.png) no-repeat;
+  background-size: cover;
+}
+.faq-wrap .fifth:after {
+  right: -12px;
+  top: 50%;
+  margin-top: -12px;
+  border-width: 12px 0 12px 13px;
+  border-color: transparent transparent transparent #D7DEE1;
+}
+.faq-wrap .sixth {
+  background: url(../images/faq6.png) no-repeat;
+  background-size: cover;
+}
+.faq-wrap .sixth:after {
+  top: -12px;
+  left: 50%;
+  margin-left: -12px;
+  border-width: 0 12px 13px 12px;
+  border-color: transparent transparent #7DC54E transparent;
+}
+.faq-wrap .faq-info {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 2px solid #63bb27;
+  padding: 43px 36px 44px 30px;
+  background: #fff;
+}
+@media (max-width: 800px) {
+  .faq-wrap .faq-info {
+    padding: 0 0 50px;
+  }
+}
+.faq-wrap .faq-info:hover .title {
+  text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.55);
+}
+.faq-wrap .faq-info .title {
+  float: left;
+  margin: -43px 29px 20px -30px;
+  width: 363px;
+  height: 117px;
+  padding: 25px 10px 15px;
+  font-family: "Pf Med";
+  font-size: 30px;
+  line-height: 38px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.55);
+  position: relative;
+  background: url(../images/faq1h.png) no-repeat;
+  background-size: cover;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+@media (max-width: 800px) {
+  .faq-wrap .faq-info .title {
+    margin: 0 0 30px;
+    width: 100%;
+    float: none;
+  }
+}
+.faq-wrap .faq-info .title:after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  z-index: 1;
+  border-style: solid;
+  bottom: -11px;
+  left: 50%;
+  margin-left: -12px;
+  border-width: 13px 12px 0 12px;
+  border-color: #7AC449 transparent transparent transparent;
+}
+.faq-wrap .faq-info p {
+  color: #2c2c2d;
+  font-size: 14px;
+  line-height: 25px;
+}
+@media (max-width: 800px) {
+  .faq-wrap .faq-info p {
+    margin: 0 15px;
+  }
+}
+.faq-wrap .faq-info .faq-close {
+  position: absolute;
+  display: block;
+  bottom: 12px;
+  right: 38px;
+  width: 54px;
+  height: 24px;
+  font-size: 12px;
+  line-height: 24px;
+  padding: 0;
+  background: #63bb27;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: none;
+}
+@media (max-width: 800px) {
+  .faq-wrap .faq-info .faq-close {
+    min-height: 24px;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+.faq-wrap .faq-info .faq-close i {
+  font-size: 12px;
+  line-height: 24px;
+}
+.faq-wrap .faq-info .faq-close:hover {
+  text-shadow: none;
+  background: #f9a526;
+}
+.faq-wrap .faq-info .faq-close:after {
+  display: none;
 }
 
 /*=========== Logos home =============*/
