@@ -42,6 +42,8 @@ $footerText: $white;
 $iconBaseColor: $mediumGrey;
 $iconGreenColor: $hardGreen;
 $iconHoverColor: $orange;
+$processBackGrey: $grey;
+$processBackWhite: $white;
 
 
 @import "compass";
@@ -75,6 +77,14 @@ body{
     @media screen and (max-width:800px) {
 		display:block;
 	}
+}
+.h1, h1{
+	font-family:"Pf Med";
+	font-size:40px;
+	line-height:1.1;
+	color:$hardGrey;
+	margin-bottom:28px;
+	text-align:center;
 }
 .flex{
     display:-webkit-box;
@@ -289,7 +299,6 @@ body{
 			}
 		}
 	}
-
 	a{
 		color:$headerColor;
 		font-family:"Pf Reg";
@@ -432,7 +441,54 @@ body{
         }
     }
 }
-
+/*==========================================*/
+/*===================== OUR PROCESS =======================*/
+/*============ Internal content ============*/
+.main-content{
+	padding:40px 0;
+}
+p{
+	font-size:16px;
+	line-height:23px;
+	color:$hardGrey;
+}
+/*============= Our Process ===============*/
+.process-wrap{
+	-webkit-flex-direction:column;
+	-moz-flex-direction:column;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	padding:37px 0 40px; 
+	.step-wrapper{
+		background:$processBackGrey;
+		padding:18px 0 40px;
+		&:nth-child(even){
+			background:$processBackWhite;
+		}
+		.step{
+			width:49%;
+			margin-right:1%;
+		}
+		.svg-img{
+			width:49%;
+			margin-left:1%;
+			&.two{
+				img{
+					display:inline-block;
+					vertical-align:top;
+					max-width:20%;
+					& + img{
+						margin-left:5%;
+					}
+				}
+			}
+			img{
+				max-width:50%;
+				display:block;
+			}
+		}
+	}
+}
 /*============== main slider ===============*/
 .main-slider{
 	img{

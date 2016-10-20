@@ -211,6 +211,15 @@ body {
   }
 }
 
+.h1, h1 {
+  font-family: "Pf Med";
+  font-size: 40px;
+  line-height: 1.1;
+  color: #7a7a7a;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
 .flex {
   display: -webkit-box;
   display: -moz-box;
@@ -627,6 +636,55 @@ body {
   -o-transition-property: bottom, -o-transform, background;
   -webkit-transition-property: bottom, -webkit-transform, background;
   transition-property: bottom, transform, background;
+}
+
+/*==========================================*/
+/*===================== OUR PROCESS =======================*/
+/*============ Internal content ============*/
+.main-content {
+  padding: 40px 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 23px;
+  color: #7a7a7a;
+}
+
+/*============= Our Process ===============*/
+.process-wrap {
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 37px 0 40px;
+}
+.process-wrap .step-wrapper {
+  background: #eaedee;
+  padding: 18px 0 40px;
+}
+.process-wrap .step-wrapper:nth-child(even) {
+  background: #fff;
+}
+.process-wrap .step-wrapper .step {
+  width: 49%;
+  margin-right: 1%;
+}
+.process-wrap .step-wrapper .svg-img {
+  width: 49%;
+  margin-left: 1%;
+}
+.process-wrap .step-wrapper .svg-img.two img {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 20%;
+}
+.process-wrap .step-wrapper .svg-img.two img + img {
+  margin-left: 5%;
+}
+.process-wrap .step-wrapper .svg-img img {
+  max-width: 50%;
+  display: block;
 }
 
 /*============== main slider ===============*/
