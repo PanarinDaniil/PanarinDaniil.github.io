@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'Pf Med';
+	src: url('#{$fontPath}PfDinMedium.eot');
+	src: local('☺'), url('#{$fontPath}PfDinMedium.woff') format('woff'), url('#{$fontPath}PfDinMedium.ttf') format('truetype'), url('#{$fontPath}PfDinMedium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Pf Reg';
+	src: url('#{$fontPath}PfDinRegular.eot');
+	src: local('☺'), url('#{$fontPath}PfDinRegular.woff') format('woff'), url('#{$fontPath}PfDinRegular.ttf') format('truetype'), url('#{$fontPath}PfDinRegular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Pf Light';
+	src: url('#{$fontPath}PfDinLight.eot');
+	src: local('☺'), url('#{$fontPath}PfDinLight.woff') format('woff'), url('#{$fontPath}PfDinLight.ttf') format('truetype'), url('#{$fontPath}PfDinLight.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

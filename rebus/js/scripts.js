@@ -2,7 +2,7 @@ WebFontConfig =
     {
     	google:{
     		families:[
-    			"Open+Sans:300,400,600,700,800&subset=latin-ext"
+    			"Open+Sans:300,400,400i,600,700&amp;subset=latin-ext"
     		]
     	}
     },
@@ -60,19 +60,20 @@ $(document).ready(function() {
         fade: true,
         cssEase: 'linear',
         swipe: true,
-        swipeToSlide: true
+        swipeToSlide: true,
+        responsive: [
+          {
+            breakpoint: 801,
+            settings: {
+                arrows: false
+            }
+          }
+        ]
     });
     
-
-
-    var browserMinWidth = Math.max(
-      document.body.scrollWidth, document.documentElement.scrollWidth,
-      document.body.offsetWidth, document.documentElement.offsetWidth,
-      document.body.clientWidth, document.documentElement.clientWidth
-    );
     var counter = false;
     if ( $(".min-carusel").width() > 0) {
-        if ( browserMinWidth <= '784' ) { // must be 17px less then in css
+        if ( window.matchMedia("(max-width:800px)").matches && counter == false ) {
             $('.min-carusel').slick({
                 lazyLoad: 'ondemand',
                 dots: true,
@@ -87,17 +88,12 @@ $(document).ready(function() {
                 swipeToSlide: true
             });
             counter = true;
-        } else if ( browserMinWidth > '783' && counter == true ) { // must be 17px less then in css
+        } else if ( window.matchMedia("(min-width:801px)").matches && counter == true ) {
             $('.min-carusel').slick('unslick');
             counter = false;
         }
         $(window).resize(function() {
-            var browserMinWidth = Math.max(
-              document.body.scrollWidth, document.documentElement.scrollWidth,
-              document.body.offsetWidth, document.documentElement.offsetWidth,
-              document.body.clientWidth, document.documentElement.clientWidth
-            );
-            if( browserMinWidth <= '784' && counter == false) { // must be 17px less then in css
+            if( window.matchMedia("(max-width:800px)").matches && counter == false) {
                 $('.min-carusel').slick({
                     lazyLoad: 'ondemand',
                     dots: true,
@@ -112,9 +108,64 @@ $(document).ready(function() {
                     swipeToSlide: true
                 });  
                 counter = true;
-            } else if ( browserMinWidth > '783' && counter == true ) { // must be 17px less then in css
+            } else if ( window.matchMedia("(min-width:801px)").matches && counter == true ) { // must be 17px less then in css
                 $('.min-carusel').slick('unslick');
-            }         
+                counter = false;
+            }
         });
     } 
+
+    // var browserMinWidth = Math.max(
+    //   document.body.scrollWidth, document.documentElement.scrollWidth,
+    //   document.body.offsetWidth, document.documentElement.offsetWidth,
+    //   document.body.clientWidth, document.documentElement.clientWidth
+    // );
+    // var counter = false;
+    // if ( $(".min-carusel").width() > 0) {
+    //     if ( browserMinWidth <= '783' ) { 
+    //         $('.min-carusel').slick({
+    //             lazyLoad: 'ondemand',
+    //             dots: true,
+    //             arrows: false,
+    //             autoplay: true,
+    //             autoplaySpeed: 10000,
+    //             infinite: true,
+    //             speed: 500,
+    //             fade: true,
+    //             cssEase: 'linear',
+    //             swipe: true,
+    //             swipeToSlide: true
+    //         });
+    //         counter = true;
+    //     } else if ( browserMinWidth > '784' && counter == true ) { 
+    //         $('.min-carusel').slick('unslick');
+    //         counter = false;
+    //     }
+    //     $(window).resize(function() {
+    //         var browserMinWidth = Math.max(
+    //           document.body.scrollWidth, document.documentElement.scrollWidth,
+    //           document.body.offsetWidth, document.documentElement.offsetWidth,
+    //           document.body.clientWidth, document.documentElement.clientWidth
+    //         );
+    //         if( browserMinWidth <= '783' && counter == false) { 
+    //             $('.min-carusel').slick({
+    //                 lazyLoad: 'ondemand',
+    //                 dots: true,
+    //                 arrows: false,
+    //                 autoplay: true,
+    //                 autoplaySpeed: 10000,
+    //                 infinite: true,
+    //                 speed: 500,
+    //                 fade: true,
+    //                 cssEase: 'linear',
+    //                 swipe: true,
+    //                 swipeToSlide: true
+    //             });  
+    //             counter = true;
+    //         } else if ( browserMinWidth > '784' && counter == true ) { 
+    //             $('.min-carusel').slick('unslick');
+    //             counter = false;
+    //         }         
+    //     });
+    // } 
 });
