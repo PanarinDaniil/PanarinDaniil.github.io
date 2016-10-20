@@ -220,7 +220,13 @@ body {
 }
 
 .wrapper {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
   align-items: flex-start;
   min-height: 100vh;
   min-width: 320px;
@@ -341,6 +347,9 @@ body {
 
 /*========= Header =========*/
 .header {
+  -webkit-align-self: flex-start;
+  -moz-align-self: flex-start;
+  -ms-align-self: flex-start;
   align-self: flex-start;
   width: 100%;
   padding: 45px 0 17px;
@@ -662,12 +671,24 @@ body {
 }
 @media screen and (max-width: 800px) {
   .responsive .content {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    -moz-flex-direction: column;
     flex-direction: column;
   }
 }
 .responsive .title-box, .responsive .responsive-img {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
   flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
+  -webkit-align-content: space-around;
+  -moz-align-content: space-around;
+  -ms-align-content: space-around;
   align-content: space-around;
 }
 .responsive .title-box {
@@ -756,14 +777,29 @@ body {
   }
 }
 .services-wrap .services {
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
 }
 .services-wrap .services a {
   width: 48%;
   margin: 0 7px 7px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
   flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
+  -webkit-align-content: space-around;
+  -moz-align-content: space-around;
+  -ms-align-content: space-around;
   align-content: space-around;
   padding: 18px 12px 23px 118px;
   position: relative;
@@ -1031,8 +1067,17 @@ body {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
     justify-content: center;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -ms-align-items: flex-start;
     align-items: flex-start;
     margin-bottom: 39px;
   }
@@ -1288,8 +1333,17 @@ body {
   justify-content: center;
 }
 .faq-wrap .faq-box a {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
   flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
+  -webkit-align-content: space-around;
+  -moz-align-content: space-around;
+  -ms-align-content: space-around;
   align-content: space-around;
   width: calc(100% / 3);
   padding: 27px 30px 19px;
@@ -1529,7 +1583,13 @@ body {
   }
 }
 .logos-wrap .logos-box {
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
 }
 .logos-wrap .logos-box li {
@@ -1572,6 +1632,9 @@ body {
 
 /*=============== Footer ===============*/
 .footer {
+  -webkit-align-self: flex-end;
+  -moz-align-self: flex-end;
+  -ms-align-self: flex-end;
   align-self: flex-end;
   width: 100%;
   padding: 57px 0 104px;
