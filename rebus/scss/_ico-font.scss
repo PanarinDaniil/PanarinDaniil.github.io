@@ -20,11 +20,11 @@ $reb-gear: "\e023";
 
 @font-face {
   font-family: 'rebus';
-  src:  url('#{$fontPath}/rebus.eot?fil5g4');
-  src:  url('#{$fontPath}/rebus.eot?fil5g4#iefix') format('embedded-opentype'),
-    url('#{$fontPath}/rebus.ttf?fil5g4') format('truetype'),
-    url('#{$fontPath}/rebus.woff?fil5g4') format('woff'),
-    url('#{$fontPath}/rebus.svg?fil5g4#rebus') format('svg');
+  src:  url('#{$fontPath}rebus.eot?fil5g4');
+  src:  url('#{$fontPath}rebus.eot?fil5g4#iefix') format('embedded-opentype'),
+    url('#{$fontPath}rebus.ttf?fil5g4') format('truetype'),
+    url('#{$fontPath}rebus.woff?fil5g4') format('woff'),
+    url('#{$fontPath}rebus.svg?fil5g4#rebus') format('svg');
   font-weight: normal;
   font-style: normal;
 }
