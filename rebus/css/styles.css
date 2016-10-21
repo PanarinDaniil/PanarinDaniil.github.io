@@ -875,6 +875,7 @@ p {
   .packages {
     -webkit-flex-direction: column;
     flex-direction: column;
+    padding-bottom: 0;
   }
 }
 .packages .col-2 {
@@ -902,6 +903,7 @@ p {
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
   border-radius: 7px;
+  padding: 22px 0 13px;
 }
 @media screen and (max-width: 800px) {
   .packages .item {
@@ -992,7 +994,7 @@ p {
   font-family: "Pf Med";
   font-size: 30px;
   line-height: 1.1;
-  padding-top: 13px;
+  padding: 13px 0 0;
 }
 @media screen and (max-width: 800px) {
   .packages .item .bill {
