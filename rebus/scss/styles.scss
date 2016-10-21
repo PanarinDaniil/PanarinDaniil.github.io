@@ -44,6 +44,9 @@ $iconGreenColor: $hardGreen;
 $iconHoverColor: $orange;
 $processBackGrey: $grey;
 $processBackWhite: $white;
+$stepNum: $hardGrey;
+$processTitle: $darkGreen;
+$processSubtitle: $hardGrey;
 
 
 @import "compass";
@@ -85,6 +88,13 @@ body{
 	color:$hardGrey;
 	margin-bottom:28px;
 	text-align:center;
+	@media screen and (max-width:800px) {
+		font-size:35px;
+	}
+}
+p{
+	font:400 16px/24px "Open Sans", Arial, sans-serif;
+	color:$hardGrey;
 }
 .flex{
     display:-webkit-box;
@@ -446,47 +456,138 @@ body{
 /*============ Internal content ============*/
 .main-content{
 	padding:40px 0;
-}
-p{
-	font-size:16px;
-	line-height:23px;
-	color:$hardGrey;
+	@media screen and (max-width:800px) {
+		padding:29px 0 49px;
+	}
+	p{
+		line-height:23px;
+	}
+	.title-bottom{
+		font-family:"Pf Reg";
+		font-size:50px;
+		line-height:1.1;
+		color:$processSubtitle;
+		margin-bottom:42px;
+		@media screen and (max-width:450px) {
+			font-size:35px;
+			margin-bottom:0;
+		}
+		a{
+			color:$processTitle;
+			font-family:"Pf Reg";
+			font-size:50px;
+			line-height:1.1;
+			text-decoration:none;
+			position:relative;
+			@media screen and (max-width:450px) {
+				font-size:35px;
+			}
+			&:after{
+				position:absolute;
+				display:block;
+				content:'';
+				bottom:1px;
+				left:0px;
+				right:0px;
+				height:4px;
+				background:$processTitle;
+				@include transition($transition);
+			}
+			&:hover{
+				&:after{
+					background:transparent;
+				}
+			}
+		}
+	}
+	.img-bottom{
+		max-width:910px;
+		@media screen and (max-width:450px) {
+			display:none;
+		}
+	}
 }
 /*============= Our Process ===============*/
 .process-wrap{
-	-webkit-flex-direction:column;
-	-moz-flex-direction:column;
-	-ms-flex-direction:column;
-	flex-direction:column;
-	padding:37px 0 40px; 
+	@include flex-direction(column);
+	padding:37px 0 40px;
+	@media screen and (max-width:800px) {
+		padding:38px 0 21px;
+	}
 	.step-wrapper{
 		background:$processBackGrey;
 		padding:18px 0 40px;
+		@media screen and (max-width:800px) {
+			padding:22px 0 30px;
+		}
 		&:nth-child(even){
 			background:$processBackWhite;
+		}
+		.content{
+			@include justify-content(center);
+		}
+		.step, .svg-img{
+		    @include flex-direction(column);
+		    @include justify-content(center);
+		    @include align-content(space-around);
 		}
 		.step{
 			width:49%;
 			margin-right:1%;
+			padding:4px 0 4px;
+			@media screen and (max-width:800px) {
+				padding:0;
+				text-align:center;
+				width:100%;
+				margin:0;
+			}
 		}
 		.svg-img{
 			width:49%;
 			margin-left:1%;
-			&.two{
-				img{
-					display:inline-block;
-					vertical-align:top;
-					max-width:20%;
-					& + img{
-						margin-left:5%;
-					}
-				}
+			@media screen and (max-width:800px) {
+				display:none;
 			}
 			img{
-				max-width:50%;
 				display:block;
+				height:455px;
 			}
 		}
+	}
+	.step-num{
+		color:$stepNum;
+		font-family:"Pf Reg";
+		font-size:48px;
+		line-height:1.1;
+		margin-bottom:30px;
+		@media screen and (max-width:800px) {
+			margin-bottom:19px;
+		}
+	}
+	.title{
+		color:$processTitle;
+		font-family:"Pf Reg";
+		font-size:35px;
+		line-height:1.1;
+		margin-bottom:15px;
+		text-transform:uppercase;
+	}
+	p{
+		margin-bottom:28px;
+		text-align:left;
+		@media screen and (max-width:800px) {
+			&:last-child{
+				text-align:center;
+			}
+		}
+	}
+	.sub-title{
+		font-size:18px;
+		line-height:24px;
+		font-weight:600;
+		text-transform:uppercase;
+		color:$processSubtitle;
+		margin-bottom:5px;
 	}
 }
 /*============== main slider ===============*/

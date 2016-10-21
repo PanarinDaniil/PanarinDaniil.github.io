@@ -219,6 +219,16 @@ body {
   margin-bottom: 28px;
   text-align: center;
 }
+@media screen and (max-width: 800px) {
+  .h1, h1 {
+    font-size: 35px;
+  }
+}
+
+p {
+  font: 400 16px/24px "Open Sans", Arial, sans-serif;
+  color: #7a7a7a;
+}
 
 .flex {
   display: -webkit-box;
@@ -644,47 +654,163 @@ body {
 .main-content {
   padding: 40px 0;
 }
-
-p {
-  font-size: 16px;
+@media screen and (max-width: 800px) {
+  .main-content {
+    padding: 29px 0 49px;
+  }
+}
+.main-content p {
   line-height: 23px;
+}
+.main-content .title-bottom {
+  font-family: "Pf Reg";
+  font-size: 50px;
+  line-height: 1.1;
   color: #7a7a7a;
+  margin-bottom: 42px;
+}
+@media screen and (max-width: 450px) {
+  .main-content .title-bottom {
+    font-size: 35px;
+    margin-bottom: 0;
+  }
+}
+.main-content .title-bottom a {
+  color: #63bb27;
+  font-family: "Pf Reg";
+  font-size: 50px;
+  line-height: 1.1;
+  text-decoration: none;
+  position: relative;
+}
+@media screen and (max-width: 450px) {
+  .main-content .title-bottom a {
+    font-size: 35px;
+  }
+}
+.main-content .title-bottom a:after {
+  position: absolute;
+  display: block;
+  content: '';
+  bottom: 1px;
+  left: 0px;
+  right: 0px;
+  height: 4px;
+  background: #63bb27;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.main-content .title-bottom a:hover:after {
+  background: transparent;
+}
+.main-content .img-bottom {
+  max-width: 910px;
+}
+@media screen and (max-width: 450px) {
+  .main-content .img-bottom {
+    display: none;
+  }
 }
 
 /*============= Our Process ===============*/
 .process-wrap {
   -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding: 37px 0 40px;
+}
+@media screen and (max-width: 800px) {
+  .process-wrap {
+    padding: 38px 0 21px;
+  }
 }
 .process-wrap .step-wrapper {
   background: #eaedee;
   padding: 18px 0 40px;
 }
+@media screen and (max-width: 800px) {
+  .process-wrap .step-wrapper {
+    padding: 22px 0 30px;
+  }
+}
 .process-wrap .step-wrapper:nth-child(even) {
   background: #fff;
+}
+.process-wrap .step-wrapper .content {
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.process-wrap .step-wrapper .step, .process-wrap .step-wrapper .svg-img {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: space-around;
+  align-content: space-around;
 }
 .process-wrap .step-wrapper .step {
   width: 49%;
   margin-right: 1%;
+  padding: 4px 0 4px;
+}
+@media screen and (max-width: 800px) {
+  .process-wrap .step-wrapper .step {
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
 }
 .process-wrap .step-wrapper .svg-img {
   width: 49%;
   margin-left: 1%;
 }
-.process-wrap .step-wrapper .svg-img.two img {
-  display: inline-block;
-  vertical-align: top;
-  max-width: 20%;
-}
-.process-wrap .step-wrapper .svg-img.two img + img {
-  margin-left: 5%;
+@media screen and (max-width: 800px) {
+  .process-wrap .step-wrapper .svg-img {
+    display: none;
+  }
 }
 .process-wrap .step-wrapper .svg-img img {
-  max-width: 50%;
   display: block;
+  height: 455px;
+}
+.process-wrap .step-num {
+  color: #7a7a7a;
+  font-family: "Pf Reg";
+  font-size: 48px;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 800px) {
+  .process-wrap .step-num {
+    margin-bottom: 19px;
+  }
+}
+.process-wrap .title {
+  color: #63bb27;
+  font-family: "Pf Reg";
+  font-size: 35px;
+  line-height: 1.1;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.process-wrap p {
+  margin-bottom: 28px;
+  text-align: left;
+}
+@media screen and (max-width: 800px) {
+  .process-wrap p:last-child {
+    text-align: center;
+  }
+}
+.process-wrap .sub-title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #7a7a7a;
+  margin-bottom: 5px;
 }
 
 /*============== main slider ===============*/
