@@ -195,13 +195,22 @@ $(document).ready(function() {
             $('.not_req').removeClass("not-empty");
         }
     });
+
+    var scrolltop, htmlOrBody;
+
+    var antiscrollevent = function(e) {
+        e.preventDefault();
+        $(htmlOrBody).scrollTop(scrolltop);
+    };
     var count = false;
-    console.log(count);
     $(".portfolio").fancybox({
         autoHeight: true,
         padding:    65,
         maxWidth:   1232,
         beforeShow: function() {
+            htmlOrBody = $('body').scrollTop() != 0 ? 'body' : 'html';
+            scrolltop = $(htmlOrBody).scrollTop();
+            $(window).on('scroll', antiscrollevent);
             if ( count == true ) {
                 $('.pop-slider').slick('unslick');
                 count = false;
@@ -230,6 +239,7 @@ $(document).ready(function() {
             }
         },
         afterClose: function() {
+            $(window).off('scroll', antiscrollevent);
             if ( count == true ) {
                 $('.pop-slider').slick('unslick');
                 count = false;
