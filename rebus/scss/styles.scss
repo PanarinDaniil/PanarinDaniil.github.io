@@ -1792,6 +1792,15 @@ p{
 	}
 }
 .fancybox-opened{
+	&.fancybox-opened{
+		@media screen and (max-width:800px) {
+			width:100%!important;
+			left:0!important;
+			top:0!important;
+		}
+	}
+}
+.fancybox-wrap{
 	&.fancybox-wrap{
 		@media screen and (max-width:800px) {
 			width:100%!important;
@@ -1799,33 +1808,33 @@ p{
 			top:0!important;
 		}
 	}
-	.fancybox-skin{
-		@include border-radius(0px);
-		@media screen and (max-width:800px) {
-			padding:70px 14px 38px!important;
-		    min-width:320px;
-		}
-		.fancybox-close{
-			font-family: 'rebus' !important;
-			speak: none;
-			font-style: normal;
-			font-weight: normal;
-			font-variant: normal;
-			text-transform: none;
-			line-height: 1;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-			background:none;
-			width:30px;
-			height:30px;
-			top:15px;
-			right:15px;
-			text-decoration:none;
-			font-size:30px;
-			color:$portfolioColor;
-			&:before{
-				content: $reb-close;
-			}
+}
+.fancybox-skin.fancybox-skin{
+	@include border-radius(0px);
+	@media screen and (max-width:800px) {
+		padding:70px 14px 38px!important;
+	    min-width:320px;
+	}
+	.fancybox-close{
+		font-family: 'rebus' !important;
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		background:none;
+		width:30px;
+		height:30px;
+		top:15px;
+		right:15px;
+		text-decoration:none;
+		font-size:30px;
+		color:$portfolioColor;
+		&:before{
+			content: $reb-close;
 		}
 	}
 }
