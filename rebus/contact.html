@@ -5,6 +5,26 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Rebus</title>
+	<style>
+	    #rebus {
+	        height:336px;
+	        width:100%;
+	    }
+	    .gm-style-iw{
+	    	max-width:260px;
+	    }
+	    .gm-style-iw * {
+	        display: block;
+	        width: 100%;
+	    }
+	    .gm-style-iw h4, .gm-style-iw p {
+	        margin: 0;
+	        padding: 0;
+	    }
+	    .gm-style-iw a {
+	        color: #4272db;
+	    }
+	</style>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
@@ -73,36 +93,53 @@
 				<div class="content">
 					<div class="h1">Contact Us Today</div>
 					<div class="contacts-wrap clear">
+						<div class="contacts-info">
+							<div class="info">Rebus Web Services, Ney york City</div>
+							<div class="info">817 Broadway 5th Floor, New York, N.Y. 10003</div>
+							<div class="info show-mob"><span class="left">Tel: 1-347-866-6247</span><span class="right">E-mail: <a href="mailto:info@rebussoft.com">info@rebussoft.com</a></span></div>
+							<div id="rebus" class="map"></div>
+						</div>
 						<div class="contacts-box">
 							<div class="title">Email Us for a Free Consultation</div>
-							<form action="#" class="contact-form" novalidate>
+							<form action="javascript:void(0);" class="contact-form" novalidate>
 								<div class="input-wrapper">
 									<input type="text" id="con_name" name="con_name" required>
 									<label for="con_name">Name</label>
+									<div class="line"></div>
 								</div>
 								<div class="input-wrapper">
 									<input type="tel" id="con_phone" name="con_phone" required>
 									<label for="con_phone">Telephone</label>
+									<div class="line"></div>
 								</div>
 								<div class="input-wrapper">
 									<input type="email" id="con_email" name="con_email" required>
 									<label for="con_email">E-mail</label>
+									<div class="line"></div>
 								</div>
 								<div class="input-wrapper">
 									<input type="text" id="con_comp" name="con_comp" class="not_req" />
 									<label for="con_comp">Company</label>
+									<div class="line"></div>
 								</div>
 								<div class="input-wrapper text">
 									<textarea id="con_msg" class="not_req_text" ></textarea>
 									<label for="con_msg">Message</label>
+									<div class="line"></div>
 								</div>
 								<div class="submit-wrapper center">
 									<button type="submit" class="btn-orange">Send message</button>
 								</div>
+								<div class="success msg">
+									<span>Your message was sent.</span>
+									<span>Thanks for contacting us!</span>
+									<span>You will be hearing from us shortly.</span>
+								</div>
+								<div class="fail msg">
+									<span>Validation errors occurred.</span>
+									<span>Please confirm your information and submit the form again.</span>
+								</div>
 							</form>
-						</div>
-						<div class="contacts-info">
-							
 						</div>
 					</div>
 				</div>
@@ -119,6 +156,88 @@
 		</footer>
 	</div>
 	<div class="layout"></div>
+	<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBxiFA1VCINLLleeVRiQIx0CjivPh9I7TM&sensor=false&extension=.js'></script>
+	<script> 
+	    google.maps.event.addDomListener(window, 'load', init);
+	    var map;
+	    function init() {
+	        var mapOptions = {
+	            center: new google.maps.LatLng(40.733726,-73.991602),
+	            zoom: 17,
+	            zoomControl: false,
+	            disableDoubleClickZoom: false,
+	            mapTypeControl: false,
+	            scaleControl: false,
+	            scrollwheel: false,
+	            panControl: false,
+	            streetViewControl: false,
+	            draggable : false,
+	            overviewMapControl: false,
+	            overviewMapControlOptions: {
+	                opened: false,
+	            },
+	            mapTypeId: google.maps.MapTypeId.ROADMAP,
+	        }
+	        var mapElement = document.getElementById('rebus');
+	        var map = new google.maps.Map(mapElement, mapOptions);
+	        var locations = [
+	['Rebus Web Services', 'Rebus- brbrbrbrbrgbrb', '1-347-866-6247', 'info@rebussoft.com', 'rebussoft.com', 40.7332147, -73.99149570000003, 'https://mapbuildr.com/assets/img/markers/default.png']
+	        ];
+	        for (i = 0; i < locations.length; i++) {
+				if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+				if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+				if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+				if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+				if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+	            marker = new google.maps.Marker({
+	                icon: markericon,
+	                position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+	                map: map,
+	                title: locations[i][0],
+	                desc: description,
+	                tel: telephone,
+	                email: email,
+	                web: web
+	            });
+				if (web.substring(0, 7) != "http://") {
+					link = "http://" + web;
+				} else {
+					link = web;
+				}
+	            bindInfoWindow(marker, map, locations[i][0], description, telephone, email, web, link);
+		    }
+			function bindInfoWindow(marker, map, title, desc, telephone, email, web, link) {
+			    var infoWindowVisible = (function () {
+		            var currentlyVisible = false;
+		            return function (visible) {
+	                if (visible !== undefined) {
+	                    currentlyVisible = visible;
+	                }
+		                return currentlyVisible;
+				    };
+		        }());
+	        	iw = new google.maps.InfoWindow();
+	        	var html= "<div style='color:#000;background-color:#fff;padding:5px;width:200px;margin:0 auto;'><h4>"+title+"</h4><p>"+desc+"<p><p>"+telephone+"<p><a href='mailto:"+email+"' >"+email+"<a><a href='"+link+"'' >"+web+"<a></div>";
+				iw = new google.maps.InfoWindow({content:html});
+				iw.open(map,marker);
+				infoWindowVisible(true);
+				google.maps.event.addListener(marker, 'click', function() {
+					if (infoWindowVisible()) {
+						iw.close();
+						infoWindowVisible(false);
+					} else {
+						var html= "<div style='color:#000;background-color:#fff;padding:5px;width:200px;margin:0 auto;'><h4>"+title+"</h4><p>"+desc+"<p><p>"+telephone+"<p><a href='mailto:"+email+"' >"+email+"<a><a href='"+link+"'' >"+web+"<a></div>";
+						iw = new google.maps.InfoWindow({content:html});
+						iw.open(map,marker);
+						infoWindowVisible(true);
+					}
+		        });
+		        google.maps.event.addListener(iw, 'closeclick', function () {
+		            infoWindowVisible(false);
+		        });
+			}
+		}
+	</script>
 	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
 	<script src="js/jquery.validate.min.js" type="text/javascript"></script>
 	<script src="js/scripts.js" type="text/javascript"></script>

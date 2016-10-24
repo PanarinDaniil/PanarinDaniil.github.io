@@ -57,6 +57,8 @@ $serviceOrange: $lightOrange;
 $serviceOrangeColor: $orange;
 $contactColor: $mediumGrey;
 $contactform: $hardGrey;
+$contactError: #ff0000;
+$contactValid: $hardGreen;
 
 
 @import "compass";
@@ -171,6 +173,7 @@ p{
 	@include border-radius(8px);
 	background:$orBtnBack;
 	color:$orBtnColor;
+	font-family:"Pf Med";
 	font-size:30px;
 	line-height:32px;
 	font-weight:700;
@@ -939,18 +942,79 @@ p{
 	width:49%;
 	margin-right:1%;
 	color:$contactColor;
+	@media screen and (max-width:800px) {
+		float:none;
+		width:100%;
+		margin:0;
+	}
 	.title{
 		font-family:"Pf Reg";
 		font-size:30px;
-		margin-bottom:36px;
+		margin-bottom:24px;
+		@media screen and (max-width:800px) {
+			text-align:center;
+		}
 	}
 }
 .contacts-info{
 	float:right;
 	width:49%;
 	margin-left:1%;
+	@media screen and (max-width:800px) {
+		float:none;
+		width:100%;
+		margin:0 0 20px;
+	}
+	.info{
+		color:$contactColor;
+		font-family:"Pf Reg";
+		font-size:24px;
+		line-height:38px;
+		@media screen and (max-width:800px) {
+			display:none;
+		}
+		&.show-mob{
+			@media screen and (max-width:800px) {
+				display:block;
+			}
+		}
+		span{
+			@media screen and (max-width:800px) {
+				display:block;
+				text-align:center;
+			}
+			&.left{
+				margin-right:15px;
+				@media screen and (max-width:800px) {
+					margin:0;
+				}
+			}
+			&.right{
+				margin-left:15px;
+				position:relative;
+				@media screen and (max-width:800px) {
+					margin:0;
+				}
+				&:before{
+					position:absolute;
+					content:"|";
+					display:block;
+					left:-16px;
+					top:-6px;
+					@media screen and (max-width:800px) {
+						display:none;
+					}
+				}
+			}
+		}
+	}
+	.map{
+		margin:26px 0 15px;
+	}
 }
 .contact-form{
+	padding-bottom:85px;
+	position:relative;
 	*{
 		outline:none;
 	}
@@ -960,14 +1024,34 @@ p{
 		margin-bottom:15px;
 		textarea{
 		    resize:none;
-		    min-height:117px;
+		    min-height:125px;
+		    & ~ .line{
+				position:absolute;
+				content:"";
+				display:block;
+				left:8px;
+				bottom:0;
+				height:2px;
+				@include transition($transition);
+			}
 		    &:focus{
 				& ~ label{
 					top:0px;
 					font-size:13px;
 					line-height:16px;
-
 				}
+			}
+			&.valid{
+				& ~ .line{
+					right:8px;
+					background:$contactValid;
+				}
+			}
+			&.not-empty ~ label{
+				top:0px;
+				font-size:13px;
+				line-height:16px;
+				color:$contactValid;
 			}
 		}
 		&.text{
@@ -978,6 +1062,7 @@ p{
 					top:100%;
 					font-size:13px;
 					line-height:16px;
+					color:$contactError;
 				}
 			}
 		}
@@ -1010,6 +1095,15 @@ p{
 			padding:7px 5px 6px;
 		}
 		input{
+			& ~ .line{
+				position:absolute;
+				content:"";
+				display:block;
+				left:8px;
+				bottom:0;
+				height:2px;
+				@include transition($transition);
+			}
 			&:focus{
 				& ~ label{
 					top:0px;
@@ -1019,7 +1113,7 @@ p{
 						top:100%;
 						font-size:13px;
 						line-height:16px;
-						color:#ff0000;
+						color:$contactError;
 					}
 				}
 			}
@@ -1028,24 +1122,29 @@ p{
 						top:0px;
 						font-size:13px;
 						line-height:16px;
+						color:$contactError;
 					&.error{
 						top:100%;
 						font-size:13px;
 						line-height:16px;
-						color:#ff0000;
+						display:none!important;
 					}
+				}
+				& ~ .line{
+					right:8px;
+					background:$contactError;
 				}
 			}
 			&.valid{
 				& ~ label{
-						top:0px;
-						font-size:13px;
-						line-height:16px;
-					// &.error{
-					// 	top:100%;
-					// 	font-size:13px;
-					// 	line-height:16px;
-					// }
+					top:0px;
+					font-size:13px;
+					line-height:16px;
+					color:$contactValid;
+				}
+				& ~ .line{
+					right:8px;
+					background:$contactValid;
 				}
 			}
 			&.not-empty{
@@ -1056,6 +1155,65 @@ p{
 				}
 			}
 		}
+	}
+	.btn-orange{
+		font-size:23px;
+		line-height:26px;
+		padding:10px 26px;
+		max-width:192px;
+		cursor:pointer;
+	}
+	.msg{
+		display:none;
+		position:absolute;
+		bottom:0;
+		left:0;
+		right:0;
+		width:310px;
+		margin:0 auto;
+		padding-left:68px;
+		font-weight:600;
+		font-size:14px;
+		line-height:18px;
+		&:before{
+			position:absolute;
+			top:50%;
+		}
+		span{
+			display:block;
+		}
+	}
+	.success{
+		color:$contactValid;
+		&:before{
+			left:10px;
+			margin-top:-23px;
+			content:$reb-check;
+			color:$contactValid;
+			font-size:46px;
+			font-family: 'rebus' !important;
+			speak: none;
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			text-transform: none;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+		&.valid{display:block;}
+	}
+	.fail{
+		color:$contactError;
+		&:before{
+			left:-6px;
+			width:70px;
+			height:77px;
+			margin-top:-38.5px;
+			content:'';
+			background:url('#{$imgPath}ops.png') no-repeat;
+		}
+		&.valid{display:block;}
 	}
 }
 /*============== main slider ===============*/

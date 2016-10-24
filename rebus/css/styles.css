@@ -312,6 +312,7 @@ p {
   border-radius: 8px;
   background: #f9a526;
   color: #fff;
+  font-family: "Pf Med";
   font-size: 30px;
   line-height: 32px;
   font-weight: 700;
@@ -1221,10 +1222,22 @@ p {
   margin-right: 1%;
   color: #b8b8b9;
 }
+@media screen and (max-width: 800px) {
+  .contacts-box {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+}
 .contacts-box .title {
   font-family: "Pf Reg";
   font-size: 30px;
-  margin-bottom: 36px;
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 800px) {
+  .contacts-box .title {
+    text-align: center;
+  }
 }
 
 .contacts-info {
@@ -1232,7 +1245,72 @@ p {
   width: 49%;
   margin-left: 1%;
 }
+@media screen and (max-width: 800px) {
+  .contacts-info {
+    float: none;
+    width: 100%;
+    margin: 0 0 20px;
+  }
+}
+.contacts-info .info {
+  color: #b8b8b9;
+  font-family: "Pf Reg";
+  font-size: 24px;
+  line-height: 38px;
+}
+@media screen and (max-width: 800px) {
+  .contacts-info .info {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contacts-info .info.show-mob {
+    display: block;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contacts-info .info span {
+    display: block;
+    text-align: center;
+  }
+}
+.contacts-info .info span.left {
+  margin-right: 15px;
+}
+@media screen and (max-width: 800px) {
+  .contacts-info .info span.left {
+    margin: 0;
+  }
+}
+.contacts-info .info span.right {
+  margin-left: 15px;
+  position: relative;
+}
+@media screen and (max-width: 800px) {
+  .contacts-info .info span.right {
+    margin: 0;
+  }
+}
+.contacts-info .info span.right:before {
+  position: absolute;
+  content: "|";
+  display: block;
+  left: -16px;
+  top: -6px;
+}
+@media screen and (max-width: 800px) {
+  .contacts-info .info span.right:before {
+    display: none;
+  }
+}
+.contacts-info .map {
+  margin: 26px 0 15px;
+}
 
+.contact-form {
+  padding-bottom: 85px;
+  position: relative;
+}
 .contact-form * {
   outline: none;
 }
@@ -1243,12 +1321,34 @@ p {
 }
 .contact-form .input-wrapper textarea {
   resize: none;
-  min-height: 117px;
+  min-height: 125px;
+}
+.contact-form .input-wrapper textarea ~ .line {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 8px;
+  bottom: 0;
+  height: 2px;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 .contact-form .input-wrapper textarea:focus ~ label {
   top: 0px;
   font-size: 13px;
   line-height: 16px;
+}
+.contact-form .input-wrapper textarea.valid ~ .line {
+  right: 8px;
+  background: #77b624;
+}
+.contact-form .input-wrapper textarea.not-empty ~ label {
+  top: 0px;
+  font-size: 13px;
+  line-height: 16px;
+  color: #77b624;
 }
 .contact-form .input-wrapper.text {
   margin-bottom: 31px;
@@ -1260,6 +1360,7 @@ p {
   top: 100%;
   font-size: 13px;
   line-height: 16px;
+  color: #ff0000;
 }
 .contact-form .input-wrapper label {
   position: absolute;
@@ -1292,6 +1393,18 @@ p {
   color: #7a7a7a;
   padding: 7px 5px 6px;
 }
+.contact-form .input-wrapper input ~ .line {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 8px;
+  bottom: 0;
+  height: 2px;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
 .contact-form .input-wrapper input:focus ~ label {
   top: 0px;
   font-size: 13px;
@@ -1307,22 +1420,95 @@ p {
   top: 0px;
   font-size: 13px;
   line-height: 16px;
+  color: #ff0000;
 }
 .contact-form .input-wrapper input.error ~ label.error {
   top: 100%;
   font-size: 13px;
   line-height: 16px;
-  color: #ff0000;
+  display: none !important;
+}
+.contact-form .input-wrapper input.error ~ .line {
+  right: 8px;
+  background: #ff0000;
 }
 .contact-form .input-wrapper input.valid ~ label {
   top: 0px;
   font-size: 13px;
   line-height: 16px;
+  color: #77b624;
+}
+.contact-form .input-wrapper input.valid ~ .line {
+  right: 8px;
+  background: #77b624;
 }
 .contact-form .input-wrapper input.not-empty ~ label {
   top: 0px;
   font-size: 13px;
   line-height: 16px;
+}
+.contact-form .btn-orange {
+  font-size: 23px;
+  line-height: 26px;
+  padding: 10px 26px;
+  max-width: 192px;
+  cursor: pointer;
+}
+.contact-form .msg {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 310px;
+  margin: 0 auto;
+  padding-left: 68px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+}
+.contact-form .msg:before {
+  position: absolute;
+  top: 50%;
+}
+.contact-form .msg span {
+  display: block;
+}
+.contact-form .success {
+  color: #77b624;
+}
+.contact-form .success:before {
+  left: 10px;
+  margin-top: -23px;
+  content: "";
+  color: #77b624;
+  font-size: 46px;
+  font-family: 'rebus' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.contact-form .success.valid {
+  display: block;
+}
+.contact-form .fail {
+  color: #ff0000;
+}
+.contact-form .fail:before {
+  left: -6px;
+  width: 70px;
+  height: 77px;
+  margin-top: -38.5px;
+  content: '';
+  background: url("../images/ops.png") no-repeat;
+}
+.contact-form .fail.valid {
+  display: block;
 }
 
 /*============== main slider ===============*/

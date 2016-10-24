@@ -141,38 +141,50 @@ $(document).ready(function() {
     }
     $(".contact-form").validate({
         rules: {
-            email: {
-                required: !0,
-                email: !0
+            con_name: {
+                required: true,
+            },
+            con_email: {
+                required: true,
+                email: true
+            },
+            con_phone: {
+                required: true,
+                minlength:10
             }
+
         },
         messages: {
             email: "Please enter a valid email address"
+        },
+        submitHandler: function() { 
+            $(".fail").removeClass("valid");
+            $(".success").addClass("valid");
+        },
+        invalidHandler: function(event, validator) {
+            var errors = validator.numberOfInvalids();
+            if (errors) {
+                $(".success").removeClass("valid");
+                $(".fail").addClass("valid");
+            } else {
+                $(".fail").removeClass("valid");
+                $(".success").addClass("valid");
+            }
         }
     });
 
-
-    //////////////////////////////
-    $('.not_req_text').change(function () {
-
-        if ( $(this).val().length !== 0 ){
-            $(this).addClass("not-empty");
-        } else{
-            $(this).removeClass("not-empty");
+    $('.not_req').keypress(function() {
+        if ($(this).length) {
+            $('.not_req').addClass("not-empty");
+        } else {
+            $('.not_req').removeClass("not-empty");
         }
-        // if ($.trim($(this).val()).length < 1) {
-        //     $(this).addClass("not-empty");
-        // } else{
-        //     $(this).removeClass("not-empty");
-        // }
     });
-
-
-    // $(".not_req").live('change', function(){
-        // if ( $(".not_req").val().length !== 0 ){
-        //     $(this).addClass("not-empty");
-        // } else{
-        //     $(this).removeClass("not-empty");
-        // }
-    // });
+    $('.not_req_text').keypress(function() {
+        if ($(this).length) {
+            $('.not_req_text').addClass("not-empty");
+        } else {
+            $('.not_req_text').removeClass("not-empty");
+        }
+    });
 });
