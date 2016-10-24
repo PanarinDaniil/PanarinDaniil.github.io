@@ -2163,22 +2163,6 @@ p {
   left: 0;
 }
 
-@media screen and (max-width: 800px) {
-  .fancybox-opened.fancybox-opened {
-    width: 100% !important;
-    left: 0 !important;
-    top: 0 !important;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .fancybox-wrap.fancybox-wrap {
-    width: 100% !important;
-    left: 0 !important;
-    top: 0 !important;
-  }
-}
-
 .fancybox-skin.fancybox-skin {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -2186,7 +2170,6 @@ p {
 }
 @media screen and (max-width: 800px) {
   .fancybox-skin.fancybox-skin {
-    padding: 70px 14px 38px !important;
     min-width: 320px;
   }
 }

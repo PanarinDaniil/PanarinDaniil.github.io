@@ -1791,28 +1791,28 @@ p{
 		}
 	}
 }
-.fancybox-opened{
-	&.fancybox-opened{
-		@media screen and (max-width:800px) {
-			width:100%!important;
-			left:0!important;
-			top:0!important;
-		}
-	}
-}
-.fancybox-wrap{
-	&.fancybox-wrap{
-		@media screen and (max-width:800px) {
-			width:100%!important;
-			left:0!important;
-			top:0!important;
-		}
-	}
-}
+// .fancybox-opened{
+// 	&.fancybox-opened{
+// 		@media screen and (max-width:800px) {
+// 			width:100%!important;
+// 			left:0!important;
+// 			top:0!important;
+// 		}
+// 	}
+// }
+// .fancybox-wrap{
+// 	&.fancybox-wrap{
+// 		@media screen and (max-width:800px) {
+// 			width:100%!important;
+// 			left:0!important;
+// 			top:0!important;
+// 		}
+// 	}
+// }
 .fancybox-skin.fancybox-skin{
 	@include border-radius(0px);
 	@media screen and (max-width:800px) {
-		padding:70px 14px 38px!important;
+		// padding:70px 14px 38px!important;
 	    min-width:320px;
 	}
 	.fancybox-close{
