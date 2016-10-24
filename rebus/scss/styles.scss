@@ -1022,6 +1022,9 @@ p{
 	}
 	.map{
 		margin:26px 0 15px;
+		@media screen and (max-width:800px) {
+			display:none;
+		}
 	}
 }
 .contact-form{

@@ -1328,6 +1328,11 @@ p {
 .contacts-info .map {
   margin: 26px 0 15px;
 }
+@media screen and (max-width: 800px) {
+  .contacts-info .map {
+    display: none;
+  }
+}
 
 .contact-form {
   padding-bottom: 85px;
