@@ -132,7 +132,7 @@ p{
 	min-width:320px;
 }
 .main{
-	flex:1;
+	/*flex:1;*/
 	width:100%;
 }
 .content{
@@ -670,9 +670,14 @@ p{
 		position:relative;
 		@include border-radius(7px);
 		padding:22px 0 13px;
+		min-height:700px;/*IE FIX*/
+		@media screen and (max-width:1030px) {
+			min-height:790px; /*IE FIX*/
+		}
 		@media screen and (max-width:800px) {
 			text-align:center;
 			padding:0;
+			min-height:auto; /*IE FIX*/
 		}
 		.title{
 			margin:0 80px 17px;
@@ -698,6 +703,7 @@ p{
 			margin:0 18px 13px;
 			@media screen and (max-width:800px) {
 				flex:0;
+				min-height:424px; /*IE FIX*/
 				margin:0 0 19px;
 			}
 			li{
@@ -1860,7 +1866,7 @@ p{
 			-moz-align-content:space-around;
 			-ms-align-content:space-around;
 		    align-content:space-around;
-		    width:calc(100% / 3);
+		    width:calc(100% / 3.05);
 		    padding:27px 30px 19px;
 		    font-family:"Pf Med";
 		    font-size:30px;
