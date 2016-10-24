@@ -139,4 +139,40 @@ $(document).ready(function() {
             }
         });
     }
+    $(".contact-form").validate({
+        rules: {
+            email: {
+                required: !0,
+                email: !0
+            }
+        },
+        messages: {
+            email: "Please enter a valid email address"
+        }
+    });
+
+
+    //////////////////////////////
+    $('.not_req_text').change(function () {
+
+        if ( $(this).val().length !== 0 ){
+            $(this).addClass("not-empty");
+        } else{
+            $(this).removeClass("not-empty");
+        }
+        // if ($.trim($(this).val()).length < 1) {
+        //     $(this).addClass("not-empty");
+        // } else{
+        //     $(this).removeClass("not-empty");
+        // }
+    });
+
+
+    // $(".not_req").live('change', function(){
+        // if ( $(".not_req").val().length !== 0 ){
+        //     $(this).addClass("not-empty");
+        // } else{
+        //     $(this).removeClass("not-empty");
+        // }
+    // });
 });

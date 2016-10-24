@@ -1214,6 +1214,117 @@ p {
   text-decoration: underline;
 }
 
+/*============ Contacts page =============*/
+.contacts-box {
+  float: left;
+  width: 49%;
+  margin-right: 1%;
+  color: #b8b8b9;
+}
+.contacts-box .title {
+  font-family: "Pf Reg";
+  font-size: 30px;
+  margin-bottom: 36px;
+}
+
+.contacts-info {
+  float: right;
+  width: 49%;
+  margin-left: 1%;
+}
+
+.contact-form * {
+  outline: none;
+}
+.contact-form .input-wrapper {
+  padding: 16px 8px 0px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.contact-form .input-wrapper textarea {
+  resize: none;
+  min-height: 117px;
+}
+.contact-form .input-wrapper textarea:focus ~ label {
+  top: 0px;
+  font-size: 13px;
+  line-height: 16px;
+}
+.contact-form .input-wrapper.text {
+  margin-bottom: 31px;
+}
+.contact-form .input-wrapper.text label {
+  top: 101px;
+}
+.contact-form .input-wrapper.text label.error {
+  top: 100%;
+  font-size: 13px;
+  line-height: 16px;
+}
+.contact-form .input-wrapper label {
+  position: absolute;
+  display: block;
+  top: 23px;
+  left: 13px;
+  font-size: 16px;
+  line-height: 26px;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.contact-form .input-wrapper label.error {
+  top: 100%;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ff0000;
+}
+.contact-form .input-wrapper input, .contact-form .input-wrapper textarea {
+  display: block;
+  width: 100%;
+  background: #fff;
+  border: none;
+  border-bottom: 1px solid #b8b8b9;
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 26px;
+  height: 39px;
+  color: #7a7a7a;
+  padding: 7px 5px 6px;
+}
+.contact-form .input-wrapper input:focus ~ label {
+  top: 0px;
+  font-size: 13px;
+  line-height: 16px;
+}
+.contact-form .input-wrapper input:focus ~ label.error {
+  top: 100%;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ff0000;
+}
+.contact-form .input-wrapper input.error ~ label {
+  top: 0px;
+  font-size: 13px;
+  line-height: 16px;
+}
+.contact-form .input-wrapper input.error ~ label.error {
+  top: 100%;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ff0000;
+}
+.contact-form .input-wrapper input.valid ~ label {
+  top: 0px;
+  font-size: 13px;
+  line-height: 16px;
+}
+.contact-form .input-wrapper input.not-empty ~ label {
+  top: 0px;
+  font-size: 13px;
+  line-height: 16px;
+}
+
 /*============== main slider ===============*/
 .main-slider img {
   display: block;
