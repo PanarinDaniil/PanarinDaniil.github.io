@@ -17,6 +17,7 @@ $reb-right-sm: "\e90a";
 $reb-left: "\e90e";
 $reb-right: "\e90f";
 $reb-gear: "\e023";
+$reb-close: "\e5cd";
 
 @font-face {
   font-family: 'rebus';
@@ -136,4 +137,8 @@ $reb-gear: "\e023";
     content: $reb-gear;
   }
 }
-
+.reb-close {
+  &:before {
+    content: $reb-close;
+  }
+}

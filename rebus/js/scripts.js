@@ -36,7 +36,6 @@ $(document).ready(function() {
           });
         }
     })();
-
     (function() {
         "use strict";
         var toggles = document.querySelectorAll(".js_tog");
@@ -96,6 +95,20 @@ $(document).ready(function() {
             ]
         });
     }
+    // $('.pop-slider').slick({
+    //     lazyLoad: 'ondemand',
+    //     dots: true,
+    //     arrows: true,
+    //     autoplay: true,
+    //     autoplaySpeed: 6000,
+    //     infinite: false,
+    //     speed: 500,
+    //     fade: true,
+    //     cssEase: 'linear',
+    //     swipe: true,
+    //     swipeToSlide: true
+    // });
+
     var counter = false;
     if ( $(".min-carusel").width() > 0) {
         if ( window.matchMedia("(max-width:800px)").matches && counter == false ) {
@@ -139,40 +152,42 @@ $(document).ready(function() {
             }
         });
     }
-    $(".contact-form").validate({
-        rules: {
-            con_name: {
-                required: true,
-            },
-            con_email: {
-                required: true,
-                email: true
-            },
-            con_phone: {
-                required: true,
-                minlength:10
-            }
+    if ( $(".contact-form").width() > 0) {
+        $(".contact-form").validate({
+            rules: {
+                con_name: {
+                    required: true,
+                },
+                con_email: {
+                    required: true,
+                    email: true
+                },
+                con_phone: {
+                    required: true,
+                    minlength:10
+                },
+                con_msg: {
+                    required: true,
+                    minlength:10     // To check in the future
+                }
 
-        },
-        messages: {
-            email: "Please enter a valid email address"
-        },
-        submitHandler: function() { 
-            $(".fail").removeClass("valid");
-            $(".success").addClass("valid");
-        },
-        invalidHandler: function(event, validator) {
-            var errors = validator.numberOfInvalids();
-            if (errors) {
-                $(".success").removeClass("valid");
-                $(".fail").addClass("valid");
-            } else {
+            },
+            submitHandler: function() { 
                 $(".fail").removeClass("valid");
                 $(".success").addClass("valid");
+            },
+            invalidHandler: function(event, validator) {
+                var errors = validator.numberOfInvalids();
+                if (errors) {
+                    $(".success").removeClass("valid");
+                    $(".fail").addClass("valid");
+                } else {
+                    $(".fail").removeClass("valid");
+                    $(".success").addClass("valid");
+                }
             }
-        }
-    });
-
+        });
+    }
     $('.not_req').keypress(function() {
         if ($(this).length) {
             $('.not_req').addClass("not-empty");
@@ -180,11 +195,52 @@ $(document).ready(function() {
             $('.not_req').removeClass("not-empty");
         }
     });
-    $('.not_req_text').keypress(function() {
-        if ($(this).length) {
-            $('.not_req_text').addClass("not-empty");
-        } else {
-            $('.not_req_text').removeClass("not-empty");
+    var count = false;
+    console.log(count);
+    $(".portfolio").fancybox({
+        autoHeight: true,
+        padding:    65,
+        maxWidth:   1232,
+        beforeShow: function() {
+            if ( count == true ) {
+                $('.pop-slider').slick('unslick');
+                count = false;
+            }
+        },
+        afterShow: function() {
+            if ( count == false ) {
+                if ( $('.pop-slider').width() > 0 ) {
+                    $('.pop-slider').slick({
+                        dots: true,
+                        arrows: true,
+                        autoplay: true,
+                        autoplaySpeed: 6000,
+                        infinite: false,
+                        speed: 500,
+                        fade: true,
+                        cssEase: 'linear',
+                        swipe: true,
+                        swipeToSlide: true
+                    });
+                    count = true;   
+                }
+            } else {
+                $('.pop-slider').slick('unslick');
+                count = false;
+            }
+        },
+        afterClose: function() {
+            if ( count == true ) {
+                $('.pop-slider').slick('unslick');
+                count = false;
+            }
         }
     });
+    // $('.not_req_text').keypress(function() {
+    //     if ($(this).length) {
+    //         $('.not_req_text').addClass("not-empty");
+    //     } else {
+    //         $('.not_req_text').removeClass("not-empty");
+    //     }
+    // });
 });
