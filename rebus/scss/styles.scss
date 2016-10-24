@@ -225,6 +225,9 @@ p{
     right: 0;
     z-index: 2;
     background:rgba(0,0,0,.3);
+    @media screen and (min-width:801px) {
+    	display:none!important;
+    }
 }
 .top-banner{
 	padding:112px 0;
@@ -270,6 +273,9 @@ p{
 }
 .main-nav{
 	float:right;
+	@media screen and (min-width:801px) {
+		display:block!important;
+	}
 	@media screen and (max-width:800px) {
 		float:none;
 		display:none;
