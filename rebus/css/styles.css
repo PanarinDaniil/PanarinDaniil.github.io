@@ -2004,6 +2004,12 @@ p {
 }
 .port-pop .pop-content {
   margin-bottom: 42px;
+  padding: 65px 65px 0 65px;
+}
+@media screen and (max-width: 800px) {
+  .port-pop .pop-content {
+    padding: 70px 14px 0;
+  }
 }
 .port-pop .title {
   text-transform: uppercase;
@@ -2029,6 +2035,11 @@ p {
   bottom: 0px;
   height: 1px;
   background: #77b624;
+}
+@media screen and (max-width: 800px) {
+  .port-pop .tech-list .title {
+    margin: 0 14px 8px;
+  }
 }
 .port-pop .pop-info .title {
   margin-bottom: 27px;
@@ -2170,7 +2181,7 @@ p {
 }
 @media screen and (max-width: 800px) {
   .fancybox-skin.fancybox-skin {
-    min-width: 320px;
+    min-width: 280px;
   }
 }
 .fancybox-skin.fancybox-skin .fancybox-close {
@@ -2186,8 +2197,8 @@ p {
   background: none;
   width: 30px;
   height: 30px;
-  top: 15px;
-  right: 15px;
+  top: 14px;
+  right: 35px;
   text-decoration: none;
   font-size: 30px;
   color: #7a7a7a;
@@ -2270,6 +2281,14 @@ p {
   content: "";
 }
 
+.tech-list {
+  padding: 0 65px 65px 65px;
+}
+@media screen and (max-width: 800px) {
+  .tech-list {
+    padding: 0 0 38px 0;
+  }
+}
 .tech-list .pop-tech {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -2278,6 +2297,11 @@ p {
   border: 2px solid #eaedee;
   border-bottom: 0px solid #eaedee;
   margin-bottom: 46px;
+}
+@media screen and (max-width: 800px) {
+  .tech-list .pop-tech {
+    margin: 0 14px 46px;
+  }
 }
 .tech-list .pop-tech a {
   -webkit-flex-direction: column;

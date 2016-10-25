@@ -1643,6 +1643,10 @@ p{
 	color:$portfolioColor;
 	.pop-content{
 		margin-bottom:42px;
+		padding:65px 65px 0 65px;
+		@media screen and (max-width:800px) {
+			padding:70px 14px 0;
+		}
 	}
 	.title{
 		text-transform:uppercase;
@@ -1665,6 +1669,13 @@ p{
 			bottom:0px;
 			height:1px;
 			background:$portfolioTitle;
+		}
+	}
+	.tech-list{
+		.title{
+			@media screen and (max-width:800px) {
+				margin:0 14px 8px;
+			}
 		}
 	}
 	.pop-info{
@@ -1791,29 +1802,10 @@ p{
 		}
 	}
 }
-// .fancybox-opened{
-// 	&.fancybox-opened{
-// 		@media screen and (max-width:800px) {
-// 			width:100%!important;
-// 			left:0!important;
-// 			top:0!important;
-// 		}
-// 	}
-// }
-// .fancybox-wrap{
-// 	&.fancybox-wrap{
-// 		@media screen and (max-width:800px) {
-// 			width:100%!important;
-// 			left:0!important;
-// 			top:0!important;
-// 		}
-// 	}
-// }
 .fancybox-skin.fancybox-skin{
 	@include border-radius(0px);
 	@media screen and (max-width:800px) {
-		// padding:70px 14px 38px!important;
-	    min-width:320px;
+	    min-width:280px;
 	}
 	.fancybox-close{
 		font-family: 'rebus' !important;
@@ -1828,8 +1820,8 @@ p{
 		background:none;
 		width:30px;
 		height:30px;
-		top:15px;
-		right:15px;
+		top:14px;
+		right:35px;
 		text-decoration:none;
 		font-size:30px;
 		color:$portfolioColor;
@@ -1904,12 +1896,19 @@ p{
 	}
 }
 .tech-list{
+	padding:0 65px 65px 65px;
+	@media screen and (max-width:800px) {
+		padding:0 0 38px 0;
+	}
 	.pop-tech{
 		@include flex-wrap(wrap);
 		@include justify-content(center);
 		border:2px solid $portfolioBorder;
 		border-bottom:0px solid $portfolioBorder;
 		margin-bottom:46px;
+		@media screen and (max-width:800px) {
+			margin:0 14px 46px;
+		}
 		a{
 			@include flex-direction(column);
 		    @include justify-content(center);

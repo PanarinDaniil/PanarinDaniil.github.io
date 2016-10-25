@@ -205,7 +205,8 @@ $(document).ready(function() {
     var count = false;
     $(".portfolio").fancybox({
         autoHeight: true,
-        padding:    65,
+        // padding: 14,
+        padding: 0,
         maxWidth:   1232,
         beforeShow: function() {
             // htmlOrBody = $('body').scrollTop() != 0 ? 'body' : 'html';
