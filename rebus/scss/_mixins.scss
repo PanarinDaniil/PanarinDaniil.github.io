@@ -1,0 +1,29 @@
+@mixin bp( $point ) {
+  @if $point == l {
+    @media screen and (min-width: 801px) { @content; }
+  }
+  @else if $point == m {
+    @media screen and (max-width: 800px) { @content; }
+  }
+  @else if $point == xs {
+    @media screen and (max-width: 450px)  { @content; }
+  }
+}
+@mixin rebus (){
+	font-family: 'rebus' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+@mixin flex (){
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}

@@ -66,6 +66,7 @@ $portfolioBorder: $grey;
 
 @import "compass";
 @import "compass/reset";
+@import "_mixins";
 @import "_ico-font";
 @import "_fonts";
 
@@ -73,9 +74,8 @@ html{
 	min-height: 100%;
 }
 body{
-	font-family:"Open Sans", Arial, sans-serif;
-	font-weight: 400;
-	min-height: 100%;
+	font-family:400 "Open Sans", Arial, sans-serif;
+	min-height:100%;
 }
 .animate, a {
     @include transition($transition);
@@ -90,13 +90,13 @@ body{
 }
 .clear.mob{
     display:none;
-    @media screen and (max-width:800px) {
+    @include bp( m ){
 		display:block;
 	}
 }
 .mob{
 	display:none;
-	@media screen and (max-width:800px) {
+	@include bp( m ){
 		display:block;
 	}
 }
@@ -107,7 +107,7 @@ body{
 	color:$hardGrey;
 	margin-bottom:28px;
 	text-align:center;
-	@media screen and (max-width:800px) {
+	@include bp( m ){
 		font-size:35px;
 	}
 }
@@ -116,26 +116,15 @@ p{
 	color:$hardGrey;
 }
 .flex{
-    display:-webkit-box;
-    display:-moz-box;
-    display:-ms-flexbox;
-    display:-webkit-flex;
-    display:flex;
+    @include flex();
 }
 .wrapper{
-	-webkit-flex-direction:column;
-	-ms-flex-direction:column;
-	-moz-flex-direction:column;
-	flex-direction:column;
-	-webkit-align-items:flex-start;
-	-moz-align-items:flex-start;
-	-ms-align-items:flex-start;
-	align-items:flex-start;
+	@include flex-direction(column);
+	@include align-items(flex-start);
     min-height:100vh;
 	min-width:320px;
 }
 .main{
-	/*flex:1;*/
 	width:100%;
 }
 .content{
@@ -154,10 +143,7 @@ p{
 	display:inline-block;
 	vertical-align:top;
 	color:$btnEmpty;
-	font-family:Arial;
-	font-size:14px;
-	line-height:28px;
-	font-weight:400;
+	font:400 14px/28px Arial, sans-serif;
 	text-transform:uppercase;
 	padding:0 11px;
 	border:3px solid $btnEmpty;
@@ -176,16 +162,13 @@ p{
 	@include border-radius(8px);
 	background:$orBtnBack;
 	color:$orBtnColor;
-	font-family:"Pf Med";
-	font-size:30px;
-	line-height:32px;
-	font-weight:700;
+	font:30px/32px "Pf Med", Arial, sans-serif;;
 	text-shadow:2px 0px 1px rgba(68, 26, 26, 0.4);
 	padding:15px 26px;
 	text-decoration:none;
 	text-transform:uppercase;
 	@include transition($transition);
-	@media screen and (max-width:800px) {
+	@include bp( m ){
 		font-size:24px;
 	    padding:10px 7px;
 	}
@@ -228,7 +211,7 @@ p{
     right: 0;
     z-index: 2;
     background:rgba(0,0,0,.3);
-    @media screen and (min-width:801px) {
+    @include bp( l ){
     	display:none!important;
     }
 }
@@ -237,17 +220,14 @@ p{
 }
 /*========= Header =========*/
 .header{
-	-webkit-align-self:flex-start;
-	-moz-align-self:flex-start;
-	-ms-align-self:flex-start;
-    align-self:flex-start;
+	@include align-self(flex-start);
     width:100%;
 	padding:45px 0 17px;
 	background:#8698a4;
 	position:relative;
     z-index:3;
     .content{
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			padding:0 14px;
 		}
 	}
@@ -276,10 +256,10 @@ p{
 }
 .main-nav{
 	float:right;
-	@media screen and (min-width:801px) {
+	@include bp( l ){
 		display:block!important;
 	}
-	@media screen and (max-width:800px) {
+	@include bp( m ){
 		float:none;
 		display:none;
 		position:absolute;
@@ -303,7 +283,7 @@ p{
 		display:inline-block;
 		vertical-align:top;
 		position:relative;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			background:#55626b;
 			display:block;
 		}
@@ -317,7 +297,7 @@ p{
 			height:0px;
 			background:transparent;
 			@include transition($transition);
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				right:100%;
 				height:4px;
 			}
@@ -326,14 +306,14 @@ p{
 			&:after{
 				height:4px;
 				background:$lightGreen;
-				@media screen and (max-width:800px) {
+				@include bp( m ){
 					right:0;
 				}
 			}
 		}
 		& + li{
 			margin-left:35px;
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				margin-left:0px;
 				margin-top:4px;
 			}
@@ -348,7 +328,7 @@ p{
 		text-transform:uppercase;
 		text-decoration:none;
 		padding:3px 0;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			font-size:18px;
 			line-height:40px;
 			padding:2px 13px;
@@ -357,7 +337,7 @@ p{
 	.main-nav-contact{
 		margin-left:16px;
 		position:static;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			text-align:center;
 			position:relative;
 			margin:13px auto 0;
@@ -373,7 +353,7 @@ p{
 		}
 		a{
 			padding:0 14px;
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				line-height:29px;
 				display:inline-block;
 				vertical-align:top;
@@ -387,7 +367,7 @@ p{
 	&:hover{
 		.main-nav-sub{
 			display: block;
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				display:none;
 			} /*!!!!!!!!!!!!!! What to do with sub-drop-down mobile !!!!!!!!!!!!!!!*/
 		}
@@ -407,9 +387,7 @@ p{
 	}
 	a{
 		color:$headerSub;
-		font-family:"Pf Reg";
-		font-size:17px;
-		line-height:1.2;
+		font:17px/1.2 "Pf Reg", Arial, sans-serif;
 		&:hover{
 			color:$lightGreen;
 		}
@@ -423,7 +401,7 @@ p{
     background:transparent;
     padding:19px 11px 20px;
     @include appearance(none);
-    @media screen and (max-width:800px) {
+    @include bp( m ){
 		display:block;
 	}
     &:hover{
@@ -486,7 +464,7 @@ p{
 /*============ Internal content ============*/
 .main-content{
 	padding:40px 0;
-	@media screen and (max-width:800px) {
+	@include bp( m ){
 		padding:29px 0 49px;
 	}
 	p{
@@ -541,13 +519,13 @@ p{
 .process-wrap{
 	@include flex-direction(column);
 	padding:37px 0 40px;
-	@media screen and (max-width:800px) {
+	@include bp( m ){
 		padding:38px 0 21px;
 	}
 	.step-wrapper{
 		background:$processBackGrey;
 		padding:18px 0 40px;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			padding:22px 0 30px;
 		}
 		&:nth-child(even){
@@ -565,7 +543,7 @@ p{
 			width:49%;
 			margin-right:1%;
 			padding:4px 0 4px;
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				padding:0;
 				text-align:center;
 				width:100%;
@@ -575,7 +553,7 @@ p{
 		.svg-img{
 			width:49%;
 			margin-left:1%;
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				display:none;
 			}
 			img{
@@ -586,25 +564,21 @@ p{
 	}
 	.step-num{
 		color:$stepNum;
-		font-family:"Pf Reg";
-		font-size:48px;
-		line-height:1.1;
+		font:48px/1.1 "Pf Reg", Arial, sans-serif;
 		margin-bottom:30px;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			margin-bottom:19px;
 		}
 	}
 	.title{
 		color:$processTitle;
-		font-family:"Pf Reg";
-		font-size:35px;
-		line-height:1.1;
+		font:35px/1.1 "Pf Reg", Arial, sans-serif;
 		margin-bottom:15px;
 		text-transform:uppercase;
 	}
 	p{
 		margin-bottom:28px;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			&:last-child{
 				text-align:center;
 			}
@@ -626,13 +600,13 @@ p{
 	li{
 		display:inline-block;
 		vertical-align:top;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			display: block;
 		}
 
 		& + li{
 			margin-left:36px;
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				margin:0 0 2px;
 			}
 		}
@@ -643,10 +617,8 @@ p{
 		color:$serviceList;
 		text-decoration:none;
 		text-transform:uppercase;
-		font-family:"Pf Med";
-		font-size:17px;
-		line-height:1.1;
-		@media screen and (max-width:800px) {
+		font:17px/1.1 "Pf Med", Arial, sans-serif;
+		@include bp( m ){
 			padding:8px 0;
 		}
 		&:hover{
@@ -657,18 +629,18 @@ p{
 .packages{
 	padding:43px 0 41px;
     @include justify-content(center);
-    @media screen and (max-width:800px) {
+    @include bp( m ){
     	@include flex-direction(column);
     	padding-bottom:0;
     }
 	.col-2{
 		width:49%;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			width:100%;
 		}
 		& + .col-2{
 			margin-left:2%;
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				margin:50px 0 0;
 			}
 		}
@@ -683,19 +655,17 @@ p{
 		@media screen and (max-width:1030px) {
 			min-height:790px; /*IE FIX*/
 		}
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			text-align:center;
 			padding:0;
 			min-height:auto; /*IE FIX*/
 		}
 		.title{
 			margin:0 80px 17px;
-			font-family:"Pf Reg";
-			font-size:45px;
-			line-height:1.1;
+			font-family:45px/1.1 "Pf Reg", Arial, sans-serif;
 			text-align:center;
 			text-transform:uppercase;
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				margin:0 0 13px;
 			}
 		}
@@ -703,14 +673,14 @@ p{
 			color:$serviceText;
 			font-weight:600;
 			margin:0 18px 20px 90px;
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				margin:0 0 35px;
 			}
 		}
 		ul{
 		    flex:1;
 			margin:0 18px 13px;
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				flex:0;
 				min-height:424px; /*IE FIX*/
 				margin:0 0 19px;
@@ -722,13 +692,13 @@ p{
 				font-size:17px;
 				line-height:1.2;
 				color:$serviceText;
-				@media screen and (max-width:800px) {
+				@include bp( m ){
 					padding:16px 5px; 
 					border-bottom:1px solid $serviceListBorder;
 				}
 				& + li{
 					border-top:1px solid $serviceListBorder;
-					@media screen and (max-width:800px) {
+					@include bp( m ){
 						border-top:none;
 					}
 				}
@@ -739,16 +709,8 @@ p{
 					font-size:17px;
 					left:35px;
 					bottom:18px;
-					font-family: 'rebus' !important;
-					speak:none;
-					font-style:normal;
-					font-weight:normal;
-					font-variant:normal;
-					text-transform:none;
-					line-height:1;
-					-webkit-font-smoothing:antialiased;
-					-moz-osx-font-smoothing:grayscale;
-					@media screen and (max-width:800px) {
+					@include rebus();
+					@include bp( m ){
 						display:none;
 					}
 				}
@@ -757,22 +719,20 @@ p{
 		.bill{
 			text-transform:uppercase;
 			text-align:center;
-			font-family:"Pf Med";
-			font-size:30px;
-			line-height:1.1;
+			font:30px/1.1 "Pf Med", Arial, sans-serif;
 			padding:13px 0 0;
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				padding:0;
 				margin-bottom:43px;
 			}
 		}
 	}
 	.ico-font{
-		position: absolute;
-		display: block;
+		position:absolute;
+		display:block;
 		top:19px;
 		left:15px;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			display:none;
 		}
 		.top{
@@ -799,7 +759,7 @@ p{
 	}
 	.green{
 		border:2px solid $serviceGreen;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			border:none;
 		}
 		.top{
@@ -816,14 +776,14 @@ p{
 		.bill{
 			border-top:2px solid $serviceGreen;
 			color:$serviceGreenColor;
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				border:none;
 			}
 		}
 	}
 	.orange{
 		border:2px solid $serviceOrange;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			border:none;
 		}
 		.top{
@@ -840,7 +800,7 @@ p{
 		.bill{
 			border-top:2px solid $serviceOrange;
 			color:$serviceOrangeColor;
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				border:none;
 			}
 		}
@@ -849,7 +809,7 @@ p{
 /*============== Partners Page ================*/
 .partners-wrap{
 	padding:35px 0 57px;
-	@media screen and (max-width:800px) {
+	@include bp( m ){
 		padding:35px 0 0;
 	}
 	.section-title{
@@ -858,24 +818,20 @@ p{
 		color:$hardGreen;
 		margin-bottom:2px;
 		text-transform:uppercase;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			text-align:center;
 		}
 	}
 	.partners{
 		border-top:1px solid $green;
 		padding-top:39px;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			padding-top:25px;
 		}
 		li{
-			display:-webkit-box;
-		    display:-moz-box;
-		    display:-ms-flexbox;
-		    display:-webkit-flex;
-		    display:flex;
+			@include flex();
 		    @include justify-content(center);
-		    @media screen and (max-width:800px) {
+		    @include bp( m ){
 		    	@include flex-wrap(wrap);
 		    }
 			&:after{
@@ -894,7 +850,7 @@ p{
 	.img-wrap{
 		width:25%;
 		padding:0 13px 0;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 	    	padding:0;
 	    	margin-bottom:10px;
 	    	width:100%;
@@ -903,7 +859,7 @@ p{
 			display:block;
 			max-width:90%;
 			margin:0 auto;
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				max-width:100%;
 			}
 		}
@@ -913,14 +869,14 @@ p{
 		line-height:26px;
 		font-weight:600;
 		color:$hardGrey;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			margin-bottom:45px;
 			width:100%;
 		}
 		.title{
 			font-size:22px;
 			margin-bottom:13px;
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				text-align:center;
 			}
 		}
@@ -928,7 +884,7 @@ p{
 			font-size:18px;
 			text-decoration:underline;	
 			margin-bottom:18px;	
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				text-align:center;
 			}
 		}
@@ -942,7 +898,7 @@ p{
 			font-weight:400;
 			color:#5288f4;
 			text-decoration:none;
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				text-align:center;
 			}
 			&:hover{
@@ -957,7 +913,7 @@ p{
 	width:49%;
 	margin-right:1%;
 	color:$contactColor;
-	@media screen and (max-width:800px) {
+	@include bp( m ){
 		float:none;
 		width:100%;
 		margin:0;
@@ -966,7 +922,7 @@ p{
 		font-family:"Pf Reg";
 		font-size:30px;
 		margin-bottom:24px;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			text-align:center;
 		}
 	}
@@ -975,7 +931,7 @@ p{
 	float:right;
 	width:49%;
 	margin-left:1%;
-	@media screen and (max-width:800px) {
+	@include bp( m ){
 		float:none;
 		width:100%;
 		margin:0 0 20px;
@@ -985,29 +941,29 @@ p{
 		font-family:"Pf Reg";
 		font-size:24px;
 		line-height:38px;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			display:none;
 		}
 		&.show-mob{
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				display:block;
 			}
 		}
 		span{
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				display:block;
 				text-align:center;
 			}
 			&.left{
 				margin-right:15px;
-				@media screen and (max-width:800px) {
+				@include bp( m ){
 					margin:0;
 				}
 			}
 			&.right{
 				margin-left:15px;
 				position:relative;
-				@media screen and (max-width:800px) {
+				@include bp( m ){
 					margin:0;
 				}
 				&:before{
@@ -1016,7 +972,7 @@ p{
 					display:block;
 					left:-16px;
 					top:-6px;
-					@media screen and (max-width:800px) {
+					@include bp( m ){
 						display:none;
 					}
 				}
@@ -1025,7 +981,7 @@ p{
 	}
 	.map{
 		margin:26px 0 15px;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			display:none;
 		}
 	}
@@ -1136,9 +1092,7 @@ p{
 			background:$white;
 			border:none;
 			border-bottom:1px solid $contactColor;
-			font-family:"Open Sans";
-			font-size:16px;
-			line-height:26px;
+			font:400 16px/26px "Open Sans", Arial, sans-serif;
 			height:39px;
 			color:$contactform;
 			padding:7px 5px 6px;
@@ -1224,6 +1178,9 @@ p{
 		font-weight:600;
 		font-size:14px;
 		line-height:18px;
+		@include bp( xs ){
+			width:100%;
+		}
 		&:before{
 			position:absolute;
 			top:50%;
@@ -1240,15 +1197,7 @@ p{
 			content:$reb-check;
 			color:$contactValid;
 			font-size:46px;
-			font-family: 'rebus' !important;
-			speak: none;
-			font-style: normal;
-			font-weight: normal;
-			font-variant: normal;
-			text-transform: none;
-			line-height: 1;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
+			@include rebus();
 		}
 		&.valid{display:block;}
 	}
@@ -1284,9 +1233,7 @@ p{
 	.main-slider-title{
 		text-transform:uppercase;
 		width:65%;
-		font-family:'Pf Med';
-		font-size:66px;
-		line-height:1;
+		font:66px/1 'Pf Med', Arial, sans-serif;
 	}
 	.slick-dots{
 		bottom:16px;
@@ -1311,31 +1258,19 @@ p{
 .responsive{
 	padding:13px 0 23px;
 	.content{
-		@media screen and (max-width:800px) {
-			-webkit-flex-direction:column;
-		    -ms-flex-direction:column;
-		    -moz-flex-direction:column;
-		    flex-direction: column;
+		@include bp( m ){
+			@include flex-direction(column);
 		}
 	}
 	.title-box, .responsive-img{
-	    -webkit-flex-direction:column;
-	    -ms-flex-direction:column;
-	    -moz-flex-direction:column;
-	    flex-direction:column;
-	    -webkit-justify-content:center;
-	    -moz-justify-content:center;
-	    -ms-justify-content:center;
-	    justify-content:center;
-	    -webkit-align-content:space-around;
-	    -moz-align-content:space-around;
-	    -ms-align-content:space-around;
-	    align-content:space-around;
+	    @include flex-direction(column);
+	    @include justify-content(center);
+	    @include align-content(space-around);
 	}
 	.title-box{
 		width:49%;
 		margin-right:1%;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			order:2;
 			width:100%;
 			margin:0;
@@ -1345,28 +1280,26 @@ p{
 		max-width:398px;
 		margin:10px auto 0;
 		color:$responsiveText;
-		font-family:"Pf Reg";
-		font-size:47px;
-		line-height:1.2;
-		@media screen and (max-width:800px) {
+		font:47px/1.2 "Pf Reg", Arial, sans-serif;
+		@include bp( m ){
 			font-family:"Pf Light";
 			font-size:40px;
 		}
 		.up{
 			text-transform:uppercase;
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				text-align:center;
 			}
 		}
 		.left{
 			text-align:left;
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				text-align:center;
 			}
 		}
 		.right{
 			text-align:right;
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				text-align:center;
 			}
 		}
@@ -1374,7 +1307,7 @@ p{
 	.responsive-img{
 		width:49%;
 		margin-left:1%;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			order:1;
 			width:100%;
 			margin:0 0 20px;
@@ -1382,7 +1315,7 @@ p{
 		img{
 			display:block;
 		    max-width:100%;
-		    @media screen and (max-width:800px) {
+		    @include bp( m ){
 		    	margin:0 auto;
 		    }
 		}
@@ -1392,49 +1325,28 @@ p{
 .services-wrap{
 	background:#fff;
 	padding:40px 0 11px;
-	@media screen and (max-width:800px) {
+	@include bp( m ){
 		padding:22px 0 3px;
 	}
 	.content{
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			padding:0;
 		}
 	}
 	.services{
-		-webkit-flex-wrap:wrap;
-		-moz-flex-wrap:wrap;
-		-ms-flex-wrap:wrap;
-		flex-wrap:wrap;
-		-webkit-justify-content:center;
-		-moz-justify-content:center;
-		-ms-justify-content:center;
-		justify-content:center;
+		@include flex-wrap(wrap);
+		@include justify-content(center);
 		a{
 			width:48%;
 			margin:0 7px 7px;
-			-webkit-flex-direction:column;
-			-ms-flex-direction:column;
-			-moz-flex-direction:column;
-			flex-direction:column;
-		    -webkit-justify-content:center;
-			-moz-justify-content:center;
-			-ms-justify-content:center;
-			justify-content:center;
-			-webkit-align-content:space-around;
-			-moz-align-content:space-around;
-			-ms-align-content:space-around;
-		    align-content:space-around;
+			@include flex-direction(column);
+		    @include justify-content(center);
+		    @include align-content(space-around);
 		    padding:18px 12px 23px 118px;
 		    position:relative;
 		    text-decoration:none;
-	        -webkit-touch-callout: text;
-		    -webkit-user-select: text;
-		    -khtml-user-select: text;
-		    -moz-user-select: text;
-		    -ms-user-select: text;
-		    user-select: text;
 			@include transition($transition);
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				width:100%;
 				margin:0 0 8px;
 				padding:11px 15px 22px 30px;
@@ -1454,12 +1366,10 @@ p{
 			.title{
 				color:$iconGreenColor;
 				text-transform:uppercase;
-				font-family:"Pf Reg";
-				font-size:30px;
-				line-height:1.1;
+				font:30px/1.1 "Pf Reg", Arial, sans-serif;
 				margin-bottom:10px;
 				@include transition($transition);
-				@media screen and (max-width:800px) {
+				@include bp( m ){
 					margin:0 0 30px 87px;
 				}
 			}
@@ -1467,17 +1377,17 @@ p{
 				color:$headerSub;
 				font-size:16px;
 				line-height:25px;
-				@media screen and (max-width:800px) {
+				@include bp( m ){
 					font-size:15px;
 				}
 			}
 			&.cms{
-				@media screen and (max-width:800px) {
+				@include bp( m ){
 					order:1;
 				}
 				.top{
 					font-size:53px;
-					@media screen and (max-width:800px) {
+					@include bp( m ){
 						font-size:46px;
 					}
 				}
@@ -1488,14 +1398,14 @@ p{
 				}	
 			}
 			&.outsource{
-				@media screen and (max-width:800px) {
+				@include bp( m ){
 					order:4;
 				}
 				.top{
 					font-size:36px;
 				    top:-17px;
 				    left:-59px;
-				    @media screen and (max-width:800px) {
+				    @include bp( m ){
 				    	font-size:27px;
 				    	top:-13px;
 				    	left:-46px;
@@ -1503,18 +1413,18 @@ p{
 				}
 				.left{
 					font-size:74px;
-				    @media screen and (max-width:800px) {
+				    @include bp( m ){
 				    	font-size:57px;
 				    }
 				}
 			}
 			&.e-commerce{
-				@media screen and (max-width:800px) {
+				@include bp( m ){
 					order:2;
 				}
 				.top{
 				    font-size:64px;
-				    @media screen and (max-width:800px) {
+				    @include bp( m ){
 					    font-size:58px;
 					    left:2px;
 					}
@@ -1523,7 +1433,7 @@ p{
 				    font-size:28px;
 				    left:-51px;
 				    top:-24px;
-				    @media screen and (max-width:800px) {
+				    @include bp( m ){
 					    font-size:26px;
 					    left:-45px;
 					    top:-21px;
@@ -1531,26 +1441,26 @@ p{
 				}
 			}
 			&.shopify{
-				@media screen and (max-width:800px) {
+				@include bp( m ){
 					order:5;
 				}
 				.top{
 				    font-size:63px;
 				    left:7px;
 				    top:-5px;
-				    @media screen and (max-width:800px) {
+				    @include bp( m ){
 				    	left:0;
 				    	top:-3px;
 				    }
 				}
 			}
 			&.custom-web{
-				@media screen and (max-width:800px) {
+				@include bp( m ){
 					order:3;
 				}
 				.top{
 				    font-size:54px;
-					@media screen and (max-width:800px) {
+					@include bp( m ){
 						font-size:39px;
 					}
 				}
@@ -1558,7 +1468,7 @@ p{
 				    font-size:43px;
 				    left:-18px;
 				    top:21px;
-				    @media screen and (max-width:800px) {
+				    @include bp( m ){
 						font-size:34px;
 					    left:-15px;
 					    top:17px;
@@ -1566,21 +1476,21 @@ p{
 				}
 			}
 			&.web-hosting{
-				@media screen and (max-width:800px) {
+				@include bp( m ){
 					order:6;
 				}
 				.top{
 				    font-size:42px;
 				    left:-53px;
 				    top:-14px;
-				    @media screen and (max-width:800px) {
+				    @include bp( m ){
 				    	top:-5px;
 				    }
 				}
 				.left{
 				    font-size:70px;
 				    top:-20px;
-				    @media screen and (max-width:800px) {
+				    @include bp( m ){
 				    	top:-10px;
 				    }
 				}
@@ -1593,7 +1503,7 @@ p{
 			top:12px;
 			left:18px;
 			color:$iconBaseColor;
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				top:6px;
 				left:30px;
 			}
@@ -1610,30 +1520,28 @@ p{
 /*=============== Portfolio main page ==============*/
 .portfolio-wrap{
 	padding:48px 0 40px;
-	@media screen and (max-width:800px) {
+	@include bp( m ){
 		padding:22px 0 32px;
 	}
 	.content{
 		max-width:1336px;
 		padding:0;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			padding:0 6px;
 		}
 	}
 	.h2{
 		color:$headerSub;
-		font-family:"Pf Med";
-		font-size:40px;
-		line-height:1.2;
+		font:40px/1.2 "Pf Med", Arial, sans-serif;;
 		margin-bottom:42px;
 		text-align:center;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			font-size:35px;
 			margin-bottom:19px
 		}
 	}
 	.btn-orange{
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			font-size:22px;
 			padding:10px 12px;
 		}
@@ -1644,7 +1552,7 @@ p{
 	.pop-content{
 		margin-bottom:42px;
 		padding:65px 65px 0 65px;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			padding:70px 14px 0;
 		}
 	}
@@ -1656,7 +1564,7 @@ p{
 		padding-bottom:2px;
 		position:relative;
 		margin-bottom:20px;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			text-align:center;
 			margin-bottom:8px;
 		}
@@ -1673,7 +1581,7 @@ p{
 	}
 	.tech-list{
 		.title{
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				margin:0 14px 8px;
 			}
 		}
@@ -1688,7 +1596,7 @@ p{
 	float:left;
 	width:37%;
 	margin-right:1%;
-	@media screen and (max-width:800px) {
+	@include bp( m ){
 		float:none;
 		width:100%;
 		margin:0;
@@ -1697,20 +1605,20 @@ p{
 		font-family:"Pf Med";
 		font-size:40px;
 		margin-bottom:28px;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			text-align:center;
 		}
 	}
 	p{
 		line-height:26px;
 		margin-bottom:30px;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			margin-bottom:24px;
 		}
 	}
 	.done{
 		margin-bottom:45px;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			margin-bottom:36px;
 		}
 		li{
@@ -1731,34 +1639,34 @@ p{
 		}
 	}
 	.for-desk{
-		@media screen and (min-width:801px) {
+		@include bp( l ){
 			display:block;
 		}
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			display:none;
 		}
 	}
 }
 .port-pop{
 	.for-mob{
-		@media screen and (min-width:801px) {
+		@include bp( l ){
 			display:none;
 		}
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			display: block;
 			background:$grey;
 			padding:22px 0 7px;
 			margin-bottom:42px;
 		}
 		.title{
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				max-width:230px;
 				margin:0 auto 28px;
 				color:$portfolioColor;
 				text-align:left;
 			}
 			&:after{
-				@media screen and (max-width:800px) {
+				@include bp( m ){
 					display:none;
 				}
 			}
@@ -1766,7 +1674,7 @@ p{
 	}
 	.pop-serv-list{
 		margin-bottom:15px;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			max-width:230px;
 			margin:0 auto 39px;
 		}
@@ -1788,7 +1696,7 @@ p{
 	.fancybox-overlay{
 		width:100%!important;
 		.fancybox-inner{
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				width:100%!important;
 			}
 		}
@@ -1804,19 +1712,11 @@ p{
 }
 .fancybox-skin.fancybox-skin{
 	@include border-radius(0px);
-	@media screen and (max-width:800px) {
+	@include bp( m ){
 	    min-width:280px;
 	}
 	.fancybox-close{
-		font-family: 'rebus' !important;
-		speak: none;
-		font-style: normal;
-		font-weight: normal;
-		font-variant: normal;
-		text-transform: none;
-		line-height: 1;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
+		@include rebus();
 		background:none;
 		width:30px;
 		height:30px;
@@ -1847,7 +1747,7 @@ p{
 .pop-slider{
 	width:62%;
 	float:right;
-	@media screen and (max-width:800px) {
+	@include bp( m ){
 		float:none;
 		width:100%;
 	}
@@ -1866,15 +1766,7 @@ p{
     		color:#fff;
     		letter-spacing:-2px;
     		opacity:1;
-    		font-family: 'rebus' !important;
-			speak: none;
-			font-style: normal;
-			font-weight: normal;
-			font-variant: normal;
-			text-transform: none;
-			line-height: 1;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
+    		@include rebus();
     	}
     	&:hover{
     		background:#000;
@@ -1897,7 +1789,7 @@ p{
 }
 .tech-list{
 	padding:0 65px 65px 65px;
-	@media screen and (max-width:800px) {
+	@include bp( m ){
 		padding:0 0 38px 0;
 	}
 	.pop-tech{
@@ -1906,7 +1798,7 @@ p{
 		border:2px solid $portfolioBorder;
 		border-bottom:0px solid $portfolioBorder;
 		margin-bottom:46px;
-		@media screen and (max-width:800px) {
+		@include bp( m ){
 			margin:0 14px 46px;
 		}
 		a{
@@ -1919,14 +1811,14 @@ p{
 			border-bottom:2px solid $portfolioBorder;
 			padding:5px 10px;
 			position:relative;
-			@media screen and (max-width:800px) {
+			@include bp( m ){
 				width:50%;
 			}
 			&:nth-child(4n){
 				border-right:0px solid $portfolioBorder;
 			}
 			&:nth-child(even){
-				@media screen and (max-width:800px) {
+				@include bp( m ){
 					border-right:0px solid $portfolioBorder;
 				}
 			}	
@@ -1941,25 +1833,12 @@ p{
 	}
 }
 /*================ Portfolio carusel ================*/
-@media (min-width:801px) {
+@include bp( l ){
 	.min-carusel{
-		display:-webkit-box;
-	    display:-moz-box;
-	    display:-ms-flexbox;
-	    display:-webkit-flex;
-	    display:flex;
-	    -webkit-flex-wrap:wrap;
-	    -moz-flex-wrap:wrap;
-	    -ms-flex-wrap:wrap;
-	    flex-wrap:wrap;
-	    -webkit-justify-content:center;
-	    -moz-justify-content:center;
-	    -ms-justify-content:center;
-	    justify-content:center;
-	    -webkit-align-items:flex-start;
-		-moz-align-items:flex-start;
-		-ms-align-items:flex-start;
-	    align-items:flex-start;
+		@include flex();
+		@include flex-wrap(wrap);
+	    @include justify-content(center);
+	    @include align-items(flex-start);
 	    margin-bottom:39px;
 		& > div{
 			width:33%;
@@ -2000,20 +1879,13 @@ p{
 			    top:50%;
 			    left:50%;
 			    max-width:155px;
-			    -webkit-transform: translate(-50%, -50%);
-			    -ms-transform: translate(-50%, -50%);
-			    -moz-transform: translate(-50%, -50%);
-			    -o-transform: translate(-50%, -50%);
-			    transform: translate(-50%, -50%);
-			    -moz-transition: all .4s ease-out;
-			    -o-transition: all .4s ease-out;
-			    -webkit-transition: all .4s ease-out;
-			    transition: all .4s ease-out;
+			    @include transform(translate(-50%, -50%));
+				@include transition(all .4s ease-out);
 			}
 		}
 	}
 }
-@media (max-width:800px) {
+@include bp( m ){
 	.min-carusel{
     	margin-bottom:55px;
 	    .slick-dots{
@@ -2056,17 +1928,10 @@ p{
 			    top:50%;
 			    left:50%;
 			    max-width:155px;
-			    @include border-radius(2px);
 				border-width:2px;
-			    -webkit-transform: translate(-50%, -50%);
-			    -ms-transform: translate(-50%, -50%);
-			    -moz-transform: translate(-50%, -50%);
-			    -o-transform: translate(-50%, -50%);
-			    transform: translate(-50%, -50%);
-			    -moz-transition: all .4s ease-out;
-			    -o-transition: all .4s ease-out;
-			    -webkit-transition: all .4s ease-out;
-			    transition: all .4s ease-out;
+			    @include border-radius(2px);
+				@include transform(translate(-50%, -50%));
+				@include transition(all .4s ease-out);
 			    -webkit-font-smoothing: antialiased;
 				-moz-osx-font-smoothing: grayscale;
 			}
@@ -2077,22 +1942,22 @@ p{
 /*=========== Testimonial home page ===========*/
 .testimon-wrap{
 	padding:37px 0 45px;
-	@media (max-width:800px) {
+	@include bp( m ){
 		padding:21px 0 72px;
 	}
 	.content{
 		max-width:830px;
-		@media (max-width:800px) {
+		@include bp( m ){
 			max-width:100%;
 		}
 	}
 	.testimonial-slider{
-	    -webkit-touch-callout: text;
-	    -webkit-user-select: text;
-	    -khtml-user-select: text;
-	    -moz-user-select: text;
-	    -ms-user-select: text;
-	    user-select: text;
+	    -webkit-touch-callout:text;
+	    -webkit-user-select:text;
+	    -khtml-user-select:text;
+	    -moz-user-select:text;
+	    -ms-user-select:text;
+	    user-select:text;
 	}
 	.slick-dots{
 	    bottom:-29px;
@@ -2113,15 +1978,7 @@ p{
 		    font-size:42px;
 		    opacity:1;
 		    color:$testArrow;
-		    font-family:'rebus' !important;
-			speak:none;
-			font-style:normal;
-			font-weight:normal;
-			font-variant:normal;
-			text-transform:none;
-			line-height:1;
-			-webkit-font-smoothing:antialiased;
-			-moz-osx-font-smoothing:grayscale;
+		    @include rebus();
 		}
 	}
 	.slick-prev{
@@ -2138,7 +1995,7 @@ p{
 	}
 	.slick-slide{
 		padding:30px 100px 20px;
-		@media (max-width:800px) {
+		@include bp( m ){
 			padding:27px 0px 10px;
 		}
 	}
@@ -2159,7 +2016,7 @@ p{
 			width:23px;
 			height:17px;
 			background:url('#{$imgPath}block.png') no-repeat;
-			@media (max-width:800px) {
+			@include bp( m ){
 				top:-26px;
 				left:0;
 			}
@@ -2183,12 +2040,12 @@ p{
 /*=========== FAQ home ===========*/
 .faq-wrap{
 	padding-bottom:41px;
-	@media (max-width:800px) {
+	@include bp( m ){
 		padding-bottom:21px;
 	}
 	.content{
 		max-width:1160px;
-		@media (max-width:800px) {
+		@include bp( m ){
 			padding:0 6px;
 		}
 	}
@@ -2197,23 +2054,12 @@ p{
 		@include flex-wrap(wrap);
 		@include justify-content(center);
 		a{
-			-webkit-flex-direction:column;
-			-ms-flex-direction:column;
-			-moz-flex-direction:column;
-			flex-direction:column;
-			-webkit-justify-content:center;
-			-moz-justify-content:center;
-			-ms-justify-content:center;
-		    justify-content:center;
-		    -webkit-align-content:space-around;
-			-moz-align-content:space-around;
-			-ms-align-content:space-around;
-		    align-content:space-around;
+			@include flex-direction(column);
+			@include justify-content(center);
+			@include align-content(space-around);
 		    width:calc(100% / 3.05);
 		    padding:27px 30px 19px;
-		    font-family:"Pf Med";
-		    font-size:30px;
-		    line-height:38px;
+		    font:30px/38px "Pf Med", Arial, sans-serif;
 			color:$faqColorGreen;
 			text-align:center;
 			text-decoration:none;
@@ -2221,7 +2067,7 @@ p{
 			text-shadow:0px 1px 1px rgba(0, 0, 0, 0.55);
 			position:relative;
 			@include transition($transition);
-			@media (max-width:800px) {
+			@include bp( m ){
 				width:100%;
 				padding:24px 30px 21px;
 				min-height:117px;
@@ -2234,7 +2080,7 @@ p{
 			    height:0;
 			    z-index:1;
 			    border-style:solid;
-			    @media (max-width:800px) {
+			    @include bp( m ){
 			    	display:none;
 			    }
 			}
@@ -2323,7 +2169,7 @@ p{
 		border:2px solid $faqBtn;
 		padding:43px 36px 44px 30px;
 		background:#fff;
-		@media (max-width:800px) {
+		@include bp( m ){
 			padding:0 0 50px;
 		}
 		&:hover{
@@ -2337,18 +2183,16 @@ p{
 			width:363px;
 			height:117px;
 			padding:25px 10px 15px;
-			font-family:"Pf Med";
-		    font-size:30px;
-		    line-height:38px;
+			font:30px/38px "Pf Med", Arial, sans-serif;
 			color:$faqColorWhite;
 			text-align:center;
 			text-transform:uppercase;
 			text-shadow:0px 1px 1px rgba(0, 0, 0, 0.55);
 			position:relative;
-			background:url(../images/faq1h.png) no-repeat;
+			background:url('#{$imgPath}faq1h.png') no-repeat;
 			background-size:cover;
 			@include transition($transition);
-			@media (max-width:800px) {
+			@include bp( m ){
 				margin:0 0 30px;
 			    width:100%;
 			    float:none;
@@ -2372,7 +2216,7 @@ p{
 			color:#2c2c2d;
 			font-size:14px;
 			line-height:25px;
-			@media (max-width:800px) {
+			@include bp( m ){
 				margin:0 15px;
 			}
 		}
@@ -2392,7 +2236,7 @@ p{
 			text-decoration:none;
 			text-align:center;
 			text-shadow:none;
-			@media (max-width:800px) {
+			@include bp( m ){
 				min-height:24px;
 				bottom:10px;
 				right:10px;
@@ -2414,32 +2258,26 @@ p{
 /*=========== Logos home =============*/
 .logos-wrap{
 	padding:33px 0 64px;
-	@media (max-width:800px) {
+	@include bp( m ){
 		padding:21px 0 46px;
 	}
 	.content{
 		max-width:1356px;
 		padding:0;
-		@media (max-width:800px) {
+		@include bp( m ){
 			padding:0 15px;
 		}
 	}
 	.logos-box{
-		-webkit-flex-wrap:wrap;
-		-moz-flex-wrap:wrap;
-		-ms-flex-wrap:wrap;
-	    flex-wrap:wrap;
-	    -webkit-justify-content:center;
-		-moz-justify-content:center;
-		-ms-justify-content:center;
-	    justify-content:center;
+		@include flex-wrap(wrap);
+		@include justify-content(center);
 	    li{
 		    width:calc(100% / 7);
 		    border-bottom:2px solid $logosBorder;
 		    border-right:2px solid $logosBorder;
 		    position: relative;
 		    height:156px;
-		    @media (max-width:800px) {
+		    @include bp( m ){
 		    	width:calc(100% / 3);
 		    	height:90px;
 		    	border:none;
@@ -2450,11 +2288,7 @@ p{
 		    	left:50%;
 		    	top:50%;
 		    	max-width:100%;
-		    	-webkit-transform: translate(-50%, -50%);
-			    -ms-transform: translate(-50%, -50%);
-			    -moz-transform: translate(-50%, -50%);
-			    -o-transform: translate(-50%, -50%);
-			    transform: translate(-50%, -50%);
+		    	@include transform(translate(-50%, -50%));
 			    @media (max-width:1200px) {
 			    	max-width:90%;
 			    }
@@ -2472,17 +2306,14 @@ p{
 
 /*=============== Footer ===============*/
 .footer{
-	-webkit-align-self:flex-end;
-	-moz-align-self:flex-end;
-	-ms-align-self:flex-end;
-	align-self:flex-end;
+	@include align-self(flex-end);
 	width:100%;
 	padding:57px 0 104px;
 	text-align:center;
 	position:relative;
 	background:url('#{$imgPath}footerBg.jpg') no-repeat;
 	background-size:cover;
-	@media (max-width:800px) {
+	@include bp( m ){
 		padding:15px 0 54px;
 	}
 	&:before{
@@ -2509,7 +2340,7 @@ p{
 		font-size:60px;
 		line-height:68px;
 		margin-bottom:3px;
-		@media (max-width:800px) {
+		@include bp( m ){
 	    	font-size:48px;
 	    	line-height:1;
 	    	margin-bottom:18px;
@@ -2519,7 +2350,7 @@ p{
 		font-size:30px;
 		line-height:1.2;
 		margin-bottom:38px;
-		@media (max-width:800px) {
+		@include bp( m ){
 	    	font-size:24px;
 	    	line-height:29px;
 	    	margin-bottom:28px;

@@ -1,8 +1,9 @@
+// ASYNC FONTS GOOGLE FONTS
 WebFontConfig = 
     {
     	google:{
     		families:[
-    			"Open+Sans:300,400,400i,600,700&amp;subset=latin-ext"
+    			"Open+Sans:300,400,400i,600&amp;subset=latin-ext"
     		]
     	}
     },
@@ -14,7 +15,10 @@ function() {
 	t=document.getElementsByTagName("script")[0];
 	t.parentNode.insertBefore(n,t)
 }();
+
 $(document).ready(function() {
+
+//MOBILE MENU
     (function() {
         "use strict";
         var toggles = document.querySelectorAll(".mob-btn");
@@ -36,6 +40,8 @@ $(document).ready(function() {
           });
         }
     })();
+
+// FAQ TOGGLE (HOME PAGE)
     (function() {
         "use strict";
         var toggles = document.querySelectorAll(".js_tog");
@@ -57,6 +63,7 @@ $(document).ready(function() {
           });
         }
     })();
+// MAIN SLIDER (HOME PAGE)
     if ( $(".main-slider").width() > 0) {
         $('.main-slider').slick({
             lazyLoad: 'ondemand',
@@ -72,6 +79,8 @@ $(document).ready(function() {
             swipeToSlide: true
         });
     }
+
+// TESTIMONIAL SLIDER (HOMR PAGE)
     if ( $(".testimonial-slider").width() > 0) {
         $('.testimonial-slider').slick({
             lazyLoad: 'ondemand',
@@ -95,20 +104,8 @@ $(document).ready(function() {
             ]
         });
     }
-    // $('.pop-slider').slick({
-    //     lazyLoad: 'ondemand',
-    //     dots: true,
-    //     arrows: true,
-    //     autoplay: true,
-    //     autoplaySpeed: 6000,
-    //     infinite: false,
-    //     speed: 500,
-    //     fade: true,
-    //     cssEase: 'linear',
-    //     swipe: true,
-    //     swipeToSlide: true
-    // });
 
+// PORTFOLIO SLIDER
     var counter = false;
     if ( $(".min-carusel").width() > 0) {
         if ( window.matchMedia("(max-width:800px)").matches && counter == false ) {
@@ -152,11 +149,14 @@ $(document).ready(function() {
             }
         });
     }
+
+// CONTACT FORM
     if ( $(".contact-form").width() > 0) {
         $(".contact-form").validate({
             rules: {
                 con_name: {
                     required: true,
+                    minlength:2
                 },
                 con_email: {
                     required: true,
@@ -168,7 +168,7 @@ $(document).ready(function() {
                 },
                 con_msg: {
                     required: true,
-                    minlength:10     // To check in the future
+                    minlength:10
                 }
 
             },
@@ -196,6 +196,7 @@ $(document).ready(function() {
         }
     });
 
+// POPUP PORTFOLIO
     // var scrolltop, htmlOrBody;
 
     // var antiscrollevent = function(e) {
@@ -247,11 +248,4 @@ $(document).ready(function() {
             }
         }
     });
-    // $('.not_req_text').keypress(function() {
-    //     if ($(this).length) {
-    //         $('.not_req_text').addClass("not-empty");
-    //     } else {
-    //         $('.not_req_text').removeClass("not-empty");
-    //     }
-    // });
 });

@@ -180,8 +180,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 400;
+  font-family: 400 "Open Sans", Arial, sans-serif;
   min-height: 100%;
 }
 
@@ -251,19 +250,14 @@ p {
 
 .wrapper {
   -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  -moz-flex-direction: column;
   flex-direction: column;
   -webkit-align-items: flex-start;
-  -moz-align-items: flex-start;
-  -ms-align-items: flex-start;
   align-items: flex-start;
   min-height: 100vh;
   min-width: 320px;
 }
 
 .main {
-  /*flex:1;*/
   width: 100%;
 }
 
@@ -286,10 +280,7 @@ p {
   display: inline-block;
   vertical-align: top;
   color: #fff;
-  font-family: Arial;
-  font-size: 14px;
-  line-height: 28px;
-  font-weight: 400;
+  font: 400 14px/28px Arial, sans-serif;
   text-transform: uppercase;
   padding: 0 11px;
   border: 3px solid #fff;
@@ -316,10 +307,7 @@ p {
   border-radius: 8px;
   background: #f9a526;
   color: #fff;
-  font-family: "Pf Med";
-  font-size: 30px;
-  line-height: 32px;
-  font-weight: 700;
+  font: 30px/32px "Pf Med", Arial, sans-serif;
   text-shadow: 2px 0px 1px rgba(68, 26, 26, 0.4);
   padding: 15px 26px;
   text-decoration: none;
@@ -390,8 +378,6 @@ p {
 /*========= Header =========*/
 .header {
   -webkit-align-self: flex-start;
-  -moz-align-self: flex-start;
-  -ms-align-self: flex-start;
   align-self: flex-start;
   width: 100%;
   padding: 45px 0 17px;
@@ -580,9 +566,7 @@ p {
 }
 .main-nav-sub a {
   color: #7a7a7a;
-  font-family: "Pf Reg";
-  font-size: 17px;
-  line-height: 1.2;
+  font: 17px/1.2 "Pf Reg", Arial, sans-serif;
 }
 .main-nav-sub a:hover {
   color: #a4de59;
@@ -805,9 +789,7 @@ p {
 }
 .process-wrap .step-num {
   color: #7a7a7a;
-  font-family: "Pf Reg";
-  font-size: 48px;
-  line-height: 1.1;
+  font: 48px/1.1 "Pf Reg", Arial, sans-serif;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 800px) {
@@ -817,9 +799,7 @@ p {
 }
 .process-wrap .title {
   color: #63bb27;
-  font-family: "Pf Reg";
-  font-size: 35px;
-  line-height: 1.1;
+  font: 35px/1.1 "Pf Reg", Arial, sans-serif;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
@@ -868,9 +848,7 @@ p {
   color: #68767f;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Pf Med";
-  font-size: 17px;
-  line-height: 1.1;
+  font: 17px/1.1 "Pf Med", Arial, sans-serif;
 }
 @media screen and (max-width: 800px) {
   .service-list a {
@@ -938,9 +916,7 @@ p {
 }
 .packages .item .title {
   margin: 0 80px 17px;
-  font-family: "Pf Reg";
-  font-size: 45px;
-  line-height: 1.1;
+  font-family: 45px/1.1 "Pf Reg", Arial, sans-serif;
   text-align: center;
   text-transform: uppercase;
 }
@@ -1018,9 +994,7 @@ p {
 .packages .item .bill {
   text-transform: uppercase;
   text-align: center;
-  font-family: "Pf Med";
-  font-size: 30px;
-  line-height: 1.1;
+  font: 30px/1.1 "Pf Med", Arial, sans-serif;
   padding: 13px 0 0;
 }
 @media screen and (max-width: 800px) {
@@ -1444,9 +1418,7 @@ p {
   background: #fff;
   border: none;
   border-bottom: 1px solid #b8b8b9;
-  font-family: "Open Sans";
-  font-size: 16px;
-  line-height: 26px;
+  font: 400 16px/26px "Open Sans", Arial, sans-serif;
   height: 39px;
   color: #7a7a7a;
   padding: 7px 5px 6px;
@@ -1525,6 +1497,11 @@ p {
   font-size: 14px;
   line-height: 18px;
 }
+@media screen and (max-width: 450px) {
+  .contact-form .msg {
+    width: 100%;
+  }
+}
 .contact-form .msg:before {
   position: absolute;
   top: 50%;
@@ -1587,9 +1564,7 @@ p {
 .main-slider .main-slider-title {
   text-transform: uppercase;
   width: 65%;
-  font-family: 'Pf Med';
-  font-size: 66px;
-  line-height: 1;
+  font: 66px/1 'Pf Med', Arial, sans-serif;
 }
 .main-slider .slick-dots {
   bottom: 16px;
@@ -1612,23 +1587,15 @@ p {
 @media screen and (max-width: 800px) {
   .responsive .content {
     -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    -moz-flex-direction: column;
     flex-direction: column;
   }
 }
 .responsive .title-box, .responsive .responsive-img {
   -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  -moz-flex-direction: column;
   flex-direction: column;
   -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
   justify-content: center;
   -webkit-align-content: space-around;
-  -moz-align-content: space-around;
-  -ms-align-content: space-around;
   align-content: space-around;
 }
 .responsive .title-box {
@@ -1646,9 +1613,7 @@ p {
   max-width: 398px;
   margin: 10px auto 0;
   color: #68767f;
-  font-family: "Pf Reg";
-  font-size: 47px;
-  line-height: 1.2;
+  font: 47px/1.2 "Pf Reg", Arial, sans-serif;
 }
 @media screen and (max-width: 800px) {
   .responsive .title {
@@ -1718,38 +1683,22 @@ p {
 }
 .services-wrap .services {
   -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
   justify-content: center;
 }
 .services-wrap .services a {
   width: 48%;
   margin: 0 7px 7px;
   -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  -moz-flex-direction: column;
   flex-direction: column;
   -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
   justify-content: center;
   -webkit-align-content: space-around;
-  -moz-align-content: space-around;
-  -ms-align-content: space-around;
   align-content: space-around;
   padding: 18px 12px 23px 118px;
   position: relative;
   text-decoration: none;
-  -webkit-touch-callout: text;
-  -webkit-user-select: text;
-  -khtml-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
@@ -1780,9 +1729,7 @@ p {
 .services-wrap .services a .title {
   color: #77b624;
   text-transform: uppercase;
-  font-family: "Pf Reg";
-  font-size: 30px;
-  line-height: 1.1;
+  font: 30px/1.1 "Pf Reg", Arial, sans-serif;
   margin-bottom: 10px;
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
@@ -1980,9 +1927,7 @@ p {
 }
 .portfolio-wrap .h2 {
   color: #7a7a7a;
-  font-family: "Pf Med";
-  font-size: 40px;
-  line-height: 1.2;
+  font: 40px/1.2 "Pf Med", Arial, sans-serif;
   margin-bottom: 42px;
   text-align: center;
 }
@@ -2340,7 +2285,7 @@ p {
 }
 
 /*================ Portfolio carusel ================*/
-@media (min-width: 801px) {
+@media screen and (min-width: 801px) {
   .min-carusel {
     display: -webkit-box;
     display: -moz-box;
@@ -2348,16 +2293,10 @@ p {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
     justify-content: center;
     -webkit-align-items: flex-start;
-    -moz-align-items: flex-start;
-    -ms-align-items: flex-start;
     align-items: flex-start;
     margin-bottom: 39px;
   }
@@ -2402,18 +2341,17 @@ p {
     top: 50%;
     left: 50%;
     max-width: 155px;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    -moz-transition: all .4s ease-out;
-    -o-transition: all .4s ease-out;
-    -webkit-transition: all .4s ease-out;
-    transition: all .4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
   }
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .min-carusel {
     margin-bottom: 55px;
   }
@@ -2459,19 +2397,18 @@ p {
     top: 50%;
     left: 50%;
     max-width: 155px;
+    border-width: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
     border-radius: 2px;
-    border-width: 2px;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    -moz-transition: all .4s ease-out;
-    -o-transition: all .4s ease-out;
-    -webkit-transition: all .4s ease-out;
-    transition: all .4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -2480,7 +2417,7 @@ p {
 .testimon-wrap {
   padding: 37px 0 45px;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .testimon-wrap {
     padding: 21px 0 72px;
   }
@@ -2488,7 +2425,7 @@ p {
 .testimon-wrap .content {
   max-width: 830px;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .testimon-wrap .content {
     max-width: 100%;
   }
@@ -2546,7 +2483,7 @@ p {
 .testimon-wrap .slick-slide {
   padding: 30px 100px 20px;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .testimon-wrap .slick-slide {
     padding: 27px 0px 10px;
   }
@@ -2570,7 +2507,7 @@ p {
   height: 17px;
   background: url("../images/block.png") no-repeat;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .testimon-wrap .text:before {
     top: -26px;
     left: 0;
@@ -2594,7 +2531,7 @@ p {
 .faq-wrap {
   padding-bottom: 41px;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .faq-wrap {
     padding-bottom: 21px;
   }
@@ -2602,7 +2539,7 @@ p {
 .faq-wrap .content {
   max-width: 1160px;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .faq-wrap .content {
     padding: 0 6px;
   }
@@ -2616,22 +2553,14 @@ p {
 }
 .faq-wrap .faq-box a {
   -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  -moz-flex-direction: column;
   flex-direction: column;
   -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
   justify-content: center;
   -webkit-align-content: space-around;
-  -moz-align-content: space-around;
-  -ms-align-content: space-around;
   align-content: space-around;
   width: calc(100% / 3.05);
   padding: 27px 30px 19px;
-  font-family: "Pf Med";
-  font-size: 30px;
-  line-height: 38px;
+  font: 30px/38px "Pf Med", Arial, sans-serif;
   color: #77b624;
   text-align: center;
   text-decoration: none;
@@ -2643,7 +2572,7 @@ p {
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .faq-wrap .faq-box a {
     width: 100%;
     padding: 24px 30px 21px;
@@ -2659,7 +2588,7 @@ p {
   z-index: 1;
   border-style: solid;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .faq-wrap .faq-box a:after {
     display: none;
   }
@@ -2748,7 +2677,7 @@ p {
   padding: 43px 36px 44px 30px;
   background: #fff;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .faq-wrap .faq-info {
     padding: 0 0 50px;
   }
@@ -2762,22 +2691,20 @@ p {
   width: 363px;
   height: 117px;
   padding: 25px 10px 15px;
-  font-family: "Pf Med";
-  font-size: 30px;
-  line-height: 38px;
+  font: 30px/38px "Pf Med", Arial, sans-serif;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.55);
   position: relative;
-  background: url(../images/faq1h.png) no-repeat;
+  background: url("../images/faq1h.png") no-repeat;
   background-size: cover;
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .faq-wrap .faq-info .title {
     margin: 0 0 30px;
     width: 100%;
@@ -2803,7 +2730,7 @@ p {
   font-size: 14px;
   line-height: 25px;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .faq-wrap .faq-info p {
     margin: 0 15px;
   }
@@ -2827,7 +2754,7 @@ p {
   text-align: center;
   text-shadow: none;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .faq-wrap .faq-info .faq-close {
     min-height: 24px;
     bottom: 10px;
@@ -2850,7 +2777,7 @@ p {
 .logos-wrap {
   padding: 33px 0 64px;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .logos-wrap {
     padding: 21px 0 46px;
   }
@@ -2859,19 +2786,15 @@ p {
   max-width: 1356px;
   padding: 0;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .logos-wrap .content {
     padding: 0 15px;
   }
 }
 .logos-wrap .logos-box {
   -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
   justify-content: center;
 }
 .logos-wrap .logos-box li {
@@ -2881,7 +2804,7 @@ p {
   position: relative;
   height: 156px;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .logos-wrap .logos-box li {
     width: calc(100% / 3);
     height: 90px;
@@ -2894,10 +2817,9 @@ p {
   left: 50%;
   top: 50%;
   max-width: 100%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 @media (max-width: 1200px) {
@@ -2915,8 +2837,6 @@ p {
 /*=============== Footer ===============*/
 .footer {
   -webkit-align-self: flex-end;
-  -moz-align-self: flex-end;
-  -ms-align-self: flex-end;
   align-self: flex-end;
   width: 100%;
   padding: 57px 0 104px;
@@ -2925,7 +2845,7 @@ p {
   background: url("../images/footerBg.jpg") no-repeat;
   background-size: cover;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .footer {
     padding: 15px 0 54px;
   }
@@ -2955,7 +2875,7 @@ p {
   line-height: 68px;
   margin-bottom: 3px;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .footer .title {
     font-size: 48px;
     line-height: 1;
@@ -2967,7 +2887,7 @@ p {
   line-height: 1.2;
   margin-bottom: 38px;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .footer .sub-title {
     font-size: 24px;
     line-height: 29px;
