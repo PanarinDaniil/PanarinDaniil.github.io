@@ -383,6 +383,7 @@ p {
   background: #8698a4;
   position: relative;
   z-index: 3;
+  height: 123px;
 }
 @media screen and (max-width: 800px) {
   .header .content {

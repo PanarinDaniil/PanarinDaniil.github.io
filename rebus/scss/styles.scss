@@ -225,6 +225,7 @@ p{
 	background:#8698a4;
 	position:relative;
     z-index:3;
+    height:123px;
     .content{
 		@include bp( m ){
 			padding:0 14px;
