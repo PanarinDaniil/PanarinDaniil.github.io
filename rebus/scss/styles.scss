@@ -121,6 +121,7 @@ p{
 	@include align-items(flex-start);
     min-height:100vh;
 	min-width:320px;
+	overflow:hidden;
 }
 .main{
 	width:100%;
@@ -367,8 +368,7 @@ p{
 			display: block;
 			@include bp( m ){
 				display:none;
-			} 
-			/*!!!!!!!!!!!!!! What to do with sub-drop-down mobile !!!!!!!!!!!!!!!*/
+			}
 			&.fix{
 				@include bp( m ){
 					display:block;
@@ -382,14 +382,18 @@ p{
 				display:block;
 				position:static;
 			    padding:0;
+			    background:$grey;
 			    li{
 			    	padding:0px 17px;
 			    }
 			    a{
 		    	    padding:8px 13px;
+		    	    color:#4a4a4a;
+		    	    &:hover{
+		    	    	color:$lightGreen;
+		    	    }
 			    }
 			}
-			/*!!!!!!!!!!!!!! What to do with sub-drop-down mobile !!!!!!!!!!!!!!!*/
 		}
 	}
 }
@@ -573,13 +577,16 @@ p{
 		.svg-img{
 			width:49%;
 			margin-left:1%;
+			display:block;
+			text-align:center;
 			@include bp( m ){
 				display:none;
 			}
 			img{
-				display:inline-block;
-				vertical-align:top;
-				height:455px;
+				display: block;
+				margin:0 auto;
+				max-height:455px;
+				max-width:100%;
 			}
 		}
 	}
@@ -875,6 +882,8 @@ p{
 	    	padding:0;
 	    	margin-bottom:10px;
 	    	width:100%;
+	    	display:block;
+	    	text-align:center;
 	    }
 		img{
 			display:inline-block;
@@ -1296,6 +1305,8 @@ p{
 			order:2;
 			width:100%;
 			margin:0;
+			display:block;
+
 		}
 	}
 	.title{
@@ -1329,7 +1340,10 @@ p{
 	.responsive-img{
 		width:49%;
 		margin-left:1%;
+		display:block;
 		@include bp( m ){
+			display:block;
+			text-align:center;
 			order:1;
 			width:100%;
 			margin:0 0 20px;
@@ -2296,13 +2310,13 @@ p{
 		@include flex-wrap(wrap);
 		@include justify-content(center);
 	    li{
-		    width:calc(100% / 7);
+		    width:calc(100% / 7.1);
 		    border-bottom:2px solid $logosBorder;
 		    border-right:2px solid $logosBorder;
 		    position: relative;
 		    height:156px;
 		    @include bp( m ){
-		    	width:calc(100% / 3);
+		    	width:calc(100% / 3.1);
 		    	height:90px;
 		    	border:none;
 		    }
@@ -2380,5 +2394,10 @@ p{
 	    	line-height:29px;
 	    	margin-bottom:28px;
 	    }
+	}
+	.btn-orange{
+		@include bp( m ){
+			padding:4px 12px;
+		}
 	}
 }

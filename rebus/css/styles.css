@@ -253,6 +253,7 @@ p {
   align-items: flex-start;
   min-height: 100vh;
   min-width: 320px;
+  overflow: hidden;
 }
 
 .main {
@@ -541,7 +542,6 @@ p {
 }
 .sub-menu:hover .main-nav-sub {
   display: block;
-  /*!!!!!!!!!!!!!! What to do with sub-drop-down mobile !!!!!!!!!!!!!!!*/
 }
 @media screen and (max-width: 800px) {
   .sub-menu:hover .main-nav-sub {
@@ -553,20 +553,22 @@ p {
     display: block;
   }
 }
-.sub-menu .main-nav-sub.fix {
-  /*!!!!!!!!!!!!!! What to do with sub-drop-down mobile !!!!!!!!!!!!!!!*/
-}
 @media screen and (max-width: 800px) {
   .sub-menu .main-nav-sub.fix {
     display: block;
     position: static;
     padding: 0;
+    background: #eaedee;
   }
   .sub-menu .main-nav-sub.fix li {
     padding: 0px 17px;
   }
   .sub-menu .main-nav-sub.fix a {
     padding: 8px 13px;
+    color: #4a4a4a;
+  }
+  .sub-menu .main-nav-sub.fix a:hover {
+    color: #a4de59;
   }
 }
 
@@ -796,6 +798,8 @@ p {
 .process-wrap .step-wrapper .svg-img {
   width: 49%;
   margin-left: 1%;
+  display: block;
+  text-align: center;
 }
 @media screen and (max-width: 800px) {
   .process-wrap .step-wrapper .svg-img {
@@ -803,9 +807,10 @@ p {
   }
 }
 .process-wrap .step-wrapper .svg-img img {
-  display: inline-block;
-  vertical-align: top;
-  height: 455px;
+  display: block;
+  margin: 0 auto;
+  max-height: 455px;
+  max-width: 100%;
 }
 .process-wrap .step-num {
   color: #7a7a7a;
@@ -1172,6 +1177,8 @@ p {
     padding: 0;
     margin-bottom: 10px;
     width: 100%;
+    display: block;
+    text-align: center;
   }
 }
 .partners-wrap .img-wrap img {
@@ -1628,6 +1635,7 @@ p {
     order: 2;
     width: 100%;
     margin: 0;
+    display: block;
   }
 }
 .responsive .title {
@@ -1669,9 +1677,12 @@ p {
 .responsive .responsive-img {
   width: 49%;
   margin-left: 1%;
+  display: block;
 }
 @media screen and (max-width: 800px) {
   .responsive .responsive-img {
+    display: block;
+    text-align: center;
     order: 1;
     width: 100%;
     margin: 0 0 20px;
@@ -2821,7 +2832,7 @@ p {
   justify-content: center;
 }
 .logos-wrap .logos-box li {
-  width: calc(100% / 7);
+  width: calc(100% / 7.1);
   border-bottom: 2px solid #eaedee;
   border-right: 2px solid #eaedee;
   position: relative;
@@ -2829,7 +2840,7 @@ p {
 }
 @media screen and (max-width: 800px) {
   .logos-wrap .logos-box li {
-    width: calc(100% / 3);
+    width: calc(100% / 3.1);
     height: 90px;
     border: none;
   }
@@ -2916,5 +2927,10 @@ p {
     font-size: 24px;
     line-height: 29px;
     margin-bottom: 28px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .footer .btn-orange {
+    padding: 4px 12px;
   }
 }
