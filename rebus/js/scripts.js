@@ -3,7 +3,7 @@ WebFontConfig =
     {
     	google:{
     		families:[
-    			"Open+Sans:300,400,400i,600&amp;subset=latin-ext"
+    			"Open+Sans:300,400,400i,600,700&amp;subset=latin-ext"
     		]
     	}
     },
@@ -198,23 +198,13 @@ $(document).ready(function() {
     });
 
 // POPUP PORTFOLIO
-
-    // var scrolltop, htmlOrBody;
-    // var antiscrollevent = function(e) {
-    //     e.preventDefault();
-    //     $(htmlOrBody).scrollTop(scrolltop);
-    // };
     if ( $(".portfolio").width() > 0 ) {
         var count = false;
         $(".portfolio").fancybox({
             autoHeight: true,
-            // padding: 14,
             padding: 0,
             maxWidth:   1232,
             beforeShow: function() {
-                // htmlOrBody = $('body').scrollTop() != 0 ? 'body' : 'html';
-                // scrolltop = $(htmlOrBody).scrollTop();
-                // $(window).on('scroll', antiscrollevent);
                 if ( count == true ) {
                     $('.pop-slider').slick('unslick');
                     count = false;
@@ -243,7 +233,6 @@ $(document).ready(function() {
                 }
             },
             afterClose: function() {
-                // $(window).off('scroll', antiscrollevent);
                 if ( count == true ) {
                     $('.pop-slider').slick('unslick');
                     count = false;

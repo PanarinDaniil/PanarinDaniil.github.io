@@ -2402,3 +2402,63 @@ p{
 		}
 	}
 }
+.error-page{
+	padding:50px 0;
+	.content{
+		text-align:center;
+		@include justify-content(center);
+	}
+	.error-img{
+		/*@include flex-direction(column);*/
+		@include justify-content(flex-end);
+		@include align-content(space-around);
+	}
+	.error-info{
+		@include flex-direction(column);
+		@include justify-content(center);
+		@include align-content(space-around);
+	}
+	.error-img{
+		width:40%;
+		
+		margin-right:1%;
+		text-align:right;
+		img{
+			display:inline-block;
+			vertical-align:top;
+			max-width:100%;
+		}
+	}
+	.error-info{
+		& > *{
+			@include flex-direction(column);
+			@include justify-content(center);
+			@include align-content(space-around);
+		}
+		width:59%;
+		.title{
+			color:$hardGreen;
+			text-transform:uppercase;
+			font-weight:700;
+			font-size:90px;
+		}
+		.sub-title{
+			color:$hardGrey;
+			font-size:40px;
+			margin-bottom:30px;
+		}
+		.suggestion{
+			color:$hardGrey;
+			font-size:25px;
+			margin-bottom:20px;
+			display:block;
+			a{
+				color:$hardGreen;
+				font-size:25px;
+				&:hover{
+					text-decoration:none;
+				}
+			}
+		}
+	}
+}
