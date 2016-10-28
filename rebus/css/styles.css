@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/*=========== For White labels just copy this and change it =========*/
+/*========= Variables used in SCSS-files ========*/
+/*========= System files ========*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -175,6 +178,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: normal;
   font-style: normal;
 }
+/*======= Main part of the SCSS(used in all blocks) =======*/
 html {
   min-height: 100%;
 }
@@ -682,8 +686,6 @@ p {
   transition-property: bottom, transform, background;
 }
 
-/*==========================================*/
-/*===================== OUR PROCESS =======================*/
 /*============ Internal content ============*/
 .main-content {
   padding: 40px 0;
@@ -2945,7 +2947,6 @@ p {
   justify-content: center;
 }
 .error-page .error-img {
-  /*@include flex-direction(column);*/
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
   -webkit-align-content: space-around;

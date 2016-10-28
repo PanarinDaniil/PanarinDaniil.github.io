@@ -1,0 +1,195 @@
+.services-wrap{
+	background:#fff;
+	padding:40px 0 11px;
+	@include bp( m ){
+		padding:22px 0 3px;
+	}
+	.content{
+		@include bp( m ){
+			padding:0;
+		}
+	}
+	.services{
+		@include flex-wrap(wrap);
+		@include justify-content(center);
+		a{
+			width:48%;
+			margin:0 7px 7px;
+			@include flex-direction(column);
+		    @include justify-content(center);
+		    @include align-content(space-around);
+		    padding:18px 12px 23px 118px;
+		    position:relative;
+		    text-decoration:none;
+			@include transition($transition);
+			@include bp( m ){
+				width:100%;
+				margin:0 0 8px;
+				padding:11px 15px 22px 30px;
+			}
+			.hover{
+				@include transition($transition);
+			}
+			&:hover{
+				background:$greyBack;
+				.title{
+					color:$iconHoverColor;
+				}
+				.hover{
+					color:$iconHoverColor;
+				}
+			}
+			.title{
+				color:$iconGreenColor;
+				text-transform:uppercase;
+				font:30px/1.1 "Pf Reg", Arial, sans-serif;
+				margin-bottom:10px;
+				@include transition($transition);
+				@include bp( m ){
+					margin:0 0 30px 87px;
+				}
+			}
+			p{
+				color:$headerSub;
+				font-size:16px;
+				line-height:25px;
+				@include bp( m ){
+					font-size:15px;
+				}
+			}
+			&.cms{
+				@include bp( m ){
+					order:1;
+				}
+				.top{
+					font-size:53px;
+					@include bp( m ){
+						font-size:46px;
+					}
+				}
+				.left{
+					font-size:30px;
+					top:13px;
+					left:-14px;
+				}	
+			}
+			&.outsource{
+				@include bp( m ){
+					order:4;
+				}
+				.top{
+					font-size:36px;
+				    top:-17px;
+				    left:-59px;
+				    @include bp( m ){
+				    	font-size:27px;
+				    	top:-13px;
+				    	left:-46px;
+				    }
+				}
+				.left{
+					font-size:74px;
+				    @include bp( m ){
+				    	font-size:57px;
+				    }
+				}
+			}
+			&.e-commerce{
+				@include bp( m ){
+					order:2;
+				}
+				.top{
+				    font-size:64px;
+				    @include bp( m ){
+					    font-size:58px;
+					    left:2px;
+					}
+				}
+				.left{
+				    font-size:28px;
+				    left:-51px;
+				    top:-24px;
+				    @include bp( m ){
+					    font-size:26px;
+					    left:-45px;
+					    top:-21px;
+					}
+				}
+			}
+			&.shopify{
+				@include bp( m ){
+					order:5;
+				}
+				.top{
+				    font-size:63px;
+				    left:7px;
+				    top:-5px;
+				    @include bp( m ){
+				    	left:0;
+				    	top:-3px;
+				    }
+				}
+			}
+			&.custom-web{
+				@include bp( m ){
+					order:3;
+				}
+				.top{
+				    font-size:54px;
+					@include bp( m ){
+						font-size:39px;
+					}
+				}
+				.left{
+				    font-size:43px;
+				    left:-18px;
+				    top:21px;
+				    @include bp( m ){
+						font-size:34px;
+					    left:-15px;
+					    top:17px;
+				    }
+				}
+			}
+			&.web-hosting{
+				@include bp( m ){
+					order:6;
+				}
+				.top{
+				    font-size:42px;
+				    left:-53px;
+				    top:-14px;
+				    @include bp( m ){
+				    	top:-5px;
+				    }
+				}
+				.left{
+				    font-size:70px;
+				    top:-20px;
+				    @include bp( m ){
+				    	top:-10px;
+				    }
+				}
+			}
+		}
+		.ico-font{
+			position:absolute;
+			display:block;
+			content:"";
+			top:12px;
+			left:18px;
+			color:$iconBaseColor;
+			@include bp( m ){
+				top:6px;
+				left:30px;
+			}
+		}
+		.top{
+			color:$iconGreenColor;
+			position:relative;
+		}
+		.left{
+			position:relative;
+		}
+	}
+}

@@ -1,0 +1,72 @@
+.responsive{
+	padding:13px 0 23px;
+	.content{
+		@include bp( m ){
+			@include flex-direction(column);
+		}
+	}
+	.title-box, .responsive-img{
+	    @include flex-direction(column);
+	    @include justify-content(center);
+	    @include align-content(space-around);
+	}
+	.title-box{
+		width:49%;
+		margin-right:1%;
+		@include bp( m ){
+			order:2;
+			width:100%;
+			margin:0;
+			display:block;
+
+		}
+	}
+	.title{
+		max-width:398px;
+		margin:10px auto 0;
+		color:$responsiveText;
+		font:47px/1.2 "Pf Reg", Arial, sans-serif;
+		@include bp( m ){
+			font-family:"Pf Light";
+			font-size:40px;
+		}
+		.up{
+			text-transform:uppercase;
+			@include bp( m ){
+				text-align:center;
+			}
+		}
+		.left{
+			text-align:left;
+			@include bp( m ){
+				text-align:center;
+			}
+		}
+		.right{
+			text-align:right;
+			@include bp( m ){
+				text-align:center;
+			}
+		}
+	}
+	.responsive-img{
+		width:49%;
+		margin-left:1%;
+		display:block;
+		@include bp( m ){
+			display:block;
+			text-align:center;
+			order:1;
+			width:100%;
+			margin:0 0 20px;
+		}
+		img{
+			display:inline-block;
+			vertical-align:top;
+		    max-width:100%;
+		    @include bp( m ){
+		    	margin:0 auto;
+		    }
+		}
+	}
+}

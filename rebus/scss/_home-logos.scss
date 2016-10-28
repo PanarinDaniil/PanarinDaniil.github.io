@@ -1,0 +1,47 @@
+.logos-wrap{
+	padding:33px 0 64px;
+	@include bp( m ){
+		padding:21px 0 46px;
+	}
+	.content{
+		max-width:1356px;
+		padding:0;
+		@include bp( m ){
+			padding:0 15px;
+		}
+	}
+	.logos-box{
+		@include flex-wrap(wrap);
+		@include justify-content(center);
+	    li{
+		    width:calc(100% / 7.1);
+		    border-bottom:2px solid $logosBorder;
+		    border-right:2px solid $logosBorder;
+		    position: relative;
+		    height:156px;
+		    @include bp( m ){
+		    	width:calc(100% / 3.1);
+		    	height:90px;
+		    	border:none;
+		    }
+		    img{
+		    	display:inline-block;
+		    	vertical-align:top;
+		    	position:absolute;
+		    	left:50%;
+		    	top:50%;
+		    	max-width:100%;
+		    	@include transform(translate(-50%, -50%));
+			    @media (max-width:1200px) {
+			    	max-width:90%;
+			    }
+		    }
+	    }
+	    li:nth-child(7n){
+	    	border-right:none;
+	    }
+	    li:nth-last-child(-n+7){
+	    	border-bottom:none;
+	    }
+	}
+}

@@ -1,0 +1,147 @@
+html{
+	min-height: 100%;
+}
+body{
+	font:400 16px/1.1 "Open Sans", Arial, sans-serif;
+	min-height:100%;
+}
+.animate, a {
+    @include transition($transition);
+}
+*, *:after, *:before {
+    @include box-sizing(border-box);
+}
+.clear:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.clear.mob{
+    display:none;
+    @include bp( m ){
+		display:block;
+	}
+}
+.mob{
+	display:none;
+	@include bp( m ){
+		display:block;
+	}
+}
+.h1, h1{
+	font:40px/1.1 "Pf Med", Arial, sans-serif;
+	color:$hardGrey;
+	margin-bottom:28px;
+	text-align:center;
+	@include bp( m ){
+		font-size:35px;
+	}
+}
+p{
+	font:400 16px/24px "Open Sans", Arial, sans-serif;
+	color:$hardGrey;
+}
+.flex{
+    @include flex();
+}
+.wrapper{
+	@include flex-direction(column);
+	@include align-items(flex-start);
+    min-height:100vh;
+	min-width:320px;
+	overflow:hidden;
+}
+.main{
+	width:100%;
+}
+.content{
+	max-width:1128px;
+	width:100%;
+	padding:0 15px;
+	margin:0 auto;
+}
+.grey-back{
+	background:$greyBack;
+}
+.center{
+	text-align:center;
+}
+.btn-empty{
+	display:inline-block;
+	vertical-align:top;
+	color:$btnEmpty;
+	font:400 14px/28px Arial, sans-serif;
+	text-transform:uppercase;
+	padding:0 11px;
+	border:3px solid $btnEmpty;
+	@include border-radius(6px);
+	text-decoration:none;
+	@include transition($transition);
+	&:hover{
+		background:$btnEmpty;
+		color:$btnEmptyHoveColor;
+	}
+}
+.btn-orange{
+	display:inline-block;
+	vertical-align:top;
+	border:2px solid $orBtnbord;
+	@include border-radius(8px);
+	background:$orBtnBack;
+	color:$orBtnColor;
+	font:30px/32px "Pf Med", Arial, sans-serif;;
+	text-shadow:2px 0px 1px rgba(68, 26, 26, 0.4);
+	padding:15px 26px;
+	text-decoration:none;
+	text-transform:uppercase;
+	@include transition($transition);
+	@include bp( m ){
+		font-size:24px;
+	    padding:10px 7px;
+	}
+	&:hover{
+		background:#ffa500;
+		border-color:#ffa500;
+	}
+}
+.slick-dots{
+	li{
+	    margin:0 4px;
+        height:13px;
+	    width:13px;
+	    button{
+	    	height:13px;
+		    width:13px;
+	    	@include border-radius(50%);
+	    	background:$sliderDots;
+	    	@include transition($transition);
+	    	&:before{
+	    		display:none;
+	    	}
+	    	&:hover{
+	    		background:$sliderDotsHover;
+	    	}
+	    }
+	    &.slick-active{
+	    	button{
+		    	background:$sliderDotsHover;
+	    	}
+	    }
+	}
+}
+.layout {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: -100px;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    background:rgba(0,0,0,.3);
+    @include bp( l ){
+    	display:none!important;
+    }
+}
+.top-banner{
+	padding:112px 0;
+}

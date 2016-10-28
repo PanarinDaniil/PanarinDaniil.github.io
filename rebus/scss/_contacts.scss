@@ -1,0 +1,306 @@
+.contacts-box{
+	float:left;
+	width:49%;
+	margin-right:1%;
+	color:$contactColor;
+	@include bp( m ){
+		float:none;
+		width:100%;
+		margin:0;
+	}
+	.title{
+		font-family:"Pf Reg";
+		font-size:30px;
+		margin-bottom:24px;
+		@include bp( m ){
+			text-align:center;
+		}
+	}
+}
+.contacts-info{
+	float:right;
+	width:49%;
+	margin-left:1%;
+	@include bp( m ){
+		float:none;
+		width:100%;
+		margin:0 0 20px;
+	}
+	.info{
+		color:$contactColor;
+		font-family:"Pf Reg";
+		font-size:24px;
+		line-height:38px;
+		@include bp( m ){
+			display:none;
+		}
+		&.show-mob{
+			@include bp( m ){
+				display:block;
+			}
+		}
+		span{
+			@include bp( m ){
+				display:block;
+				text-align:center;
+			}
+			&.left{
+				margin-right:15px;
+				@include bp( m ){
+					margin:0;
+				}
+			}
+			&.right{
+				margin-left:15px;
+				position:relative;
+				@include bp( m ){
+					margin:0;
+				}
+				&:before{
+					position:absolute;
+					content:"|";
+					display:block;
+					left:-16px;
+					top:-6px;
+					@include bp( m ){
+						display:none;
+					}
+				}
+			}
+		}
+	}
+	.map{
+		margin:26px 0 15px;
+		@include bp( m ){
+			display:none;
+		}
+	}
+}
+.contact-form{
+	padding-bottom:85px;
+	position:relative;
+	*{
+		outline:none;
+	}
+	.input-wrapper{
+		padding:16px 8px 0px;
+		position:relative;
+		margin-bottom:15px;
+		textarea{
+		    resize:none;
+		    min-height:125px;
+		    & ~ .line{
+				position:absolute;
+				content:"";
+				display:block;
+				left:8px;
+				bottom:0;
+				height:2px;
+				@include transition($transition);
+			}
+			&:focus{
+				& ~ label{
+					top:0px;
+					font-size:13px;
+					line-height:16px;
+					&.error{
+						top:100%;
+						font-size:13px;
+						line-height:16px;
+						color:$contactError;
+					}
+				}
+			}
+			&.not-empty{
+				& ~ label{
+					top:0px;
+					font-size:13px;
+					line-height:16px;
+				}
+			}
+			&.valid{
+				& ~ label{
+					top:0px;
+					font-size:13px;
+					line-height:16px;
+					color:$contactValid;
+				}
+				& ~ .line{
+					right:8px;
+					background:$contactValid;
+				}
+			}
+			&.error{
+				& ~ label{
+						top:0px;
+						font-size:13px;
+						line-height:16px;
+						color:$contactError;
+					&.error{
+						top:100%;
+						font-size:13px;
+						line-height:16px;
+						display:none!important;
+					}
+				}
+				& ~ .line{
+					right:8px;
+					background:$contactError;
+				}
+			}		
+		}
+		&.text{
+			margin-bottom:31px;
+			label{
+				top:101px;
+				&.error{
+					top:100%;
+					font-size:13px;
+					line-height:16px;
+					color:$contactError;
+				}
+			}
+		}
+		label{
+			position:absolute;
+			display:block;
+			top:23px;
+			left:13px;
+			font-size:16px;
+			line-height:26px;
+			@include transition($transition);
+			&.error{
+				top:100%;
+				font-size:13px;
+				line-height:16px;
+				color:#ff0000;
+			}
+		}
+		input, textarea{
+			display:block;
+			width:100%;
+			background:$white;
+			border:none;
+			border-bottom:1px solid $contactColor;
+			font:400 16px/26px "Open Sans", Arial, sans-serif;
+			height:39px;
+			color:$contactform;
+			padding:7px 5px 6px;
+		}
+		input{
+			& ~ .line{
+				position:absolute;
+				content:"";
+				display:block;
+				left:8px;
+				bottom:0;
+				height:2px;
+				@include transition($transition);
+			}
+			&:focus{
+				& ~ label{
+					top:0px;
+					font-size:13px;
+					line-height:16px;
+					&.error{
+						top:100%;
+						font-size:13px;
+						line-height:16px;
+						color:$contactError;
+					}
+				}
+			}
+			&.error{
+				& ~ label{
+						top:0px;
+						font-size:13px;
+						line-height:16px;
+						color:$contactError;
+					&.error{
+						top:100%;
+						font-size:13px;
+						line-height:16px;
+						display:none!important;
+					}
+				}
+				& ~ .line{
+					right:8px;
+					background:$contactError;
+				}
+			}
+			&.valid{
+				& ~ label{
+					top:0px;
+					font-size:13px;
+					line-height:16px;
+					color:$contactValid;
+				}
+				& ~ .line{
+					right:8px;
+					background:$contactValid;
+				}
+			}
+			&.not-empty{
+				& ~ label{
+					top:0px;
+					font-size:13px;
+					line-height:16px;
+				}
+			}
+		}
+	}
+	.btn-orange{
+		font-size:23px;
+		line-height:26px;
+		padding:10px 26px;
+		max-width:192px;
+		cursor:pointer;
+	}
+	.msg{
+		display:none;
+		position:absolute;
+		bottom:0;
+		left:0;
+		right:0;
+		width:310px;
+		margin:0 auto;
+		padding-left:68px;
+		font-weight:600;
+		font-size:14px;
+		line-height:18px;
+		@include bp( xs ){
+			width:100%;
+		}
+		&:before{
+			position:absolute;
+			top:50%;
+		}
+		span{
+			display:block;
+		}
+	}
+	.success{
+		color:$contactValid;
+		&:before{
+			left:10px;
+			margin-top:-23px;
+			content:$reb-check;
+			color:$contactValid;
+			font-size:46px;
+			@include rebus();
+		}
+		&.valid{display:block;}
+	}
+	.fail{
+		color:$contactError;
+		&:before{
+			left:-6px;
+			width:70px;
+			height:77px;
+			margin-top:-38.5px;
+			content:'';
+			background:url('#{$imgPath}ops.png') no-repeat;
+		}
+		&.valid{display:block;}
+	}
+}

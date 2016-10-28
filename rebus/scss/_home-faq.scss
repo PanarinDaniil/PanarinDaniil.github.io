@@ -1,0 +1,217 @@
+.faq-wrap{
+	padding-bottom:41px;
+	@include bp( m ){
+		padding-bottom:21px;
+	}
+	.content{
+		max-width:1160px;
+		@include bp( m ){
+			padding:0 6px;
+		}
+	}
+	.faq-box{
+		position:relative;
+		@include flex-wrap(wrap);
+		@include justify-content(center);
+		a{
+			@include flex-direction(column);
+			@include justify-content(center);
+			@include align-content(space-around);
+		    width:calc(100% / 3.05);
+		    padding:27px 30px 19px;
+		    font:30px/38px "Pf Med", Arial, sans-serif;
+			color:$faqColorGreen;
+			text-align:center;
+			text-decoration:none;
+			text-transform:uppercase;
+			text-shadow:0px 1px 1px rgba(0, 0, 0, 0.55);
+			position:relative;
+			@include transition($transition);
+			@include bp( m ){
+				width:100%;
+				padding:24px 30px 21px;
+				min-height:117px;
+			}
+			&:after{
+				position:absolute;
+			    content:"";
+			    display:inline-block;
+			    width:0;
+			    height:0;
+			    z-index:1;
+			    border-style:solid;
+			    @include bp( m ){
+			    	display:none;
+			    }
+			}
+			&:nth-child(even){
+				color:$faqColorWhite;
+			}
+			&:hover{
+			    text-shadow:0px 3px 2px rgba(0, 0, 0, 0.55);
+			}
+		}
+	}
+	.first{
+		background:url(../images/faq1.png) no-repeat;
+		background-size:cover;
+		&:after{
+			bottom:-12px;
+			left:50%;
+			margin-left:-12px;
+		    border-width:13px 12px 0 12px;
+		    border-color:#dfe3e6 transparent transparent transparent;
+		}
+	}
+	.second{
+		background:url(../images/faq2.png) no-repeat;
+		background-size:cover;
+		&:after{
+			left:-12px;
+			top:50%;
+			margin-top:-12px;
+		    border-width:12px 13px 12px 0;
+		    border-color:transparent #63BB27 transparent transparent;
+		}
+	}
+	.third{
+		background:url(../images/faq3.png) no-repeat;
+		background-size:cover;
+		&:after{
+			left:-12px;
+			top:50%;
+			margin-top:-12px;
+		    border-width:12px 13px 12px 0;
+		    border-color:transparent #D7DEE1 transparent transparent;
+		}
+	}
+	.fourth{
+		background:url(../images/faq4.png) no-repeat;
+		background-size:cover;
+		&:after{
+			right:-12px;
+			top:50%;
+			margin-top:-12px;
+		    border-width:12px 0 12px 13px;
+		    border-color:transparent transparent transparent #63bb27;
+		}
+	}
+	.fifth{
+		background:url(../images/faq5.png) no-repeat;
+		background-size:cover;
+		&:after{
+			right:-12px;
+			top:50%;
+			margin-top:-12px;
+		    border-width:12px 0 12px 13px;
+		    border-color:transparent transparent transparent #D7DEE1;
+		}
+	}
+	.sixth{
+		background:url(../images/faq6.png) no-repeat;
+		background-size:cover;
+		&:after{
+			top:-12px;
+			left:50%;
+			margin-left:-12px;
+		    border-width:0 12px 13px 12px;
+		    border-color:transparent transparent #7DC54E transparent;
+		}
+	}
+	.faq-info{
+		display:none;
+		position:absolute;
+		z-index:1;
+		top:0;
+		left:0;
+		bottom:0;
+		right:0;
+		border:2px solid $faqBtn;
+		padding:43px 36px 44px 30px;
+		background:#fff;
+		@include bp( m ){
+			padding:0 0 50px;
+		}
+		&:hover{
+			.title{
+				text-shadow:0px 3px 2px rgba(0, 0, 0, 0.55);	
+			}
+		}
+		.title{
+			float:left;
+			margin:-43px 29px 20px -30px; 
+			width:363px;
+			height:117px;
+			padding:25px 10px 15px;
+			font:30px/38px "Pf Med", Arial, sans-serif;
+			color:$faqColorWhite;
+			text-align:center;
+			text-transform:uppercase;
+			text-shadow:0px 1px 1px rgba(0, 0, 0, 0.55);
+			position:relative;
+			background:url('#{$imgPath}faq1h.png') no-repeat;
+			background-size:cover;
+			@include transition($transition);
+			@include bp( m ){
+				margin:0 0 30px;
+			    width:100%;
+			    float:none;
+			}
+			&:after{
+				position:absolute;
+			    content:"";
+			    display:inline-block;
+			    width:0;
+			    height:0;
+			    z-index:1;
+			    border-style:solid;
+				bottom:-11px;
+				left:50%;
+				margin-left:-12px;
+			    border-width:13px 12px 0 12px;
+			    border-color:#7AC449 transparent transparent transparent;
+			}
+		}
+		p{
+			color:#2c2c2d;
+			font-size:14px;
+			line-height:25px;
+			@include bp( m ){
+				margin:0 15px;
+			}
+		}
+		.faq-close{
+			position:absolute;
+			display:block;
+			bottom:12px;
+			right:38px;
+			width:54px;
+			height:24px;
+			font-size:12px;
+			line-height:24px;
+			padding:0;
+			background:$faqBtn;
+			@include border-radius(2px);
+			color:#fff;
+			text-decoration:none;
+			text-align:center;
+			text-shadow:none;
+			@include bp( m ){
+				min-height:24px;
+				bottom:10px;
+				right:10px;
+			}
+			i{
+				font-size:12px;
+				line-height:24px;
+			}
+			&:hover{
+				text-shadow:none;
+				background:$faqBtnHover;
+			}
+			&:after{
+				display:none;
+			}
+		}
+	}
+}

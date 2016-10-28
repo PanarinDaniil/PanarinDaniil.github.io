@@ -1,0 +1,266 @@
+.header{
+	@include align-self(flex-start);
+    width:100%;
+	padding:45px 0 17px;
+	background:#8698a4;
+	position:relative;
+    z-index:3;
+    height:123px;
+    .content{
+		@include bp( m ){
+			padding:0 14px;
+		}
+	}
+	&:before{
+		position:absolute;
+		content:"";
+		display:block;
+		top:0;
+		left:0;
+		right:0;
+		height:12px;
+		background:rgba(0,0,0,.29);
+	}
+	.logo{
+		display:block;
+		float:left;
+		img{
+			display:block;
+			max-width:161px;
+			& + img{
+				margin-top:10px;
+			}
+		}
+
+	}
+}
+.main-nav{
+	float:right;
+	@include bp( l ){
+		display:block!important;
+	}
+	@include bp( m ){
+		float:none;
+		display:none;
+		position:absolute;
+		left:0;
+		right:0;
+		top:calc(100% - 14px);
+		background:#8698a4;
+		padding:14px;
+		&:before{
+			position:absolute;
+			content:"";
+			display:block;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			background:rgba(0,0,0,.29);
+		}
+	}
+	& > li{
+		display:inline-block;
+		vertical-align:top;
+		position:relative;
+		@include bp( m ){
+			background:#55626b;
+			display:block;
+		}
+		&:after{
+			display:block;
+			content:"";
+			position:absolute;
+			left:0;
+			right:0;
+			bottom:0px;
+			height:0px;
+			background:transparent;
+			@include transition($transition);
+			@include bp( m ){
+				right:100%;
+				height:4px;
+			}
+		}
+		&:hover{
+			&:after{
+				height:4px;
+				background:$lightGreen;
+				@include bp( m ){
+					right:0;
+				}
+			}
+		}
+		& + li{
+			margin-left:35px;
+			@include bp( m ){
+				margin-left:0px;
+				margin-top:4px;
+			}
+		}
+	}
+	a{
+		color:$headerColor;
+		font-family:"Pf Reg";
+		font-size:17px;
+		line-height:29px;
+		display:block;
+		text-transform:uppercase;
+		text-decoration:none;
+		padding:3px 0;
+		@include bp( m ){
+			font-size:18px;
+			line-height:40px;
+			padding:2px 13px;
+		}
+	}
+	.main-nav-contact{
+		margin-left:16px;
+		position:static;
+		@include bp( m ){
+			text-align:center;
+			position:relative;
+			margin:13px auto 0;
+			background:transparent;
+		}
+		&:after{
+			display:none;
+		}
+		&:hover{
+			&:after{
+				display:none;
+			}
+		}
+		a{
+			padding:0 14px;
+			@include bp( m ){
+				line-height:29px;
+				display:inline-block;
+				vertical-align:top;
+				min-width:116px;
+			}
+		}
+	}
+}
+.sub-menu{
+	position:relative;
+	&:hover{
+		.main-nav-sub{
+			display: block;
+			@include bp( m ){
+				display:none;
+			}
+			&.fix{
+				@include bp( m ){
+					display:block;
+				}
+			}
+		}
+	}
+	.main-nav-sub{
+		&.fix{
+			@include bp( m ){
+				display:block;
+				position:static;
+			    padding:0;
+			    background:$grey;
+			    li{
+			    	padding:0px 17px;
+			    }
+			    a{
+		    	    padding:8px 13px;
+		    	    color:#4a4a4a;
+		    	    &:hover{
+		    	    	color:$lightGreen;
+		    	    }
+			    }
+			}
+		}
+	}
+}
+.main-nav-sub{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	padding:10px 0;
+	background:$headerColor;
+	li{
+		display:block;
+		padding:3px 17px;
+		min-width:197px;
+	}
+	a{
+		color:$headerSub;
+		font:17px/1.2 "Pf Reg", Arial, sans-serif;
+		&:hover{
+			color:$lightGreen;
+		}
+	}
+}
+.mob-btn{
+    display:none;
+    float:right;
+    width:58px;
+    height:44px;
+    background:transparent;
+    padding:19px 11px 20px;
+    @include appearance(none);
+    @include bp( m ){
+		display:block;
+	}
+    &:hover{
+        div{
+        	background:$lightGreen;
+        	&:before,
+	        &:after{
+	        	background:$lightGreen;
+	        }
+        }
+    }
+    &.active{
+        div{
+            background:transparent;
+            &:before,
+            &:after{
+                @include transition-delay(0s,.3s);
+            }
+            &:before{
+                top:0px;
+                @include transform(rotate(45deg));
+            }
+            &:after{
+                bottom:0px;
+                @include transform(rotate(-45deg));
+            }
+        }
+    }
+    div{
+        text-indent:-9999px;
+        height:5px;
+        display:block;
+        background:$headerColor;
+        position:relative;
+        @include transition(background 0.3s 0s);
+        &:before,
+        &:after{
+            position:absolute;
+            content:"";
+            left:0;
+            right:0;
+            height:5px;
+            z-index:1;
+            background:$headerColor;
+            @include transition-delay(.3s, 0s, 0s);
+            @include transition-duration(.3s, .3s, .3s);
+        }
+        &:before{
+            top:-9px;
+            @include transition-property(top,transform, background);
+        }
+        &:after{
+            bottom:-9px;
+            @include transition-property(bottom,transform, background);
+        }
+    }
+}

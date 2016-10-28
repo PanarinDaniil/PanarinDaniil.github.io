@@ -1,0 +1,53 @@
+.main-content{
+	padding:40px 0;
+	@include bp( m ){
+		padding:29px 0 49px;
+	}
+	p{
+		line-height:23px;
+	}
+	.title-bottom{
+		font-family:"Pf Reg";
+		font-size:50px;
+		line-height:1.1;
+		color:$processSubtitle;
+		margin-bottom:42px;
+		@media screen and (max-width:450px) {
+			font-size:35px;
+			margin-bottom:0;
+		}
+		a{
+			color:$processTitle;
+			font-family:"Pf Reg";
+			font-size:50px;
+			line-height:1.1;
+			text-decoration:none;
+			position:relative;
+			@media screen and (max-width:450px) {
+				font-size:35px;
+			}
+			&:after{
+				position:absolute;
+				display:block;
+				content:'';
+				bottom:1px;
+				left:0px;
+				right:0px;
+				height:4px;
+				background:$processTitle;
+				@include transition($transition);
+			}
+			&:hover{
+				&:after{
+					background:transparent;
+				}
+			}
+		}
+	}
+	.img-bottom{
+		max-width:910px;
+		@media screen and (max-width:450px) {
+			display:none;
+		}
+	}
+}
