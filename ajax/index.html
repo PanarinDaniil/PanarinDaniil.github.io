@@ -40,7 +40,19 @@
       var list = document.getElementById('list');
       phones.forEach( function(phone) {
         var li = list.appendChild(document.createElement('li'));
-        li.innerHTML = phone.name;
+        var ul = li.appendChild(document.createElement('ul'));
+        var liAge = ul.appendChild(document.createElement('li'));
+        var liCarrier = ul.appendChild(document.createElement('li'));
+        var liId = ul.appendChild(document.createElement('li'));
+        var liImageUrl = ul.appendChild(document.createElement('li'));
+        var liName = ul.appendChild(document.createElement('li'));
+        var liSnippet = ul.appendChild(document.createElement('li'));
+        liAge.innerHTML = phone.age;
+        liCarrier.innerHTML = phone.carrier;
+        liId.innerHTML = phone.id;
+        liImageUrl.innerHTML = phone.imageUrl;
+        liName.innerHTML = phone.name;
+        liSnippet.innerHTML = phone.snippet;
       });
     }
   </script>
