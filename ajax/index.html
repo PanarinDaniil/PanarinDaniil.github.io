@@ -54,6 +54,7 @@
       color:#fff;
       text-align:center;
       font-size:12px;
+      background:green;
     }
     .img-wrap .life,
     .img-wrap .vodafone{
@@ -115,7 +116,19 @@
             if ( obj.carrier ) {
               var sticker = wrap.appendChild(document.createElement('div'));
               sticker.classList.add("sticker", obj.carrier);
-              // sticker.innerHTML = obj.carrier;
+              switch (obj.carrier) {
+                case "life":
+                  sticker.innerHTML = "l";
+                  break;
+                case "vodafone":
+                  sticker.innerHTML = "v";
+                  break;
+                case "kievstar":
+                  sticker.innerHTML = "k";
+                  break;
+                default:
+                  sticker.innerHTML = "o";
+              }
             }
             var img = wrap.appendChild(document.createElement('img'));
             img.src = obj[prop];

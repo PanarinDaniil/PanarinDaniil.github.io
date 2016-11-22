@@ -38,7 +38,7 @@
     },
     {
         "age": 5,
-        "carrier": "vodafone",
+        "carrier": "other",
         "id": "dell-venue",
         "imageUrl": "/images/banner/6.jpg",
         "name": "Dell Venue",
