@@ -15,7 +15,7 @@
     },
     {
         "age": 2,
-        "carrier": "AT&amp;T",
+        "carrier": "life",
         "id": "motorola-atrix-4g",
         "imageUrl": "/images/banner/3.jpg",
         "name": "MOTOROLA ATRIX\u2122 4G",
@@ -30,7 +30,7 @@
     },
     {
         "age": 4,
-        "carrier": "Cellular South",
+        "carrier": "vodafone",
         "id": "samsung-gem",
         "imageUrl": "/images/banner/5.jpg",
         "name": "Samsung Gem\u2122",
@@ -38,7 +38,7 @@
     },
     {
         "age": 5,
-        "carrier": "Dell",
+        "carrier": "vodafone",
         "id": "dell-venue",
         "imageUrl": "/images/banner/6.jpg",
         "name": "Dell Venue",
@@ -46,7 +46,7 @@
     },
     {
         "age": 6,
-        "carrier": "Best Buy",
+        "carrier": "kievstar",
         "id": "nexus-s",
         "imageUrl": "/images/banner/7.jpg",
         "name": "Nexus S",
@@ -54,7 +54,7 @@
     },
     {
         "age": 7,
-        "carrier": "Cellular South",
+        "carrier": "kievstar",
         "id": "lg-axis",
         "imageUrl": "/images/banner/8.jpg",
         "name": "LG Axis",
@@ -69,7 +69,7 @@
     },
     {
         "age": 9,
-        "carrier": "Cellular South",
+        "carrier": "kievstar",
         "id": "samsung-showcase-a-galaxy-s-phone",
         "imageUrl": "/images/banner/10.jpg",
         "name": "Samsung Showcase\u2122 a Galaxy S\u2122 phone",
@@ -77,7 +77,7 @@
     },
     {
         "age": 10,
-        "carrier": "Verizon",
+        "carrier": "life",
         "id": "droid-2-global-by-motorola",
         "imageUrl": "/images/banner/1.jpg",
         "name": "DROID\u2122 2 Global by Motorola",
@@ -85,7 +85,7 @@
     },
     {
         "age": 11,
-        "carrier": "Verizon",
+        "carrier": "life",
         "id": "droid-pro-by-motorola",
         "imageUrl": "/images/banner/2.jpg",
         "name": "DROID\u2122 Pro by Motorola",
@@ -93,7 +93,7 @@
     },
     {
         "age": 12,
-        "carrier": "AT&amp;T",
+        "carrier": "life",
         "id": "motorola-bravo-with-motoblur",
         "imageUrl": "/images/banner/3.jpg",
         "name": "MOTOROLA BRAVO\u2122 with MOTOBLUR\u2122",
@@ -101,7 +101,7 @@
     },
     {
         "age": 13,
-        "carrier": "T-Mobile",
+        "carrier": "life",
         "id": "motorola-defy-with-motoblur",
         "imageUrl": "/images/banner/4.jpg",
         "name": "Motorola DEFY\u2122 with MOTOBLUR\u2122",
@@ -109,7 +109,7 @@
     },
     {
         "age": 14,
-        "carrier": "T-Mobile",
+        "carrier": "life",
         "id": "t-mobile-mytouch-4g",
         "imageUrl": "/images/banner/5.jpg",
         "name": "T-Mobile myTouch 4G",
@@ -117,7 +117,7 @@
     },
     {
         "age": 15,
-        "carrier": "US Cellular",
+        "carrier": "vodafone",
         "id": "samsung-mesmerize-a-galaxy-s-phone",
         "imageUrl": "/images/banner/6.jpg",
         "name": "Samsung Mesmerize\u2122 a Galaxy S\u2122 phone",
@@ -125,7 +125,7 @@
     },
     {
         "age": 16,
-        "carrier": "Sprint",
+        "carrier": "vodafone",
         "id": "sanyo-zio",
         "imageUrl": "/images/banner/7.jpg",
         "name": "SANYO ZIO",

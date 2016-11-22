@@ -8,27 +8,63 @@
     body{
       margin:0;
       padding:0;
+      background:#fff;
+      font:400 16px/1.4 Arial, sans-serif;
     }
     #list{
       padding:0;
       margin:0;
+      text-align:center;
     }
     #list li{
       display:block;
+      padding:0;
     }
-    #list > li{
-      margin-bottom:15px;
-      padding:5px 0;
+    #list li + li{
+      border-top:1px solid #eee;
     }
-    #list > li:nth-child(even){
-      background:#eee;
-    }
-    .inner-list{
-      list-style:disc;
-    }
-    .inner-list img{
+    #list img{
       display:block;
-      max-width:200px;
+      max-width:100%;
+      margin:0 auto;
+    }
+    #list a{
+      display:block;
+      padding:15px 0;
+      text-decoration:none;
+      color:#000;
+      transition:all .5s ease-out;
+    }
+    #list a:hover{
+      background: #eee;
+    }
+    #list .img-wrap{
+      position:relative;
+      width:200px;
+      margin:5px auto;
+    }
+    .img-wrap .sticker{
+      position:absolute;
+      display:block;
+      content:"";
+      width:40px;
+      height:40px;
+      line-height:40px;
+      border-radius:50%;
+      color:#fff;
+      text-align:center;
+      font-size:12px;
+    }
+    .img-wrap .life,
+    .img-wrap .vodafone{
+      background:red;
+    }
+    .img-wrap .kievstar{
+      background:blue;
+    }
+    #list .title{
+      margin-bottom:5px
+      text-transform:uppercase;
     }
 
   </style>
@@ -65,15 +101,36 @@
       var list = document.getElementById('list');
       for (var i = 0; i < phones.length; i++) {
         var li = list.appendChild(document.createElement('li'));
-        var ul = li.appendChild(document.createElement('ul'));
-        ul.classList.add("inner-list");
+        var a = li.appendChild(document.createElement('a'));
         var obj = phones[i];
+
+        if ( obj.id ) {
+          a.href = "pages/" + obj.id;
+        }
         for (var prop in obj) {
-          var liInner = ul.appendChild(document.createElement('li'));
+          console.log(obj[prop]);
           if ( prop.indexOf("imageUrl") !== -1 ) {
-            liInner.innerHTML = "<img src='" + obj[prop] + "' alt='" + obj.name + "' />";
+            var wrap = a.appendChild(document.createElement('div'));
+            wrap.classList.add("img-wrap");
+            if ( obj.carrier ) {
+              var sticker = wrap.appendChild(document.createElement('div'));
+              sticker.classList.add("sticker", obj.carrier);
+              // sticker.innerHTML = obj.carrier;
+            }
+            var img = wrap.appendChild(document.createElement('img'));
+            img.src = obj[prop];
+            img.setAttribute("alt", "obj.name");
+          } else if (prop === "id") {
+
+          } else if (prop === "carrier") {
+
+          } else if (prop === "name") {
+            var div = a.appendChild(document.createElement('div'));
+            div.classList.add("title");
+            div.innerHTML = obj[prop];
           } else {
-            liInner.innerHTML = obj[prop];
+            var div = a.appendChild(document.createElement('div'));
+            div.innerHTML = obj[prop];
           }
         }
       }
