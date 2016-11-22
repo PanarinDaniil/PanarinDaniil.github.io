@@ -8,7 +8,6 @@
       padding:0;
     }
     #list{
-      list-style:none;
       padding:0;
       margin:0;
     }
@@ -33,26 +32,21 @@
   </style>
 </head>
 <body>
-  <button onclick="loadPhones()" id="button">Загрузить phones.json!</button>
+  <button id="button">Загрузить phones.json!</button>
   <ul id="list"></ul>
 
   <script>
-    function loadPhones() {
-      var button = document.getElementById('button');
+    var button = document.getElementById('button');
+    button.addEventListener("click", function(){
       var xhr = new XMLHttpRequest();
-
       xhr.open('GET', 'phones.json');
       xhr.send();
       xhr.onreadystatechange = function() {
         if (xhr.readyState != 4) return;
-
         button.parentNode.removeChild(button);
-        // button.innerHTML = 'Готово!';
         if (xhr.status != 200) {
-          // обработать ошибку
           console.log('Ошибка ' + xhr.status + ': ' + xhr.statusText);
         } else {
-          // вывести результат
           try {
             var phones = JSON.parse(xhr.responseText);
           } catch (e) {
@@ -63,32 +57,24 @@
       }
       button.innerHTML = 'Загружаю...';
       button.disabled = true;
-    }
+    });
 
     function showPhones(phones) {
       var list = document.getElementById('list');
-      // phones.forEach( function(phone) {
-        // var li = list.appendChild(document.createElement('li'));
-        // li.innerHTML =  "<ul class='inner-list'><li>" + phone.age + "</li><li>" + phone.carrier + "</li><li>" + phone.id + "</li><li><img src='" + phone.imageUrl + "' alt='" + phone.name + "'/></li><li>" + phone.name + "</li><li>" + phone.snippet + "</li></ul>";
-      //});
       for (var i = 0; i < phones.length; i++) {
         var li = list.appendChild(document.createElement('li'));
         var ul = li.appendChild(document.createElement('ul'));
-        ul.className += "inner-list";
+        ul.classList.add("inner-list");
         var obj = phones[i];
         for (var prop in obj) {
           var liInner = ul.appendChild(document.createElement('li'));
           if ( prop.indexOf("imageUrl") !== -1 ) {
-            liInner.innerHTML = "<img src='" + obj[prop] + "' alt='' />";
-            // var img = liInner.appendChild(document.createElement('img'));
-            // img.src = obj[prop];
-            // img.alt = "";
+            liInner.innerHTML = "<img src='" + obj[prop] + "' alt='" + obj.name + "' />";
           } else {
             liInner.innerHTML = obj[prop];
           }
         }
       }
-        // li.innerHTML =  "<ul class='inner-list'><li>" + phone.age + "</li><li>" + phone.carrier + "</li><li>" + phone.id + "</li><li><img src='" + phone.imageUrl + "' alt='" + phone.name + "'/></li><li>" + phone.name + "</li><li>" + phone.snippet + "</li></ul>";
     }
   </script>
 </body>

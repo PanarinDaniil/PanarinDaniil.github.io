@@ -8,9 +8,10 @@ var file = new static.Server('.', {
 function accept(req, res) {
   if (req.url == '/phones.json') {
     // искусственная задержка для наглядности
-    setTimeout(function() {
-      file.serve(req, res);
-    }, 2000);
+    file.serve(req, res);
+    // setTimeout(function() {
+    //   file.serve(req, res);
+    // }, 2000);
   } else {
     file.serve(req, res);
   }
