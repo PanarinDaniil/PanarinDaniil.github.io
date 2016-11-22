@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <button onclick="loadPhones()" id="button">Загрузить phones.json!</button>
+  <ul id="list"></ul>
+
+  <script>
+    function loadPhones() {
+      var button = document.getElementById('button');
+      var xhr = new XMLHttpRequest();
+
+      xhr.open('GET', 'phones.json');
+      xhr.send();
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState != 4) return;
+
+        button.parentNode.removeChild(button);
+        // button.innerHTML = 'Готово!';
+        if (xhr.status != 200) {
+          // обработать ошибку
+          console.log('Ошибка ' + xhr.status + ': ' + xhr.statusText);
+        } else {
+          // вывести результат
+          try {
+            var phones = JSON.parse(xhr.responseText);
+          } catch (e) {
+            console.log( "Некорректный ответ " + e.message );
+          }
+          showPhones(phones);
+        }
+      }
+      button.innerHTML = 'Загружаю...';
+      button.disabled = true;
+    }
+
+    function showPhones(phones) {
+      var list = document.getElementById('list');
+      phones.forEach( function(phone) {
+        var li = list.appendChild(document.createElement('li'));
+        li.innerHTML = phone.name;
+      });
+    }
+  </script>
+</body>
+</html>
