@@ -2,6 +2,32 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <style type="text/css">
+    body{
+      margin:0;
+      padding:0;
+    }
+    #list{
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+    #list > li{
+      margin-bottom:15px;
+      padding:5px 0;
+    }
+    #list > li:nth-child(even){
+      background:#eee;
+    }
+    .inner-list{
+      list-style:disc;
+    }
+    .inner-list img{
+      display:block;
+      max-width:200px;
+    }
+
+  </style>
 </head>
 <body>
   <button onclick="loadPhones()" id="button">Загрузить phones.json!</button>
@@ -40,7 +66,7 @@
       var list = document.getElementById('list');
       phones.forEach( function(phone) {
         var li = list.appendChild(document.createElement('li'));
-        li.innerHTML =  "<ul class='inner-list'><li>" + phone.age + "</li><li>" + phone.carrier + "</li><li>" + phone.id + "</li><li><img src='" + phone.imageUrl + "' alt='" + phone.name + "'</li><li>" + phone.name + "</li><li>" + phone.snippet + "</li></ul>";
+        li.innerHTML =  "<ul class='inner-list'><li>" + phone.age + "</li><li>" + phone.carrier + "</li><li>" + phone.id + "</li><li><img src='" + phone.imageUrl + "' alt='" + phone.name + "'/></li><li>" + phone.name + "</li><li>" + phone.snippet + "</li></ul>";
         // var ul = li.appendChild(document.createElement('ul'));
         // var liAge = ul.appendChild(document.createElement('li'));
         // var liCarrier = ul.appendChild(document.createElement('li'));
