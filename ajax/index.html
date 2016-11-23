@@ -83,6 +83,9 @@
       var xhr = new XMLHttpRequest();
       xhr.open('GET', 'phones.json');
       xhr.send();
+      xhr.onprogress = function(event) {
+        console.log(event.loaded + ":" + event.total);
+      }
       xhr.onreadystatechange = function() {
         if (xhr.readyState != 4) return;
         button.parentNode.removeChild(button);
@@ -101,6 +104,21 @@
       button.disabled = true;
     });
 
+    function getCarrier (carie) {
+      var res;
+      var carriers = {
+        "life" : "l",
+        "vodafone" : "v",
+        "kievstar" : "k"
+      };
+      if ( carriers.hasOwnProperty(carie)  ) {
+        res = carriers[carie];
+      } else {
+        res = "o";
+      }
+      return res;
+    }
+
     function showPhones(phones) {
       var list = document.getElementById('list');
       for (var i = 0; i < phones.length; i++) {
@@ -112,42 +130,27 @@
           a.href = "pages/" + obj.id;
         }
         for (var prop in obj) {
-          if ( prop.indexOf("imageUrl") !== -1 ) {
+          if ( prop.indexOf("imageUrl") >= 0 ) {
             var wrap = a.appendChild(document.createElement('div'));
             wrap.classList.add("img-wrap");
             if ( obj.carrier ) {
               var sticker = wrap.appendChild(document.createElement('div'));
               sticker.classList.add("sticker", obj.carrier);
-              switch (obj.carrier) {
-                case "life":
-                  sticker.innerHTML = "l";
-                  break;
-                case "vodafone":
-                  sticker.innerHTML = "v";
-                  break;
-                case "kievstar":
-                  sticker.innerHTML = "k";
-                  break;
-                default:
-                  sticker.innerHTML = "o";
-              }
+              sticker.innerHTML = getCarrier(obj.carrier);
             }
             var img = wrap.appendChild(document.createElement('img'));
             img.src = obj[prop];
             img.setAttribute("alt", obj.name);
-          } else if (prop === "id") {
 
-          } else if (prop === "carrier") {
-
-          } else if (prop === "name") {
+          } else if (prop == "name") {
             var div = a.appendChild(document.createElement('div'));
             div.classList.add("title");
             div.innerHTML = obj[prop];
-          } else if ( prop === "snippet" ) {
+          } else if ( prop == "snippet" ) {
             var p = a.appendChild(document.createElement('p'));
             var descr = obj[prop].replace("\n\n", "<br/>" ).replace("\r\n\r\n", "<br/>" );
             p.innerHTML = descr;
-          } else {
+          } else if (prop != "id" && prop != "carrier" ) {
             var div = a.appendChild(document.createElement('div'));
             div.innerHTML = obj[prop];
           }
