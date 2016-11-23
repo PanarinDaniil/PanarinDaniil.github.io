@@ -40,7 +40,7 @@
     }
     #list .img-wrap{
       position:relative;
-      width:200px;
+      width:300px;
       margin:5px auto;
     }
     .img-wrap .sticker{
@@ -64,7 +64,7 @@
       background:blue;
     }
     #list .title{
-      margin-bottom:5px
+      margin-bottom:5px;
       text-transform:uppercase;
     }
 
@@ -132,7 +132,7 @@
             }
             var img = wrap.appendChild(document.createElement('img'));
             img.src = obj[prop];
-            img.setAttribute("alt", "obj.name");
+            img.setAttribute("alt", obj.name);
           } else if (prop === "id") {
 
           } else if (prop === "carrier") {
@@ -141,6 +141,10 @@
             var div = a.appendChild(document.createElement('div'));
             div.classList.add("title");
             div.innerHTML = obj[prop];
+          } else if ( prop === "snippet" ) {
+            var p = a.appendChild(document.createElement('p'));
+            var descr = obj[prop].replace("\n\n", "<br/>" ).replace("\r\n\r\n", "<br/>" );
+            p.innerHTML = descr;
           } else {
             var div = a.appendChild(document.createElement('div'));
             div.innerHTML = obj[prop];
