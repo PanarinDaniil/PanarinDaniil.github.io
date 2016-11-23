@@ -67,6 +67,9 @@
       margin-bottom:5px;
       text-transform:uppercase;
     }
+    #list p{
+      margin:0;
+    }
 
   </style>
 </head>
@@ -88,10 +91,10 @@
         } else {
           try {
             var phones = JSON.parse(xhr.responseText);
+            showPhones(phones);
           } catch (e) {
             console.log( "Некорректный ответ " + e.message );
           }
-          showPhones(phones);
         }
       }
       button.innerHTML = 'Загружаю...';
@@ -109,7 +112,6 @@
           a.href = "pages/" + obj.id;
         }
         for (var prop in obj) {
-          console.log(obj[prop]);
           if ( prop.indexOf("imageUrl") !== -1 ) {
             var wrap = a.appendChild(document.createElement('div'));
             wrap.classList.add("img-wrap");
