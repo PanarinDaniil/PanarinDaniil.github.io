@@ -64,10 +64,6 @@
 			@include flex-direction(column);
 		}
 	}
-	// .error-img{
-	// 	@include justify-content(flex-end);
-	// 	@include align-content(space-around);
-	// }
 	.error-info{
 		@include flex-direction(column);
 		@include justify-content(center);
