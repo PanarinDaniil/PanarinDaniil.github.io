@@ -16,6 +16,19 @@ function() {
 	t.parentNode.insertBefore(n,t)
 }();
 
+function toTop(anchor){
+    var top = $(anchor).offset().top - 0;
+    $('html, body').animate({ scrollTop: top }, 1200);
+}
+if(document.location.hash.length>1){
+    toTop(document.location.hash);
+}
+// $(document.location.hash).ready(function() {
+//     if(document.location.hash.length>1){
+//         toTop(document.location.hash);
+//     }
+// });
+
 $(document).ready(function() {
 
 //MOBILE MENU
@@ -241,41 +254,11 @@ $(document).ready(function() {
         });
     }
 
-    function toTop(anchor){
-        var top = $(anchor).offset().top - 0;
-        $('html, body').animate({ scrollTop: top }, 1200);
-    } 
     $("a[href*='#']").on("click", function (event) {
-      toTop(this.hash);
+        var str = document.location.href;
+        if ( str == this.href ) {
+            event.preventDefault();
+            toTop(this.hash);
+        }
     });
-    //}
-
-    // var str = document.location.href;
-    // var n1 = "#team";
-    // var n2 = "#holiday";
-    
-    // if ( str.indexOf(n1) !== -1 ){
-    //     toTop(n1);
-    // } else if ( str.indexOf(n2) !== -1 ) {
-    //     toTop(n2);
-    // }
-
-    // function toTop(anchor){
-    //     var top = $(anchor).offset().top - 0;
-    //     $('html, body').animate({ scrollTop: top }, 1200);
-    // }
- 
-    // if ( str.indexOf("about") !== -1 ) {
-    //     var s = $(".scroll");
-    //     s.each(function(){
-    //       var text = $(this).attr('href')
-    //       text = text.replace('about.html','');
-    //       $(this).attr('href', text);
-    //     });   
-    //     $(".scroll").on("click", function (event) {
-    //       event.preventDefault();
-    //       var id = $(this).attr('href');
-    //       toTop(id);
-    //     });
-    // }
 });
