@@ -1112,6 +1112,65 @@ p {
   }
 }
 
+/*==================== About page ==================*/
+.about-wrap {
+  margin: 66px 0 82px;
+  letter-spacing: -4px;
+  font-size: 0px;
+}
+@media screen and (max-width: 450px) {
+  .about-wrap {
+    margin: 35px 0 40px;
+  }
+}
+.about-wrap li {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  padding: 0 12px;
+  text-align: center;
+  margin: 0 0 20px;
+}
+@media screen and (max-width: 800px) {
+  .about-wrap li {
+    width: 50%;
+  }
+}
+.about-wrap li * {
+  letter-spacing: 0;
+  font: 24px/1.2 "Pf Reg", Arial, sans-serif;
+}
+.about-wrap li .img-wrap {
+  margin-bottom: 15px;
+}
+.about-wrap li .img-wrap img {
+  display: block;
+  max-width: 100%;
+  width: 202px;
+  margin: 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: url("../images/grayscale.svg");
+  filter: gray;
+  -webkit-filter: grayscale(1);
+}
+.about-wrap li .name {
+  color: #7a7a7a;
+  font-size: 30px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+.about-wrap li .position {
+  color: #63bb27;
+  text-transform: uppercase;
+}
+
 /*============== Partners Page ================*/
 .partners-wrap {
   padding: 35px 0 57px;
