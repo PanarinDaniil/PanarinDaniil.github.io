@@ -3016,11 +3016,11 @@ p {
   -webkit-justify-content: center;
   justify-content: center;
 }
-.error-page .error-img {
-  -webkit-justify-content: flex-end;
-  justify-content: flex-end;
-  -webkit-align-content: space-around;
-  align-content: space-around;
+@media screen and (max-width: 800px) {
+  .error-page .content {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
 }
 .error-page .error-info {
   -webkit-flex-direction: column;
@@ -3031,9 +3031,16 @@ p {
   align-content: space-around;
 }
 .error-page .error-img {
-  width: 40%;
+  width: 50%;
   margin-right: 1%;
   text-align: right;
+}
+@media screen and (max-width: 800px) {
+  .error-page .error-img {
+    width: 100%;
+    margin: 0 0 20px;
+    text-align: center;
+  }
 }
 .error-page .error-img img {
   display: inline-block;
@@ -3041,7 +3048,12 @@ p {
   max-width: 100%;
 }
 .error-page .error-info {
-  width: 59%;
+  width: 49%;
+}
+@media screen and (max-width: 800px) {
+  .error-page .error-info {
+    width: 100%;
+  }
 }
 .error-page .error-info > * {
   -webkit-flex-direction: column;
