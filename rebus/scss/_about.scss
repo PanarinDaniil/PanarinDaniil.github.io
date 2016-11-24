@@ -49,3 +49,15 @@
 		}
 	}
 }
+.packages{
+	&.schedule{
+		.col-2{
+			min-width:700px;
+		    min-height:initial;
+		    @include bp( m ){
+				min-width:290px;
+			    min-height:initial;
+			}
+		}
+	}
+}

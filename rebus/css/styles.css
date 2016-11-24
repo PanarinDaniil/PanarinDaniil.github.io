@@ -1171,6 +1171,17 @@ p {
   text-transform: uppercase;
 }
 
+.packages.schedule .col-2 {
+  min-width: 700px;
+  min-height: initial;
+}
+@media screen and (max-width: 800px) {
+  .packages.schedule .col-2 {
+    min-width: 290px;
+    min-height: initial;
+  }
+}
+
 /*============== Partners Page ================*/
 .partners-wrap {
   padding: 35px 0 57px;
