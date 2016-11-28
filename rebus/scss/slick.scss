@@ -67,7 +67,7 @@
         float: right;
     }
     img {
-        display: block;
+        display: inline-block;
     }
     &.slick-loading img {
         display: none;
@@ -81,6 +81,7 @@
 
     .slick-initialized & {
         display: block;
+        text-align: center;
     }
 
     .slick-loading & {
