@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Small AJAX</title>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <style type="text/css">
+    body{
+      margin:0;
+      padding:0;
+      background:#fff;
+      font:400 16px/1.4 Arial, sans-serif;
+    }
+    #list{
+      padding:0;
+      margin:0;
+      text-align:center;
+    }
+    #list li{
+      display:block;
+      padding:0;
+    }
+    #list li + li{
+      border-top:1px solid #eee;
+    }
+    #list img{
+      display:block;
+      max-width:100%;
+      margin:0 auto;
+    }
+    #list a{
+      display:block;
+      padding:15px 0;
+      text-decoration:none;
+      color:#000;
+      transition:all .5s ease-out;
+    }
+    #list a:hover{
+      background: #eee;
+    }
+    #list .img-wrap{
+      position:relative;
+      width:300px;
+      margin:5px auto;
+    }
+    #list .hidden{
+      display:none;
+    }
+    #list .title{
+      margin-bottom:5px;
+      text-transform:uppercase;
+    }
+    #list p{
+      margin:0;
+    }
+
+  </style>
+</head>
+<body>
+  <button id="button">Загрузить каталог товаров</button>
+  <ul id="list"></ul>
+
+  <script>
+    var button = document.getElementById('button');
+    button.addEventListener("click", function(){
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'products.json');
+      xhr.send();
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState != 4) return;
+        button.parentNode.removeChild(button);
+        if (xhr.status != 200) {
+          console.log('Ошибка ' + xhr.status + ': ' + xhr.statusText);
+        } else {
+          try {
+            var products = JSON.parse(xhr.responseText);
+            showProducts(products);
+          } catch (e) {
+            console.log( "Некорректный ответ " + e.message );
+          }
+        }
+      }
+      button.innerHTML = 'Загружаю...';
+      button.disabled = true;
+    });
+
+    function showProducts(products) {
+      var list = document.getElementById('list');
+      for (var i = 0; i < products.length; i++) {
+        var li = list.appendChild(document.createElement('li'));
+        var a = li.appendChild(document.createElement('a'));
+        var obj = products[i];
+
+        if ( obj.url ) {
+          a.href = obj.url;
+        }
+        for (var prop in obj) {
+          if ( prop.indexOf("img_url") >= 0 ) {
+            var wrap = a.appendChild(document.createElement('div'));
+            wrap.classList.add("img-wrap");
+            var img = wrap.appendChild(document.createElement('img'));
+            img.src = obj[prop];
+            img.setAttribute("alt", obj.name);
+
+          } else if (prop == "name") {
+            var div = a.appendChild(document.createElement('div'));
+            div.classList.add("title");
+            div.innerHTML = obj[prop];
+          } else if ( prop == "descr" ) {
+            var p = a.appendChild(document.createElement('p'));
+            var descr = obj[prop].replace("\n\n", "<br/>" ).replace("\r\n\r\n", "<br/>" );
+            p.innerHTML = descr;
+          } else if ( prop == "quantity" ) {
+            var qty = a.appendChild(document.createElement('div'));
+            qty.classList.add("quantity");
+            qty.innerHTML = obj[prop];
+          } else if ( prop == "price" ) {
+            var price = a.appendChild(document.createElement('div'));
+            price.classList.add("price");
+            price.innerHTML = obj[prop] + "$";
+          } else if ( prop == "id" ) {
+            var id = a.appendChild(document.createElement('div'));
+            id.classList.add("hidden");
+            id.innerHTML = obj[prop];
+          } else if (prop != "url"  ) {
+            var div = a.appendChild(document.createElement('div'));
+            div.innerHTML = obj[prop];
+          }
+        }
+        var btn = li.appendChild(document.createElement('a'));
+        btn.classList.add("btn");
+        btn.href = "javascript:var prod" + obj.id + " = new Product({id:" + obj.id + ", name:'" + obj.name + "', price:" + obj.price + ", quantity:1});cart.addProductCart(prod" + obj.id + ");";
+        btn.innerHTML = "Add To Cart"
+      }
+    }
+
+
+    function Product(data) {
+      this.id = data.id;
+      this.name = data.name;
+      this.price = data.price;
+      // this.img_url = data.img_url;
+      this.quantity = data.quantity;
+      // this.descr = data.descr;
+      // this.url = data.url;
+
+      this.addQty = function (num) {
+        this.quantity = num;
+      }
+    };
+
+
+    var cart = {
+      products: {},
+      addProductCart: function (productObj) {
+        if ( !this.products[productObj] ) {
+          this.products[productObj.id] = productObj;
+          this.cartTotal();
+          console.log(productObj.name + " has been added to cart");
+        } else {
+          this.products[productObj.id].quantity += productObj.quantity;
+          this.cartTotal(productObj);
+          console.log(productObj.name + " has been added to cart");
+        }
+      },
+      removeProduct: function (productId) {
+        delete this.products[productId];
+        this.cartTotal();
+      },
+      emptyCart: function () {
+        this.products = {};
+        this.cartTotal();
+      },
+      decriseProduct: function (productId) {
+        this.products[productId].quantity -= 1;
+        this.cartTotal();
+      },
+      cartTotal: function () {
+        this.cartSum = 0;
+        this.cartQty = 0;
+        for( var prod in this.products) {
+          this.cartSum += this.products[prod].quantity * this.products[prod].price;
+          this.cartQty += 1;
+        }
+        console.log(this.cartSum);
+        console.log(this.cartQty);
+      }
+    };
+
+    // btn.addEventListener("click", function(){
+
+    // });
+  </script>
+</body>
+</html>

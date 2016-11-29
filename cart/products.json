@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "img_url": "img/doll.png",
+        "name": "Doll",
+        "quantity": 4,
+        "price": 10.25,
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium accusamus omnis voluptatum, excepturi distinctio ex voluptas, tempore pariatur molestiae est quas explicabo deleniti, fugit, unde quisquam non quaerat repellendus qui.",
+        "url": "prod1.html"
+    },
+    {
+        "id": 2,
+        "img_url": "img/dog.png",
+        "name": "Dog",
+        "quantity": 10,
+        "price": 5.75,
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium accusamus omnis voluptatum, excepturi distinctio ex voluptas, tempore pariatur molestiae est quas explicabo deleniti, fugit, unde quisquam non quaerat repellendus qui.",
+        "url": "prod2.html"
+    },
+    {
+        "id": 3,
+        "img_url": "img/cat.png",
+        "name": "Cat",
+        "quantity": 6,
+        "price": 24.00,
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium accusamus omnis voluptatum, excepturi distinctio ex voluptas, tempore pariatur molestiae est quas explicabo deleniti, fugit, unde quisquam non quaerat repellendus qui.",
+        "url": "prod3.html"
+    }
+]
