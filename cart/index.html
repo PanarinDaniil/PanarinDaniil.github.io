@@ -20,6 +20,7 @@
     #list li{
       display:block;
       padding:0;
+      text-align:center;
     }
     #list li + li{
       border-top:1px solid #eee;
@@ -38,6 +39,23 @@
     }
     #list a:hover{
       background: #eee;
+    }
+    #list .btn{
+      display:inline-block;
+      vertical-align:top;
+      margin:5px 0 15px;
+      max-width:200px;
+      padding:10px 20px;
+      background:#ece505;
+      -webkit-transition: all .2s ease-out;
+      -moz-transition: all .2s ease-out;
+      -ms-transition: all .2s ease-out;
+      -o-transition: all .2s ease-out;
+      transition: all .2s ease-out;
+    }
+    #list .btn:hover{
+      background:#1e2b1c;
+      color:#fff;
     }
     #list .img-wrap{
       position:relative;
@@ -169,7 +187,7 @@
       this.img_url = data.img_url | "";
       this.quantity = data.quantity;
       this.descr = data.descr | "";
-      this.url = data.url | "";
+      this.url = "prod" + data.id + ".html";
       this.addQty = function (num) {
         this.quantity = num;
       }
@@ -217,7 +235,6 @@
         var popTitle = divWrap.appendChild(document.createElement('div'));
         popTitle.classList.add("pop-title");
         popTitle.innerHTML = "<a href='" + productObj.url + "'>" + productObj.name + "</a> has been added to the cart.";
-        
         setTimeout( function () {
           body.removeChild(divWrap);
         }, 5000);
@@ -227,13 +244,17 @@
         var cartQuantity = document.getElementsByClassName('cart-qty')[0];
         if ( !this.cartSum ) {
           cartTotal.innerHTML = "0$";
+          cartTotal.setAttribute("title", "Total sum");
         } else {
           cartTotal.innerHTML = this.cartSum + "$";
+          cartTotal.setAttribute("title", "Total sum");
         }
         if ( !this.cartQty ) {
           cartQuantity.innerHTML = "0";
+          cartQuantity.setAttribute("title", "Quantity of products");
         } else {
           cartQuantity.innerHTML = this.cartQty;
+          cartQuantity.setAttribute("title", "Quantity of products");
         }
       }
     };
