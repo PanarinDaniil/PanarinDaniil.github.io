@@ -95,6 +95,22 @@
       background:#ece505;
       text-align:center;
     }
+    .pop-close{
+      position:absolute;
+      display:block;
+      top:5px;
+      right:5px;
+      text-transform:none;
+      color:#aaa;
+      -webkit-transition: all .2s ease-out;
+      -moz-transition: all .2s ease-out;
+      -ms-transition: all .2s ease-out;
+      -o-transition: all .2s ease-out;
+      transition: all .2s ease-out;
+    }
+    .pop-close:hover{
+      color:#000;
+    }
 
   </style>
 </head>
@@ -235,9 +251,27 @@
         var popTitle = divWrap.appendChild(document.createElement('div'));
         popTitle.classList.add("pop-title");
         popTitle.innerHTML = "<a href='" + productObj.url + "'>" + productObj.name + "</a> has been added to the cart.";
+        var popClose = divWrap.appendChild(document.createElement('a'));
+        popClose.href = "javascript:void(0);";
+        popClose.classList.add("pop-close");
+        popClose.innerHTML = "X";
+        var closeBtn = document.getElementsByClassName('pop-close')[0];
+
+        closeBtn.addEventListener("click", function(){
+          cart.close(divWrap);
+        });
+        
         setTimeout( function () {
-          body.removeChild(divWrap);
+          cart.close(divWrap);
         }, 5000);
+        
+      },
+      close: function (divWrap) {
+        var body = document.getElementsByTagName('body')[0];
+        var cartPop = document.getElementsByClassName('popup').length;
+        if ( cartPop > 0 ) {
+          body.removeChild(divWrap);
+        }
       },
       showCart: function () {
         var cartTotal = document.getElementsByClassName('cart-total')[0];
