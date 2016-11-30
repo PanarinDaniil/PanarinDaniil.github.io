@@ -10,6 +10,7 @@
       padding:0;
       background:#fff;
       font:400 16px/1.4 Arial, sans-serif;
+      position:relative;
     }
     #list{
       padding:0;
@@ -53,13 +54,39 @@
     #list p{
       margin:0;
     }
+    .popup{
+      display:block;
+      position:fixed;
+      top:20px;
+      left:50%;
+      margin-left:-120px;
+      width:200px;
+      padding:15px 20px;
+      background:#ccc;
+      text-align:left;
+    }
+    .cart{
+      position:absolute;
+      display:block;
+      top:0;
+      right:0;
+      min-width:50px;
+      height:;
+      padding:5px 10px;
+      z-index:2;
+      background:#ece505;
+      text-align:center;
+    }
 
   </style>
 </head>
 <body>
   <button id="button">Загрузить каталог товаров</button>
   <ul id="list"></ul>
-
+  <div class="cart">
+    <div class="cart-total">0$</div>
+    <div class="cart-qty">0</div>
+  </div>
   <script>
     var button = document.getElementById('button');
     button.addEventListener("click", function(){
@@ -139,16 +166,14 @@
       this.id = data.id;
       this.name = data.name;
       this.price = data.price;
-      // this.img_url = data.img_url;
+      this.img_url = data.img_url | "";
       this.quantity = data.quantity;
-      // this.descr = data.descr;
-      // this.url = data.url;
-
+      this.descr = data.descr | "";
+      this.url = data.url | "";
       this.addQty = function (num) {
         this.quantity = num;
       }
     };
-
 
     var cart = {
       products: {},
@@ -156,11 +181,11 @@
         if ( !(this.products[productObj.id]) ) {
           this.products[productObj.id] = productObj;
           this.cartTotal();
-          console.log(productObj.name + " has been added to cart");
+          this.popup(productObj);
         } else {
           this.products[productObj.id].quantity += productObj.quantity;
           this.cartTotal(productObj);
-          console.log(productObj.name + " has been added to cart");
+          this.popup(productObj);
         }
       },
       removeProduct: function (productId) {
@@ -182,14 +207,37 @@
           this.cartSum += this.products[prod].quantity * this.products[prod].price;
           this.cartQty += 1;
         }
-        console.log(this.cartSum + "$ - Total");
-        console.log(this.cartQty + "items in cart");
+        this.showCart();
+      },
+      popup: function (productObj) {
+        var body = document.getElementsByTagName('body')[0];
+        var divWrap = body.appendChild(document.createElement('div'));
+        this.showCart();
+        divWrap.classList.add("popup");
+        var popTitle = divWrap.appendChild(document.createElement('div'));
+        popTitle.classList.add("pop-title");
+        popTitle.innerHTML = "<a href='" + productObj.url + "'>" + productObj.name + "</a> has been added to the cart.";
+        
+        setTimeout( function () {
+          body.removeChild(divWrap);
+        }, 5000);
+      },
+      showCart: function () {
+        var cartTotal = document.getElementsByClassName('cart-total')[0];
+        var cartQuantity = document.getElementsByClassName('cart-qty')[0];
+        if ( !this.cartSum ) {
+          cartTotal.innerHTML = "0$";
+        } else {
+          cartTotal.innerHTML = this.cartSum + "$";
+        }
+        if ( !this.cartQty ) {
+          cartQuantity.innerHTML = "0";
+        } else {
+          cartQuantity.innerHTML = this.cartQty;
+        }
       }
     };
-
-    // btn.addEventListener("click", function(){
-
-    // });
+    cart.showCart();
   </script>
 </body>
 </html>
