@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/styles.css" />
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/panarinSlider.js"></script>
 
 </head>
 <body>
@@ -24,99 +26,8 @@
 		</ul>
 	</div>
 	<script type="text/javascript">
-		var panarinSlider = {
-			slider: document.getElementById("slider"),
-			currentPosition: 1,
-			fWidth: function () {
-				return this.slider.getElementsByClassName("slider-list");
-			},
-			slide: function () {
-				return this.slider.getElementsByTagName("li");
-			},
-			num: function () {
-				return this.slide().length;
-			},
-			init_plugin: function () {
-				var w = this.getSliderWidth();
-				this.setWidth(w);
-				this.show(this.currentPosition);
-				if ( !document.getElementsByClassName("arrows-slider").length ) {
-					this.addBtn(slider);
-				}
-			},
-			init: function () {
-				this.init_plugin();
-				var pSlider = this;
-				window.onresize = function(event) {
-				    pSlider.init_plugin();
-				};
-			},
-			getSliderWidth: function () {
-				return Math.max(
-					this.slider.offsetWidth, 
-					this.slider.clientWidth
-				);
-			},
-			setWidth: function (w) {
-				var fullWidth = this.num() * w;
-				this.fWidth()[0].style.width = fullWidth + "px";
-				for (var i = 0; i < this.num(); i++) {
-					this.slide()[i].style.width = w + "px";
-				}
-			},
-			show: function (number) {
-				var w = this.getSliderWidth();
-				this.setWidth(w);
-				if ( number <= this.num() && number > 0 ) {
-					var position = w * (number - 1);
-					this.fWidth()[0].style.marginLeft = -position + "px";
-				}
-			},
-			addBtn: function (slider) {
-				var arrowsSlider = this.slider.appendChild(document.createElement('div'));
-				arrowsSlider.classList.add("arrows-slider");
-	            var prev = arrowsSlider.appendChild(document.createElement('a')),
-					next = arrowsSlider.appendChild(document.createElement('a'));
-	            prev.classList.add("arrow-slider");
-	            next.classList.add("arrow-slider");
-	            prev.classList.add("prev");
-	            next.classList.add("next");
-	            prev.href = next.href = "javascript:void(0);";
-	            var pSlider = this;
-	            this.checkArrowsStyle(prev, next);
-	            prev.addEventListener("click", function(){
-	            	if ( pSlider.currentPosition > 1 && pSlider.currentPosition <= pSlider.num() ) {
-	            		pSlider.currentPosition -= 1;
-		            	pSlider.checkArrowsStyle(prev, next);
-	            		pSlider.show(pSlider.currentPosition);
-	            	}
-	            });
-	            next.addEventListener("click", function(){
-	            	if ( pSlider.currentPosition >= 1 && pSlider.currentPosition < pSlider.num() ) {
-	            		pSlider.currentPosition += 1;
-		            	pSlider.checkArrowsStyle(prev, next);
-	            		pSlider.show(pSlider.currentPosition);
-	            	}
-	            });
-			},
-			checkArrowsStyle: function (prev, next) {
-				if ( this.currentPosition > 1 && this.currentPosition <= this.num() ) {
-	            	prev.classList.remove("dis");
-	            } else {
-	            	prev.classList.add("dis");
-	            }
-	            if ( this.currentPosition >= 1 && this.currentPosition < this.num() ) {
-	            	next.classList.remove("dis");
-	            } else {
-	            	next.classList.add("dis");
-	            }
-			},
 
-		};
-
-		document.addEventListener("DOMContentLoaded", function(event) { 
-			panarinSlider.init();
-		});
+		$('#slider').panarinSlider();
 	</script>
 </body>
 </html>
