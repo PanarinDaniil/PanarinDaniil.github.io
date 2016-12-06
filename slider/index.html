@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/styles.css" />
+
+</head>
+<body>
+	<div class="slider" id="slider">
+		<ul class="slider-list">
+			<li>
+				<img src="images/1.jpg" alt=""  />
+			</li>
+			<li>
+				<img src="images/2.jpg" alt="">
+			</li>
+			<li>
+				<img src="images/3.jpg" alt="" />
+			</li>
+			<li>
+				<img src="images/4.jpg" alt="">
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		var slider = document.getElementById("slider");
+		var currentPosition = 1;
+		var fWidth = slider.getElementsByClassName("slider-list");
+		var slide = slider.getElementsByTagName("li");
+		var num = slide.length;
+
+
+		function init () {
+			var w = getSliderWidth();
+			setWidth(w);
+			show(currentPosition);
+			if ( !document.getElementsByClassName("arrows-slider").length ) {
+				addBtn(slider);
+			}
+		}
+		function getSliderWidth () {
+			return Math.max(
+				slider.offsetWidth, 
+				slider.clientWidth
+			);
+		}
+		function setWidth (w) {
+			var fullWidth = num * w;
+			fWidth[0].style.width = fullWidth + "px";
+			for (var i = 0; i < num; i++) {
+				slide[i].style.width = w + "px";
+			}
+		}
+		function show(number) {
+			var w = getSliderWidth();
+			setWidth(w);
+			if ( number <= num && number > 0 ) {
+				var position = w * (number - 1);
+				fWidth[0].style.marginLeft = -position + "px";
+			} 
+		}
+		function addBtn(slider){
+			var arrowsSlider = slider.appendChild(document.createElement('div'));
+			arrowsSlider.classList.add("arrows-slider");
+            var prev = arrowsSlider.appendChild(document.createElement('a')),
+				next = arrowsSlider.appendChild(document.createElement('a'));
+            prev.classList.add("arrow-slider");
+            next.classList.add("arrow-slider");
+            prev.classList.add("prev");
+            next.classList.add("next");
+            prev.href = next.href = "javascript:void(0);";
+            checkArrowsStyle(prev, next);
+            prev.addEventListener("click", function(){
+            	if ( currentPosition > 1 && currentPosition <= num ) {
+            		currentPosition -= 1;
+	            	checkArrowsStyle(prev, next);
+            		show(currentPosition);
+            	}
+            });
+            next.addEventListener("click", function(){
+            	if ( currentPosition >= 1 && currentPosition < num ) {
+            		currentPosition += 1;
+	            	checkArrowsStyle(prev, next);
+            		show(currentPosition);
+            	}
+            });
+		}
+		function checkArrowsStyle (prev, next) {
+			if ( currentPosition > 1 && currentPosition <= num ) {
+            	prev.classList.remove("dis");
+            } else {
+            	prev.classList.add("dis");
+            }
+            if ( currentPosition >= 1 && currentPosition < num ) {
+            	next.classList.remove("dis");
+            } else {
+            	next.classList.add("dis");
+            }
+		}
+ 		window.onresize = function(event) {
+		    init();
+		};
+
+		// INITIALISATION
+		document.addEventListener("DOMContentLoaded", function(event) { 
+			init();
+		});
+	</script>
+</body>
+</html>
