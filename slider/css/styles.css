@@ -80,3 +80,35 @@ a{
 .arrow-slider.dis:hover{
 	opacity:0.3;
 }
+.dots{
+	position:absolute;
+	display:block;
+	bottom:5px;
+	margin:0;
+	padding:0;
+	left:0;
+	right:0;
+	text-align:center;
+	cursor:default;
+}
+.dots li{
+	display:inline-block;
+	vertical-align:top;
+	width:20px;
+	height:20px;
+	margin:0 5px;
+}
+.dots a{
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+	margin:0;
+	display:block;
+	background:#fff;
+	border:1px solid #000;
+	width:18px;
+	height:18px;
+}
+.dots a.active{
+	background:#21ff47;
+}
