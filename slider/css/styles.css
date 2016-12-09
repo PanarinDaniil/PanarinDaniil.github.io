@@ -31,15 +31,6 @@ a{
 	max-width:100%;
 	display:block;
 }
-.arrows-slider{
-	position:absolute;
-	display:block;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	z-index:0;
-}
 .arrow-slider{
 	position:absolute;
 	display:block;
@@ -55,6 +46,7 @@ a{
 	-webkit-border-radius:50%;
 	-moz-border-radius:50%;
 	border-radius:50%;
+	z-index:2;
 }
 .arrow-slider:after{
 	position:absolute;

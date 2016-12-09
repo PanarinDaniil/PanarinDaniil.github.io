@@ -58,16 +58,13 @@
 				}
 			};
 			addBtn() {
-				var arrowsSlider = this.slider.appendChild(document.createElement('div'));
-				arrowsSlider.classList.add("arrows-slider");
-	            var prev = arrowsSlider.appendChild(document.createElement('a')),
-					next = arrowsSlider.appendChild(document.createElement('a'));
-	            prev.classList.add("arrow-slider");
+	   			var prev = this.slider.appendChild(document.createElement('a')),
+	   				next = this.slider.appendChild(document.createElement('a'));
+	   			prev.classList.add("arrow-slider");
 	            next.classList.add("arrow-slider");
 	            prev.classList.add("prev");
 	            next.classList.add("next");
 	            prev.href = next.href = "javascript:void(0);";
-
 	            var pSlider = this;
 	            this.checkArrowsStyle();
 	            prev.addEventListener("click", function(){
