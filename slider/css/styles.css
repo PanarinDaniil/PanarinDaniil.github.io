@@ -1,13 +1,16 @@
 body{
 	margin:0;
 	padding:0;
-	/*width:600px;*/
 }
 a{
--moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+.center{
+	max-width:500px;
+	margin:0 auto;
 }
 .slider{
 	overflow:hidden;
