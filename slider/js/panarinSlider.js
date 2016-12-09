@@ -44,10 +44,31 @@
 			show(number) {
 				var w = this.getSliderWidth();
 				this.setWidth(w);
-				if ( number <= this.num() && number > 0 ) {
-					var position = w * (number - 1);
-					this.fWidth()[0].style.marginLeft = -position + "px";
+				if (this.fWidth()[0].style.marginLeft === "") {
+					this.fWidth()[0].style.marginLeft = 0 + "px";
 				}
+				this.start = parseFloat(this.fWidth()[0].style.marginLeft);
+				console.log(this.start);
+				if ( number <= this.num() && number > 0 ) {
+					this.position = w * (number - 1);
+					console.log(-this.position);
+					// this.fWidth()[0].style.marginLeft = -position + "px";
+					var pSlider = this;
+					this.animate(pSlider.fWidth()[0], "marginLeft", this.start, -this.position, 1000);
+				}
+			};
+			animate(object, property, start_value, end_value, time) {
+				var frame_rate = 0.06;
+				var frame = 0;
+				var delta = (end_value - start_value) / time / frame_rate;
+				var handle = setInterval(function() {
+					frame++;
+					var value = start_value + delta * frame;
+					object.style[property] = value + "px";
+					if (value == end_value) {
+					  clearInterval(handle);
+					}
+				}, 1 / frame_rate);
 			};
 			addDots() {
 				var dots = this.slider.appendChild(document.createElement('ul'));
@@ -63,24 +84,23 @@
 					var pSlider = this;
 					(function (obj, a, number) {
 						a.addEventListener("click", function(){
-			            	pSlider.setSlideDot(pSlider, number);
-			            	pSlider.checkArrowsStyle();
-			            });
+							pSlider.setSlideDot(pSlider, number);
+							pSlider.checkArrowsStyle();
+						});
 					})(pSlider, a, i);
 				}
 			};
 			setSlideDot(obj, pos) {
 				var curPosition = this.currentPosition;
 				var newPosition = pos;
-				console.log(pos);
 				if (newPosition > (obj.num())) {
-        			newPosition = obj.num();
-        		} else if (newPosition < 1) {
-        			newPosition = 1;
-        		}
-        		this.currentPosition = newPosition;
-            	obj.checkDotsStyle();
-        		obj.show(newPosition);
+					newPosition = obj.num();
+				} else if (newPosition < 1) {
+					newPosition = 1;
+				}
+				this.currentPosition = newPosition;
+				obj.checkDotsStyle();
+				obj.show(newPosition);
 			};
 			checkDotsStyle() {
 				var dots = this.slider.getElementsByClassName("dots")[0];
@@ -88,7 +108,6 @@
 				var curPosition = this.currentPosition;
 				for ( var i = 0; i < li.length; i++) {
 					var a = li[i].getElementsByTagName("a")[0];
-					console.log(a);
 					if (curPosition == (i+1)) {
 						a.classList.add("active");
 					} else {
@@ -97,36 +116,36 @@
 				}
 			};
 			addBtn() {
-	   			var prev = this.slider.appendChild(document.createElement('a')),
-	   				next = this.slider.appendChild(document.createElement('a'));
-	   			prev.classList.add("arrow-slider");
-	            next.classList.add("arrow-slider");
-	            prev.classList.add("prev");
-	            next.classList.add("next");
-	            prev.href = next.href = "javascript:void(0);";
-	            var pSlider = this;
-	            this.checkArrowsStyle();
-	            prev.addEventListener("click", function(){
-	            	pSlider.setSlide(pSlider, -1);
-	            });
-	            next.addEventListener("click", function(){
-	            	pSlider.setSlide(pSlider, +1);
-	            });
+				var prev = this.slider.appendChild(document.createElement('a')),
+					next = this.slider.appendChild(document.createElement('a'));
+				prev.classList.add("arrow-slider");
+				next.classList.add("arrow-slider");
+				prev.classList.add("prev");
+				next.classList.add("next");
+				prev.href = next.href = "javascript:void(0);";
+				var pSlider = this;
+				this.checkArrowsStyle();
+				prev.addEventListener("click", function(){
+					pSlider.setSlide(pSlider, -1);
+				});
+				next.addEventListener("click", function(){
+					pSlider.setSlide(pSlider, +1);
+				});
 			};
 			setSlide(obj, pos) {
 				var curPosition = this.currentPosition;
-            	if ( curPosition >= 1 && curPosition <= obj.num() ) {
-            		var newPosition = curPosition + pos;
-            		if (newPosition > (obj.num())) {
-            			newPosition = obj.num();
-            		} else if (newPosition < 1) {
-            			newPosition = 1;
-            		}
-            		this.currentPosition = newPosition;
-	            	obj.checkArrowsStyle();
-            		obj.show(newPosition);
-            		obj.checkDotsStyle();
-            	}
+				if ( curPosition >= 1 && curPosition <= obj.num() ) {
+					var newPosition = curPosition + pos;
+					if (newPosition > (obj.num())) {
+						newPosition = obj.num();
+					} else if (newPosition < 1) {
+						newPosition = 1;
+					}
+					this.currentPosition = newPosition;
+					obj.checkArrowsStyle();
+					obj.show(newPosition);
+					obj.checkDotsStyle();
+				}
 			};
 			checkArrowsStyle() {
 				var prev = this.slider.getElementsByClassName("prev")[0];
@@ -143,9 +162,9 @@
 				}
 			}
 		};
+
 		var obj = this;
 		var slider = [];
-
 		$(window).on('load resize', function(){
 			for (var i=0; i< obj.length;i++) {
 				if ( typeof slider[i] == "undefined" ) {
