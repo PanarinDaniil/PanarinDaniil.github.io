@@ -4,19 +4,34 @@
 		class PSlider {
 			constructor (obj) {
 				this.slider = obj;
+				// this.afterLoad = false;
 				this.initPlugin();
+				// if (typeof obj.afterLoad != "underfined" ) {
+				// 	this.afterLoad = obj.afterLoad;
+				// }
+
 			};
+
 			initPlugin() {
+				document.getElementsByTagName("body")[0].style.overflow = "hidden";
 				if (typeof this.currentPosition == "undefined") {
 					this.currentPosition = 1;
 				}
-				var fullW = this.getSliderWidth();
-				this.setWidth(fullW);
-				this.show(this.currentPosition);
 				if ( !this.slider.getElementsByClassName("arrows-slider").length ) {
 					this.addBtn();
 					this.addDots();
 				}
+				var fullW = this.getSliderWidth();
+				this.setWidth(fullW);
+				this.show(this.currentPosition);
+				// this.slider.classList.add("show");
+				document.getElementsByTagName("body")[0].style.overflow = "visible";
+				// if ( this.afterLoad != false ) {
+				// 	this.afterLoad(this);
+				// }
+			};
+			afterLoad(obj) {
+
 			};
 			fWidth() {
 				return this.slider.getElementsByClassName("slider-list");
@@ -44,17 +59,17 @@
 			show(number) {
 				var w = this.getSliderWidth();
 				this.setWidth(w);
-				if (this.fWidth()[0].style.marginLeft === "") {
-					this.fWidth()[0].style.marginLeft = 0 + "px";
+				if (this.fWidth()[0].style.left === "") {
+					this.fWidth()[0].style.left = 0 + "px";
 				}
-				this.start = parseFloat(this.fWidth()[0].style.marginLeft);
-				console.log(this.start);
+				this.start = Math.abs(parseFloat(this.fWidth()[0].style.left));
+
 				if ( number <= this.num() && number > 0 ) {
 					this.position = w * (number - 1);
-					console.log(-this.position);
-					// this.fWidth()[0].style.marginLeft = -position + "px";
 					var pSlider = this;
-					this.animate(pSlider.fWidth()[0], "marginLeft", this.start, -this.position, 1000);
+					(function (pSlider) {
+						pSlider.animate(pSlider.fWidth()[0], "left", pSlider.start, pSlider.position, 1000);
+					})(pSlider);
 				}
 			};
 			animate(object, property, start_value, end_value, time) {
@@ -64,9 +79,16 @@
 				var handle = setInterval(function() {
 					frame++;
 					var value = start_value + delta * frame;
-					object.style[property] = value + "px";
-					if (value == end_value) {
-					  clearInterval(handle);
+					object.style[property] = -value + "px";
+					if (start_value > end_value){
+						if (value <= end_value) {
+							clearInterval(handle);
+						}
+					}
+					if (start_value <= end_value){
+						if (value >= end_value) {
+							clearInterval(handle);
+						}
 					}
 				}, 1 / frame_rate);
 			};
@@ -166,9 +188,12 @@
 		var obj = this;
 		var slider = [];
 		$(window).on('load resize', function(){
-			for (var i=0; i< obj.length;i++) {
+			for ( var i = 0; i < obj.length; i++ ) {
 				if ( typeof slider[i] == "undefined" ) {
 					slider[i] = new PSlider(obj[i]);
+					// var fullW = slider[i].getSliderWidth();
+					// slider[i].setWidth(fullW);
+					// slider[i].show(slider[i].currentPosition);
 				} else {
 					slider[i].initPlugin();
 				}

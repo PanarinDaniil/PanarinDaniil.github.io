@@ -23,23 +23,6 @@
 				<img src="images/4.jpg" alt="" />
 			</li>
 		</ul>
-		<!-- <ul class="dots">
-			<li>
-				<a href="#"></a>
-			</li>
-			<li>
-				<a href="#"></a>
-			</li>
-			<li>
-				<a href="#"></a>
-			</li>
-			<li>
-				<a href="#"></a>
-			</li>
-			<li>
-				<a href="#"></a>
-			</li>
-		</ul> -->
 	</div>
 	<div class="center">
 		<div class="slider" id="slider2">
@@ -60,7 +43,13 @@
 		</div>
 	</div>
 	<script type="text/javascript">
-		$('.slider').panarinSlider();
+		$('.slider').panarinSlider({
+			// afterLoad: function (sliderObj) {
+			// 	sliderObj.
+			// }
+		});
+
+		
 		// $('#slider').panarinSlider();
 		// $('#slider2').panarinSlider();
 	</script>

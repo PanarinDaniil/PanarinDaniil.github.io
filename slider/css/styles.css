@@ -16,12 +16,18 @@ a{
 	overflow:hidden;
 	width:100%;
 	position:relative;
+	/*height:0;*/
+}
+.slider.show{
+	height:auto;
 }
 .slider-list{
 	list-style:none;
 	margin:0;
 	padding:0;
 	letter-spacing:-4px;
+	left:0;
+	position:relative;
 }
 .slider li{
 	display:inline-block;
