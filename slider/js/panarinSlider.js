@@ -4,6 +4,7 @@
 		class PSlider {
 			constructor (obj) {
 				this.slider = obj;
+				this.res = false;
 				// this.afterLoad = false;
 				this.initPlugin();
 				// if (typeof obj.afterLoad != "underfined" ) {
@@ -24,7 +25,6 @@
 				var fullW = this.getSliderWidth();
 				this.setWidth(fullW);
 				this.show(this.currentPosition);
-				// this.slider.classList.add("show");
 				document.getElementsByTagName("body")[0].style.overflow = "visible";
 				// if ( this.afterLoad != false ) {
 				// 	this.afterLoad(this);
@@ -66,10 +66,18 @@
 
 				if ( number <= this.num() && number > 0 ) {
 					this.position = w * (number - 1);
-					var pSlider = this;
-					(function (pSlider) {
-						pSlider.animate(pSlider.fWidth()[0], "left", pSlider.start, pSlider.position, 1000);
-					})(pSlider);
+					if (this.res == true ) {
+						this.fWidth()[0].style.left = -this.position + "px";
+						this.res = false;
+					} else {
+						this.animate(this.fWidth()[0], "left", this.start, this.position, 1000);
+					}
+					// this.fWidth()[0].style.left = -this.position + "px";
+
+					// var pSlider = this;
+					// (function (pSlider) {
+					// 	pSlider.animate(pSlider.fWidth()[0], "left", pSlider.start, pSlider.position, 1000);
+					// })(pSlider);
 				}
 			};
 			animate(object, property, start_value, end_value, time) {
@@ -195,7 +203,9 @@
 					// slider[i].setWidth(fullW);
 					// slider[i].show(slider[i].currentPosition);
 				} else {
+					slider[i].res = true;
 					slider[i].initPlugin();
+					slider[i].res = false;
 				}
 			}
 		});
