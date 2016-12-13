@@ -9,8 +9,8 @@
 	<script type="text/javascript" src="js/panarinSlider.js"></script>
 </head>
 <body>
-	<div class="slider" id="slider">
-		<ul class="slider-list">
+	<div class="pSlider" id="slider">
+		<ul class="pSlider-list">
 			<li>
 				<img src="images/1.jpg" alt=""  />
 			</li>
@@ -26,8 +26,8 @@
 		</ul>
 	</div>
 	<div class="center">
-		<div class="slider" id="slider2">
-			<ul class="slider-list">
+		<div class="pSlider slider-full" id="slider2">
+			<ul class="pSlider-list">
 				<li>
 					<img src="images/1.jpg" alt=""  />
 				</li>
@@ -44,15 +44,19 @@
 		</div>
 	</div>
 	<script type="text/javascript">
-		$('.slider').panarinSlider({
-			// afterLoad: function (sliderObj) {
-			// 	sliderObj.
-			// }
+		$('#slider').panarinSlider({
+			dots: true,
+			arrows: false,
+			afterLoad: function (sliderObj) {
+				console.log("after load");
+			},
+			preLoad: function (sliderObj) {
+				console.log("before load");
+			}
 		});
-
-		
-		// $('#slider').panarinSlider();
-		// $('#slider2').panarinSlider();
+		$('.slider-full').panarinSlider({
+			dots: true
+		});
 	</script>
 </body>
 </html>
