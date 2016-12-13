@@ -59,11 +59,11 @@
 			show(number) {
 				var w = this.getSliderWidth();
 				this.setWidth(w);
+
 				if (this.fWidth()[0].style.left === "") {
 					this.fWidth()[0].style.left = 0 + "px";
 				}
 				this.start = Math.abs(parseFloat(this.fWidth()[0].style.left));
-
 				if ( number <= this.num() && number > 0 ) {
 					this.position = w * (number - 1);
 					if (this.res == true ) {
@@ -72,12 +72,6 @@
 					} else {
 						this.animate(this.fWidth()[0], "left", this.start, this.position, 1000);
 					}
-					// this.fWidth()[0].style.left = -this.position + "px";
-
-					// var pSlider = this;
-					// (function (pSlider) {
-					// 	pSlider.animate(pSlider.fWidth()[0], "left", pSlider.start, pSlider.position, 1000);
-					// })(pSlider);
 				}
 			};
 			animate(object, property, start_value, end_value, time) {
@@ -100,7 +94,16 @@
 					}
 				}, 1 / frame_rate);
 			};
+			containsTagByClass (tag) {
+				return this.slider.getElementsByClassName(tag).length > 0;
+			};
+			hasDots () {
+				return this.containsTagByClass("dots");
+			};
 			addDots() {
+				if ( this.hasDots() ) {
+					return;
+				}
 				var dots = this.slider.appendChild(document.createElement('ul'));
 				dots.classList.add("dots");
 				for (var i = 1; i <= this.num(); i++) {
@@ -118,7 +121,7 @@
 							pSlider.checkArrowsStyle();
 						});
 					})(pSlider, a, i);
-				}
+				}			
 			};
 			setSlideDot(obj, pos) {
 				var curPosition = this.currentPosition;
@@ -138,14 +141,23 @@
 				var curPosition = this.currentPosition;
 				for ( var i = 0; i < li.length; i++) {
 					var a = li[i].getElementsByTagName("a")[0];
-					if (curPosition == (i+1)) {
+					a.removeAttribute('class');
+					if (curPosition === i+1) {
 						a.classList.add("active");
 					} else {
-						a.classList.remove("active");
-					}
+						a.className = "";
+					}					
 				}
 			};
+			hasArrows () {
+				var hasPrev = this.containsTagByClass("prev"),
+					hasNext = this.containsTagByClass("next");
+				return hasPrev && hasNext;
+			};
 			addBtn() {
+				if ( this.hasArrows() ) {
+					return;
+				}
 				var prev = this.slider.appendChild(document.createElement('a')),
 					next = this.slider.appendChild(document.createElement('a'));
 				prev.classList.add("arrow-slider");
