@@ -44,7 +44,7 @@
 		</div>
 	</div>
 	<script type="text/javascript">
-		$('#slider').panarinSlider({
+		var firstSlider = $('#slider').panarinSlider({
 			dots: true,
 			arrows: false,
 			afterLoad: function (sliderObj) {
@@ -57,6 +57,12 @@
 		$('.slider-full').panarinSlider({
 			dots: true
 		});
+
+		// firstSlider[0].__proto__.nextSlide(firstSlider[0]);
+		// firstSlider[0].__proto__.prevSlide(firstSlider[0]);
+		// firstSlider[0].__proto__.setSlideDot(firstSlider[0], 3);
+		
+
 	</script>
 </body>
 </html>
