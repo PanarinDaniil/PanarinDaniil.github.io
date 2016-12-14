@@ -26,7 +26,7 @@
 
 				// Events
 				if ( options == "next" ){
-					this.setSlide(this, +1);
+					this.setSlideArrows(this, +1);
 				}
 
 								 
@@ -153,7 +153,7 @@
 						var pSlider = this;
 						(function (obj, a, number) {
 							a.addEventListener("click", function(){
-								obj.setSlideDot(obj, number);
+								obj.setSlide(obj, number);
 								if ( obj.arrows ) {
 									obj.checkArrowsStyle();
 								}
@@ -162,7 +162,7 @@
 					}			
 				}
 			};
-			setSlideDot(obj, pos) {
+			setSlide(obj, pos) {
 				var curPosition = obj.currentPosition;
 				var newPosition = pos;
 				if (newPosition > (obj.num())) {
@@ -215,14 +215,14 @@
 					}
 					var pSlider = this;
 					prev.addEventListener("click", function(){
-						pSlider.setSlide(pSlider, -1);
+						pSlider.setSlideArrows(pSlider, -1);
 					});
 					next.addEventListener("click", function(){
-						pSlider.setSlide(pSlider, +1);
+						pSlider.setSlideArrows(pSlider, +1);
 					});
 				}
 			};
-			setSlide(obj, pos) {
+			setSlideArrows(obj, pos) {
 				var curPosition = obj.currentPosition;
 				if ( curPosition >= 1 && curPosition <= obj.num() ) {
 					var newPosition = curPosition + pos;
