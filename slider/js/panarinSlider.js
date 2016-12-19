@@ -19,7 +19,7 @@
 				}
 
 				this.initPlugin();
-
+				// this.showCurrent();
 				if ( this.afterInit != false ) {
 					this.afterInit(this);
 				}
@@ -29,7 +29,6 @@
 					this.setSlideArrows(this, +1);
 				}
 
-								 
 				return this;
 			};
 
@@ -48,6 +47,7 @@
 				var fullW = this.getSliderWidth();
 				this.setWidth(fullW);
 				this.show(this.currentPosition);
+				this.showCurrent();
 				document.getElementsByTagName("body")[0].style.overflow = "visible";
 				// this.style.height = "auto";
 			};
@@ -91,10 +91,18 @@
 					this.slide()[i].style.width = w + "px";
 				}
 			};
+			showCurrent() {
+				for (var i = 0; i < this.num(); i++) {
+					this.slide()[i].classList.remove("pan-slide-current");
+					if ( this.currentPosition === i+1) {
+						this.slide()[i].classList.add("pan-slide-current");
+					}
+				}
+			};
 			show(number) {
 				var w = this.getSliderWidth();
 				this.setWidth(w);
-
+				
 				if (this.fWidth()[0].style.left === "") {
 					this.fWidth()[0].style.left = 0 + "px";
 				}
@@ -104,8 +112,10 @@
 					if (this.res == true ) {
 						this.fWidth()[0].style.left = -this.position + "px";
 						this.res = false;
+						this.showCurrent();
 					} else {
 						this.animate(this.fWidth()[0], "left", this.start, this.position, 1000);
+						this.showCurrent();
 					}
 				}
 			};
@@ -292,24 +302,6 @@
 					obj.show(newPosition);
 				}
 			};
-			// toSlide(obj, number) {
-			// 	var curPosition = obj.currentPosition;
-			// 	if ( curPosition >= 1 && curPosition <= obj.num() ) {
-				
-			// 		var newPosition = curPosition - 1;
-			// 		if ( newPosition <= 1 ) {
-			// 			newPosition = 1;
-			// 		}
-			// 		obj.currentPosition = newPosition;
-			// 		if ( obj.arrows ) {
-			// 			obj.checkArrowsStyle();
-			// 		}
-			// 		if ( obj.dots ) {
-			// 			obj.checkDotsStyle();
-			// 		}
-			// 		obj.show(newPosition);
-			// 	}
-			// };
 		};
 
 		var obj = this;
