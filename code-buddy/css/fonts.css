@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'code-buddy';
+  src: url("../fonts/code-buddy.eot?la2cw6");
+  src: url("../fonts/code-buddy.eot?la2cw6#iefix") format("embedded-opentype"), url("../fonts/code-buddy.ttf?la2cw6") format("truetype"), url("../fonts/code-buddy.woff?la2cw6") format("woff"), url("../fonts/code-buddy.svg?la2cw6#code-buddy") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

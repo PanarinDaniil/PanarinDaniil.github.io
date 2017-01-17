@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'Mer-BI';
+	src: url('#{$fontPath}/Mer-BI.eot');
+	src: local('☺'), url('#{$fontPath}/Mer-BI.woff') format('woff'), url('#{$fontPath}/Mer-BI.ttf') format('truetype'), url('#{$fontPath}/Mer-BI.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Mer-R';
+	src: url('#{$fontPath}/Mer-R.eot');
+	src: local('☺'), url('#{$fontPath}/Mer-R.woff') format('woff'), url('#{$fontPath}/Mer-R.ttf') format('truetype'), url('#{$fontPath}/Mer-R.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
