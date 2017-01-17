@@ -288,23 +288,27 @@ h3, .h3 {
 .placeholder::-webkit-input-placeholder {
   color: #9b9b9b;
   font: 400 14px/1 "Open Sans", Arial, sans-serif;
+  min-height: 43px;
 }
 
 .placeholder:-moz-placeholder {
   color: #9b9b9b;
   font: 400 14px/1 "Open Sans", Arial, sans-serif;
   opacity: 1;
+  min-height: 43px;
 }
 
 .placeholder::-moz-placeholder {
   color: #9b9b9b;
   font: 400 14px/1 "Open Sans", Arial, sans-serif;
   opacity: 1;
+  min-height: 43px;
 }
 
 .placeholder:-ms-input-placeholder {
   color: #9b9b9b;
   font: 400 14px/1 "Open Sans", Arial, sans-serif;
+  min-height: 43px;
   opacity: 1;
 }
 
@@ -729,7 +733,8 @@ h3, .h3 {
   -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
   border: 1px solid #9b9b9b;
-  padding: 14px 15px;
+  padding: 13px 15px;
+  min-height: 43px;
   color: #545462;
 }
 .contact-form .submit-wrap .form-btn {
@@ -793,7 +798,8 @@ h3, .h3 {
   width: 100%;
 }
 .thanks-banner .content {
-  min-height: 72vh;
+  height: 72vh;
+  min-height: 300px;
   position: relative;
 }
 .thanks-banner .center {
@@ -903,6 +909,7 @@ h3, .h3 {
 .top-banner .form input, .top-banner .form textarea {
   display: block;
   width: 100%;
+  min-height: 43px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
@@ -911,7 +918,7 @@ h3, .h3 {
   -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
   border: 1px solid #9b9b9b;
-  padding: 14px 15px;
+  padding: 13px 15px;
 }
 .top-banner img {
   display: block;
