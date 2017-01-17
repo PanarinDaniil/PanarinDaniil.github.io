@@ -428,6 +428,19 @@ h3, .h3{
 			@include bp( m ){
 				width:49%;
 			}
+			&:after{
+				position:absolute;
+				display:block;
+				content:"";
+				top:0;
+				bottom:0;
+				left:0;
+				right:0;
+				z-index:1;
+				background:rgba(0,0,0,0);
+				@include border-radius(50%);
+				@include transition($transition);
+			}
 			*{
 				letter-spacing:0;
 			}
@@ -454,10 +467,11 @@ h3, .h3{
 				left:0;
 				right:0;
 				text-align:center;
+				z-index:2;
 				@include transform(translate(0,-50%));
 				div{
 					font:600 18px/1 "Open Sans";
-					color:$text-hard-grey;
+					color:#fff;
 					margin-bottom:5px;
 					& + div{
 						margin-bottom:0;
@@ -465,6 +479,9 @@ h3, .h3{
 				}
 			}
 			&:hover{
+				&:after{
+					background:rgba(0,0,0,.6);
+				}
 				.hover{
 					display:block;
 				}
@@ -488,6 +505,12 @@ h3, .h3{
 	float:left;
 	width:55%;
 	margin:0 5% 20px 0;
+	@include bp( l ){
+		float:none;
+		width:100%;
+		max-width:450px;
+	    margin:0 auto 40px;
+	}
 	.input-wrap{
 		margin-bottom:26px;
 		input, textarea{
@@ -522,6 +545,12 @@ h3, .h3{
 	width:40%;
 	border:1px dashed #9b9b9b;
 	padding:31px 40px 44px;
+	@include bp( l ){
+		float:none;
+		width:100%;
+		max-width:450px;
+	    margin:0 auto;
+	}
 	.title{
 		font:600 22px/1 "Open Sans";
 		color:#545462;

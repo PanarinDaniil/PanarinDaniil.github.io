@@ -653,6 +653,24 @@ h3, .h3 {
     width: 49%;
   }
 }
+.about .about-list li:after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: transparent;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
 .about .about-list li * {
   letter-spacing: 0;
 }
@@ -683,6 +701,7 @@ h3, .h3 {
   left: 0;
   right: 0;
   text-align: center;
+  z-index: 2;
   -moz-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   -webkit-transform: translate(0, -50%);
@@ -690,11 +709,14 @@ h3, .h3 {
 }
 .about .about-list li .hover div {
   font: 600 18px/1 "Open Sans";
-  color: #545462;
+  color: #fff;
   margin-bottom: 5px;
 }
 .about .about-list li .hover div + div {
   margin-bottom: 0;
+}
+.about .about-list li:hover:after {
+  background: rgba(0, 0, 0, 0.6);
 }
 .about .about-list li:hover .hover {
   display: block;
@@ -714,6 +736,14 @@ h3, .h3 {
   float: left;
   width: 55%;
   margin: 0 5% 20px 0;
+}
+@media screen and (max-width: 800px) {
+  .contact-form {
+    float: none;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto 40px;
+  }
 }
 .contact-form .input-wrap {
   margin-bottom: 26px;
@@ -753,6 +783,14 @@ h3, .h3 {
   width: 40%;
   border: 1px dashed #9b9b9b;
   padding: 31px 40px 44px;
+}
+@media screen and (max-width: 800px) {
+  .contact-info {
+    float: none;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+  }
 }
 .contact-info .title {
   font: 600 22px/1 "Open Sans";
