@@ -76,4 +76,15 @@ $(document).ready(function(){
             }
         });
     }
+    $('.slider').slick({
+        lazyLoad: 'ondemand',
+        dots: true,
+        arrows: false,
+        // autoplay: true,
+        autoplaySpeed: 10000,
+        // infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
 });
