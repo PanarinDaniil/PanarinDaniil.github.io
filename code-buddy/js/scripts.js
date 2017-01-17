@@ -76,15 +76,15 @@ $(document).ready(function(){
             }
         });
     }
-    $('.slider').slick({
-        lazyLoad: 'ondemand',
-        dots: true,
-        arrows: false,
-        // autoplay: true,
-        autoplaySpeed: 10000,
-        // infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear'
-      });
+    if ( $(".slider").length ) {
+        $('.slider').slick({
+            lazyLoad: 'ondemand',
+            dots: true,
+            arrows: false,
+            autoplaySpeed: 10000,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+    }
 });
