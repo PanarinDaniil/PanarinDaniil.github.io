@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Code Buddy</title>
+	<style>
+	    #codeBuddy {
+	        height:400px;
+	        width:100%;
+	    }
+	    .gm-style-iw{
+	    	max-width:260px;
+	    }
+	    .gm-style-iw * {
+	        display: block;
+	        width: 100%;
+	    }
+	    .gm-style-iw h4, .gm-style-iw p {
+	        margin: 0;
+	        padding: 0;
+	    }
+	    .gm-style-iw a {
+	        color: #4272db;
+	    }
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body >
+	<div class="wrapper index">
+		<header class="header">
+			<div class="content">
+				<div class="left-header">
+					<a href="#" class="logo">
+						<img src="images/logo.png" alt="Code Buddy" />
+					</a>
+					<div class="top-phone icon-phone">+62 202 555 0117</div>
+				</div>
+				<button class="mob mob-btn">
+					<div>Menu</div>
+				</button>
+				<ul class="right-header">
+					<li>
+						<a href="#">How it works</a>
+					</li>
+					<li>
+						<a href="#">Pricing</a>
+					</li>
+					<li>
+						<a href="#">Login</a>
+					</li>
+					<li>
+						<a href="#" class="top-btn">Get Started</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="map">
+			<div id="codeBuddy" class="js_map"></div>
+		</div>
+		<div class="contacts-wrap">
+			<div class="content">
+				<h2>Get In Touch With Us</h2>
+				<div class="h2-SubHeading">We are here to help. Want to learn more about our services? <br/>Please get in touch, we'd love to hear from you!</div>
+				<div class="contact-box">
+					<form action="javascript:void(0);" class="form contact-form" novalidate>
+						<div class="input-wrap">
+							<input type="text" id="conName" name="conName" placeholder="Name" class="placeholder"/>
+						</div>
+						<div class="input-wrap">
+							<input type="email" id="conEmail" name="conEmail" placeholder="Email" class="placeholder"/>
+						</div>
+						<div class="input-wrap">
+							<input type="tel" id="conPhone" name="conPhone" placeholder="Phone" class="placeholder"/>
+						</div>
+						<div class="input-wrap">
+							<textarea name="conMsg" id="conMsg" placeholder="Message" class="placeholder"></textarea>
+						</div>
+						<div class="submit-wrap">
+							<button type="submit" class="form-btn animate">Send message</button>
+						</div>
+					</form>
+					<div class="contact-info">
+						<div class="title">Offices</div>
+						<ul class="contact-list">
+							<li><i class="icon-map-marker"></i>1412 Broadyway <br/>
+							Floor 22<br/>
+							New York, NY 10003</li>
+							<li><i class="icon-phone"></i>+62 202 555 0117</li>
+							<li>
+								<i class="icon-envelope"></i>
+								<a href="mailto:help@code-buddy.com">help@code-buddy.com</a>
+							</li>
+						</ul>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="content">
+				<div class="footer-list flex">
+					<div class="column">
+						<a href="#" class="sm-logo">
+							<img src="images/sm-logo.png" alt="" />
+						</a>
+						<div class="line">@: <a href="mailto:help@code-buddy.com">help@code-buddy.com</a></div>
+						<div class="line">1412 Broadway Fl. 22 <br/>New York, NY 10018</div>
+					</div>
+					<div class="column">
+						<div class="f-title">Company</div>
+						<div class="line">
+							<a href="#">About Us</a>
+						</div>
+						<div class="line">
+							<a href="#">Pricing</a>
+						</div>
+						<div class="line">
+							<a href="#">Contact Us</a>
+						</div>
+					</div>
+					<div class="column">
+						<div class="f-title">Service</div>
+						<div class="line">
+							<a href="#">Help & Support</a>
+						</div>
+						<div class="line">
+							<a href="#">Privacy Policy</a>
+						</div>
+						<div class="line">
+							<a href="#">Terms</a>
+						</div>
+					</div>
+					<div class="column">
+						<div class="f-title text">Newsletter</div>
+						<div class="line text">Subscribe to our newsletter and get all the cool news</div>
+						<form action="javascript:void(0);" class="footer-form" novalidate>
+							<div class="input-wrap">
+								<input type="email" name="emailF" id="emailF" class="placeholder" placeholder="Enter Email" />
+							</div>
+							<div class="submit-wrap">
+								<button type="submit" class="form-btn animate">Subscribe</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="layout"></div>
+	<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBxiFA1VCINLLleeVRiQIx0CjivPh9I7TM'></script>
+	<script>
+		google.maps.event.addDomListener(window, 'load', init);
+	    var map;
+	    function init() {
+	        var mapOptions = {
+	            center: new google.maps.LatLng(40.763877,-73.980908),
+	            zoom: 16,
+	            zoomControl: false,
+	            disableDoubleClickZoom: false,
+	            mapTypeControl: false,
+	            scaleControl: false,
+	            scrollwheel: false,
+	            panControl: false,
+	            streetViewControl: false,
+	            draggable : true,
+	            overviewMapControl: false,
+	            overviewMapControlOptions: {
+	                opened: false,
+	            },
+	            mapTypeId: google.maps.MapTypeId.ROADMAP,
+	            styles: [{"featureType":"all","elementType":"all","stylers":[{"saturation":-100},{"gamma":0.5}]}],
+	            // styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e5eefc"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"off"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"visibility":"off"},{"saturation":36},{"color":"#ffffff"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+	        }
+	        var mapElement = document.getElementById('codeBuddy');
+	        var map = new google.maps.Map(mapElement, mapOptions);
+	        var locations = [
+				['Shop 1', 'fkhfgkjfhfkjh hbk jhvjvgh gv kgvk jgvkjvkj vkjhv kjhv kjvhk jvhkjh vk vkj vhkj hvkjhv kjvh kv hjv kjvh kjhv', '99999999999', 'dd@dd.ru', 'refer.com', 49.9761099, 36.25240439999993, 'https://mapbuildr.com/assets/img/markers/solid-pin-black.png'],['Shop 2', 'gblrejn jd kjb kjbkjb h lhb lib lihjb hhb hb', '8888888888', 'sd@xsd.com', 'fffggf.com', 50.4477339, 30.5223608, 'https://mapbuildr.com/assets/img/markers/solid-pin-black.png']
+    		];
+    		for (i = 0; i < locations.length; i++) {
+				if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+				if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+				if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+				if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+				if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+        		marker = new google.maps.Marker({
+	                icon: markericon,
+	                position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+	                map: map,
+	                title: locations[i][0],
+	                desc: description,
+	                tel: telephone,
+	                email: email,
+	                web: web
+	            });
+				if (web.substring(0, 7) != "http://") {
+					link = "http://" + web;
+				} else {
+					link = web;
+				}
+	            bindInfoWindow(marker, map, locations[i][0], description, telephone, email, web, link);
+			}
+			function bindInfoWindow(marker, map, title, desc, telephone, email, web, link) {
+				var infoWindowVisible = (function () {
+					var currentlyVisible = false;
+					return function (visible) {
+						if (visible !== undefined) {
+							currentlyVisible = visible;
+						}
+						return currentlyVisible;
+					};
+				}());
+				iw = new google.maps.InfoWindow();
+				google.maps.event.addListener(marker, 'click', function() {
+					if (infoWindowVisible()) {
+						iw.close();
+						infoWindowVisible(false);
+					} else {
+						var html= "<div style='color:#000;background-color:#fff;padding:5px;width:150px;'><h4>"+title+"</h4><p>"+desc+"<p><p>"+telephone+"<p><a href='mailto:"+email+"' >"+email+"<a><a href='"+link+"'' >"+web+"<a></div>";
+						iw = new google.maps.InfoWindow({content:html});
+						iw.open(map,marker);
+						infoWindowVisible(true);
+					}
+				});
+		        google.maps.event.addListener(iw, 'closeclick', function () {
+		            infoWindowVisible(false);
+		        });
+			}
+		}
+	</script>
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+	<script src="js/jquery.validate.min.js" type="text/javascript"></script>
+	<script src="js/scripts.js" type="text/javascript"></script>
+</body>
+</html>

@@ -11,9 +11,6 @@
   @else if $point == m {
     @media screen and (max-width: 678px) { @content; }
   }
-  // @else if $point == xs {
-  //   @media screen and (max-width: 450px)  { @content; }
-  // }
 }
 @mixin code-buddy (){
 	font-family:'code-buddy' !important;
@@ -27,9 +24,9 @@
 	-moz-osx-font-smoothing:grayscale;
 }
 @mixin flex (){
-    display:-webkit-box;
-    display:-moz-box;
-    display:-ms-flexbox;
-    display:-webkit-flex;
-    display:flex;
+  display:-webkit-box;
+  display:-moz-box;
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  display:flex;
 }

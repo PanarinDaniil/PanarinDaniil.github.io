@@ -2,7 +2,7 @@ WebFontConfig =
     {
     	google:{
     		families:[
-    			"Open+Sans:400,400i,600,700,700i&amp;subset=latin-ext"
+    			"Open+Sans:400,600,700,700i&amp;subset=latin-ext"
     		]
     	}
     },
@@ -38,6 +38,28 @@ $(document).ready(function(){
                     email: true
                 },
                 topMsg: {
+                    required: true,
+                    minlength:10
+                }
+            }
+        });
+    }
+    if ( $(".contact-form").length ) {
+        $(".contact-form").validate({
+            rules: {
+                conName: {
+                    required: true,
+                    minlength:2
+                },
+                conEmail: {
+                    required: true,
+                    email: true
+                },
+                conPhone: {
+                    required: true,
+                    minlength:10
+                },
+                conMsg: {
                     required: true,
                     minlength:10
                 }
