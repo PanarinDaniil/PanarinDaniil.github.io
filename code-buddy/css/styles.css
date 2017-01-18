@@ -339,6 +339,7 @@ h3, .h3 {
   left: 0;
   right: 0;
   top: 0;
+  z-index: 1;
 }
 .header .content {
   border-bottom: 1px solid #594d58;
@@ -897,6 +898,12 @@ h3, .h3 {
 }
 .thanks-banner .sub-title {
   font: 21px/1.1 "Mer-R";
+}
+.thanks-banner .sub-title a {
+  color: #686067;
+}
+.thanks-banner .sub-title a:hover {
+  text-decoration: none;
 }
 
 .top-banner {

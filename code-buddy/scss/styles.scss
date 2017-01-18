@@ -163,6 +163,7 @@ h3, .h3{
 	left:0;
 	right:0;
 	top:0;
+	z-index:1;
 	.content{
 		border-bottom:1px solid #594d58;
 		padding:24px 0;
@@ -643,6 +644,12 @@ h3, .h3{
 	}
 	.sub-title{
 		font:21px/1.1 "Mer-R";
+		a{
+			color:#686067;
+			&:hover{
+				text-decoration:none;	
+			}
+		}
 	}
 
 }
