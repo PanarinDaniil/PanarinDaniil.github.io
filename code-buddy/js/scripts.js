@@ -21,7 +21,6 @@ $(document).ready(function(){
         $(this).toggleClass("active");
         $(".layout, .right-header").toggle($(this).hasClass("active"));
     });
-
     $('.layout').click(function() {
         $(".mob-btn").removeClass("active");
         $(".layout, .right-header").hide('fast');
