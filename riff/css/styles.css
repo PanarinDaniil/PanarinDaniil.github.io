@@ -230,6 +230,12 @@ h2, .h2 {
   background: #3e3e3f;
   padding: 25px 0;
 }
+.header.fixed-theme .logo a {
+  max-width: 70px;
+}
+.header.fixed-theme .header-nav {
+  margin-top: 28px;
+}
 .header .content {
   max-width: 950px;
 }
@@ -242,6 +248,10 @@ h2, .h2 {
 .logo a {
   max-width: 129px;
   display: block;
+  -moz-transition: all 0.8s linear;
+  -o-transition: all 0.8s linear;
+  -webkit-transition: all 0.8s linear;
+  transition: all 0.8s linear;
 }
 .logo img {
   max-width: 100%;
@@ -257,6 +267,10 @@ h2, .h2 {
   margin-left: 1%;
   letter-spacing: -4px;
   font-size: 0px;
+  -moz-transition: all 0.8s linear;
+  -o-transition: all 0.8s linear;
+  -webkit-transition: all 0.8s linear;
+  transition: all 0.8s linear;
 }
 .header-nav * {
   letter-spacing: 0;

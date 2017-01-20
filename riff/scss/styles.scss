@@ -91,6 +91,14 @@ h2, .h2{
 		position:fixed;
 		background:#3e3e3f;
 		padding:25px 0;
+		.logo{
+			a{
+				max-width:70px;
+			}
+		}
+		.header-nav{
+			margin-top:28px;
+		}
 	}
 	.content{
 		max-width:950px;
@@ -103,6 +111,7 @@ h2, .h2{
 	a{
 		max-width:129px;
 		display:block;
+		@include transition($transitionL);
 	}
 	img{
 		max-width:100%;
@@ -118,6 +127,7 @@ h2, .h2{
 	margin-left:1%;
 	letter-spacing:-4px;
 	font-size:0px;
+	@include transition($transitionL);
 	*{
 		letter-spacing:0;
 	}
