@@ -159,10 +159,20 @@ h1, .h1 {
   font: 72px/1.4 "Gilroy-EB";
   color: #d81720;
 }
+@media screen and (max-width: 576px) {
+  h1, .h1 {
+    font-size: 48px;
+  }
+}
 
 h2, .h2 {
   font: 72px/1.2 "Gilroy-EB";
   color: #d81720;
+}
+@media screen and (max-width: 576px) {
+  h2, .h2 {
+    font-size: 48px;
+  }
 }
 
 .flex {
@@ -210,6 +220,15 @@ h2, .h2 {
   left: 0;
   right: 0;
   z-index: 4;
+  -moz-transition: all 0.8s linear;
+  -o-transition: all 0.8s linear;
+  -webkit-transition: all 0.8s linear;
+  transition: all 0.8s linear;
+}
+.header.fixed-theme {
+  position: fixed;
+  background: #3e3e3f;
+  padding: 25px 0;
 }
 .header .content {
   max-width: 950px;

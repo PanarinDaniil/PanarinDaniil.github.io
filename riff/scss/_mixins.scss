@@ -11,6 +11,10 @@
   @else if $point == m {
     @media screen and (max-width: 678px) { @content; }
   }
+
+  @else if $point == s {
+    @media screen and (max-width: 576px) { @content; }
+  }
 }
 @mixin code-buddy (){
 	font-family:'code-buddy' !important;

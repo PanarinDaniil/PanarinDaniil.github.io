@@ -39,23 +39,17 @@ a{
 h1, .h1{
 	font:72px/1.4 "Gilroy-EB";
 	color:#d81720;
+	@include bp(s) {
+		font-size:48px;
+	}
 }
 h2, .h2{
 	font:72px/1.2 "Gilroy-EB";
 	color:#d81720;
+	@include bp( s ){	
+		font-size:48px;
+	}
 }
-// .clear.mob{
-//     display:none;
-//     @include bp( m ){
-// 		display:block;
-// 	}
-// }
-// .mob{
-// 	display:none;
-// 	@include bp( m ){
-// 		display:block;
-// 	}
-// }
 .flex{
     @include flex();
 }
@@ -92,6 +86,12 @@ h2, .h2{
 	left:0;
 	right:0;
 	z-index:4;
+	@include transition($transitionL);
+	&.fixed-theme{
+		position:fixed;
+		background:#3e3e3f;
+		padding:25px 0;
+	}
 	.content{
 		max-width:950px;
 	}

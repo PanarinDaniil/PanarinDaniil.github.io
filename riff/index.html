@@ -18,7 +18,7 @@
 						<img src="images/logo.svg" alt="878TEN" />
 					</a>
 				</div>
-				<ul class="header-nav">
+				<ul id="navbar" class="header-nav">
 					<li>
 						<a href="#">About</a>
 					</li>
@@ -186,6 +186,52 @@
 			</div>
 		</div>
 	</div>
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var myNavBar = {
+			    flagAdd: true,
+			    elements: [],
+			    init: function (elements) {
+			        this.elements = elements;
+			    },
+			    add : function() {
+			        if(this.flagAdd) {
+			            for(var i=0; i < this.elements.length; i++) {
+			                document.getElementById(this.elements[i]).className += " fixed-theme";
+			            }
+			            this.flagAdd = false;
+			        }
+			    },
+			    remove: function() {
+			        for(var i=0; i < this.elements.length; i++) {
+			            document.getElementById(this.elements[i]).className =
+			                    document.getElementById(this.elements[i]).className.replace( /(?:^|\s)fixed-theme(?!\S)/g , '' );
+			        }
+			        this.flagAdd = true;
+			    }
+			};
+			myNavBar.init(  [
+			    "header"
+			]);
+			function offSetManager(){
+			    var yOffset = 0;
+			    var currYOffSet = window.pageYOffset;
+
+			    if(yOffset < currYOffSet) {
+			        myNavBar.add();
+			    }
+			    else if(currYOffSet == yOffset){
+			        myNavBar.remove();
+			    }
+			}
+			window.onscroll = function(e) {
+			    offSetManager();
+			}
+			offSetManager();
+		});
+	</script>
 <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script type="text/javascript">
 	particlesJS("particles1", {
