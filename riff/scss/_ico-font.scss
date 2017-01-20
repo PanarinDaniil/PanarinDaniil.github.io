@@ -1,0 +1,40 @@
+$icon-chevron-right: "\f054";
+$icon-plus: "\f067";
+$icon-minus: "\f068";
+
+@font-face {
+  font-family: '787';
+  src: url('#{$fontPath}/787.eot?x83t32');
+  src: url('#{$fontPath}/787.eot?x83t32#iefix') format('embedded-opentype'),
+    url('#{$fontPath}/787.ttf?x83t32') format('truetype'),
+    url('#{$fontPath}/787.woff?x83t32') format('woff'),
+    url('#{$fontPath}/787.svg?x83t32#787') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  font-family: '787' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-chevron-right {
+  &:before {
+    content: $icon-chevron-right;
+  }
+}
+.icon-plus {
+  &:before {
+    content: $icon-plus;
+  }
+}
+.icon-minus {
+  &:before {
+    content: $icon-minus;
+  }
+}
