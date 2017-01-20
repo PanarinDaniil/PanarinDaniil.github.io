@@ -191,6 +191,9 @@ canvas {
 .white{
 	background:#fff;
 }
+.grey{
+	background:#f9f9f9;
+}
 .fl-end{
 	@include align-self(flex-end);
 }
@@ -198,7 +201,6 @@ canvas {
 	@include border-radius(10px);
 }
 .usp{
-	background:#f9f9f9;
 	padding-bottom:170px;
 	.container{
 	    position:relative;
@@ -232,6 +234,7 @@ canvas {
 	p{
 		line-height:1.47;
 		color:#787878;
+		margin-bottom:35px;
 	}
 	.link{
 		font:18px/1 "Gilroy-EB";
@@ -254,10 +257,17 @@ canvas {
 	.text-box{
 		p{
 			color:#3e3e3f;
-			margin-bottom:35px;
+			// margin-bottom:35px;
 		}
 		.link{
 			color:#3e3e3f;
+		}
+	}
+	.blank-sheet{
+		.number{
+			color:#ffdb00;
+			bottom:-10px;
+			left:-40px;
 		}
 	}
 }
@@ -270,10 +280,10 @@ canvas {
 	bottom:0;
 	width:71%;
 
-	&.right{
+	&.right-block{
 		right:0;
 	}
-	&.left{
+	&.left-block{
 		left:0;
 		.sm-nav{
 		    bottom:40px;
@@ -297,6 +307,13 @@ canvas {
 			height:1px;
 			background:#ffcf06;
 		}
+	}
+	.number{
+		position:absolute;
+		bottom:-10px;
+		left:-20px;
+		font:300px/0.7 "Gilroy-EB";
+		color:#f9f9f9;
 	}
 }
 .box_2{
@@ -334,7 +351,7 @@ canvas {
 		}
 	}
 }
-.box_3{
+.box_3, .box_5{
 	padding:104px 0 94px;
 	.content{
 	    position:relative;
@@ -347,6 +364,26 @@ canvas {
 		width:62%;
 	}
 	.text-box{
-		margin-top:55px;
+		margin-top:68px;
+	}
+}
+.box_4{
+	padding:115px 0 137px;
+	.h2, h2{
+		padding:84px 0 250px;
+	}
+	.text-box{
+		margin-top:65px;
+	}
+	.blank-sheet{
+		.sm-nav{
+		    bottom:42px;
+		    right:20px;
+		}
+	}
+}
+.box_5{
+	.blank-sheet{
+		width:70%;
 	}
 }

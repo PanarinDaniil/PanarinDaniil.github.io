@@ -314,6 +314,10 @@ canvas {
   background: #fff;
 }
 
+.grey {
+  background: #f9f9f9;
+}
+
 .fl-end {
   -webkit-align-self: flex-end;
   align-self: flex-end;
@@ -326,7 +330,6 @@ canvas {
 }
 
 .usp {
-  background: #f9f9f9;
   padding-bottom: 170px;
 }
 .usp .container {
@@ -357,6 +360,7 @@ canvas {
 .text-box p {
   line-height: 1.47;
   color: #787878;
+  margin-bottom: 35px;
 }
 .text-box .link {
   font: 18px/1 "Gilroy-EB";
@@ -380,10 +384,14 @@ canvas {
 
 .polygon-yellow .text-box p {
   color: #3e3e3f;
-  margin-bottom: 35px;
 }
 .polygon-yellow .text-box .link {
   color: #3e3e3f;
+}
+.polygon-yellow .blank-sheet .number {
+  color: #ffdb00;
+  bottom: -10px;
+  left: -40px;
 }
 
 .box_1 {
@@ -396,13 +404,13 @@ canvas {
   bottom: 0;
   width: 71%;
 }
-.blank-sheet.right {
+.blank-sheet.right-block {
   right: 0;
 }
-.blank-sheet.left {
+.blank-sheet.left-block {
   left: 0;
 }
-.blank-sheet.left .sm-nav {
+.blank-sheet.left-block .sm-nav {
   bottom: 40px;
   right: 25px;
 }
@@ -426,6 +434,13 @@ canvas {
   width: 47px;
   height: 1px;
   background: #ffcf06;
+}
+.blank-sheet .number {
+  position: absolute;
+  bottom: -10px;
+  left: -20px;
+  font: 300px/0.7 "Gilroy-EB";
+  color: #f9f9f9;
 }
 
 .box_2 .text-box {
@@ -463,19 +478,37 @@ canvas {
   background: #787878;
 }
 
-.box_3 {
+.box_3, .box_5 {
   padding: 104px 0 94px;
 }
-.box_3 .content {
+.box_3 .content, .box_5 .content {
   position: relative;
   z-index: 3;
 }
-.box_3 .h2, .box_3 h2 {
+.box_3 .h2, .box_3 h2, .box_5 .h2, .box_5 h2 {
   padding: 95px 0 160px;
 }
-.box_3 .blank-sheet {
+.box_3 .blank-sheet, .box_5 .blank-sheet {
   width: 62%;
 }
-.box_3 .text-box {
-  margin-top: 55px;
+.box_3 .text-box, .box_5 .text-box {
+  margin-top: 68px;
+}
+
+.box_4 {
+  padding: 115px 0 137px;
+}
+.box_4 .h2, .box_4 h2 {
+  padding: 84px 0 250px;
+}
+.box_4 .text-box {
+  margin-top: 65px;
+}
+.box_4 .blank-sheet .sm-nav {
+  bottom: 42px;
+  right: 20px;
+}
+
+.box_5 .blank-sheet {
+  width: 70%;
 }
