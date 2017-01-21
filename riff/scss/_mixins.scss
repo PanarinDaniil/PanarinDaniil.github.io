@@ -16,8 +16,8 @@
     @media screen and (max-width: 576px) { @content; }
   }
 }
-@mixin code-buddy (){
-	font-family:'code-buddy' !important;
+@mixin icoFont (){
+	font-family:'787' !important;
 	speak:none;
 	font-style:normal;
 	font-weight:normal;
