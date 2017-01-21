@@ -648,7 +648,7 @@ canvas {
   filter: gray;
 }
 
-.accordion .ac-toggle {
+.accordion-wrap .ac-toggle {
   color: #3e3e3f;
   cursor: pointer;
   margin-bottom: 8px;
@@ -660,7 +660,7 @@ canvas {
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
 }
-.accordion .ac-toggle:before {
+.accordion-wrap .ac-toggle:before {
   position: absolute;
   content: "";
   left: 0;
@@ -681,19 +681,19 @@ canvas {
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
 }
-.accordion .ac-toggle:hover, .accordion .ac-toggle.active {
+.accordion-wrap .ac-toggle:hover, .accordion-wrap .ac-toggle.active {
   color: #d81720;
 }
-.accordion .ac-toggle:hover:before, .accordion .ac-toggle.active:before {
+.accordion-wrap .ac-toggle:hover:before, .accordion-wrap .ac-toggle.active:before {
   color: #d81720;
 }
-.accordion .ac-toggle.active:before {
+.accordion-wrap .ac-toggle.active:before {
   content: "";
 }
-.accordion .ac-content {
+.accordion-wrap .ac-content {
   display: none;
 }
-.accordion .ac-content p {
+.accordion-wrap .ac-content p {
   padding: 31px 0 38px;
   margin: 0;
 }

@@ -278,29 +278,29 @@
 						</div>
 						<div id="rev-27" class="col-md-6 col-12 text-box">
 							<p>878TEN has offices in both Australia and UK as well as a presence in Hong Kong. Our senior team has many years experience at the highest levels of Telecommunications, Technology, Finance, Privacy & Integrity, Law and Marketing. We are currently identifying talent in preparation for rapid upscaling in the near future.</p>
-							<div class="accordion">
-								<div class="ac-toggle active">Dave Greenwood – Chief Executive Officer</div>
-								<div class="ac-content" style="display:block;">
+							<div class="accordion1 accordion-wrap">
+								<div class="ac-t1 ac-toggle active">Dave Greenwood – Chief Executive Officer</div>
+								<div class="ac-c1 ac-content" style="display:block;">
 									<p>Dave has more than three decades experience leading and advising multi-billion-dollar technology and telecommunications projects across markets including UK, US, India and Australia.</p>
 								</div>
-								<div class="ac-toggle">Alex Nikolov – Chief Technology Officer</div>
-								<div class="ac-content">
+								<div class="ac-t1 ac-toggle">Alex Nikolov – Chief Technology Officer</div>
+								<div class="ac-c1 ac-content">
 									<p>Lorem ipsum dolor sit amet mauris eu turpis.</p>
 								</div>
-								<div class="ac-toggle">Antony Corel – Chief Legal Officer</div>
-								<div class="ac-content">
+								<div class="ac-t1 ac-toggle">Antony Corel – Chief Legal Officer</div>
+								<div class="ac-c1 ac-content">
 									<p>Lorem ipsum dolor sit amet mauris eu turpis.</p>
 								</div>
-								<div class="ac-toggle">Emilio Alvarez – Chief Financial Officer</div>
-								<div class="ac-content">
+								<div class="ac-t1 ac-toggle">Emilio Alvarez – Chief Financial Officer</div>
+								<div class="ac-c1 ac-content">
 									<p>Lorem ipsum dolor sit amet mauris eu turpis.</p>
 								</div>
-								<div class="ac-toggle">Malcolm Crompton AM – Special Adviser Privacy &Integrity</div>
-								<div class="ac-content">
+								<div class="ac-t1 ac-toggle">Malcolm Crompton AM – Special Adviser Privacy &Integrity</div>
+								<div class="ac-c1 ac-content">
 									<p>Lorem ipsum dolor sit amet mauris eu turpis.</p>
 								</div>
-								<div class="ac-toggle">Paul Fishlock – Chief Marketing Officer</div>
-								<div class="ac-content">
+								<div class="ac-t1 ac-toggle">Paul Fishlock – Chief Marketing Officer</div>
+								<div class="ac-c1 ac-content">
 									<p>Lorem ipsum dolor sit amet mauris eu turpis.</p>
 								</div>
 							</div>						
@@ -314,21 +314,21 @@
 				<div id="rev-28" class="h2">Technical FAQs</div>
 				<div class="container">
 					<div class="row justify-content-md-center">
-						<div id="rev-29" class="accordion col-md-10 col">
-							<div class="ac-toggle active">What makes 878TEN unique?</div>
-							<div class="ac-content" style="display:block;">
+						<div id="rev-29" class="accordion2 accordion-wrap col-md-10 col">
+							<div class="ac-t2 ac-toggle active">What makes 878TEN unique?</div>
+							<div class="ac-c2 ac-content" style="display:block;">
 								<p>878TEN is the only Universal Personal Telecommunications (UPT) number range in the world and one of only two global number ranges that has been given an ENUM delegation by the ITU (the other range has just 100,000 numbers). As a result, 878TEN is the only E.164 number range where an individual or organisation can actually own the telephone number (as opposed to it being owned by a government or a regulator). There are some country codes that have been granted an ENUM delegation, however, these provide “second service” ENUM, rather than the “first service” ENUM of 878TEN. In a second service ENUM, the ENUM benefits can only be accessed via the Internet, with the number behaving as a normal telephone number if it is accessed from a telephone network. 878TEN is a “first service” ENUM delegation, so it always functions as an ENUM enabled identifier, even when called from a telephone network.</p>
 							</div>
-							<div class="ac-toggle">What is UPT?</div>
-							<div class="ac-content">
+							<div class="ac-t2 ac-toggle">What is UPT?</div>
+							<div class="ac-c2 ac-content">
 								<p>Lorem ipsum dolor sit amet mauris eu turpis.</p>
 							</div>
-							<div class="ac-toggle">How doe ENUM work?</div>
-							<div class="ac-content">
+							<div class="ac-t2 ac-toggle">How doe ENUM work?</div>
+							<div class="ac-c2 ac-content">
 								<p>Lorem ipsum dolor sit amet mauris eu turpis.</p>
 							</div>
-							<div class="ac-toggle">Can I use an 878TEN number even if my telco does not recognise 878TEN?</div>
-							<div class="ac-content">
+							<div class="ac-t2 ac-toggle">Can I use an 878TEN number even if my telco does not recognise 878TEN?</div>
+							<div class="ac-c2 ac-content">
 								<p>Lorem ipsum dolor sit amet mauris eu turpis.</p>
 							</div>
 						</div>
@@ -830,11 +830,18 @@
 			}
 			offSetManager();
 			// Accordion
-			$('.accordion').find('.ac-toggle').click(function() {
+			$('.accordion1').find('.ac-t1').click(function() {
 				$(this).next().slideToggle('600');
-				$(".ac-content").not($(this).next()).slideUp('600');
+				$(".ac-c1").not($(this).next()).slideUp('600');
 			});
-			$('.ac-toggle').on('click', function() {
+			$('.ac-t1').on('click', function() {
+				$(this).toggleClass('active').siblings().removeClass('active');
+			});
+			$('.accordion2').find('.ac-t2').click(function() {
+				$(this).next().slideToggle('600');
+				$(".ac-c2").not($(this).next()).slideUp('600');
+			});
+			$('.ac-t2').on('click', function() {
 				$(this).toggleClass('active').siblings().removeClass('active');
 			});
 		});
