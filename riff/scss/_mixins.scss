@@ -8,10 +8,14 @@
   @else if $point == xm {
     @media screen and (min-width: 679px) { @content; }
   }
-  @else if $point == m {
-    @media screen and (max-width: 678px) { @content; }
-  }
+  
 
+  @else if $point == m {
+    @media screen and (max-width: 767px) { @content; }
+  }
+  @else if $point == minM {
+    @media screen and (min-width: 768px) { @content; }
+  }
   @else if $point == s {
     @media screen and (max-width: 576px) { @content; }
   }

@@ -227,6 +227,11 @@ h2, .h2 {
   -webkit-transition: all 0.8s linear;
   transition: all 0.8s linear;
 }
+@media screen and (max-width: 767px) {
+  .header {
+    z-index: 12;
+  }
+}
 .header.fixed-theme {
   position: fixed;
   background: #3e3e3f;
@@ -242,11 +247,112 @@ h2, .h2 {
   max-width: 980px;
 }
 
-.logo {
-  display: block;
-  float: left;
-  width: 24%;
+.mob-btn {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 5px;
+  width: 58px;
+  height: 44px;
+  background: transparent;
+  padding: 19px 11px 20px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
+@media screen and (max-width: 767px) {
+  .mob-btn {
+    display: block;
+  }
+}
+.mob-btn:hover div {
+  background: #b2b2b2;
+}
+.mob-btn:hover div:before, .mob-btn:hover div:after {
+  background: #b2b2b2;
+}
+.mob-btn.active div {
+  background: transparent;
+}
+.mob-btn.active div:before, .mob-btn.active div:after {
+  -moz-transition-delay: 0s, 0.3s;
+  -o-transition-delay: 0s, 0.3s;
+  -webkit-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+}
+.mob-btn.active div:before {
+  top: 0px;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.mob-btn.active div:after {
+  bottom: 0px;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.mob-btn div {
+  text-indent: -9999px;
+  height: 5px;
+  display: block;
+  background: #b2b2b2;
+  position: relative;
+  -moz-transition: background 0.3s 0s;
+  -o-transition: background 0.3s 0s;
+  -webkit-transition: background 0.3s;
+  -webkit-transition-delay: 0s;
+  transition: background 0.3s 0s;
+}
+.mob-btn div:before, .mob-btn div:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  height: 5px;
+  z-index: 1;
+  background: #b2b2b2;
+  -moz-transition-delay: 0.3s, 0s, 0s;
+  -o-transition-delay: 0.3s, 0s, 0s;
+  -webkit-transition-delay: 0.3s, 0s, 0s;
+  transition-delay: 0.3s, 0s, 0s;
+  -moz-transition-duration: 0.3s, 0.3s, 0.3s;
+  -o-transition-duration: 0.3s, 0.3s, 0.3s;
+  -webkit-transition-duration: 0.3s, 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s, 0.3s;
+}
+.mob-btn div:before {
+  top: -9px;
+  -moz-transition-property: top, -moz-transform, background;
+  -o-transition-property: top, -o-transform, background;
+  -webkit-transition-property: top, -webkit-transform, background;
+  transition-property: top, transform, background;
+}
+.mob-btn div:after {
+  bottom: -9px;
+  -moz-transition-property: bottom, -moz-transform, background;
+  -o-transition-property: bottom, -o-transform, background;
+  -webkit-transition-property: bottom, -webkit-transform, background;
+  transition-property: bottom, transform, background;
+}
+
+.nav-layout {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: -100px;
+  bottom: 0;
+  right: 0;
+  z-index: 11;
+  background: rgba(0, 0, 0, 0.3);
+}
+@media screen and (min-width: 768px) {
+  .nav-layout {
+    display: none !important;
+  }
+}
+
 .logo a {
   max-width: 129px;
   display: block;
@@ -261,18 +367,26 @@ h2, .h2 {
 }
 
 .header-nav {
-  float: right;
   display: block;
-  width: 75%;
   text-align: right;
   margin-top: 56px;
-  margin-left: 1%;
   letter-spacing: -4px;
   font-size: 0px;
   -moz-transition: all 0.8s linear;
   -o-transition: all 0.8s linear;
   -webkit-transition: all 0.8s linear;
   transition: all 0.8s linear;
+}
+@media screen and (min-width: 768px) {
+  .header-nav {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-nav {
+    display: none;
+    text-align: center;
+  }
 }
 .header-nav * {
   letter-spacing: 0;
@@ -281,18 +395,40 @@ h2, .h2 {
   display: inline-block;
   vertical-align: top;
 }
+@media screen and (max-width: 767px) {
+  .header-nav li {
+    display: block;
+  }
+}
 .header-nav li + li {
   margin-left: 26px;
+}
+@media screen and (max-width: 767px) {
+  .header-nav li + li {
+    margin-left: 0;
+    margin-top: 5px;
+  }
 }
 .header-nav a {
   font: 18px/1 "Gilroy-EB";
   color: #b2b2b2;
+}
+@media screen and (max-width: 767px) {
+  .header-nav a {
+    display: block;
+    padding: 15px 0;
+  }
 }
 
 .top-back .content {
   padding: 303px 0 475px;
   position: relative;
   z-index: 3;
+}
+@media screen and (max-width: 767px) {
+  .top-back .content {
+    padding-bottom: 50px;
+  }
 }
 .top-back .h1, .top-back h1 {
   margin-bottom: 31px;
@@ -371,11 +507,22 @@ canvas {
   position: relative;
   z-index: 3;
 }
+@media screen and (max-width: 767px) {
+  .usp .mob-padding {
+    padding: 0 30px;
+  }
+}
 .usp .box-wrap {
   margin: 0 0 42px;
 }
 .usp .box-wrap.to-top {
   margin-top: -310px;
+}
+@media screen and (max-width: 767px) {
+  .usp .box-wrap.to-top {
+    margin-top: 0px;
+    background: transparent;
+  }
 }
 .usp .box-wrap .h2, .usp .box-wrap h2 {
   color: #d81720;
@@ -396,6 +543,12 @@ canvas {
 }
 .usp .visible.show {
   display: block;
+}
+@media screen and (max-width: 767px) {
+  .usp .text-box {
+    -webkit-order: 2;
+    order: 2;
+  }
 }
 .usp .text-box p {
   margin-bottom: 26px;
@@ -508,6 +661,9 @@ canvas {
   color: #f9f9f9;
   line-height: 1;
 }
+.black-block .round-list {
+  padding-left: 40px;
+}
 .black-block .round-list li {
   position: relative;
   line-height: 1;
@@ -557,6 +713,12 @@ canvas {
   bottom: 42px;
   right: 20px;
 }
+@media screen and (max-width: 767px) {
+  .box_4 .order, .box_6 .order, .box_7 .order {
+    -webkit-order: 2;
+    order: 2;
+  }
+}
 
 .box_5 .blank-sheet {
   width: 70%;
@@ -591,6 +753,13 @@ canvas {
 }
 .box_7 .text-box, .box_10 .text-box {
   margin-top: 210px;
+}
+@media screen and (max-width: 767px) {
+  .box_7 .order, .box_10 .order {
+    margin-top: 50px;
+    -webkit-order: 2;
+    order: 2;
+  }
 }
 
 .box_8 {

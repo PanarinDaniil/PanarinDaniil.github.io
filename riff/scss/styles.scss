@@ -87,6 +87,9 @@ h2, .h2{
 	right:0;
 	z-index:4;
 	@include transition($transitionL);
+	@include bp( m ){
+		z-index:12;
+	}
 	&.fixed-theme{
 		position:fixed;
 		background:#3e3e3f;
@@ -97,17 +100,95 @@ h2, .h2{
 			}
 		}
 		.header-nav{
-			margin-top:28px;
+			margin-top:28px;		
 		}
 	}
 	.content{
 		max-width:980px;
 	}
 }
+.mob-btn{
+    display:none;
+    position:absolute;
+    top:15px;
+    right:5px;
+    width:58px;
+    height:44px;
+    background:transparent;
+    padding:19px 11px 20px;
+    @include appearance(none);
+    @include bp( m ){
+		display:block;
+	}
+    &:hover{
+        div{
+        	background:#b2b2b2;
+        	&:before,
+	        &:after{
+	        	background:#b2b2b2;
+	        }
+        }
+    }
+    &.active{
+        div{
+            background:transparent;
+            &:before,
+            &:after{
+                @include transition-delay(0s,.3s);
+            }
+            &:before{
+                top:0px;
+                @include transform(rotate(45deg));
+            }
+            &:after{
+                bottom:0px;
+                @include transform(rotate(-45deg));
+            }
+        }
+    }
+    div{
+        text-indent:-9999px;
+        height:5px;
+        display:block;
+        background:#b2b2b2;
+        position:relative;
+        @include transition(background 0.3s 0s);
+        &:before,
+        &:after{
+            position:absolute;
+            content:"";
+            left:0;
+            right:0;
+            height:5px;
+            z-index:1;
+            background:#b2b2b2;
+            @include transition-delay(.3s, 0s, 0s);
+            @include transition-duration(.3s, .3s, .3s);
+        }
+        &:before{
+            top:-9px;
+            @include transition-property(top,transform, background);
+        }
+        &:after{
+            bottom:-9px;
+            @include transition-property(bottom,transform, background);
+        }
+    }
+}
+.nav-layout {
+    display:none;
+    position:fixed;
+    left:0;
+    top:-100px;
+    bottom:0;
+    right:0;
+    z-index:11;
+    background:rgba(0, 0, 0, 0.3);
+    @include bp( minM ){
+    	display:none!important;
+    }
+}
 .logo{
-	display:block;
-	float:left;
-	width:24%;
 	a{
 		max-width:129px;
 		display:block;
@@ -119,28 +200,43 @@ h2, .h2{
 	}
 }
 .header-nav{
-	float:right;
 	display:block;
-	width:75%;
 	text-align:right;
 	margin-top:56px;
-	margin-left:1%;
 	letter-spacing:-4px;
 	font-size:0px;
 	@include transition($transitionL);
+	@include bp( minM ){
+		display:block!important;
+	}
+	@include bp( m ){
+		display:none;
+		text-align:center;
+	}
 	*{
 		letter-spacing:0;
 	}
 	li{
 		display:inline-block;
 		vertical-align:top;
+		@include bp( m ){
+			display:block;
+		}
 		& + li{
 			margin-left:26px;
+			@include bp( m ){
+				margin-left:0;
+				margin-top:5px;
+			}
 		}
 	}
 	a{
 		font:18px/1 "Gilroy-EB";
 		color:#b2b2b2;
+		@include bp( m ){
+			display:block;
+			padding:15px 0;
+		}
 	}
 }
 .top-back{
@@ -148,6 +244,9 @@ h2, .h2{
 		padding:303px 0 475px;
 		position:relative;
 		z-index:3;
+		@include bp(m){
+			padding-bottom:50px;
+		}
 	}
 
 	.h1, h1{
@@ -216,10 +315,19 @@ canvas {
 	    position:relative;
 	    z-index:3;
 	}
+	.mob-padding{
+		@include bp(m){
+			padding:0 30px;
+		}
+	}
 	.box-wrap{
 		margin:0 0 42px;
 		&.to-top{
 			margin-top:-310px;
+			@include bp(m){
+				margin-top:0px;
+				background:transparent;
+			}
 		}		
 		.h2, h2{
 			color:#d81720;
@@ -237,9 +345,6 @@ canvas {
 			}
 		}
 	}
-	// .collapse.in{
-	// 	display:block;
-	// }
 	.visible{
 		display:none;
 		&.show{
@@ -247,6 +352,9 @@ canvas {
 		}
 	}
 	.text-box{
+		@include bp(m){
+			@include order(2);	
+		}
 		p{
 			margin-bottom:26px;
 		}
@@ -361,6 +469,7 @@ canvas {
 		line-height:1;
 	}
 	.round-list{
+		padding-left:40px;
 		li{
 			position:relative;
 			line-height:1;
@@ -409,6 +518,11 @@ canvas {
 		    right:20px;
 		}
 	}
+	.order{
+		@include bp(m){
+			@include order(2);	
+		}
+	}
 }
 .box_5{
 	.blank-sheet{
@@ -443,6 +557,12 @@ canvas {
 	}
 	.text-box{
 		margin-top:210px;
+	}
+	.order{
+		@include bp(m){
+			margin-top:50px;
+			@include order(2);	
+		}
 	}
 }
 .box_8{
