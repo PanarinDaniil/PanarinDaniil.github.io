@@ -199,17 +199,6 @@ h2, .h2 {
   position: relative;
 }
 
-.block-revealer__element {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  pointer-events: none;
-  opacity: 0;
-}
-
 .content {
   margin: 0 auto;
   width: 100%;
@@ -221,6 +210,7 @@ h2, .h2 {
   min-width: 320px;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .header {
@@ -648,6 +638,72 @@ canvas {
   filter: gray;
 }
 
+.footer {
+  padding: 150px 0 35px;
+}
+.footer .content {
+  position: relative;
+  z-index: 3;
+}
+.footer h2, .footer .h2 {
+  color: #fff;
+  margin-bottom: 80px;
+}
+.footer .footer-text {
+  margin-bottom: 90px;
+}
+.footer .footer-text p {
+  margin: 0;
+}
+.footer .footer-adr {
+  margin-bottom: 10px;
+}
+.footer .f-logo {
+  display: inline-block;
+  vertical-align: top;
+  width: 97px;
+}
+.footer .f-logo img {
+  display: block;
+  max-width: 100%;
+}
+.footer .f-info, .footer .title {
+  margin-bottom: 45px;
+  color: #fff;
+}
+.footer .title {
+  font: 24px/1.5 "Gilroy-EB";
+}
+.footer .f-info {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.polygon-yellow .ac-toggle {
+  font-size: 24px;
+  padding-left: 20px;
+}
+.polygon-yellow .ac-toggle:before {
+  font-size: 20px;
+}
+.polygon-yellow .ac-toggle:hover, .polygon-yellow .ac-toggle.active {
+  color: #3e3e3f;
+}
+.polygon-yellow .ac-toggle:hover:before, .polygon-yellow .ac-toggle.active:before {
+  color: #3e3e3f;
+}
+
+.block-revealer__element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  pointer-events: none;
+  opacity: 0;
+}
+
 .accordion-wrap .ac-toggle {
   color: #3e3e3f;
   cursor: pointer;
@@ -696,20 +752,6 @@ canvas {
 .accordion-wrap .ac-content p {
   padding: 31px 0 38px;
   margin: 0;
-}
-
-.polygon-yellow .ac-toggle {
-  font-size: 24px;
-  padding-left: 20px;
-}
-.polygon-yellow .ac-toggle:before {
-  font-size: 20px;
-}
-.polygon-yellow .ac-toggle:hover, .polygon-yellow .ac-toggle.active {
-  color: #3e3e3f;
-}
-.polygon-yellow .ac-toggle:hover:before, .polygon-yellow .ac-toggle.active:before {
-  color: #3e3e3f;
 }
 
 /*POPUPs*/
