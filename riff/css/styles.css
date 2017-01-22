@@ -380,8 +380,22 @@ canvas {
 .usp .box-wrap .h2, .usp .box-wrap h2 {
   color: #d81720;
 }
-.usp .box-wrap .h2 span, .usp .box-wrap h2 span {
+.usp .box-wrap .h2 a, .usp .box-wrap h2 a {
+  color: #d81720;
+}
+.usp .box-wrap .h2 a:focus, .usp .box-wrap h2 a:focus {
+  color: #d81720;
+  text-decoration: none;
+}
+.usp .box-wrap .h2 a:hover, .usp .box-wrap .h2 a.active, .usp .box-wrap h2 a:hover, .usp .box-wrap h2 a.active {
   color: #3e3e3f;
+  text-decoration: none;
+}
+.usp .visible {
+  display: none;
+}
+.usp .visible.show {
+  display: block;
 }
 .usp .text-box p {
   margin-bottom: 26px;
@@ -654,6 +668,7 @@ canvas {
 }
 .footer .footer-text p {
   margin: 0;
+  color: #fff;
 }
 .footer .footer-adr {
   margin-bottom: 10px;
@@ -667,7 +682,7 @@ canvas {
   display: block;
   max-width: 100%;
 }
-.footer .f-info, .footer .title {
+.footer .f-info, .footer .f-info p, .footer .title {
   margin-bottom: 45px;
   color: #fff;
 }

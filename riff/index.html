@@ -63,13 +63,37 @@
 							<div class="box-wrap box_1 box-round to-top white">
 								<div class="row justify-content-md-center">
 									<div class="col-12 col-md-10 ">
-										<div class="row flex">
+										<div id="collapse-group" class="row flex">
 											<div class="col-md-5 col-12 text-box fl-end">
-												<div id="rev-3" class="title">Unique</div>
-												<p id="rev-4">The 87810 number range is a unique Numbering, Naming, Addressing and Identification (NNAI) ecosystem that is both flexible and future proofed. Issued by the UN’s International Telecommunications Union (ITU), there’s nothing like it now and there is unlikely to be anything like it in the foreseeable future.</p>
+												<div id="el1" class="panel-collapse collapse show">
+													<div id="rev-3" class="title">Unique</div>
+													<p id="rev-4">The 87810 number range is a unique Numbering, Naming, Addressing and Identification (NNAI) ecosystem that is both flexible and future proofed. Issued by the UN’s International Telecommunications Union (ITU), there’s nothing like it now and there is unlikely to be anything like it in the foreseeable future.</p>
+												</div>
+												<div id="el2" class="panel-collapse collapse">
+													<div class="title">Ubiquitous</div>
+													<p>878TEN numbers are ‘smart labels’ that can be assigned to anything: individuals, organisations, devices, documents, products, cars, properties, animals, even non-physical things such as ideas. I don’t understand this non physical like ideas but trust that it works</p>
+												</div>
+												<div id="el3" class="panel-collapse collapse">
+													<div class="title">Universal</div>
+													<p>87810 numbers work simultaneously across the IP world - as universal digital identifiers - and the telephony world - as the world’s only global mobile telephone numbers.  87810 numbers can be used on any device at any time and support any future systems that rely upon digital identity.</p>
+												</div>
+												<div id="el4" class="panel-collapse collapse">
+													<div class="title">Scalable</div>
+													<p>Ten billion 878TEN numbers are immediately available with the potential to extend the range to one trillion (1,000 billion).</p>
+												</div>
+												<div id="el5" class="panel-collapse collapse">
+													<div class="title">Secure</div>
+													<p>878TEN uses DNSSEC, the secure form of DNS. It enables world-leading identity verification and integrates with the latest high security Internet technologies such as Blockchain and RINA as well as biometric and biographic identity technologies.</p>
+												</div>
 											</div>
 											<div class="col-md-6 col-12 offset-md-1 ">
-												<div id="rev-5" class="h2"><span>Unique</span> Ubiquitous Universal Scalable Secure</div>
+												<div id="rev-5" class="h2">
+													<a data-toggle="collapse" data-parent="#collapse-group" href="#el1">Unique</a>
+													<a data-toggle="collapse" data-parent="#collapse-group" href="#el2">Ubiquitous</a>
+													<a data-toggle="collapse" data-parent="#collapse-group" href="#el3">Universal</a>
+													<a data-toggle="collapse" data-parent="#collapse-group" href="#el4">Scalable</a>
+													<a data-toggle="collapse" data-parent="#collapse-group" href="#el5">Secure</a>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -540,9 +564,9 @@
 				});
 				rev2.reveal();
 				//************************ Example 2 - reveal on scroll ********************************				
-				var scrollElemToWatch_1 = document.getElementById('rev-3'),
+				var scrollElemToWatch_1 = document.getElementById('rev-5'),
 					watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -300),				
-					rev3 = new RevealFx(scrollElemToWatch_1, {
+					rev5 = new RevealFx(scrollElemToWatch_1, {
 						revealSettings : {
 							bgcolor: '#d51c29',
 							direction: 'rl',
@@ -551,7 +575,7 @@
 							}
 						}
 					}),
-					rev4 = new RevealFx(document.querySelector('#rev-4'), {
+					rev3 = new RevealFx(document.querySelector('#rev-3'), {
 						revealSettings : {
 							bgcolor: '#ffcf01',
 							delay: 250,
@@ -560,7 +584,7 @@
 							}
 						}
 					}),
-					rev5 = new RevealFx(document.querySelector('#rev-5'), {
+					rev4 = new RevealFx(document.querySelector('#rev-4'), {
 						revealSettings : {
 							bgcolor: '#d51c29',
 							delay: 500,
@@ -961,6 +985,35 @@
 			$('.ac-t2').on('click', function() {
 				$(this).toggleClass('active').siblings().removeClass('active');
 			});
+
+
+			// $('.visible').collapse();
+
+			// Toggle text(first block)
+			// var myEl = document.getElementById('tog-links');
+			// myEl.addEventListener('click', function(event) {
+			//     console.log(event.target);
+			// }, false);
+			// var links = myEl.getElementsByTagName('span');
+			// for ( var i = 0; i < links.length; i++) {
+
+			// }
+
+			// $('#tog-links').click(span, function(event) {
+			// 	console.log(event);
+			// });
+
+
+			// myEl.addEventListener('click', function() {
+			//     alert('Hello world again!!!');
+			// }, false);
+
+			// $('#tog-links').find('span').click(function() {
+
+			// });
+			// $('#tog-links span').on('click', function() {
+			// 	$(this).toggleClass('active').siblings().removeClass('active');
+			// });
 		});
 	</script>
 <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>

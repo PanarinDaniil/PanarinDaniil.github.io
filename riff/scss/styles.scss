@@ -216,7 +216,6 @@ canvas {
 	    position:relative;
 	    z-index:3;
 	}
-	
 	.box-wrap{
 		margin:0 0 42px;
 		&.to-top{
@@ -224,9 +223,27 @@ canvas {
 		}		
 		.h2, h2{
 			color:#d81720;
-			span{
-				color:#3e3e3f;
+			a{
+				color:#d81720;
+				&:focus{
+					color:#d81720;
+					text-decoration:none;
+				}
+				&:hover,
+				&.active{
+					color:#3e3e3f;
+					text-decoration:none;
+				}
 			}
+		}
+	}
+	// .collapse.in{
+	// 	display:block;
+	// }
+	.visible{
+		display:none;
+		&.show{
+			display:block;
 		}
 	}
 	.text-box{
@@ -235,6 +252,7 @@ canvas {
 		}
 	}	
 }
+
 .text-box{
 	.title{
 		margin-bottom:22px;
@@ -501,6 +519,7 @@ canvas {
 		margin-bottom:90px;
 		p{
 			margin:0;
+			color:#fff;
 		}
 	}
 	.footer-adr{
@@ -515,13 +534,12 @@ canvas {
 			max-width:100%;
 		}
 	}
-	.f-info, .title{
+	.f-info, .f-info p, .title{
 		margin-bottom:45px;
 		color:#fff;
 	}
 	.title{
 		font:24px/1.5 "Gilroy-EB";
-
 	}
 	.f-info{
 		font-size:24px;
