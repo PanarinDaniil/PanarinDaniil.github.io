@@ -553,8 +553,7 @@ canvas {
 		}
 	}
 }
-
-/* Overlay style  POPUP*/
+/*POPUPs*/
 .overlay-hugeinc{
 	position:fixed;
 	width:100%;
@@ -562,7 +561,7 @@ canvas {
 	top:0;
 	left:0;
 	z-index:10;
-	background:rgba(153,204,51,0.9);
+	background:rgba(255,207,1,0.9);
 	.close-pop{
 		width:80px;
 		height:80px;
@@ -600,26 +599,18 @@ canvas {
 		}
 	}
 }
-
-/* Effects */
 .overlay-hugeinc {
 	opacity:0;
 	visibility:hidden;
 	@include transition(opacity 0.5s, visibility 0s 0.5s);
-	// -webkit-transition:opacity 0.5s, visibility 0s 0.5s;
-	// transition:opacity 0.5s, visibility 0s 0.5s;
 	&.open{
 		opacity:1;
 		visibility:visible;
 		@include transition(opacity 0.5s);
-		// -webkit-transition:opacity 0.5s;
-		// transition:opacity 0.5s;
 		.popup-content{
 			.text{
 				opacity:1;
 				@include transform(rotateX(0deg));
-				// -webkit-transform:rotateX(0deg);
-				// transform:rotateX(0deg);
 			}
 		}
 	}
@@ -627,20 +618,14 @@ canvas {
 		.popup-content{
 			.text{
 				@include transform(translateY(25%) rotateX(-35deg));
-				// -webkit-transform:translateY(25%) rotateX(-35deg);
-				// transform:translateY(25%) rotateX(-35deg);
 			}
 		}
 	}
 	.popup-content{
-		// -webkit-perspective:1200px;
-		// perspective:1200px;
 		@include perspective(1200px);
 		.text{
 			opacity:0.4;
 			@include transform(translateY(-25%) rotateX(35deg));
-			// -webkit-transform:translateY(-25%) rotateX(35deg);
-			// transform:translateY(-25%) rotateX(35deg);
 			-webkit-transition:-webkit-transform 0.5s, opacity 0.5s;
 			transition:transform 0.5s, opacity 0.5s;
 		}

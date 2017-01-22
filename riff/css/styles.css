@@ -712,7 +712,7 @@ canvas {
   color: #3e3e3f;
 }
 
-/* Overlay style  POPUP*/
+/*POPUPs*/
 .overlay-hugeinc {
   position: fixed;
   width: 100%;
@@ -720,7 +720,7 @@ canvas {
   top: 0;
   left: 0;
   z-index: 10;
-  background: rgba(153, 204, 51, 0.9);
+  background: rgba(255, 207, 1, 0.9);
 }
 .overlay-hugeinc .close-pop {
   width: 80px;
@@ -762,7 +762,6 @@ canvas {
   line-height: 2.12;
 }
 
-/* Effects */
 .overlay-hugeinc {
   opacity: 0;
   visibility: hidden;
