@@ -265,10 +265,10 @@ h2, .h2 {
   }
 }
 .mob-btn:hover div {
-  background: #b2b2b2;
+  background: #ffdb00;
 }
 .mob-btn:hover div:before, .mob-btn:hover div:after {
-  background: #b2b2b2;
+  background: #ffdb00;
 }
 .mob-btn.active div {
   background: transparent;
@@ -297,7 +297,7 @@ h2, .h2 {
   text-indent: -9999px;
   height: 5px;
   display: block;
-  background: #b2b2b2;
+  background: #ffdb00;
   position: relative;
   -moz-transition: background 0.3s 0s;
   -o-transition: background 0.3s 0s;
@@ -312,7 +312,7 @@ h2, .h2 {
   right: 0;
   height: 5px;
   z-index: 1;
-  background: #b2b2b2;
+  background: #ffdb00;
   -moz-transition-delay: 0.3s, 0s, 0s;
   -o-transition-delay: 0.3s, 0s, 0s;
   -webkit-transition-delay: 0.3s, 0s, 0s;

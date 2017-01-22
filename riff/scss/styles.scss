@@ -122,10 +122,10 @@ h2, .h2{
 	}
     &:hover{
         div{
-        	background:#b2b2b2;
+        	background:#ffdb00;
         	&:before,
 	        &:after{
-	        	background:#b2b2b2;
+	        	background:#ffdb00;
 	        }
         }
     }
@@ -150,7 +150,7 @@ h2, .h2{
         text-indent:-9999px;
         height:5px;
         display:block;
-        background:#b2b2b2;
+        background:#ffdb00;
         position:relative;
         @include transition(background 0.3s 0s);
         &:before,
@@ -161,7 +161,7 @@ h2, .h2{
             right:0;
             height:5px;
             z-index:1;
-            background:#b2b2b2;
+            background:#ffdb00;
             @include transition-delay(.3s, 0s, 0s);
             @include transition-duration(.3s, .3s, .3s);
         }
