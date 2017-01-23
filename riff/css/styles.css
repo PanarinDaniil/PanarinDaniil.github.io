@@ -181,7 +181,7 @@ h2, .h2 {
 }
 @media screen and (max-width: 767px) {
   h2, .h2 {
-    font-size: 48px;
+    font-size: 45px;
   }
 }
 
@@ -394,6 +394,11 @@ h2, .h2 {
   -webkit-transition: all 0.8s linear;
   transition: all 0.8s linear;
 }
+@media screen and (max-width: 991px) {
+  .header-nav {
+    margin-top: 35px;
+  }
+}
 @media screen and (min-width: 768px) {
   .header-nav {
     display: block !important;
@@ -454,6 +459,11 @@ h2, .h2 {
 .top-back .h1 span, .top-back h1 span {
   font-size: 60px;
   display: block;
+}
+@media screen and (max-width: 767px) {
+  .top-back .h1 span, .top-back h1 span {
+    font-size: 40px;
+  }
 }
 .top-back p {
   font: 24px/1.21 "Gilroy-R";
@@ -637,6 +647,11 @@ canvas {
   -ms-transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
+}
+@media screen and (max-width: 767px) {
+  .box_1 .sm-nav {
+    right: 30px;
+  }
 }
 .box_1 .sm-nav:after {
   position: absolute;
@@ -851,11 +866,37 @@ canvas {
   -webkit-align-items: center;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .box_11 .partners {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
 .box_11 .partners * {
   letter-spacing: 0;
 }
+.box_11 .partners li {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+  filter: grayscale(100%);
+  filter: gray;
+}
+@media screen and (max-width: 767px) {
+  .box_11 .partners li {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
 .box_11 .partners li + li {
   margin-left: 25px;
+}
+@media screen and (max-width: 767px) {
+  .box_11 .partners li + li {
+    margin-left: 0;
+  }
 }
 .box_11 .partners img {
   display: block;
@@ -867,6 +908,11 @@ canvas {
   filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
   filter: grayscale(100%);
   filter: gray;
+}
+@media screen and (max-width: 767px) {
+  .box_11 .partners img {
+    margin: 0 auto;
+  }
 }
 
 .footer {
