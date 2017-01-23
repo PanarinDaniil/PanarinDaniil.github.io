@@ -101,7 +101,7 @@ h2, .h2{
 	&.fixed-theme{
 		position:fixed;
 		background:#3e3e3f;
-		padding:25px 0;
+		padding:15px 0;
 		.logo{
 			a{
 				max-width:70px;
@@ -243,6 +243,11 @@ h2, .h2{
 				margin-top:5px;
 			}
 		}
+		&.active{
+			a{
+				color:#d81720;
+			}
+		}
 	}
 	a{
 		font:18px/1 "Gilroy-EB";
@@ -250,6 +255,14 @@ h2, .h2{
 		@include bp( m ){
 			display:block;
 			padding:15px 0;
+		}
+		&:focus{
+			color:#b2b2b2;
+			text-decoration:none;	
+		}
+		&:hover{
+			text-decoration:none;
+			color:#d81720;
 		}
 	}
 }

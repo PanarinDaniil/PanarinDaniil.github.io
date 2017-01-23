@@ -108,7 +108,7 @@ particlesJS("particles1", {
 	  },
 	  "retina_detect": true
 });
-particlesJS("particles2", {
+particlesJS("application", {
 	  "particles": {
 	    "number": {
 	      "value": 80,
@@ -328,7 +328,7 @@ particlesJS("particles3", {
 	  },
 	  "retina_detect": true
 });
-particlesJS("particles4", {
+particlesJS("vision", {
 	  "particles": {
 	    "number": {
 	      "value": 80,
@@ -438,7 +438,7 @@ particlesJS("particles4", {
 	  },
 	  "retina_detect": true
 });
-particlesJS("particles5", {
+particlesJS("faq", {
 	  "particles": {
 	    "number": {
 	      "value": 80,
@@ -548,7 +548,7 @@ particlesJS("particles5", {
 	  },
 	  "retina_detect": true
 });
-particlesJS("particles6", {
+particlesJS("contact", {
 	  "particles": {
 	    "number": {
 	      "value": 80,

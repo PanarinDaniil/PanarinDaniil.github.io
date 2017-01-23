@@ -247,7 +247,7 @@ h2, .h2 {
 .header.fixed-theme {
   position: fixed;
   background: #3e3e3f;
-  padding: 25px 0;
+  padding: 15px 0;
 }
 .header.fixed-theme .logo a {
   max-width: 70px;
@@ -431,6 +431,9 @@ h2, .h2 {
     margin-top: 5px;
   }
 }
+.header-nav li.active a {
+  color: #d81720;
+}
 .header-nav a {
   font: 18px/1 "Gilroy-EB";
   color: #b2b2b2;
@@ -440,6 +443,14 @@ h2, .h2 {
     display: block;
     padding: 15px 0;
   }
+}
+.header-nav a:focus {
+  color: #b2b2b2;
+  text-decoration: none;
+}
+.header-nav a:hover {
+  text-decoration: none;
+  color: #d81720;
 }
 
 .top-back .content {
