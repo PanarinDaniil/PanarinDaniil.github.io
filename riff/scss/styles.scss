@@ -39,14 +39,20 @@ a{
 h1, .h1{
 	font:72px/1.4 "Gilroy-EB";
 	color:#d81720;
-	@include bp(s) {
+	@include bp( l ) {
+	    font-size:52px;
+	}
+	@include bp( m ) {
 		font-size:48px;
 	}
 }
 h2, .h2{
 	font:72px/1.2 "Gilroy-EB";
 	color:#d81720;
-	@include bp( s ){	
+	@include bp( l ) {
+	    font-size:52px;
+	}
+	@include bp( m ){	
 		font-size:48px;
 	}
 }
@@ -89,6 +95,8 @@ h2, .h2{
 	@include transition($transitionL);
 	@include bp( m ){
 		z-index:12;
+		background:#3e3e3f;
+		padding:25px 0;
 	}
 	&.fixed-theme{
 		position:fixed;
@@ -193,6 +201,9 @@ h2, .h2{
 		max-width:129px;
 		display:block;
 		@include transition($transitionL);
+		@include bp( m ){
+			max-width:70px;
+		}
 	}
 	img{
 		max-width:100%;
@@ -245,7 +256,7 @@ h2, .h2{
 		position:relative;
 		z-index:3;
 		@include bp(m){
-			padding-bottom:50px;
+			padding:150px 0 50px;
 		}
 	}
 
@@ -311,6 +322,9 @@ canvas {
 }
 .usp{
 	padding-bottom:170px;
+	@include bp(m){
+		padding-bottom:40px;
+	}
 	.container{
 	    position:relative;
 	    z-index:3;
@@ -409,13 +423,33 @@ canvas {
 }
 .box_1{
 	padding:85px 0 150px;
+	@include bp( m ) {
+		padding-bottom:40px;
+	}
+	.sm-nav{
+	    position:absolute;
+	    top:-60px;
+	    right:60px;
+	    color:#ffcf06;
+	    font-size:16px;
+	    line-height:1;
+	    @include transform(rotate(-90deg));
+	    &:after{
+    	    position:absolute;
+		    content:"";
+		    left:-58px;
+		    top:7px;
+		    width:47px;
+		    height:1px;
+		    background:#ffcf06;
+	    }
+	}
 }
 .blank-sheet{
 	position:absolute;
 	top:0;
 	bottom:0;
 	width:71%;
-
 	&.right-block{
 		right:0;
 	}
@@ -431,7 +465,7 @@ canvas {
 		bottom:90px;
 		right:-5px;
 		color:#ffcf06;
-		font-size:14px;
+		font-size:16px;
 		line-height:1;
 		@include transform(rotate(-90deg));
 		&:after{
@@ -619,8 +653,8 @@ canvas {
 			-moz-filter:grayscale(100%);
 			-ms-filter:grayscale(100%);
 			-o-filter:grayscale(100%);
+			filter:url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
 			filter:grayscale(100%);
-			filter:url('#{$imgPath}/grayscale.svg');
 			filter:gray;
 		}
 	}
@@ -740,7 +774,7 @@ canvas {
 	height:100%;
 	top:0;
 	left:0;
-	z-index:10;
+	z-index:13;
 	background:rgba(255,207,1,0.9);
 	.close-pop{
 		width:80px;

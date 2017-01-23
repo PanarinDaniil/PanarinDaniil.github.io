@@ -159,7 +159,12 @@ h1, .h1 {
   font: 72px/1.4 "Gilroy-EB";
   color: #d81720;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 991px) {
+  h1, .h1 {
+    font-size: 52px;
+  }
+}
+@media screen and (max-width: 767px) {
   h1, .h1 {
     font-size: 48px;
   }
@@ -169,7 +174,12 @@ h2, .h2 {
   font: 72px/1.2 "Gilroy-EB";
   color: #d81720;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 991px) {
+  h2, .h2 {
+    font-size: 52px;
+  }
+}
+@media screen and (max-width: 767px) {
   h2, .h2 {
     font-size: 48px;
   }
@@ -230,6 +240,8 @@ h2, .h2 {
 @media screen and (max-width: 767px) {
   .header {
     z-index: 12;
+    background: #3e3e3f;
+    padding: 25px 0;
   }
 }
 .header.fixed-theme {
@@ -361,6 +373,11 @@ h2, .h2 {
   -webkit-transition: all 0.8s linear;
   transition: all 0.8s linear;
 }
+@media screen and (max-width: 767px) {
+  .logo a {
+    max-width: 70px;
+  }
+}
 .logo img {
   max-width: 100%;
   display: block;
@@ -427,7 +444,7 @@ h2, .h2 {
 }
 @media screen and (max-width: 767px) {
   .top-back .content {
-    padding-bottom: 50px;
+    padding: 150px 0 50px;
   }
 }
 .top-back .h1, .top-back h1 {
@@ -502,6 +519,11 @@ canvas {
 
 .usp {
   padding-bottom: 170px;
+}
+@media screen and (max-width: 767px) {
+  .usp {
+    padding-bottom: 40px;
+  }
 }
 .usp .container {
   position: relative;
@@ -599,6 +621,32 @@ canvas {
 .box_1 {
   padding: 85px 0 150px;
 }
+@media screen and (max-width: 767px) {
+  .box_1 {
+    padding-bottom: 40px;
+  }
+}
+.box_1 .sm-nav {
+  position: absolute;
+  top: -60px;
+  right: 60px;
+  color: #ffcf06;
+  font-size: 16px;
+  line-height: 1;
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.box_1 .sm-nav:after {
+  position: absolute;
+  content: "";
+  left: -58px;
+  top: 7px;
+  width: 47px;
+  height: 1px;
+  background: #ffcf06;
+}
 
 .blank-sheet {
   position: absolute;
@@ -621,7 +669,7 @@ canvas {
   bottom: 90px;
   right: -5px;
   color: #ffcf06;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1;
   -moz-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
@@ -816,8 +864,8 @@ canvas {
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
+  filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
   filter: grayscale(100%);
-  filter: url("../images/grayscale.svg");
   filter: gray;
 }
 
@@ -945,7 +993,7 @@ canvas {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 13;
   background: rgba(255, 207, 1, 0.9);
 }
 .overlay-hugeinc .close-pop {

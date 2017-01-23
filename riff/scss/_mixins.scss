@@ -2,14 +2,13 @@
   @if $point == xl {
     @media screen and (min-width: 801px) { @content; }
   }
-  @else if $point == l {
-    @media screen and (max-width: 800px) { @content; }
-  }
   @else if $point == xm {
     @media screen and (min-width: 679px) { @content; }
   }
   
-
+  @else if $point == l {
+    @media screen and (max-width: 991px) { @content; }
+  }
   @else if $point == m {
     @media screen and (max-width: 767px) { @content; }
   }
