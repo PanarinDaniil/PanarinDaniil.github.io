@@ -103,6 +103,7 @@ h2, .h2{
 		background:#3e3e3f;
 		padding:15px 0;
 		.logo{
+		    height:69px;
 			a{
 				max-width:70px;
 			}
@@ -197,6 +198,10 @@ h2, .h2{
     }
 }
 .logo{
+	height:126px;
+	@include bp( m ){
+		height:69px;
+	}
 	a{
 		max-width:129px;
 		display:block;

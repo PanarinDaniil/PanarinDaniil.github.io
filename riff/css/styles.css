@@ -249,6 +249,9 @@ h2, .h2 {
   background: #3e3e3f;
   padding: 15px 0;
 }
+.header.fixed-theme .logo {
+  height: 69px;
+}
 .header.fixed-theme .logo a {
   max-width: 70px;
 }
@@ -365,6 +368,14 @@ h2, .h2 {
   }
 }
 
+.logo {
+  height: 126px;
+}
+@media screen and (max-width: 767px) {
+  .logo {
+    height: 69px;
+  }
+}
 .logo a {
   max-width: 129px;
   display: block;
