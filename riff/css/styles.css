@@ -991,17 +991,17 @@ canvas {
   min-height: 87px;
 }
 
-.polygon-yellow .ac-toggle {
+.polygon-yellow .accordion-wrap .ac-toggle {
   font-size: 24px;
   padding-left: 20px;
 }
-.polygon-yellow .ac-toggle:before {
+.polygon-yellow .accordion-wrap .ac-toggle:before {
   font-size: 20px;
 }
-.polygon-yellow .ac-toggle:hover, .polygon-yellow .ac-toggle.active {
+.polygon-yellow .accordion-wrap .ac-toggle:hover, .polygon-yellow .accordion-wrap .ac-toggle.active {
   color: #3e3e3f;
 }
-.polygon-yellow .ac-toggle:hover:before, .polygon-yellow .ac-toggle.active:before {
+.polygon-yellow .accordion-wrap .ac-toggle:hover:before, .polygon-yellow .accordion-wrap .ac-toggle.active:before {
   color: #3e3e3f;
 }
 

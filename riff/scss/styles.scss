@@ -756,21 +756,22 @@ canvas {
 	}
 }
 .polygon-yellow{
-	.ac-toggle{
-		font-size:24px;
-		padding-left:20px;
-		&:before{
-			font-size:20px;
-		}
-		&:hover, &.active{
-			color:#3e3e3f;
+	.accordion-wrap{
+		.ac-toggle{
+			font-size:24px;
+			padding-left:20px;
 			&:before{
-				color:#3e3e3f;
+				font-size:20px;
 			}
-		}
+			&:hover, &.active{
+				color:#3e3e3f;
+				&:before{
+					color:#3e3e3f;
+				}
+			}
+		}	
 	}
 }
-
 //  Block-reveal 
 .block-revealer__element {
 	position: absolute;
