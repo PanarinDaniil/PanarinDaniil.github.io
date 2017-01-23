@@ -255,6 +255,9 @@ h2, .h2 {
 .header.fixed-theme .logo a {
   max-width: 70px;
 }
+.header.fixed-theme .logo a img {
+  height: 69px;
+}
 .header.fixed-theme .header-nav {
   margin-top: 28px;
 }
@@ -392,6 +395,12 @@ h2, .h2 {
 .logo img {
   max-width: 100%;
   display: block;
+  height: 126px;
+}
+@media screen and (max-width: 767px) {
+  .logo img {
+    height: 69px;
+  }
 }
 
 .header-nav {

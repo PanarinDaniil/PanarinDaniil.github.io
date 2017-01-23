@@ -106,6 +106,9 @@ h2, .h2{
 		    height:69px;
 			a{
 				max-width:70px;
+				img{
+					height:69px;
+				}
 			}
 		}
 		.header-nav{
@@ -213,6 +216,10 @@ h2, .h2{
 	img{
 		max-width:100%;
 		display:block;
+		height:126px;
+		@include bp( m ){
+			height:69px;
+		}
 	}
 }
 .header-nav{
