@@ -53,4 +53,24 @@ $(document).ready(function(){
 		changeHash: true,
 		scrollSpeed: 750
 	});
+
+	$('[class^="questionEl"]').on('click', function(e){
+	    e.preventDefault();
+	    var numb = this.className.replace('questionEl-', '');
+	    var num = parseInt(numb);
+	    $('[class^="questionEl"]').removeClass('active');
+	    $(this).addClass('active');
+	    $('[id^="questionEl-"]').hide();
+	    $('#questionEl-' + num).show();
+	});
+
+	$('[class^="answerEl"]').on('click', function(e){
+	    e.preventDefault();
+	    var numb = this.className.replace('answerEl-', '');
+	    var num = parseInt(numb);
+	    $('[class^="answerEl"]').removeClass('active');
+	    $(this).addClass('active');
+	    $('[id^="answerEl-"]').hide();
+	    $('#answerEl-' + num).show();
+	});
 });

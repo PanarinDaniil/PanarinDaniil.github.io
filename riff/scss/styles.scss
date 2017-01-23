@@ -372,21 +372,6 @@ canvas {
 				margin-top:0px;
 				background:transparent;
 			}
-		}		
-		.h2, h2{
-			color:#d81720;
-			a{
-				color:#d81720;
-				&:focus{
-					color:#d81720;
-					text-decoration:none;
-				}
-				&:hover,
-				&.active{
-					color:#3e3e3f;
-					text-decoration:none;
-				}
-			}
 		}
 	}
 	.visible{
@@ -404,7 +389,26 @@ canvas {
 		}
 	}	
 }
-
+.add-links{
+	.h2, h2{
+		color:#d81720;
+		a{
+			color:#d81720;
+			&:focus{
+				color:#d81720;
+				text-decoration:none;
+			}
+			&:hover,
+			&.active{
+				color:#3e3e3f;
+				text-decoration:none;
+			}
+		}
+	}
+}
+.common-st{
+	display:none;
+}
 .text-box{
 	.title{
 		margin-bottom:22px;
