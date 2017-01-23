@@ -963,10 +963,12 @@ canvas {
 }
 .footer .title {
   font: 24px/1.5 "Gilroy-EB";
+  min-height: 72px;
 }
 .footer .f-info {
   font-size: 24px;
   line-height: 1.5;
+  min-height: 87px;
 }
 
 .polygon-yellow .ac-toggle {
