@@ -262,7 +262,6 @@ h2, .h2{
 			padding:150px 0 50px;
 		}
 	}
-
 	.h1, h1{
 		margin-bottom:31px;
 		color:#fff;
@@ -271,6 +270,7 @@ h2, .h2{
 			display:block;
 			@include bp(m){
 				font-size:40px;
+				line-height:1.4;
 			}
 		}
 	}
@@ -280,7 +280,6 @@ h2, .h2{
 		max-width:906px;
 	}
 }
-
 /*Particles*/
 canvas {
   display:block;
@@ -827,6 +826,9 @@ canvas {
 		height:60%;
 		font-size:54px;
 		@include transform(translateY(-50%));
+		@include bp(m){
+		    overflow-y:auto;
+		}
 	}
 	.text{
 		padding:0 15px;
