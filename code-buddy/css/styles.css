@@ -134,7 +134,7 @@ html {
 
 body {
   min-height: 100%;
-  min-height: 100hv;
+  min-height: 100vh;
   font: 16px/1.4 "Mer-R", Arial, sans-serif;
   color: #545462;
   background: url("../images/pattern-purple.png");
