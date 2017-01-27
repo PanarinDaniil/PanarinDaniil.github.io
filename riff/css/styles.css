@@ -1197,7 +1197,7 @@ canvas {
   }
 }
 .footer .f-info {
-  min-height: 103px;
+  min-height: 108px;
 }
 @media screen and (max-width: 576px) {
   .footer .f-info {
