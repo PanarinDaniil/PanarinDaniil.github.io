@@ -1067,6 +1067,8 @@ h3, .h3{
 		}
 	}
 }
+
+
 .partners-content{
 	h1, .h1{
 		margin-bottom:20px;
@@ -1074,7 +1076,7 @@ h3, .h3{
 }
 .partners-wrap{
 	padding:35px 0 57px;
-	@include bp( m ){
+	@include bp( l ){
 		padding:35px 0 0;
 	}
 	.section-title{
@@ -1082,20 +1084,20 @@ h3, .h3{
 		color:$pale-olive-green;
 		margin-bottom:2px;
 		text-transform:uppercase;
-		@include bp( m ){
+		@include bp( l ){
 			text-align:center;
 		}
 	}
 	.partners{
 		border-top:1px solid $pale-olive-green;
 		padding-top:39px;
-		@include bp( m ){
+		@include bp( l ){
 			padding-top:25px;
 		}
 		li{
 			@include flex();
 		    @include justify-content(center);
-		    @include bp( m ){
+		    @include bp( l ){
 		    	@include flex-wrap(wrap);
 		    }
 			&:after{
@@ -1114,7 +1116,7 @@ h3, .h3{
 	.img-wrap{
 		width:25%;
 		padding:0 13px 0;
-		@include bp( m ){
+		@include bp( l ){
 	    	padding:0;
 	    	margin-bottom:10px;
 	    	width:100%;
@@ -1126,7 +1128,7 @@ h3, .h3{
 			vertical-align:top;
 			max-width:90%;
 			margin:0 auto;
-			@include bp( m ){
+			@include bp( l ){
 				max-width:100%;
 			}
 		}
@@ -1136,14 +1138,14 @@ h3, .h3{
 		line-height:26px;
 		font-weight:600;
 		color:$text-grey;
-		@include bp( m ){
+		@include bp( l ){
 			margin-bottom:45px;
 			width:100%;
 		}
 		.title{
 			font:700 22px/1.2 "Open Sans";
 			margin-bottom:13px;
-			@include bp( m ){
+			@include bp( l ){
 				text-align:center;
 			}
 		}
@@ -1151,7 +1153,7 @@ h3, .h3{
 			font:600 22px/1.2 "Open Sans";
 			text-decoration:underline;	
 			margin-bottom:18px;	
-			@include bp( m ){
+			@include bp( l ){
 				text-align:center;
 			}
 		}
@@ -1164,13 +1166,60 @@ h3, .h3{
 			font:400 16px/1.2 "Open Sans";
 			color:#5288f4;
 			text-decoration:none;
-			@include bp( m ){
+			@include bp( l ){
 				text-align:center;
 			}
 			&:hover{
 				text-decoration:underline;
 			}
 		}
+	}
+}
+.logos-wrap{
+	padding:33px 0 64px;
+	@include bp( l ){
+		padding:21px 0 46px;
+	}
+	.content{
+		max-width:1356px;
+		padding:0;
+		@include bp( l ){
+			padding:0 15px;
+		}
+	}
+	.logos-box{
+		@include flex-wrap(wrap);
+		@include justify-content(center);
+	    li{
+		    width:calc(100% / 7.1);
+		    border-bottom:2px solid $light-grey;
+		    border-right:2px solid $light-grey;
+		    position: relative;
+		    height:156px;
+		    @include bp( l ){
+		    	width:calc(100% / 3.1);
+		    	height:90px;
+		    	border:none;
+		    }
+		    img{
+		    	display:inline-block;
+		    	vertical-align:top;
+		    	position:absolute;
+		    	left:50%;
+		    	top:50%;
+		    	max-width:100%;
+		    	@include transform(translate(-50%, -50%));
+			    @media (max-width:1200px) {
+			    	max-width:90%;
+			    }
+		    }
+	    }
+	    li:nth-child(7n){
+	    	border-right:none;
+	    }
+	    li:nth-last-child(-n+7){
+	    	border-bottom:none;
+	    }
 	}
 }
 .footer{
