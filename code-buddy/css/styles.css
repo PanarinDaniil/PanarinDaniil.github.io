@@ -1496,6 +1496,7 @@ h3, .h3 {
 
 .logos-wrap {
   padding: 33px 0 64px;
+  background: #ffffff;
 }
 @media screen and (max-width: 800px) {
   .logos-wrap {
