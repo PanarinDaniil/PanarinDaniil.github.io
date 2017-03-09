@@ -1,4 +1,27 @@
 /*FOOTER*/
 .footer{
-    background:#2f2f2f;
+    margin-top:-50px;
+    .content-wrap{
+	    background:#2f2f2f;
+        margin:0 -200px;
+        -webkit-transform-origin:left center;
+        -moz-transform-origin:left center;
+        -o-transform-origin:left center;
+        -ms-transform-origin:left center;
+        transform-origin:left center;
+        -webkit-transform:rotate(10deg);
+        -moz-transform:rotate(10deg);
+        -o-transform:rotate(10deg);
+        -ms-transform:rotate(10deg);
+        transform:rotate(10deg);
+    }
+    .content-box{
+        -webkit-transform:rotate(-10deg);
+        -moz-transform:rotate(-10deg);
+        -o-transform:rotate(-10deg);
+        -ms-transform:rotate(-10deg);
+        transform:rotate(-10deg);
+        color:#000;
+        margin:20px 177px 20px 223px;
+    }
 }
