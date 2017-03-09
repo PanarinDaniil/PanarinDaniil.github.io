@@ -1,27 +1,17 @@
-$icon-envelope: "\e903";
-$icon-support: "\e900";
-$icon-check: "\e911";
-$icon-tools: "\e901";
-$icon-heart: "\e902";
-$icon-gear: "\e023";
-$icon-map-marker: "\f041";
-$icon-phone: "\f095";
-$icon-dollar: "\f155";
-$icon-usd: "\f155";
-
+$icon-facebook: "\e900";
+$icon-instagramm: "\e901";
 @font-face {
-  font-family: 'Code-buddy';
-  src:  url('#{$fontPath}/code-buddy.eot?la2cw6');
-  src:  url('#{$fontPath}/code-buddy.eot?la2cw6#iefix') format('embedded-opentype'),
-    url('#{$fontPath}/code-buddy.ttf?la2cw6') format('truetype'),
-    url('#{$fontPath}/code-buddy.woff?la2cw6') format('woff'),
-    url('#{$fontPath}/code-buddy.svg?la2cw6#code-buddy') format('svg');
+  font-family: 'ocb';
+  src:  url('#{$fontPath}ocb.eot?jfgjds');
+  src:  url('#{$fontPath}ocb.eot?jfgjds#iefix') format('embedded-opentype'),
+    url('#{$fontPath}ocb.ttf?jfgjds') format('truetype'),
+    url('#{$fontPath}ocb.woff?jfgjds') format('woff'),
+    url('#{$fontPath}ocb.svg?jfgjds#ocb') format('svg');
   font-weight: normal;
   font-style: normal;
 }
-
 [class^="icon-"], [class*=" icon-"] {
-  font-family: 'code-buddy' !important;
+  font-family: 'ocb' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -31,53 +21,9 @@ $icon-usd: "\f155";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-envelope {
-  &:before {
-    content: $icon-envelope;
-  }
+.icon-facebook:before {
+  content: "\e900";
 }
-.icon-support {
-  &:before {
-    content: $icon-support;
-  }
-}
-.icon-check {
-  &:before {
-    content: $icon-check;
-  }
-}
-.icon-tools {
-  &:before {
-    content: $icon-tools;
-  }
-}
-.icon-heart {
-  &:before {
-    content: $icon-heart;
-  }
-}
-.icon-gear {
-  &:before {
-    content: $icon-gear;
-  }
-}
-.icon-map-marker {
-  &:before {
-    content: $icon-map-marker;
-  }
-}
-.icon-phone {
-  &:before {
-    content: $icon-phone;
-  }
-}
-.icon-dollar {
-  &:before {
-    content: $icon-dollar;
-  }
-}
-.icon-usd {
-  &:before {
-    content: $icon-usd;
-  }
+.icon-instagramm:before {
+  content: "\e901";
 }

@@ -106,6 +106,8 @@ p{
     .sub-logo{
         position:absolute;
         display:block;
+        border-radius:50%;
+        background:#fff;
         top:-13px;
         left:50%;
         width:8.8%;
@@ -426,9 +428,9 @@ p{
         width:55%;
         float:left;
         margin-top:-166px;
-        -webkit-box-shadow: -15px 0px 65px 65px rgba(47,47,47,0.7);
-        -moz-box-shadow: -15px 0px 65px 65px rgba(47,47,47,0.7);
-        box-shadow: -15px 0px 65px 65px rgba(47,47,47,0.7);
+        -webkit-box-shadow:-15px 0px 65px 65px rgba(47,47,47,0.7);
+        -moz-box-shadow:-15px 0px 65px 65px rgba(47,47,47,0.7);
+        box-shadow:-15px 0px 65px 65px rgba(47,47,47,0.7);
         img{
             display:block;
             max-width:100%;
@@ -440,3 +442,4 @@ p{
         width:37%;
     }
 }
+@import "footer";

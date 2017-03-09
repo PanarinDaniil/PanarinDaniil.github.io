@@ -57,14 +57,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 @font-face {
-  font-family: 'Code-buddy';
-  src: url("../fonts//code-buddy.eot?la2cw6");
-  src: url("../fonts//code-buddy.eot?la2cw6#iefix") format("embedded-opentype"), url("../fonts//code-buddy.ttf?la2cw6") format("truetype"), url("../fonts//code-buddy.woff?la2cw6") format("woff"), url("../fonts//code-buddy.svg?la2cw6#code-buddy") format("svg");
+  font-family: 'ocb';
+  src: url("../fonts/ocb.eot?jfgjds");
+  src: url("../fonts/ocb.eot?jfgjds#iefix") format("embedded-opentype"), url("../fonts/ocb.ttf?jfgjds") format("truetype"), url("../fonts/ocb.woff?jfgjds") format("woff"), url("../fonts/ocb.svg?jfgjds#ocb") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 [class^="icon-"], [class*=" icon-"] {
-  font-family: 'code-buddy' !important;
+  font-family: 'ocb' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -75,44 +75,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-envelope:before {
-  content: "";
+.icon-facebook:before {
+  content: "\e900";
 }
 
-.icon-support:before {
-  content: "";
-}
-
-.icon-check:before {
-  content: "";
-}
-
-.icon-tools:before {
-  content: "";
-}
-
-.icon-heart:before {
-  content: "";
-}
-
-.icon-gear:before {
-  content: "";
-}
-
-.icon-map-marker:before {
-  content: "";
-}
-
-.icon-phone:before {
-  content: "";
-}
-
-.icon-dollar:before {
-  content: "";
-}
-
-.icon-usd:before {
-  content: "";
+.icon-instagramm:before {
+  content: "\e901";
 }
 
 .container {
@@ -1992,6 +1960,8 @@ p {
 .top-nav .sub-logo {
   position: absolute;
   display: block;
+  border-radius: 50%;
+  background: #fff;
   top: -13px;
   left: 50%;
   width: 8.8%;
@@ -2390,4 +2360,9 @@ p {
   float: right;
   margin-left: 8%;
   width: 37%;
+}
+
+/*FOOTER*/
+.footer {
+  background: #2f2f2f;
 }
