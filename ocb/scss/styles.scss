@@ -298,7 +298,7 @@ p{
         max-width:100%;
     }
     .slick-dots{
-        bottom:31%;
+        bottom:31.5%;
         @media (max-width:999px) {
             /*bottom:35%;*/
         }
@@ -329,7 +329,7 @@ p{
         position:absolute;
         left:0;
         right:0;
-        bottom:27%;
+        bottom:28.5%;
         max-width:860px;
         margin:0 auto;
         text-align:center;
@@ -363,7 +363,7 @@ p{
             }
         }
         .slide-box{
-            padding:51px 55px 160px;
+            padding:50px 55px 160px;
             @media (max-width:1200px){
                 padding:10px 30px 50px;
             }
@@ -452,7 +452,7 @@ p{
     .img-wrap{
         width:57%;
         float:left;
-        margin-top:-214px;
+        margin-top:-212px;
         @include box-shadow(0px 0px 65px 0px rgba(47, 47, 47, 0.75));
         @media (max-width:1500px) {
             width:45%;
@@ -469,10 +469,14 @@ p{
             max-width:100%;
         }
     }
+    .title-number{
+        margin-bottom:41px;
+    }
     .info-wrap{
         float:right;
         margin-left:8%;
         width:32%;
+        padding-top:68px;
         @media (max-width:1500px) {
             width:47%;
         }
@@ -488,7 +492,7 @@ p{
         font:600 58px/78px "Roboto", sans-serif;
         position:relative;
         text-transform:uppercase;
-        padding-bottom:30px;
+        padding-bottom:29px;
         margin-bottom:68px;
         @media (max-width:2459px) {
             font-size:40px;
@@ -547,8 +551,8 @@ p{
         margin:20px 480px 20px 520px;
     }
     .content{
-        padding-bottom:390px;
-        padding-top:110px;
+        padding-bottom:600px;
+        padding-top:148px;
     }
     .title-number{
         margin-bottom:94px;
@@ -635,7 +639,7 @@ p{
     }
     .first{
         z-index:2;
-        top:156px;
+        top:155px;
         left:0;
         width:50%;
         max-width:1140px;
@@ -646,14 +650,14 @@ p{
     }
     .second{
         float:right;
-        top:-665px;
+        top:-781px;
         right:0;
         width:66.666667%;
         max-width:1540px;
     }
     .third{
         float:right;
-        top:-608px;
+        top:-729px;
         right:8.333333%;
         width:50%;
         max-width:1140px;
@@ -665,7 +669,7 @@ p{
     }
     .fourth{
         float:left;
-        top:-210px;
+        top:-261px;
         left:8.333333%;
         width:40.1709%;
         max-width:940px;
@@ -676,14 +680,14 @@ p{
     .fifth{
         float:left;   
         left:50%;
-        top:-474px;
+        top:-573px;
         width:50%;
         max-width:1140px;
     }
     .btn-holder{
         position:absolute;
-        bottom:600px;
-        left:200px;
+        bottom:677px;
+        left:205px;
         text-align:left;
         @media (max-width:2459px) {
             left:130px;
@@ -693,7 +697,6 @@ p{
 }
 /*Third block*/
 .third-main-wrap{
-    // margin-top:-50px;
     &.content-wrap{
         background:#fff;
         margin:0 -480px;
@@ -717,18 +720,17 @@ p{
         -ms-transform:rotate(9deg);
         transform:rotate(9deg);
         color:#000;
-        margin:20px 480px 20px 510px;
+        margin:20px 507px 20px 495px;
         @media (max-width:550px){
             margin:20px 475px 20px 500px;
         }
     }
     .content{
-        padding-bottom:150px;
-        padding-top:150px;
+        padding-bottom:95px;
+        padding-top:226px;
         border:2px solid #2f2f2f;
         position:relative;
-        top:-50px;
-        /* margin-top:-108px;*/
+        top:-120px;
         @media (max-width:1200px) {
             padding-top:70px;
             padding-bottom:50px;
@@ -737,7 +739,7 @@ p{
     .title-number{
         width:49%;
         float:right;
-        margin-bottom:100px;
+        margin-bottom:95px;
         @media (max-width:1200px) {
             float:none;
             width:auto;
@@ -747,7 +749,7 @@ p{
         color:#9e9e9e;
         font-size:28px;
         line-height:48px;
-        margin-bottom:50px;
+        margin-bottom:43px;
         text-align:center;
         @media (max-width:1300px) {
             margin-bottom:20px;
@@ -768,14 +770,14 @@ p{
             color:#2f2f2f;
             i{
                 display:block;
-                font-size:45px;
+                font-size:55px;
             }
         }
     }
     .grey{
-        padding:250px 0;
+        padding:423px 0;
         background:#e6e6e6;
-        margin:-800px -480px 0;
+        margin:-921px -480px 0;
         -webkit-transform-origin:left center;
         -moz-transform-origin:leftcenter;
         -o-transform-origin:lef center;
@@ -814,12 +816,16 @@ p{
         margin:0 auto;
     }
     .gallery-item{
-        width:23.5%;
-        margin-left:2%;
-        margin-bottom:155px;
-        &:focus{
-            outline:none;
+        width:23.2%;
+        margin-left:2.4%;
+        margin-bottom:164px;
+        &:nth-child,
+        &:nth-child-last(2),
+        &:nth-child-last(3),
+        &:nth-child-last(4){
+            margin-bottom:130px;
         }
+
         @media (max-width:1300px){
             width:48%;
             margin-left:0;
@@ -857,7 +863,7 @@ p{
             background:rgba(47,47,47,.75);
             text-align:center;
             i{
-                font-size:44px;
+                font-size:54px;
                 line-height:80px;
                 color:#fff;
             }
@@ -868,10 +874,12 @@ p{
     }
     .author{
         color:#9e9e9e;
-        margin-bottom:22px;
+        margin-bottom:19px;
     }
     .info{
         color:#2f2f2f;
+        font-size:28px;
+        line-height:42px;
     }
 }
 .fourth-main-wrap{
@@ -894,19 +902,19 @@ p{
         -ms-transform:rotate(-9deg);
         transform:rotate(-9deg);
         color:#000;
-        margin:20px 480px 20px 520px;
+        margin:20px 471px 20px 520px;
     }
     .content{
         padding-top:40px;
         position:relative;
         z-index:5;
-        top:-440px;
+        top:-664px;
         @media (max-width:500px){
             top:-450px;
         }
     }
     .title-number{
-        margin-bottom:195px;
+        margin-bottom:199px;
         @media (max-width:1500px){
             margin-bottom:105px;
         }
@@ -921,9 +929,12 @@ p{
 }
 .article-preview{
     .article-item{
-        margin-bottom:260px;
+        margin-bottom:296px;
         @media (max-width:1500px){
             margin-bottom:120px;
+        }
+        &:last-child{
+            margin-bottom:313px;
         }
         .img-wrap{
             float:right;
@@ -955,7 +966,7 @@ p{
             }
             .art-wrap{
                 float:right;
-                margin-right:8.333333%;
+                margin-right:7%;
                 @media (max-width:1500px){
                     margin-right:0;
                 }
@@ -964,8 +975,8 @@ p{
     }
     .date{
         float:left;
-        width:18.7%;
-        margin-top:4px;
+        width:19%;
+        margin-top:-2px;
         @media (max-width:2000px){
             width:25%;
         }
@@ -982,6 +993,7 @@ p{
             line-height:48px;
             letter-spacing:0.25px;
             text-transform:uppercase;
+            margin-bottom:4px;
             @media (max-width:1500px){
                 font-size:25px;
             }
@@ -1010,7 +1022,7 @@ p{
     }
     .art-info{
         float:right;
-        width:78%;
+        width:80%;
         @media (max-width:2000px){
             width:73%;
         }
@@ -1027,7 +1039,7 @@ p{
             line-height:74px;
             font-weight:600;
             text-transform:uppercase;
-            margin-bottom:37px;
+            margin-bottom:26px;
             @media (max-width:1500px){
                 font-size:38px;
                 line-height:45px;
@@ -1043,7 +1055,7 @@ p{
             line-height:48px;
             letter-spacing:0.25px;
             text-transform:uppercase;
-            margin-bottom:68px;
+            margin-bottom:55px;
             @media (max-width:1500px){
                 font-size:25px;
                 margin-bottom:30px;
@@ -1071,49 +1083,37 @@ p{
 }
 .fifth-main-wrap{
     position:relative;
-    .back-img{
-        position:absolute;
-        display:block;
-        content:"";
-        top:-177px;
-        left:0;
-        bottom:-10px;
-        width:50%;
-        -webkit-transform:rotate(-9deg);
-        -moz-transform:rotate(-9deg);
-        -o-transform:rotate(-9deg);
-        -ms-transform:rotate(-9deg);
-        transform:rotate(-9deg);
-        @media (max-width:1000px){
-            width:80%;
-        }
-    }
     &.content-wrap{
         overflow:hidden;
         background:#e6e6e6;
-        margin:-240px -480px 0;
+        margin:-315px -480px 0;
         -webkit-transform-origin:left center;
         -moz-transform-origin:left center;
         -o-transform-origin:left center;
         -ms-transform-origin:left center;
         transform-origin:left center;
-        -webkit-transform:rotate(9deg);
-        -moz-transform:rotate(9deg);
-        -o-transform:rotate(9deg);
-        -ms-transform:rotate(9deg);
-        transform:rotate(9deg);
+        @include transform(rotate(9deg));
         @media (max-width:1000px){
             margin-top:-320px;
+        }
+    }
+    .back-img{
+        position:absolute;
+        display:block;
+        content:"";
+        top:-188px;
+        left:0;
+        bottom:-10px;
+        width:50.7%;
+        @include transform(rotate(-9deg));
+        @media (max-width:1000px){
+            width:80%;
         }
     }
     .content-box{
         position:relative;
         z-index:2;
-        -webkit-transform:rotate(-9deg);
-        -moz-transform:rotate(-9deg);
-        -o-transform:rotate(-9deg);
-        -ms-transform:rotate(-9deg);
-        transform:rotate(-9deg);
+        @include transform(rotate(-9deg));
         color:#000;
         margin:0px 460px 0px 480px;
         @media (max-width:1500px){
@@ -1125,7 +1125,7 @@ p{
     }
     .content{
         position:relative;
-        padding:250px 0;
+        padding:279px 0 302px;
         @media (max-width:1000px){
             padding:90px 0 250px;
         }
@@ -1133,19 +1133,10 @@ p{
             padding:30px 0 200px;
         }
     }
-    .left-img{
-        float:left;
-        width:50%;
-        overflow:hidden;
-        img{
-            display:block;
-            max-width:100%;
-        }
-    }
     .right-block{
         float:right;
-        width:50%;
-        padding-left:8.5%;
+        width:49%;
+        padding-left:8.7%;
         padding-right:20px;
         @media (max-width:1000px){
             float:none;
@@ -1159,7 +1150,7 @@ p{
         }
     }
     .title-number{
-        margin-bottom:62px;
+        margin-bottom:57px;
         @media (max-width:1500px){
             margin-bottom:35px;
         }
@@ -1171,7 +1162,7 @@ p{
     }
     .description{
         p{
-            margin-bottom:62px;
+            margin-bottom:52px;
             @media (max-width:1500px){
                 font-size:26px;
                 line-height:1.4;
