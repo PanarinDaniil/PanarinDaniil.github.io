@@ -4,7 +4,7 @@
     .content-wrap{
 	    background:#2f2f2f;
         margin:0 -280px;
-        padding-top:200px;
+        padding-top:50px;
         padding-bottom:230px;
         -webkit-transform-origin:left center;
         -moz-transform-origin:left center;
@@ -12,6 +12,13 @@
         -ms-transform-origin:left center;
         transform-origin:left center;
         @include transform(rotate(9deg));
+        @media (min-width:1800px){
+            padding-bottom:370px;
+            padding-top:200px;
+        }
+        @media (max-width:768px) {
+        	padding-bottom:150px;
+        }
     }
     .content-box{
         @include transform(rotate(-9deg));
@@ -24,6 +31,13 @@
         padding-bottom:220px;
         overflow:hidden;
         position:relative;
+        @media (max-width:1800px){
+            padding-bottom:110px;
+        }
+        @media (max-width:999px){
+            padding-bottom:60px;
+        }
+
     }
     .top-footer::after{
         content:"";
@@ -59,18 +73,34 @@
             color:#fff;
             margin-bottom:60px;
             text-transform:uppercase;
+             @media (max-width:2459px) {
+        		font-size:40px;
+        		line-height:45px;
+    		}
         }
+        @media (max-width:768px) {
+        	float:none;
+        	width: 100%;
+         }
     }
     p{
         font-size:36px;
         color:#fff;
         margin-bottom:40px;
+        @media (max-width:2459px) {
+        	font-size:28px;
+        	line-height:1.4;
+    	}
 
     }
     .phone-list{
         font-size:36px;
         color:#fff;
         line-height: 48px;
+        @media (max-width:2459px) {
+        	font-size:28px;
+        	line-height:1.4;
+    	}
 
     }
     .right-footer{
@@ -80,22 +110,59 @@
         padding-left: 8.5%;
         color:#fff;
         line-height: 52px;
+        @media (max-width:2459px) {
+        	font-size:28px;
+        	line-height:1.4;
+    	}
+    	@media (max-width:1800px){
+           	padding-top:200px;
+        }
+        @media (max-width:999px) {
+        	padding-top:150px;
+    	}
+    	@media (max-width:768px) {
+         	float:none;
+        	width: 100%;
+        	padding-left: 0;
+        	padding-top:50px;
+        }
 
         .address{
             max-width:470px;
             margin-bottom:100px;
+            @media (max-width:1800px){ 
+            	margin-bottom:50px;
+        	}
         }
+
         .option{
             display:inline-block;
             min-width: 200px;
+            @media (max-width:1399px) {
+            	min-width: 120px;
+        	}
         }
+
         .item{
             display:inline-block;
         }
     }
+
 .bottom-nav{
     position:relative;
-     padding-top:178px;  
+    padding-top:178px; 
+    @media (max-width:1800px){
+        padding-top:110px; 
+    } 
+    @media (max-width:999px){
+        padding-top:60px;
+        }
+    @media (max-width:768px) {
+        padding-top:100px;
+    }
+    @media (max-width:500px) {
+        padding-top:40px;
+    }
 
     .sub-logo{
         position:absolute;
@@ -106,8 +173,18 @@
         width:8.8%;
         height:auto;
        	@include transform(translate(-50%, 0));
-        
-
+        @media (max-width:999px) {
+        	width:7%;
+        	bottom:-10px;
+    	}
+    	@media (max-width:768px) {
+        	bottom:auto;
+        	top:20px;
+        	width:10%;
+    	}
+    	@media (max-width:500px) {
+    		display:none;
+    	}
     }
 }
 
@@ -123,16 +200,20 @@
     @media (max-width:2459px) {
         margin-left:-6%;
     }
+    @media (max-width:1800px){
+        margin-bottom:120px;
+    } 
+    @media (max-width:999px){
+        margin-bottom:60px;
+    }
     @media (max-width:768px) {
         margin-left:0;
-        background:#fff;
     }
     *{
         line-height:48px;
         letter-spacing:1px;
         font-size:36px;
         display:inline-block;
-
         @media (max-width:2459px) {
             font-size:28px;
         }
@@ -165,7 +246,6 @@
                 margin-left:10%;
             }
         }
-        
     }
     a{
         color:#9e9e9e;
@@ -176,18 +256,11 @@
         &.active{
             color:#db4343;
         }
-
-
     }
-    
-    
-    
-   
 }
 
 .footer-social{
         text-align: center;
-
         li{
         	display: inline-block;
     		vertical-align: top;
@@ -198,8 +271,4 @@
     		color: #7b7a7a;
         }
     }
-
-
 }
-
-
