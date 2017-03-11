@@ -1035,6 +1035,7 @@ p{
         }
         .art-title{
             color:#db4343;
+            text-decoration:none;
             font-size:58px;
             line-height:74px;
             font-weight:600;
@@ -1047,6 +1048,9 @@ p{
             }
             @media (max-width:800px){
                 margin-bottom:5px;
+            }
+            &:hover{
+                text-decoration:underline;
             }
         }
         .blog-title{
