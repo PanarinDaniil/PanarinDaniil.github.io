@@ -53,14 +53,14 @@ p{
 .content{
     width:100%;
     max-width:2460px;
-    padding:0 1.2195%;
+    padding:0 1.9%;
     margin:0 auto;
     position:relative;
 }
 
 /*HEADER*/
 .header{
-    padding:65px 0 42px;
+    padding:65px 0 41px;
     position:relative;
     z-index:30;
     @include box-shadow(0px 0px 65px 0px rgba(47, 47, 47, 0.75));
@@ -78,7 +78,7 @@ p{
 .logo-wrapper{
     max-width:591px;
     width:33.3333%;
-    margin:0 auto 52px;
+    margin:0 auto 56px;
     @media (max-width:1399px) {
         margin-bottom:30px;
     }
@@ -329,7 +329,7 @@ p{
         position:absolute;
         left:0;
         right:0;
-        bottom:30%;
+        bottom:27%;
         max-width:860px;
         margin:0 auto;
         text-align:center;
@@ -363,7 +363,7 @@ p{
             }
         }
         .slide-box{
-            padding:30px 55px 50px;
+            padding:51px 55px 160px;
             @media (max-width:1200px){
                 padding:10px 30px 50px;
             }
@@ -385,13 +385,13 @@ p{
         .title{
             font:700 400px/0.77 "Roboto Slab", serif;
             letter-spacing:-0.5px;
-            margin-bottom:20px;
+            margin-bottom:50px;
             @media (max-width:1200px){
                 font-size:200px;
             }
         }
         .sub-title{
-            font-size:48px;
+            font-size:58px;
             line-height:1;
             letter-spacing:1px;
             font-weight:600;
@@ -448,10 +448,11 @@ p{
         color:#000;
         margin:20px 177px 20px 223px;
     }
+
     .img-wrap{
-        width:55%;
+        width:57%;
         float:left;
-        margin-top:-68px;
+        margin-top:-214px;
         @include box-shadow(0px 0px 65px 0px rgba(47, 47, 47, 0.75));
         @media (max-width:1500px) {
             width:45%;
@@ -471,7 +472,7 @@ p{
     .info-wrap{
         float:right;
         margin-left:8%;
-        width:37%;
+        width:32%;
         @media (max-width:1500px) {
             width:47%;
         }
@@ -487,8 +488,8 @@ p{
         font:600 58px/78px "Roboto", sans-serif;
         position:relative;
         text-transform:uppercase;
-        padding-bottom:32px;
-        margin-bottom:76px;
+        padding-bottom:30px;
+        margin-bottom:68px;
         @media (max-width:2459px) {
             font-size:40px;
             line-height:65px;
@@ -522,7 +523,7 @@ p{
 }
 .second-main-wrap{
     background:#e6e6e6;
-    margin:-190px -480px 0;
+    margin:-413px -480px 0;
     -webkit-transform-origin:left center;
     -moz-transform-origin:left center;
     -o-transform-origin:left center;
