@@ -48,8 +48,6 @@ p{
     position:relative;
 }
 
-
-
 /*HEADER*/
 .header{
     padding:65px 0 42px;
@@ -278,6 +276,7 @@ p{
         display:none!important;
     }
 }
+
 /*TOP SLIDER*/
 .top-slider{
     .slick-list{
@@ -546,14 +545,15 @@ p{
     .content{
         padding-bottom:510px;
         padding-top:150px;
-        /*Delete it later*/
-        min-height:1200px;
-        /**/
+    }
+    .title-number{
+        margin-bottom:94px;
     }
 }
 .gallery-box{
     position:relative;
     .item{
+        position:relative;
         a{
             display:block;
             text-decoration:none;
@@ -564,24 +564,46 @@ p{
         }
     }
     .first{
-        position:absolute;
-        display:block;
-        top:160px;
+        z-index:2;
+        top:156px;
         left:0;
         width:50%;
         max-width:1140px;
     }
     .second{
         float:right;
+        top:-665px;
+        right:0;
         width:66.666667%;
         max-width:1540px;
-        margin-bottom:52px;
     }
     .third{
         float:right;
+        top:-608px;
+        right:8.333333%;
         width:50%;
         max-width:1140px;
-        margin-right:8.333333%
+        z-index:2;
+    }
+    .fourth{
+        float:left;
+        top:-210px;
+        left:8.333333%;
+        width:40.1709%;
+        max-width:940px;
+    }
+    .fifth{
+        float:right;   
+        left:50%;
+        top:-474px;
+        width:50%;
+        max-width:1140px;
+    }
+    .btn-holder{
+        position:absolute;
+        bottom:600px;
+        left:150px;
+        text-align:left;
     }
 
 }
@@ -794,7 +816,7 @@ p{
         padding-top:40px;
         position:relative;
         z-index:5;
-        top:-490px;
+        top:-440px;
         @media (max-width:500px){
             top:-450px;
         }
