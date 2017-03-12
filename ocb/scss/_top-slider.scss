@@ -1,0 +1,118 @@
+.top-slider{
+    .slick-list{
+        overflow:visible;
+    }
+    .slick-slide{
+        outline:none;
+    }
+    img{
+        display:block;
+        width:100%;
+    }
+    .slick-dots{
+        bottom:31.5%;
+        @media (max-width:999px) {
+            
+        }
+        li{
+            width:22px;
+            height:22px;
+            margin:0;
+            &.slick-active,
+            &:hover{
+                button{
+                    background:#fff;
+                }
+            }
+            & + li{
+                margin-left:18px;
+            }
+            button{
+                border:2px solid #fff;
+                @include border-radius(50%);
+                background:transparent;
+                &:before{
+                    display:none;
+                }
+            }
+        }
+    }
+    .slide-info{
+        position:absolute;
+        left:0;
+        right:0;
+        bottom:28.5%;
+        max-width:860px;
+        margin:0 auto;
+        text-align:center;
+        color:#fff;
+        border-top:2px solid rgba(255,255,255,.3);
+        border-bottom:2px solid rgba(255,255,255,.3);
+        @media (max-width:1200px){
+            width:420px;
+        }
+        &:before, 
+        &:after{
+            position:absolute;
+            display:block;
+            content:"";
+            background:#fff;
+            opacity:0.3;
+            width:2px;
+            top:0;
+            height:90%;
+        }
+        &:before{
+            left:47px;
+            @media (max-width:1200px){
+                left:25px;
+            }
+        }
+        &:after{
+            right:47px;
+            @media (max-width:1200px){
+                right:25px;
+            }
+        }
+        .slide-box{
+            padding:50px 55px 160px;
+            @media (max-width:1200px){
+                padding:10px 30px 50px;
+            }
+            &:before{
+                position:absolute;
+                display:block;
+                content:"";
+                background:#fff;
+                opacity:0.3;
+                height:2px;
+                left:0;
+                right:0;
+                top:-13px;
+            }
+        }
+        @media (max-width:999px) {
+            width:330px;
+        }
+        .title{
+            font:700 400px/0.77 "Roboto Slab", serif;
+            letter-spacing:-0.5px;
+            margin-bottom:50px;
+            @media (max-width:1200px){
+                font-size:200px;
+            }
+        }
+        .sub-title{
+            font-size:58px;
+            line-height:1;
+            letter-spacing:1px;
+            font-weight:600;
+            text-transform:uppercase;
+            max-width:300px;
+            margin:0 auto;
+            @media (max-width:1200px){
+                font-size:40px;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.second-main-wrap{
+    background:#e6e6e6;
+    margin:-413px -480px 0;
+    -webkit-transform-origin:left center;
+    -moz-transform-origin:left center;
+    -o-transform-origin:left center;
+    -ms-transform-origin:left center;
+    transform-origin:left center;
+    @include transform(rotate(9deg));
+    @media (max-width:1200px){
+        margin-top:-130px;
+    }
+    .content-box{
+        @include transform(rotate(-9deg));
+        color:#000;
+        margin:20px 480px 20px 520px;
+    }
+    .content{
+        padding-bottom:600px;
+        padding-top:148px;
+    }
+    .title-number{
+        margin-bottom:94px;
+    }
+}

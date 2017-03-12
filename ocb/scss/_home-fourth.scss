@@ -1,0 +1,37 @@
+.fourth-main-wrap{
+    background:#fff;
+    margin:130px -480px 0;
+    -webkit-transform-origin:left center;
+    -moz-transform-origin:left center;
+    -o-transform-origin:left center;
+    -ms-transform-origin:left center;
+    transform-origin:left center;
+    @include transform(rotate(9deg));
+    .content-box{
+        @include transform(rotate(-9deg));
+        color:#000;
+        margin:20px 471px 20px 520px;
+    }
+    .content{
+        padding-top:40px;
+        position:relative;
+        z-index:5;
+        top:-664px;
+        @media (max-width:500px){
+            top:-450px;
+        }
+    }
+    .title-number{
+        margin-bottom:199px;
+        @media (max-width:1500px){
+            margin-bottom:105px;
+        }
+        .title-num{
+            @media (max-width:500px){
+                margin-left:0;
+                font-size:26px;
+                line-height:36px;
+            }
+        }
+    }
+}

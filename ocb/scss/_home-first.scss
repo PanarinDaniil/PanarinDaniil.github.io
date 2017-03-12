@@ -1,0 +1,91 @@
+.first-main-wrap{
+    .content-wrap{
+        background:#fff;
+        margin:0 -200px;
+        -webkit-transform-origin:left center;
+        -moz-transform-origin:left center;
+        -o-transform-origin:left center;
+        -ms-transform-origin:left center;
+        transform-origin:left center;
+        @include transform(rotate(-9deg));
+    }
+    .content-box{
+        @include transform(rotate(9deg));
+        color:#000;
+        margin:20px 177px 20px 223px;
+    }
+    .img-wrap{
+        width:57%;
+        float:left;
+        margin-top:-212px;
+        @include box-shadow(0px 0px 65px 0px rgba(47, 47, 47, 0.75));
+        @media (max-width:1500px) {
+            width:45%;
+        }
+        @media (max-width:1200px) {
+            width:80%;
+            max-width:700px;
+            margin:-68px auto 60px;
+            float:none;
+        }
+        img{
+            display:block;
+            max-width:100%;
+        }
+    }
+    .title-number{
+        margin-bottom:41px;
+    }
+    .info-wrap{
+        float:right;
+        margin-left:8%;
+        width:32%;
+        padding-top:68px;
+        @media (max-width:1500px) {
+            width:47%;
+        }
+        @media (max-width:1200px) {
+            width:100%;
+            max-width:700px;
+            margin:0 auto;
+            float:none;
+        }
+    }
+    .title{
+        color:#2f2f2f;
+        font:600 58px/78px "Roboto", sans-serif;
+        position:relative;
+        text-transform:uppercase;
+        padding-bottom:29px;
+        margin-bottom:68px;
+        @media (max-width:2459px) {
+            font-size:40px;
+            line-height:65px;
+            padding-bottom:25px;
+            margin-bottom:50px;
+        }
+        @media (max-width:550px){
+            font-size:27px;
+            line-height:45px;
+        }
+        &:after{
+            position:absolute;
+            display:block;
+            content:"";
+            background:#dadada;
+            bottom:0;
+            height:2px;
+            left:0;
+            width:140px;
+        }
+    }
+    .descr-wrap,
+    .descr-wrap p{
+        color:#2f2f2f;
+        font:400 36px/52px "Roboto", sans-serif;
+        @media (max-width:2459px) {
+            font-size:28px;
+            line-height:1.4;
+        }
+    }
+}

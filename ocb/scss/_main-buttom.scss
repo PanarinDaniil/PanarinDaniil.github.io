@@ -1,0 +1,95 @@
+.btn-holder{
+    text-align:center;
+}
+.btn{
+    display:inline-block;
+    vertical-align:top;
+    text-align:center;
+    position:relative;
+    z-index:5;
+    background:#db4343;
+    padding:36px 99px 36px 125px;
+    text-decoration:none;
+    @include transition($transition);
+    @media (max-width:800px){
+        padding:15px 35px;
+    }
+    &:before,
+    &:after{
+        position:absolute;
+        display:block;
+        content:"";
+    }
+    &:before{
+        top:-13px;
+        left:-13px;
+        width:100%;
+        height:100%;
+        border:2px solid #db4343;
+        z-index:1;
+        @include transition($transition);
+        @media (max-width:800px){
+            top:-5px;
+            left:-5px;
+        }
+    }
+    &:after{
+        top:50%;
+        margin-top:-10px;
+        right:30px;
+        z-index:3;
+        border-style:inset;
+        border-style:solid;
+        border-width:10px 0 10px 20px;
+        border-color:transparent transparent transparent #ffffff;
+        @media (max-width:800px){
+            right:10px;
+            border-width:6px 0 6px 12px;
+            margin-top:-6px;
+        }
+    }
+    &:hover{
+        &:before{
+            top:-8px;
+            left:-8px;
+        }
+    }
+    span{
+        position:relative;
+        display:block;
+        z-index:2;
+        font:600 28px/32px "Roboto", sans-serif;
+        letter-spacing:0.5px;
+        text-transform:uppercase;
+        color:#ffffff;
+        @media (max-width:800px){
+            font-size:20px;
+        }
+        &:before,
+        &:after{
+            position:absolute;
+            display:block;
+            content:'';
+            top:50%;
+            margin-top:-1px;
+            height:2px;
+            background:#fff;
+        }
+        &:before{
+            left:-93px;
+            width:60px;
+            @media (max-width:800px){
+                left:-25px;
+                width:15px;
+            }
+        }
+        &:after{
+            right:-67px;
+            width:40px;
+            @media (max-width:800px){
+                right:-25px;
+                width:15px;
+            }
+        }
+    }
+}
