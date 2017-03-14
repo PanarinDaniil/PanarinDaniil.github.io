@@ -1,0 +1,38 @@
+.btn-holder{
+	position:relative;
+	&.decoration{
+		padding-top:72px;
+		&:after{
+	        bottom:auto;
+	        top:13px;
+	    }
+	    &:before{
+	        bottom:auto;
+	        top:0px;
+	    }
+	}
+}
+.pagination{
+	li{
+		display:inline-block;
+		vertical-align:bottom;
+	}
+	a{
+		display:block;
+		font:700 italic 36px/58px "Roboto Slab", serif;
+		color:#db4343;
+		text-align:center;
+		min-width:60px;
+		margin:0 10px;
+		text-decoration:none;
+		&:hover,
+		&.active{
+			color:#2f2f2f;
+		}
+		&.active{
+			font-size:58px;
+		    position:relative;
+		    top:-7px;
+		}
+	}
+}
