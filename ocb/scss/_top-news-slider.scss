@@ -1,8 +1,22 @@
 .news-wrap{
 	margin-bottom:208px;
+	@media (max-width:800px){
+		margin-bottom:100px;
+	}
 	&.first-main-wrap{
 		.content-wrap{
 			margin-top:-110px;
+			@media (max-width:800px){
+				margin-bottom:30px;
+			}
+		}
+		.content{
+			@media (max-width: 1500px){
+			    padding-bottom:60px;
+			}
+			@media (max-width:800px){
+				padding-bottom:30px;
+			}
 		}
 	}
 	.content{
@@ -16,32 +30,91 @@
 .top-news{
 	width:66%;
 	margin:0 auto;
+	@media (max-width:800px){
+		width:100%;
+	}
 	.article-item{
 		.date{
 			width:13%;
+			@media (max-width:2000px){
+	            width:25%;
+	        }
+	        @media (max-width:1500px){
+	            width:18%;
+	        }
+	        @media (max-width:1000px){
+	            float:none;
+	            width:100%;
+	        }
 			.month{
 			    margin-bottom:18px;
 			    margin-top:4px;
+			    @media (max-width:1500px){
+	                font-size:25px;
+	            }
+	            @media (max-width:1200px){
+	                font-size:18px;
+	            }
+	            @media (max-width:1000px){
+	                display:inline-block;
+	                vertical-align:bottom;
+	                margin-bottom:0;
+	            }
 			}
 			.day{
 				font-size:137px;
+				@media (max-width:2000px){
+	                font-size:75px;
+	            }
+	            @media (max-width:1000px){
+	                display:inline-block;
+	                vertical-align:bottom;
+	                font-size:18px;
+	                line-height:49px;
+	            }
 			}
 		}
 		.art-info{
 			width:87%;
+			@media (max-width:2000px){
+	            width:73%;
+	        }
+	        @media (max-width:1500px){
+	            width:80%;
+	        }
+	        @media (max-width:1000px){
+	            float:none;
+	            width:100%;
+	        }
 			.art-title{
 				font-size:55px;
 			    margin-bottom:31px;
 			    max-width:840px;
 			    display:block;
 			    margin-top:1px;
+			    @media (max-width:1500px){
+	                font-size:38px;
+	                line-height:45px;
+	                margin-bottom:20px;
+	            }
+	            @media (max-width:800px){
+	                margin-bottom:5px;
+	            }
 			}
 			.blog-title{
 			    font-size:26px;
 		        margin-bottom:51px;
+		        @media (max-width:1500px){
+	                font-size:25px;
+	                margin-bottom:30px;
+	            }
 			}
 			.art-descr{
 			    font-size:33px;
+			    @media (max-width:1500px){
+		            font-size:20px;
+		            line-height:29px;
+		        }
 			}
 		}
 	}
@@ -51,6 +124,10 @@
 	    top:-258px;
 	    width:42px;
 	    height:60px;
+	    @media (max-width:1200px){
+			top:-110px;
+			right:20%;
+	    }
 	    &:after,
 	    &:before{
 	    	position:absolute;
@@ -81,6 +158,10 @@
 	.slick-prev{
 	    left:auto;
 		right:-102px;
+		@media (max-width:1200px){
+			right:auto;
+			left:20%;
+	    }
 		&:before{
 			right:0;
 	    	left:4px;
@@ -116,6 +197,9 @@
 .news{
 	&.articles-wrap{
 		padding-bottom:396px;
+		@media (max-width:1500px){
+			padding-bottom:200px;
+		}
 	}
 	.article-item{
 		&:first-child{
@@ -131,7 +215,14 @@
 			    margin-bottom:31px;
 			    margin-top:-2px;
 			    display:block;
-
+				@media (max-width:1500px){
+	                font-size:38px;
+	                line-height:45px;
+	                margin-bottom:20px;
+	            }
+	            @media (max-width:800px){
+	                margin-bottom:5px;
+	            }
 			}
 			.blog-title{
 		        font-size:27px;
@@ -139,6 +230,10 @@
 			}
 			.art-descr{
 				font-size:34px;
+				@media (max-width:1500px){
+					font-size:20px;
+				    line-height:29px;
+				}
 			}
 		}
 	}
@@ -146,6 +241,9 @@
 		.article-item{
 			&:last-child{
 			    margin-bottom:297px;
+			    @media (max-width:800px){
+					margin-bottom:110px;
+			    }
 			}
 		}
 	}
