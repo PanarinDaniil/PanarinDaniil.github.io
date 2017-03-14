@@ -7,18 +7,27 @@
     -ms-transform-origin:left center;
     transform-origin:left center;
     @include transform(rotate(9deg));
+    @media (max-width:1200px){
+        margin-top:0;
+    }
     .content-box{
         @include transform(rotate(-9deg));
         color:#000;
         margin:20px 471px 20px 520px;
+        @media (max-width:1200px){
+            margin:20px 474px 20px 500px;
+        }
     }
     .content{
         padding-top:40px;
         position:relative;
         z-index:5;
         top:-664px;
+        @media (max-width:1200px){
+            padding-top:0;
+        }
         @media (max-width:500px){
-            top:-450px;
+            top:-630px;
         }
     }
     .title-number{

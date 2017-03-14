@@ -2,23 +2,51 @@
 	margin-bottom:208px;
 	&.first-main-wrap{
 		.content-wrap{
-			margin-top:-120px;
+			margin-top:-110px;
 		}
 	}
 	.content{
-		padding-top:180px;
+		padding-top:200px;
+	    padding-bottom:15px;
 	}
 }
 .articles-wrap{
 	padding-bottom:170px;
 }
 .top-news{
-	width:66.666667%;
+	width:66%;
 	margin:0 auto;
+	.date{
+		width:13%;
+		.month{
+		    margin-bottom:18px;
+		    margin-top:4px;
+		}
+		.day{
+			font-size:137px;
+		}
+	}
+	.art-info{
+		width:87%;
+		.art-title{
+			font-size:55px;
+		    margin-bottom:31px;
+		    max-width:840px;
+		    display:block;
+		    margin-top:1px;
+		}
+		.blog-title{
+		    font-size:26px;
+	        margin-bottom:51px;
+		}
+		.art-descr{
+		    font-size:33px;
+		}
+	}
 	.slick-prev,
 	.slick-next{
-	    right:-144px;
-	    top:-160px;
+	    right:-202px;
+	    top:-258px;
 	    width:42px;
 	    height:60px;
 	    &:after,
@@ -50,7 +78,7 @@
 	}
 	.slick-prev{
 	    left:auto;
-		right:-42px;
+		right:-102px;
 		&:before{
 			right:0;
 	    	left:4px;

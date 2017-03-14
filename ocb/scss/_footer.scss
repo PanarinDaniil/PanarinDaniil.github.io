@@ -24,7 +24,7 @@
         @include transform(rotate(-9deg));
         margin:0px 272px 0px 280px;
         @media (max-width:1000px){
-            margin:0px 275px 0px 323px;
+            margin:0px 293px 0px 283px;
         }
     }
     p{
@@ -239,6 +239,9 @@
     	display: block;
 		text-decoration: none;
 		color:#7b7a7a;
+        &:hover{
+            color:#db4343;
+        }
         i{
             font-size:59px;
         }

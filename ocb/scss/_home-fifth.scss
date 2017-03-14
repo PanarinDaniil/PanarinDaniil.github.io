@@ -11,7 +11,10 @@
         transform-origin:left center;
         @include transform(rotate(9deg));
         @media (max-width:1000px){
-            margin-top:-320px;
+            margin-top:-470px;
+        }
+        @media (max-width:500px){
+            margin-top:-500px;
         }
     }
     .back-img{
@@ -36,8 +39,11 @@
         @media (max-width:1500px){
             margin:0px 466px 0px 495px;
         }
+        @media (max-width:1000px){
+            margin:0px 473px 0px 495px;
+        }
         @media (max-width:500px){
-            margin:20px 475px 20px 500px;
+            margin-right:477px;
         }
     }
     .content{

@@ -14,10 +14,24 @@
         @include transform(rotate(-9deg));
         color:#000;
         margin:20px 480px 20px 520px;
+        @media (max-width:768px){
+            margin-left:500px;
+        }
+
     }
     .content{
         padding-bottom:600px;
         padding-top:148px;
+        @media (max-width:1500px) {
+            padding-bottom:100px;
+        }
+        @media (max-width:1200px){
+            padding-top:30px;
+            padding-bottom:620px;
+        }
+        @media (max-width:768px){
+            padding-bottom:460px;
+        }
     }
     .title-number{
         margin-bottom:94px;

@@ -15,8 +15,14 @@
         @include transform(rotate(9deg));
         color:#000;
         margin:20px 507px 20px 495px;
+        @media (max-width:2700px){
+            margin:20px 470px 20px 530px;
+        }
+        @media (max-width:1920px){
+            margin-left:560px;
+        }
         @media (max-width:550px){
-            margin:20px 475px 20px 500px;
+            margin:20px 450px 20px 530px;
         }
     }
     .content{
@@ -59,6 +65,9 @@
             }
         }
         a{
+            &:hover{
+                color:#db4343;
+            }
             display:block;
             text-decoration:none;
             color:#2f2f2f;
