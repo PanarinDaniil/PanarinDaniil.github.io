@@ -3,6 +3,9 @@
         .slick-dots{
             bottom:21%;
             @media (max-width:2200px){
+                bottom:28%;
+            }
+            @media (max-width:1500px){
                 bottom:35%;
             }
         }
