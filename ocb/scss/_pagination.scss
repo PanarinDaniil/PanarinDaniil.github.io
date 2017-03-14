@@ -1,7 +1,7 @@
 .btn-holder{
 	position:relative;
 	&.decoration{
-		padding-top:72px;
+		padding-top:75px;
 		&:after{
 	        bottom:auto;
 	        top:13px;
@@ -22,8 +22,8 @@
 		font:700 italic 36px/58px "Roboto Slab", serif;
 		color:#db4343;
 		text-align:center;
-		min-width:60px;
-		margin:0 10px;
+	    min-width:40px;
+	    margin:0 3px;
 		text-decoration:none;
 		&:hover,
 		&.active{

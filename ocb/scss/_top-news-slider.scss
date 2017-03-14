@@ -113,3 +113,40 @@
 		}
 	}
 }
+.news{
+	&.articles-wrap{
+		padding-bottom:396px;
+	}
+	.article-item{
+		&:first-child{
+			.art-info{
+				.art-title{
+					margin-top:-6px;
+				}
+			}
+		}
+		.art-info{
+			.art-title{
+			    font-size:54px;
+			    margin-bottom:31px;
+			    margin-top:-2px;
+			    display:block;
+
+			}
+			.blog-title{
+		        font-size:27px;
+			    margin-bottom:52px;
+			}
+			.art-descr{
+				font-size:34px;
+			}
+		}
+	}
+	.article-preview{
+		.article-item{
+			&:last-child{
+			    margin-bottom:297px;
+			}
+		}
+	}
+}
