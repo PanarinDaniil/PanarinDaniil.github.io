@@ -16,31 +16,33 @@
 .top-news{
 	width:66%;
 	margin:0 auto;
-	.date{
-		width:13%;
-		.month{
-		    margin-bottom:18px;
-		    margin-top:4px;
+	.article-item{
+		.date{
+			width:13%;
+			.month{
+			    margin-bottom:18px;
+			    margin-top:4px;
+			}
+			.day{
+				font-size:137px;
+			}
 		}
-		.day{
-			font-size:137px;
-		}
-	}
-	.art-info{
-		width:87%;
-		.art-title{
-			font-size:55px;
-		    margin-bottom:31px;
-		    max-width:840px;
-		    display:block;
-		    margin-top:1px;
-		}
-		.blog-title{
-		    font-size:26px;
-	        margin-bottom:51px;
-		}
-		.art-descr{
-		    font-size:33px;
+		.art-info{
+			width:87%;
+			.art-title{
+				font-size:55px;
+			    margin-bottom:31px;
+			    max-width:840px;
+			    display:block;
+			    margin-top:1px;
+			}
+			.blog-title{
+			    font-size:26px;
+		        margin-bottom:51px;
+			}
+			.art-descr{
+			    font-size:33px;
+			}
 		}
 	}
 	.slick-prev,
