@@ -1,0 +1,32 @@
+@mixin bp( $point ) {
+  @if $point == xl {
+    @media screen and (min-width: 801px) { @content; }
+  }
+  @else if $point == l {
+    @media screen and (max-width: 800px) { @content; }
+  }
+  @else if $point == xm {
+    @media screen and (min-width: 679px) { @content; }
+  }
+  @else if $point == m {
+    @media screen and (max-width: 678px) { @content; }
+  }
+}
+@mixin code-buddy (){
+	font-family:'code-buddy' !important;
+	speak:none;
+	font-style:normal;
+	font-weight:normal;
+	font-variant:normal;
+	text-transform:none;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+@mixin flex (){
+  display:-webkit-box;
+  display:-moz-box;
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  display:flex;
+}
