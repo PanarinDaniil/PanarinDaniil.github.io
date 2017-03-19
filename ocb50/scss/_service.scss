@@ -50,7 +50,7 @@
 				display:inline;
 				position:relative;
 				text-decoration:none;
-				color:#db4343;
+				color:$mainRed;
 				font-size:18px;
 				line-height:31px;
 				&:after{
@@ -61,7 +61,7 @@
 					left:0;
 					right:0;
 					height:1px;
-					background:#db4343;
+					background:$mainRed;
 					@include transition($transition);
 				}
 				&:hover{
@@ -149,7 +149,7 @@
 }
 .service-fourth{
 	&.fourth-main-wrap{
-		background:#e6e6e6;
+		background:$lightGrey;
 		margin-top:-300px;
 		.content-box{
 			@media (max-width:768px){
@@ -212,7 +212,7 @@
 				li{
 					font-size:18px;
 					line-height:26px;
-					color:#2f2f2f;
+					color:$darkGrey;
 				    margin-left:25px;
 				}
 			}
@@ -269,7 +269,7 @@
 			p{
 				font-size:18px;
 				line-height:26px;
-				color:#2f2f2f;
+				color:$darkGrey;
 				margin-bottom:26px;
 			}
 			ul{
@@ -278,7 +278,7 @@
 				li{
 					font-size:18px;
 					line-height:26px;
-					color:#2f2f2f;
+					color:$darkGrey;
 				}
 			}
 		}

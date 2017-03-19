@@ -64,7 +64,7 @@
             width:100%;
         }
         .month{
-            color:#9e9e9e;
+            color:$grey;
             font-size:14px;
             line-height:24px;
             letter-spacing:0.25px;
@@ -83,7 +83,7 @@
             }
         }
         .day{
-            color:#2f2f2f;
+            color:$darkGrey;
             font:700 italic 152px/0.75 "Roboto Slab", serif;
             letter-spacing:-0.5px;
             @media (max-width:2000px){
@@ -111,7 +111,7 @@
             width:100%;
         }
         .art-title{
-            color:#db4343;
+            color:$mainRed;
             text-decoration:none;
             display: block;
             font-size:26px;
@@ -127,19 +127,16 @@
             }
         }
         .blog-title{
-            color:#9e9e9e;
+            color:$grey;
             font-size:14px;
             line-height:24px;
             letter-spacing:0.25px;
             text-transform:uppercase;
             margin-bottom:25px;
-            @media (max-width:1500px){
-                
-            }
         }
     }
     .art-descr{
-        color:#2f2f2f;
+        color:$darkGrey;
         font-size:18px;
         line-height:26px;
         @media (max-width:1500px){
@@ -149,7 +146,7 @@
     }
     .img-wrap{
         &:hover{
-            @include box-shadow(0px 0px 65px 0px rgba(47, 47, 47, 0.75));
+            @include box-shadow(0px 0px 35px 0px rgba(47, 47, 47, 0.75));
         }
         img{
             display:block;

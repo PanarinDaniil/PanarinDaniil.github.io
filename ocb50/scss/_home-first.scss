@@ -32,7 +32,7 @@
         width:57%;
         float:left;
         margin-top:-77px;
-        @include box-shadow(0px 0px 65px 0px rgba(47, 47, 47, 0.75));
+        @include box-shadow(0px 0px 35px 0px rgba(47, 47, 47, 0.75));
         @media (max-width:1900px) {
             margin-top:-50px;
         }
@@ -70,7 +70,7 @@
         }
     }
     .title{
-        color:#2f2f2f;
+        color:$darkGrey;
         font:600 30px/38px "Roboto", sans-serif;
         position:relative;
         text-transform:uppercase;
@@ -93,7 +93,7 @@
     }
     .descr-wrap,
     .descr-wrap p{
-        color:#2f2f2f;
+        color:$darkGrey;
         font:400 18px/1.4 "Roboto", sans-serif;
     }
 }

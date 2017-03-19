@@ -22,7 +22,7 @@ body{
 }
 p{
     line-height:52px;
-    color:#2f2f2f;
+    color:$darkGrey;
 }
 .animate, a {
     @include transition($transition);
@@ -38,7 +38,7 @@ p{
     &:focus{
         outline:none;
     }
-  }  
+  }
 }
 .clear:after{
     display: block;

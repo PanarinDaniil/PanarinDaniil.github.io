@@ -1,8 +1,7 @@
-/*FOOTER*/
 .footer{
     margin-top:-125px;
     .content-wrap{
-	    background:#2f2f2f;
+	    background:$darkGrey;
         margin:0 -280px;
         padding-bottom:255px;
         padding-top:73px;
@@ -194,13 +193,13 @@
         }
     }
     a{
-        color:#9e9e9e;
+        color:$grey;
         text-decoration:none;
         text-transform:uppercase;
         color:#fff;
         &:hover,
         &.active{
-            color:#db4343;
+            color:$mainRed;
         }
     }
 }
@@ -215,7 +214,7 @@
 		text-decoration: none;
 		color:#7b7a7a;
         &:hover{
-            color:#db4343;
+            color:$mainRed;
         }
         i{
             font-size:30px;

@@ -4,14 +4,14 @@
         display:inline-block;
         vertical-align:bottom;
         font:700 italic 37px/1 "Roboto Slab", serif;
-        color:#db4343;
+        color:$mainRed;
         letter-spacing:-0.5px;
     }
     .title-num{
         display:inline-block;
         vertical-align:bottom;
         font:400 17px/1.2 "Roboto", sans-serif;
-        color:#2f2f2f;
+        color:$darkGrey;
         letter-spacing:1px;
         text-transform:uppercase;
         margin-left:16px;
