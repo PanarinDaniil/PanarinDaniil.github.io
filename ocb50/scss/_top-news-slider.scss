@@ -1,5 +1,4 @@
 .news-wrap{
-	
 	@media (max-width:800px){
 		margin-bottom:100px;
 	}
@@ -129,7 +128,7 @@
 	    	top:50%;
 	    	margin-top:-1px;
 	    	height:1px;
-	    	background:#db4343;
+	    	background:$mainRed;
 	    }
 	    &:after{
 		    opacity:1;
@@ -141,7 +140,7 @@
 	    }
 	    &:hover{
 	    	&:before{
-				background:#2f2f2f;
+				background:$darkGrey;
 	    	}
 	    }
 	}
@@ -158,11 +157,11 @@
 		&:after{
 			left:0;
 			border-width:5px 10px 5px 0;
-	        border-color:transparent #db4343 transparent transparent;
+	        border-color:transparent $mainRed transparent transparent;
 		}
 		&:hover{
 			&:after{
-				border-right-color:#2f2f2f;
+				border-right-color:$darkGrey;
 			}
 		}
 	}
@@ -174,11 +173,11 @@
 		&:after{
 			right:0;
 			border-width:5px 0 5px 10px;
-	        border-color:transparent transparent transparent #db4343;
+	        border-color:transparent transparent transparent $mainRed;
 		}
 		&:hover{
 			&:after{
-				border-left-color:#2f2f2f;
+				border-left-color:$darkGrey;
 			}
 		}
 	}

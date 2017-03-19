@@ -20,14 +20,14 @@
 	a{
 		display:block;
 		font:700 italic 16px/58px "Roboto Slab", serif;
-		color:#db4343;
+		color:$mainRed;
 		text-align:center;
 	    min-width:20px;
 	    margin:0 3px;
 		text-decoration:none;
 		&:hover,
 		&.active{
-			color:#2f2f2f;
+			color:$darkGrey;
 		}
 		&.active{
 			font-size:29px;
