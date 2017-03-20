@@ -180,11 +180,11 @@
 		.content{
 			top:0;
 			border:none;
-		    padding-bottom:130px;
-		    padding-top:320px;
+		    padding-bottom:150px;
+		    padding-top:350px;
 		    @media (min-width:2000px){
-				padding-bottom:440px;
-			    padding-top:320px;
+				padding-bottom:350px;
+			    padding-top:610px;
 		    }
 		    @media (max-width:1200px){
 				padding-bottom:45px;
@@ -330,4 +330,15 @@
 			}
 		}
 	}
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.service-info .img-part{
+		float:left;
+    }
+    .service-info .info-part{
+		float:right;
+    }
+    .service-info.service_1 .third{
+    	margin-left:0;
+    }
 }
