@@ -152,6 +152,7 @@
 		background:$lightGrey;
 		margin-top:-300px;
 		.content-box{
+		    margin:20px 471px 20px 520px;
 			@media (max-width:768px){
 				margin-left:500px;
 			    margin-right:480px;
@@ -180,15 +181,14 @@
 		.content{
 			top:0;
 			border:none;
-		    padding-bottom:150px;
-		    padding-top:350px;
+		    padding-bottom:240px;
+		    padding-top:260px;
 		    @media (min-width:2000px){
 				padding-bottom:350px;
 			    padding-top:610px;
 		    }
 		    @media (max-width:1200px){
-				padding-bottom:45px;
-			    padding-top:170px;
+			    padding-top:140px;
 		    }
 		    @media (max-width:1000px){
 		    	padding-top:120px;

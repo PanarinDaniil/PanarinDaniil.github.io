@@ -1,41 +1,57 @@
 .fifth-main-wrap{
     position:relative;
     &.content-wrap{
-        overflow:hidden;
         background:$lightGrey;
-        margin:-200px -480px 0;
+        margin:-450px -480px 0;
         -webkit-transform-origin:left center;
         -moz-transform-origin:left center;
         -o-transform-origin:left center;
         -ms-transform-origin:left center;
         transform-origin:left center;
-        @include transform(rotate(9deg));
-        @media (max-width:1000px){
-            margin-top:-470px;
-        }
-        @media (max-width:500px){
-            margin-top:-500px;
-        }
+        -webkit-transform:perspective(1px) rotate(9deg);
+        -moz-transform:perspective(1px) rotate(9deg);
+        -ms-transform:rotate(9deg);
+        -o-transform:rotate(9deg);
+        transform:perspective(1px) rotate(9deg);
     }
-    .back-img{
+    .fix-moz{
         position:absolute;
         display:block;
         content:"";
-        top:-188px;
+        top:0px;
         left:0;
         bottom:-10px;
-        width:50.7%;
-        @include transform(rotate(-9deg));
-        background-size:cover;
-        background-repeat:no-repeat;
-        @media (max-width:1000px){
-            width:80%;
+        width:100%;
+        overflow:hidden;
+        .back-img{
+            position:absolute;
+            display:block;
+            content:"";
+            top:-188px;
+            left:0;
+            bottom:-10px;
+            width:50.7%;
+            -webkit-transform:perspective(1px) rotate(-9deg);
+            -moz-transform:perspective(1px) rotate(-9deg);
+            -ms-transform:rotate(-9deg);
+            -o-transform:rotate(-9deg);
+            transform:perspective(1px) rotate(-9deg);
+            background-size:cover;
+            background-repeat:no-repeat;
+            @media (max-width:1000px){
+                width:80%;
+            }
         }
     }
     .content-box{
         position:relative;
         z-index:2;
-        @include transform(rotate(-9deg));
+        -webkit-transform:perspective(1px) rotate(-9deg);
+        -moz-transform:perspective(1px) rotate(-9deg);
+        -ms-transform:rotate(-9deg);
+        -o-transform:rotate(-9deg);
+        transform:perspective(1px) rotate(-9deg);
+        /*-webkit-transform-origin:0% 50%;*/
         color:#000;
         margin:0px 460px 0px 480px;
         @media (max-width:1500px){
@@ -52,7 +68,7 @@
         position:relative;
         padding:144px 0 302px;
         @media (max-width:1000px){
-            padding:90px 0 238px;
+            padding:70px 0 328px;
         }
         @media (max-width:500px){
             padding:30px 0 200px;

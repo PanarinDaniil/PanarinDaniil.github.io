@@ -7,12 +7,20 @@
         -o-transform-origin:left center;
         -ms-transform-origin:left center;
         transform-origin:left center;
-        @include transform(rotate(-9deg));
+        -webkit-transform:perspective(1px) rotate(-9deg);
+        -moz-transform:perspective(1px) rotate(-9deg);
+        -ms-transform:rotate(-9deg);
+        -o-transform:rotate(-9deg);
+        transform:perspective(1px) rotate(-9deg);
     }
     .content-box{
         position:relative;
         z-index:2;
-        @include transform(rotate(9deg));
+        -webkit-transform:perspective(1px) rotate(9deg);
+        -moz-transform:perspective(1px) rotate(9deg);
+        -ms-transform:rotate(9deg);
+        -o-transform:rotate(9deg);
+        transform:perspective(1px) rotate(9deg);
         color:#000;
         margin:20px 507px 20px 495px;
         @media (max-width:2700px){
@@ -84,7 +92,11 @@
         -o-transform-origin:lef center;
         -ms-transform-origin:eft center;
         transform-origin:left enter;
-        @include transform(rotate(18deg));
+        -webkit-transform:perspective(1px) rotate(18deg);
+        -moz-transform:perspective(1px) rotate(18deg);
+        -ms-transform:rotate(18deg);
+        -o-transform:rotate(18deg);
+        transform:perspective(1px) rotate(18deg);
         @media (max-width:2459px) {
             margin-top:-750px;
         }

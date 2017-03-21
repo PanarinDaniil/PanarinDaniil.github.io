@@ -7,10 +7,18 @@
         -o-transform-origin:left center;
         -ms-transform-origin:left center;
         transform-origin:left center;
-        @include transform(rotate(-9deg));
+        -webkit-transform:perspective(1px) rotate(-9deg);
+        -moz-transform:perspective(1px) rotate(-9deg);
+        -ms-transform:rotate(-9deg);
+        -o-transform:rotate(-9deg);
+        transform:perspective(1px) rotate(-9deg);
     }
     .content-box{
-        @include transform(rotate(9deg));
+        -webkit-transform:perspective(1px) rotate(9deg);
+        -moz-transform:perspective(1px) rotate(9deg);
+        -ms-transform:rotate(9deg);
+        -o-transform:rotate(9deg);
+        transform:perspective(1px) rotate(9deg);
         color:#000;
         margin:20px 177px 20px 223px;
         @media (max-width:2000px){

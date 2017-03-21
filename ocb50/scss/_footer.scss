@@ -10,7 +10,11 @@
         -o-transform-origin:left center;
         -ms-transform-origin:left center;
         transform-origin:left center;
-        @include transform(rotate(9deg));
+        -webkit-transform:perspective(1px) rotate(9deg);
+        -moz-transform:perspective(1px) rotate(9deg);
+        -ms-transform:rotate(9deg);
+        -o-transform:rotate(9deg);
+        transform:perspective(1px) rotate(9deg);
         @media (max-width:1800px){
             padding-top:50px;
             padding-bottom:230px;
@@ -20,7 +24,11 @@
         }
     }
     .content-box{
-        @include transform(rotate(-9deg));
+        -webkit-transform:perspective(1px) rotate(-9deg);
+        -moz-transform:perspective(1px) rotate(-9deg);
+        -ms-transform:rotate(-9deg);
+        -o-transform:rotate(-9deg);
+        transform:perspective(1px) rotate(-9deg);
         margin:0px 272px 0px 280px;
         @media (max-width:1000px){
             margin:0px 293px 0px 283px;
@@ -80,12 +88,6 @@
     color:#fff;
     font-size:18px;
     line-height: 1.4;
-	@media (max-width:1800px){
-       	padding-top:200px;
-    }
-    @media (max-width:999px) {
-    	padding-top:150px;
-	}
 	@media (max-width:768px) {
      	float:none;
     	width: 100%;
