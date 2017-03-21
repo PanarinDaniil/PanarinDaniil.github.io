@@ -5,3 +5,12 @@
   display:-webkit-flex;
   display:flex;
 }
+@mixin skew ( $deg ){
+	-webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0) skew(0deg,$deg);
+    -moz-transform:skew(0deg,$deg);
+    -ms-transform:skew(0deg,$deg);
+    -o-transform:skew(0deg,$deg);
+    transform: translateZ(0) skew(0deg,$deg);
+    font-smoothing:antialiased!important;
+}

@@ -63,6 +63,10 @@ p{
     margin:0 auto;
     position:relative;
     clear:both;
+    @media (max-width:768px){
+        padding-left:15px;
+        padding-right:15px;
+    }
 }
 
 /*HEADER*/

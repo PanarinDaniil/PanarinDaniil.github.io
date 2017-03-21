@@ -1,18 +1,13 @@
 .news-wrap{
-	@media (max-width:800px){
-		margin-bottom:100px;
-	}
 	&.first-main-wrap{
 		.content-wrap{
-			/*margin-top:-110px;*/
 			margin-top:-260px;
-			-webkit-transform-origin:50% 51%;
-		    -moz-transform-origin:50% 51%;
-		    -o-transform-origin:50% 51%;
-		    -ms-transform-origin:50% 51%;
-		    transform-origin:50% 51%;
 			@media (max-width:800px){
+				margin-top:-150px;
 				margin-bottom:30px;
+			}
+			@media (max-width:500px){
+				margin-top:-110px;
 			}
 		}
 		.content-box{
@@ -76,6 +71,8 @@
 	                display:inline-block;
 	                vertical-align:bottom;
 	                margin-bottom:0;
+	                line-height:28px;
+	                margin-top:0;
 	            }
 			}
 			.day{
@@ -87,7 +84,7 @@
 	                display:inline-block;
 	                vertical-align:bottom;
 	                font-size:18px;
-	                line-height:28px;
+	                line-height:29px;
 	            }
 			}
 		}
@@ -127,6 +124,10 @@
 	    top:-128px;
 	    width:24px;
 	    height:30px;
+	    @media (max-width:880px) {
+			top:-58px;
+			right:30px;
+	    }
 	    &:after,
 	    &:before{
 	    	position:absolute;
@@ -157,9 +158,9 @@
 	.slick-prev{
 	    left:auto;
 		right:-84px;
-		@media (max-width:1200px){
-			
-	    }
+		@media (max-width:880px) {
+			right:85px;
+		}
 		&:before{
 			right:0;
 	    	left:4px;
@@ -195,12 +196,8 @@
 .news{
 	&.articles-wrap{
 		padding-bottom:198px;
-		@media (max-width:1500px){
-			
-		}
 	}
 	.article-item{
-		
 		.art-info{
 			.art-title{
 			    font-size:26px;

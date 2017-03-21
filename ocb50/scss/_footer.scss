@@ -1,20 +1,12 @@
 .footer{
-    margin-top:-125px;
+    margin-top:-85px;
+    margin-bottom:-180px;
     .content-wrap{
 	    background:$darkGrey;
-        margin:0 -280px;
+        margin:0 0 0;
         padding-bottom:255px;
         padding-top:73px;
-        -webkit-transform-origin:left center;
-        -moz-transform-origin:left center;
-        -o-transform-origin:left center;
-        -ms-transform-origin:left center;
-        transform-origin:left center;
-        -webkit-transform:perspective(1px) rotate(9deg);
-        -moz-transform:perspective(1px) rotate(9deg);
-        -ms-transform:rotate(9deg);
-        -o-transform:rotate(9deg);
-        transform:perspective(1px) rotate(9deg);
+        @include skew(9deg);
         @media (max-width:1800px){
             padding-top:50px;
             padding-bottom:230px;
@@ -24,15 +16,8 @@
         }
     }
     .content-box{
-        -webkit-transform:perspective(1px) rotate(-9deg);
-        -moz-transform:perspective(1px) rotate(-9deg);
-        -ms-transform:rotate(-9deg);
-        -o-transform:rotate(-9deg);
-        transform:perspective(1px) rotate(-9deg);
-        margin:0px 272px 0px 280px;
-        @media (max-width:1000px){
-            margin:0px 293px 0px 283px;
-        }
+        @include skew(-9deg);
+        margin:0px 0px;
     }
     p{
         font-size:16px;

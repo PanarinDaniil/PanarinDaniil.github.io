@@ -2,17 +2,8 @@
     position:relative;
     &.content-wrap{
         background:$lightGrey;
-        margin:-450px -480px 0;
-        -webkit-transform-origin:left center;
-        -moz-transform-origin:left center;
-        -o-transform-origin:left center;
-        -ms-transform-origin:left center;
-        transform-origin:left center;
-        -webkit-transform:perspective(1px) rotate(9deg);
-        -moz-transform:perspective(1px) rotate(9deg);
-        -ms-transform:rotate(9deg);
-        -o-transform:rotate(9deg);
-        transform:perspective(1px) rotate(9deg);
+        margin:-140px 0 0;
+        @include skew(9deg);
     }
     .fix-moz{
         position:absolute;
@@ -20,7 +11,7 @@
         content:"";
         top:0px;
         left:0;
-        bottom:-10px;
+        bottom:-20px;
         width:100%;
         overflow:hidden;
         .back-img{
@@ -31,47 +22,25 @@
             left:0;
             bottom:-10px;
             width:50.7%;
-            -webkit-transform:perspective(1px) rotate(-9deg);
-            -moz-transform:perspective(1px) rotate(-9deg);
-            -ms-transform:rotate(-9deg);
-            -o-transform:rotate(-9deg);
-            transform:perspective(1px) rotate(-9deg);
+            @include skew(-9deg);
             background-size:cover;
             background-repeat:no-repeat;
             @media (max-width:1000px){
-                width:80%;
+                width:100%;
             }
         }
     }
     .content-box{
         position:relative;
         z-index:2;
-        -webkit-transform:perspective(1px) rotate(-9deg);
-        -moz-transform:perspective(1px) rotate(-9deg);
-        -ms-transform:rotate(-9deg);
-        -o-transform:rotate(-9deg);
-        transform:perspective(1px) rotate(-9deg);
-        /*-webkit-transform-origin:0% 50%;*/
+        @include skew(-9deg);
         color:#000;
-        margin:0px 460px 0px 480px;
-        @media (max-width:1500px){
-            margin:0px 466px 0px 495px;
-        }
-        @media (max-width:1000px){
-            margin:0px 473px 0px 495px;
-        }
-        @media (max-width:500px){
-            margin-right:477px;
-        }
     }
     .content{
         position:relative;
-        padding:144px 0 302px;
+        padding:200px 0 220px;
         @media (max-width:1000px){
-            padding:70px 0 328px;
-        }
-        @media (max-width:500px){
-            padding:30px 0 200px;
+            padding:120px 0 190px;
         }
     }
     .right-block{

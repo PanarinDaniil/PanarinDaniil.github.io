@@ -1,41 +1,23 @@
 .fourth-main-wrap{
     background:#fff;
-    margin:115px -480px 0;
-    -webkit-transform-origin:left center;
-    -moz-transform-origin:left center;
-    -o-transform-origin:left center;
-    -ms-transform-origin:left center;
-    transform-origin:left center;
-    -webkit-transform:perspective(1px) rotate(9deg);
-    -moz-transform:perspective(1px) rotate(9deg);
-    -ms-transform:rotate(9deg);
-    -o-transform:rotate(9deg);
-    transform:perspective(1px) rotate(9deg);
+    margin:0 0 0;
+    @include skew(9deg);
     @media (max-width:1200px){
         margin-top:0;
     }
     .content-box{
-        -webkit-transform:perspective(1px) rotate(-9deg);
-        -moz-transform:perspective(1px) rotate(-9deg);
-        -ms-transform:rotate(-9deg);
-        -o-transform:rotate(-9deg);
-        transform:perspective(1px) rotate(-9deg);
+        @include skew(-9deg);
         color:#000;
-        margin:20px 471px 20px 520px;
-        @media (max-width:1200px){
-            margin:20px 474px 20px 500px;
-        }
+        margin:0 0 0;
     }
     .content{
         padding-top:40px;
         position:relative;
         z-index:5;
-        top:-664px;
+        top:-320px;
         @media (max-width:1200px){
             padding-top:0;
-        }
-        @media (max-width:500px){
-            top:-630px;
+            top:-240px;
         }
     }
     .title-number{

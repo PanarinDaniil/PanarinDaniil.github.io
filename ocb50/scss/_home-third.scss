@@ -1,36 +1,19 @@
 .third-main-wrap{
     &.content-wrap{
         background:#fff;
-        margin:0 -480px;
-        -webkit-transform-origin:left center;
-        -moz-transform-origin:left center;
-        -o-transform-origin:left center;
-        -ms-transform-origin:left center;
-        transform-origin:left center;
-        -webkit-transform:perspective(1px) rotate(-9deg);
-        -moz-transform:perspective(1px) rotate(-9deg);
-        -ms-transform:rotate(-9deg);
-        -o-transform:rotate(-9deg);
-        transform:perspective(1px) rotate(-9deg);
+        margin:-510px 0 0;
+        @include skew(-9deg);
+        @media (max-width:1200px){
+            margin-top:-370px;
+        }
     }
     .content-box{
         position:relative;
         z-index:2;
-        -webkit-transform:perspective(1px) rotate(9deg);
-        -moz-transform:perspective(1px) rotate(9deg);
-        -ms-transform:rotate(9deg);
-        -o-transform:rotate(9deg);
-        transform:perspective(1px) rotate(9deg);
+        @include skew(9deg);
         color:#000;
-        margin:20px 507px 20px 495px;
-        @media (max-width:2700px){
-            margin:20px 510px 20px 530px;
-        }
-        @media (max-width:1920px){
-            margin-left:560px;
-        }
-        @media (max-width:550px){
-            margin:20px 450px 20px 530px;
+        @media (max-width:1300px){
+            margin:0 10px;
         }
     }
     .content{
@@ -38,10 +21,11 @@
         padding-top:120px;
         border:1px solid $darkGrey;
         position:relative;
-        top:-63px;
+        top:-50px;
         @media (max-width:1200px) {
             padding-top:70px;
             padding-bottom:50px;
+            top:0px;
         }
     }
     .title-number{
@@ -68,7 +52,6 @@
         li{
             display:inline-block;
             vertical-align:top;
-            
         }
         a{
             &:hover{
@@ -84,25 +67,9 @@
         }
     }
     .grey{
-        padding:423px 0;
+        padding:170px 0;
         background:$lightGrey;
-        margin:-670px -480px 0;
-        -webkit-transform-origin:left center;
-        -moz-transform-origin:leftcenter;
-        -o-transform-origin:lef center;
-        -ms-transform-origin:eft center;
-        transform-origin:left enter;
-        -webkit-transform:perspective(1px) rotate(18deg);
-        -moz-transform:perspective(1px) rotate(18deg);
-        -ms-transform:rotate(18deg);
-        -o-transform:rotate(18deg);
-        transform:perspective(1px) rotate(18deg);
-        @media (max-width:2459px) {
-            margin-top:-750px;
-        }
-        @media (max-width:1200px) {
-            margin-top:-480px;
-        }
+        @include skew(18deg);
     }
 }
 .gallery{
