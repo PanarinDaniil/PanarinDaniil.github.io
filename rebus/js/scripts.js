@@ -240,4 +240,32 @@ $(document).ready(function() {
             }
         });
     }
+
+// SWIPE
+
+$(function() {
+  $(".info-left").swipe( {
+    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+      if( direction == 'left' ){
+        $('.portfolio-box').removeClass('swiped');
+        $(this).addClass('swiped');
+      }
+      if( direction == 'right' ){
+        $('.portfolio-box').removeClass('swiped');
+      }
+    }
+  });
+  $(".info-right").swipe( {
+    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+      if( direction == 'right' ){
+        $('.portfolio-box').removeClass('swiped');
+        $(this).addClass('swiped');
+      }
+      if( direction == 'left' ){
+        $('.portfolio-box').removeClass('swiped');
+      }
+    }
+  });
+});
+
 });

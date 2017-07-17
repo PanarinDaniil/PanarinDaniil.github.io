@@ -1577,6 +1577,30 @@ p {
   display: block;
 }
 
+/*============== promo image home page ===============*/
+.index-img {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 100%;
+  height: calc(100vh - 123px);
+}
+.index-img .title {
+  text-transform: uppercase;
+  width: 65%;
+  max-width: 640px;
+  padding: 15px 15px;
+  font: 66px/1 'Pf Med', Arial, sans-serif;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+}
+
 /*============== main slider ===============*/
 .main-slider img {
   display: block;
@@ -1944,6 +1968,10 @@ p {
 }
 
 /*=============== Portfolio main page ==============*/
+.main {
+  overflow: hidden;
+}
+
 .portfolio-box {
   position: relative;
 }
@@ -1975,8 +2003,33 @@ p {
   position: static;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 800px) {
+  .portfolio-box.inner {
+    width: 140%;
+  }
+}
 .portfolio-box.inner:hover .image-back:after {
   background: rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-width: 800px) {
+  .portfolio-box.inner.swiped.info-right {
+    left: 0%;
+    right: -40%;
+  }
+  .portfolio-box.inner.swiped.info-left {
+    right: 0%;
+    left: -40%;
+  }
+  .portfolio-box.inner.swiped .image-back {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .portfolio-box.inner.info-left {
+    position: relative;
+    right: -40%;
+    left: 0;
+  }
 }
 .portfolio-box.inner.info-left .image-back {
   order: 1;
@@ -1986,6 +2039,13 @@ p {
 }
 .portfolio-box.inner.info-left .content-box {
   order: 2;
+}
+@media screen and (max-width: 800px) {
+  .portfolio-box.inner.info-right {
+    position: relative;
+    left: -40%;
+    right: 0;
+  }
 }
 .portfolio-box.inner.info-right .image-back {
   order: 2;
@@ -2004,10 +2064,15 @@ p {
 }
 .portfolio-box.inner .image-back {
   width: 80%;
+  -moz-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
 @media screen and (max-width: 800px) {
   .portfolio-box.inner .image-back {
-    width: 60%;
+    /*width:60%;*/
+    width: 80%;
   }
 }
 .portfolio-box.inner .image-back:before {
@@ -2040,6 +2105,12 @@ p {
   color: #000;
   border-left-color: #000;
   border-right-color: #000;
+}
+@media screen and (max-width: 1200px) {
+  .portfolio-box.inner .btn {
+    font-size: 22px;
+    line-height: 35px;
+  }
 }
 .portfolio-box.inner .btn:before, .portfolio-box.inner .btn:after {
   background: #000;
@@ -2116,7 +2187,7 @@ p {
 }
 @media screen and (max-width: 1200px) {
   .portfolio-box .title {
-    font-size: 35px;
+    font-size: 25px;
   }
 }
 .portfolio-box .btn {
@@ -2190,6 +2261,7 @@ p {
 		}
 	}
 }*/
+/*=============== Portfolio popup ==============*/
 .port-pop {
   color: #7a7a7a;
 }
