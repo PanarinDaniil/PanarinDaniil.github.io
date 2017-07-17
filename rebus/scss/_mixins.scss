@@ -2,6 +2,9 @@
   @if $point == l {
     @media screen and (min-width: 801px) { @content; }
   }
+  @else if $point == n {
+    @media screen and (max-width: 1200px) { @content; }
+  }
   @else if $point == m {
     @media screen and (max-width: 800px) { @content; }
   }
