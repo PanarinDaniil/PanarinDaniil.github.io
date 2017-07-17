@@ -1600,6 +1600,14 @@ p {
   color: #fff;
   background: rgba(0, 0, 0, 0.5);
 }
+@media screen and (max-width: 800px) {
+  .index-img .title {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 45px;
+    text-align: center;
+  }
+}
 
 /*============== main slider ===============*/
 .main-slider img {
@@ -2424,6 +2432,7 @@ p {
 
 .fancybox-lock .fancybox-overlay {
   width: 100% !important;
+  overflow: hidden;
 }
 @media screen and (max-width: 800px) {
   .fancybox-lock .fancybox-overlay .fancybox-inner {

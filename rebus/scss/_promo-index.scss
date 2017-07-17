@@ -18,5 +18,11 @@
 		font:66px/1 'Pf Med', Arial, sans-serif;
 		color:#fff;
 		background:rgba(0,0,0,.5);
+		@include bp( m ){
+			width:90%;
+			margin:0 auto;
+			font-size:45px;
+		    text-align:center;
+		}
 	}
 }

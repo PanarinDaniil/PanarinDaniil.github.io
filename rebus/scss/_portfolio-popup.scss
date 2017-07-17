@@ -146,6 +146,7 @@
 .fancybox-lock{
 	.fancybox-overlay{
 		width:100%!important;
+		overflow:hidden;
 		.fancybox-inner{
 			@include bp( m ){
 				width:100%!important;
