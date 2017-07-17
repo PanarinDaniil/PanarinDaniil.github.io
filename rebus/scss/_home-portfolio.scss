@@ -60,7 +60,7 @@
 			.image-back{
 				order:1;
 				&:before{
-					right:0px;
+					right:-2px;
 				}
 			}
 			.content-box{
@@ -78,7 +78,7 @@
 				&:before{
 					top:-1px;
 					bottom:-1px;
-					left:0px;
+					left:-2px;
 					@include transform(rotate(180deg));
 				}
 			}

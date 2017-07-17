@@ -243,29 +243,25 @@ $(document).ready(function() {
 
 // SWIPE
 
-$(function() {
-  $(".info-left").swipe( {
-    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-      if( direction == 'left' ){
-        $('.portfolio-box').removeClass('swiped');
-        $(this).addClass('swiped');
-      }
-      if( direction == 'right' ){
-        $('.portfolio-box').removeClass('swiped');
-      }
-    }
-  });
-  $(".info-right").swipe( {
-    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-      if( direction == 'right' ){
-        $('.portfolio-box').removeClass('swiped');
-        $(this).addClass('swiped');
-      }
-      if( direction == 'left' ){
-        $('.portfolio-box').removeClass('swiped');
-      }
-    }
-  });
-});
+    $(function() {
+        $(".info-left").swipe( {
+            swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
+                $('.portfolio-box').removeClass('swiped');
+                $(this).addClass('swiped');
+            },
+            swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
+                $('.portfolio-box').removeClass('swiped');
+            }
+        });
+        $(".info-right").swipe( {
+            swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
+                $('.portfolio-box').removeClass('swiped');
+                $(this).addClass('swiped');
+            },
+            swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
+                $('.portfolio-box').removeClass('swiped');
+            }
+        });
+    });
 
 });
