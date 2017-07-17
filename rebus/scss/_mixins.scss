@@ -5,6 +5,12 @@
   @else if $point == n {
     @media screen and (max-width: 1200px) { @content; }
   }
+  @else if $point == xl {
+    @media screen and (min-width: 901px) { @content; }
+  }
+  @else if $point == xm {
+    @media screen and (max-width: 900px) { @content; }
+  }
   @else if $point == m {
     @media screen and (max-width: 800px) { @content; }
   }

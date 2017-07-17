@@ -7,7 +7,7 @@
     z-index:3;
     height:123px;
     .content{
-		@include bp( m ){
+		@include bp( xm ){
 			padding:0 14px;
 		}
 	}
@@ -36,10 +36,10 @@
 }
 .main-nav{
 	float:right;
-	@include bp( l ){
+	@include bp( xl ){
 		display:block!important;
 	}
-	@include bp( m ){
+	@include bp( xm ){
 		float:none;
 		display:none;
 		position:absolute;
@@ -63,7 +63,7 @@
 		display:inline-block;
 		vertical-align:top;
 		position:relative;
-		@include bp( m ){
+		@include bp( xm ){
 			background:#55626b;
 			display:block;
 		}
@@ -77,7 +77,7 @@
 			height:0px;
 			background:transparent;
 			@include transition($transition);
-			@include bp( m ){
+			@include bp( xm ){
 				right:100%;
 				height:4px;
 			}
@@ -86,14 +86,14 @@
 			&:after{
 				height:4px;
 				background:$lightGreen;
-				@include bp( m ){
+				@include bp( xm ){
 					right:0;
 				}
 			}
 		}
 		& + li{
 			margin-left:35px;
-			@include bp( m ){
+			@include bp( xm ){
 				margin-left:0px;
 				margin-top:4px;
 			}
@@ -108,7 +108,7 @@
 		text-transform:uppercase;
 		text-decoration:none;
 		padding:3px 0;
-		@include bp( m ){
+		@include bp( xm ){
 			font-size:18px;
 			line-height:40px;
 			padding:2px 13px;
@@ -117,7 +117,7 @@
 	.main-nav-contact{
 		margin-left:16px;
 		position:static;
-		@include bp( m ){
+		@include bp( xm ){
 			text-align:center;
 			position:relative;
 			margin:13px auto 0;
@@ -133,7 +133,7 @@
 		}
 		a{
 			padding:0 14px;
-			@include bp( m ){
+			@include bp( xm ){
 				line-height:29px;
 				display:inline-block;
 				vertical-align:top;
@@ -147,11 +147,11 @@
 	&:hover{
 		.main-nav-sub{
 			display: block;
-			@include bp( m ){
+			@include bp( xm ){
 				display:none;
 			}
 			&.fix{
-				@include bp( m ){
+				@include bp( xm ){
 					display:block;
 				}
 			}
@@ -159,7 +159,7 @@
 	}
 	.main-nav-sub{
 		&.fix{
-			@include bp( m ){
+			@include bp( xm ){
 				display:block;
 				position:static;
 			    padding:0;
@@ -206,7 +206,7 @@
     background:transparent;
     padding:19px 11px 20px;
     @include appearance(none);
-    @include bp( m ){
+    @include bp( xm ){
 		display:block;
 	}
     &:hover{
