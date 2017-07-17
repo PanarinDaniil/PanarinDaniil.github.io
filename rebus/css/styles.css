@@ -2002,10 +2002,10 @@ p {
   align-items: center;
   position: static;
   margin-bottom: 20px;
-  -moz-transition: all 0.9s linear;
-  -o-transition: all 0.9s linear;
-  -webkit-transition: all 0.9s linear;
-  transition: all 0.9s linear;
+  -moz-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
 @media screen and (max-width: 800px) {
   .portfolio-box.inner {
