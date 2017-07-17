@@ -16,14 +16,6 @@ function() {
 	t.parentNode.insertBefore(n,t)
 }();
 
-// function toTop(anchor){
-//     var top = $(anchor).offset().top - 0;
-//     $('html, body').animate({ scrollTop: top }, 1200);
-// }
-// if(document.location.hash.length>1){
-//     toTop(document.location.hash);
-// }
-
 $(document).ready(function() {
 
 //MOBILE MENU
@@ -248,12 +240,4 @@ $(document).ready(function() {
             }
         });
     }
-
-    // $("a[href*='#']").on("click", function (event) {
-    //     var str = document.location.href;
-    //     if ( str == this.href ) {
-    //         event.preventDefault();
-    //         toTop(this.hash);
-    //     }
-    // });
 });
