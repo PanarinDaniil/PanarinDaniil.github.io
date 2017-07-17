@@ -28,7 +28,7 @@
 	    align-items:center;
 	    position:static;
 	    margin-bottom:20px;
-	    @include transition(all 0.4s linear);
+	    @include transition(all 0.2s linear);
 	    @include bp( m ){
 	    	width:140%;
 	    }
