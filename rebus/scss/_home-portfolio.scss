@@ -49,9 +49,9 @@
 					right:0%;
 					left:-40%;
 				}
-				.image-back{
+				/*.image-back{
 					width:60%;
-				}
+				}*/
 			}
 		}
 	    &.info-left{
@@ -93,8 +93,7 @@
 			width:80%;
 			@include transition(all 0.4s linear);
 			@include bp( m ){
-				/*width:60%;*/
-				width:80%;
+				width:75%;
 			}
 			&:before{
 				position:absolute;

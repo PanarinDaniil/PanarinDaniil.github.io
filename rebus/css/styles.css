@@ -2012,6 +2012,11 @@ p {
   background: rgba(0, 0, 0, 0.4);
 }
 @media screen and (max-width: 800px) {
+  .portfolio-box.inner.swiped {
+    /*.image-back{
+    	width:60%;
+    }*/
+  }
   .portfolio-box.inner.swiped.info-right {
     left: 0%;
     right: -40%;
@@ -2019,9 +2024,6 @@ p {
   .portfolio-box.inner.swiped.info-left {
     right: 0%;
     left: -40%;
-  }
-  .portfolio-box.inner.swiped .image-back {
-    width: 60%;
   }
 }
 @media screen and (max-width: 800px) {
@@ -2071,8 +2073,7 @@ p {
 }
 @media screen and (max-width: 800px) {
   .portfolio-box.inner .image-back {
-    /*width:60%;*/
-    width: 80%;
+    width: 75%;
   }
 }
 .portfolio-box.inner .image-back:before {
