@@ -2002,6 +2002,10 @@ p {
   align-items: center;
   position: static;
   margin-bottom: 20px;
+  -moz-transition: all 0.9s linear;
+  -o-transition: all 0.9s linear;
+  -webkit-transition: all 0.9s linear;
+  transition: all 0.9s linear;
 }
 @media screen and (max-width: 800px) {
   .portfolio-box.inner {
@@ -2012,11 +2016,6 @@ p {
   background: rgba(0, 0, 0, 0.4);
 }
 @media screen and (max-width: 800px) {
-  .portfolio-box.inner.swiped {
-    /*.image-back{
-    	width:60%;
-    }*/
-  }
   .portfolio-box.inner.swiped.info-right {
     left: 0%;
     right: -40%;

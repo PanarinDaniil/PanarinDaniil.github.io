@@ -28,6 +28,7 @@
 	    align-items:center;
 	    position:static;
 	    margin-bottom:20px;
+	    @include transition(all 0.9s linear);
 	    @include bp( m ){
 	    	width:140%;
 	    }
@@ -40,7 +41,6 @@
 		}
 		&.swiped{
 			@include bp( m ){
-				//width:100%;
 				&.info-right{
 					left:0%;
 					right:-40%;
@@ -49,9 +49,6 @@
 					right:0%;
 					left:-40%;
 				}
-				/*.image-back{
-					width:60%;
-				}*/
 			}
 		}
 	    &.info-left{
