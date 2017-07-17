@@ -65,7 +65,7 @@ $(document).ready(function() {
     })();
 
 // MAIN SLIDER (HOME PAGE)
-    if ( $(".main-slider").width() > 0 ) {
+    /*if ( $(".main-slider").width() > 0 ) {
         $('.main-slider').slick({
             lazyLoad: 'ondemand',
             dots: true,
@@ -79,7 +79,7 @@ $(document).ready(function() {
             swipe: true,
             swipeToSlide: true
         });
-    }
+    }*/
 
 // TESTIMONIAL SLIDER (HOMR PAGE)
     if ( $(".testimonial-slider").width() > 0 ) {
@@ -107,7 +107,7 @@ $(document).ready(function() {
     }
 
 // PORTFOLIO SLIDER
-    var counter = false;
+    /*var counter = false;
     if ( $(".min-carusel").width() > 0 ) {
         if ( window.matchMedia("(max-width:800px)").matches && counter == false ) {
             $('.min-carusel').slick({
@@ -149,7 +149,7 @@ $(document).ready(function() {
                 counter = false;
             }
         });
-    }
+    }*/
 
 // CONTACT FORM
     if ( $(".contact-form").width() > 0 ) {
@@ -204,7 +204,7 @@ $(document).ready(function() {
             autoHeight: true,
             padding: 0,
             maxWidth:   1232,
-            beforeShow: function() {
+            /*beforeShow: function() {
                 if ( count == true ) {
                     $('.pop-slider').slick('unslick');
                     count = false;
@@ -237,7 +237,7 @@ $(document).ready(function() {
                     $('.pop-slider').slick('unslick');
                     count = false;
                 }
-            }
+            }*/
         });
     }
 

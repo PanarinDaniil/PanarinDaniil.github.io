@@ -1610,39 +1610,7 @@ p {
 }
 
 /*============== main slider ===============*/
-.main-slider img {
-  display: block;
-  width: 100%;
-}
-.main-slider .content {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  color: #fff;
-  padding-top: 34px;
-  padding-bottom: 35px;
-}
-.main-slider .main-slider-title {
-  text-transform: uppercase;
-  width: 65%;
-  font: 66px/1 'Pf Med', Arial, sans-serif;
-}
-.main-slider .slick-dots {
-  bottom: 16px;
-  width: 50%;
-}
-.main-slider .slick-dots li button {
-  background: #77b624;
-}
-.main-slider .slick-dots li button:hover {
-  background: #fff;
-}
-.main-slider .slick-dots li.slick-active button {
-  background: #fff;
-}
-
+/*@import "_home-slider";*/
 /*================ Responsive =================*/
 .responsive {
   padding: 13px 0 23px;
@@ -2503,6 +2471,7 @@ p {
   }
 }
 .pop-slider img {
+  display: block;
   margin: 0 auto;
   max-width: 100%;
 }
@@ -2613,134 +2582,7 @@ p {
 }
 
 /*================ Portfolio carusel ================*/
-@media screen and (min-width: 801px) {
-  .min-carusel {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
-    margin-bottom: 39px;
-  }
-  .min-carusel > div {
-    width: 33%;
-    margin: 0 1px 2px;
-  }
-  .min-carusel a {
-    display: block;
-    position: relative;
-    color: #7a7a7a;
-  }
-  .min-carusel a:hover .min-carusel-hover {
-    background: rgba(0, 0, 0, 0.4);
-  }
-  .min-carusel a:hover .min-carusel-hover .btn-empty {
-    display: block;
-  }
-  .min-carusel a img {
-    display: block;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-  .min-carusel .min-carusel-hover {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: transparent;
-    text-align: center;
-    -moz-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-  }
-  .min-carusel .min-carusel-hover .btn-empty {
-    display: none;
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    left: 50%;
-    max-width: 155px;
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -moz-transition: all 0.4s ease-out;
-    -o-transition: all 0.4s ease-out;
-    -webkit-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
-  }
-}
-@media screen and (max-width: 800px) {
-  .min-carusel {
-    margin-bottom: 55px;
-  }
-  .min-carusel .slick-dots {
-    bottom: -33px;
-  }
-  .min-carusel .slick-slide {
-    position: relative;
-  }
-  .min-carusel a {
-    display: block;
-  }
-  .min-carusel a:hover .min-carusel-hover {
-    background: rgba(0, 0, 0, 0.4);
-    text-align: center;
-  }
-  .min-carusel a:hover .min-carusel-hover .btn-empty {
-    display: inline-block;
-  }
-  .min-carusel img {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-  }
-  .min-carusel .min-carusel-hover {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: transparent;
-    text-align: center;
-    -moz-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-  }
-  .min-carusel .min-carusel-hover .btn-empty {
-    display: none;
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    left: 50%;
-    max-width: 155px;
-    border-width: 2px;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -moz-transition: all 0.4s ease-out;
-    -o-transition: all 0.4s ease-out;
-    -webkit-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-}
+/*@import "_portfolio-carusel";*/
 /*=========== Testimonial home page ===========*/
 .testimon-wrap {
   padding: 37px 0 45px;
