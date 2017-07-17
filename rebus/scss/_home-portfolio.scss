@@ -185,7 +185,7 @@
 		@include bp( n ){
 			font-size:25px;
 		}
-		
+
 	}
 	.btn{
 		display:inline-block;
@@ -228,6 +228,17 @@
 			}
 		}
 	}
+}
+
+.portfolio-wrap .h2 {
+    color:#7a7a7a;
+    font:40px/1.2 "Pf Med", Arial, sans-serif;
+    margin-bottom:42px;
+    text-align:center;
+    @include bp( m ){
+	    font-size:35px;
+	    margin-bottom:19px;
+    }
 }
 /*.portfolio-wrap{
 	padding:48px 0 40px;
