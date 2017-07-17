@@ -242,26 +242,34 @@ $(document).ready(function() {
     }
 
 // SWIPE
+    if ( $(".portfolio-box.inner").width() > 0 ) {
+        $(function() {
+            $(".info-left").swipe( {
+                swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
+                    $('.portfolio-box').removeClass('swiped');
+                    $(this).addClass('swiped');
+                },
+                swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
+                    $('.portfolio-box').removeClass('swiped');
+                },
+                threshold:45
+            });
+            $(".info-right").swipe( {
+                swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
+                    $('.portfolio-box').removeClass('swiped');
+                    $(this).addClass('swiped');
+                },
+                swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
+                    $('.portfolio-box').removeClass('swiped');
+                },
+                threshold:45
+            });
+        });
 
-    $(function() {
-        $(".info-left").swipe( {
-            swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
-                $('.portfolio-box').removeClass('swiped');
-                $(this).addClass('swiped');
-            },
-            swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
-                $('.portfolio-box').removeClass('swiped');
-            }
+        $('.image-back').click(function() {
+            $('.portfolio-box').removeClass('swiped');
+            $(this).closest('.portfolio-box').addClass('swiped');
         });
-        $(".info-right").swipe( {
-            swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
-                $('.portfolio-box').removeClass('swiped');
-                $(this).addClass('swiped');
-            },
-            swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
-                $('.portfolio-box').removeClass('swiped');
-            }
-        });
-    });
+    }
 
 });
