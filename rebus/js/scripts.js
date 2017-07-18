@@ -281,18 +281,19 @@ $(document).ready(function() {
             $(this).closest('.portfolio-box').addClass('swiped');
         });
 
-        $(window).scroll(function() {
-            var scroll = $(window).scrollTop();
-            $('.portfolio-box.inner').each( function () {
-                var height = $(this).outerHeight(true) + $(this).position().top + 50;
-                if ( ($(this).position().top - 130 )<= scroll && height >= scroll ) {
-                    $('.portfolio-box.inner').removeClass('swiped');
-                    $(this).addClass('swiped');
-                } else {
-                    $(this).removeClass('swiped');
-                }
-            });
-        });
+// Show blocks info on scroll
+        // $(window).scroll(function() {
+        //     var scroll = $(window).scrollTop();
+        //     $('.portfolio-box.inner').each( function () {
+        //         var height = $(this).outerHeight(true) + $(this).position().top + 50;
+        //         if ( ($(this).position().top - 130 )<= scroll && height >= scroll ) {
+        //             $('.portfolio-box.inner').removeClass('swiped');
+        //             $(this).addClass('swiped');
+        //         } else {
+        //             $(this).removeClass('swiped');
+        //         }
+        //     });
+        // });
     }
 
 });
