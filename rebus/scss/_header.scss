@@ -14,6 +14,16 @@
     	padding:21px 0 10px;
     	height:90px;
     	background:rgba(0,0,0,.5);
+    	@include bp( xm ){
+    		height:75px;
+    	}
+    	.logo{
+			img{
+				@include bp( xm ){
+					max-width:110px;
+				}
+			}
+		}
     	.main-nav{
     		padding-top:10px;
     	}
@@ -61,6 +71,7 @@
 		top:100%;
 		background:rgba(0,0,0,.5);
 		padding:14px;
+		@include transition(none);
 		&:before{
 			position:absolute;
 			content:"";
@@ -221,6 +232,7 @@
     @include appearance(none);
     @include bp( xm ){
 		display:block;
+		padding-top:17px;
 	}
     &:hover{
         div{

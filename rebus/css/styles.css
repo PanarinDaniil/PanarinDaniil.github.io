@@ -408,6 +408,16 @@ p {
   height: 90px;
   background: rgba(0, 0, 0, 0.5);
 }
+@media screen and (max-width: 900px) {
+  .header.fixed {
+    height: 75px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header.fixed .logo img {
+    max-width: 110px;
+  }
+}
 .header.fixed .main-nav {
   padding-top: 10px;
 }
@@ -460,6 +470,10 @@ p {
     top: 100%;
     background: rgba(0, 0, 0, 0.5);
     padding: 14px;
+    -moz-transition: none;
+    -o-transition: none;
+    -webkit-transition: none;
+    transition: none;
   }
   .main-nav:before {
     position: absolute;
@@ -637,6 +651,7 @@ p {
 @media screen and (max-width: 900px) {
   .mob-btn {
     display: block;
+    padding-top: 17px;
   }
 }
 .mob-btn:hover div {
