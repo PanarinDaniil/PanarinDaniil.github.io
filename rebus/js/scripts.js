@@ -41,6 +41,16 @@ $(document).ready(function() {
         }
     })();
 
+//Sticky header
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 10 ) {
+            $(".header").addClass('fixed');
+        } else {
+            $(".header").removeClass('fixed');
+        }
+    });
+
 // FAQ TOGGLE (HOME PAGE)
     (function() {
         "use strict";

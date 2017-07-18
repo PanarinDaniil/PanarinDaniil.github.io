@@ -384,10 +384,21 @@ p {
   align-self: flex-start;
   width: 100%;
   padding: 45px 0 17px;
-  background: #8698a4;
-  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
   z-index: 3;
   height: 123px;
+  -moz-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.header.fixed {
+  padding: 21px 0 10px;
+  height: 90px;
+}
+.header.fixed .main-nav {
+  padding-top: 10px;
 }
 @media screen and (max-width: 900px) {
   .header .content {
@@ -418,6 +429,10 @@ p {
 
 .main-nav {
   float: right;
+  -moz-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
 @media screen and (min-width: 901px) {
   .main-nav {
@@ -431,8 +446,8 @@ p {
     position: absolute;
     left: 0;
     right: 0;
-    top: calc(100% - 14px);
-    background: #8698a4;
+    top: 100%;
+    background: rgba(0, 0, 0, 0.5);
     padding: 14px;
   }
   .main-nav:before {
@@ -453,7 +468,7 @@ p {
 }
 @media screen and (max-width: 900px) {
   .main-nav > li {
-    background: #55626b;
+    background: rgba(0, 0, 0, 0.5);
     display: block;
   }
 }
@@ -604,7 +619,7 @@ p {
   width: 58px;
   height: 44px;
   background: transparent;
-  padding: 19px 11px 20px;
+  padding: 21px 11px 20px;
   -moz-appearance: none;
   -webkit-appearance: none;
 }

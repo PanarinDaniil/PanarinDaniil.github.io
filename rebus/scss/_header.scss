@@ -2,10 +2,18 @@
 	@include align-self(flex-start);
     width:100%;
 	padding:45px 0 17px;
-	background:#8698a4;
-	position:relative;
+	background:rgba(0,0,0,.5);
+	position:fixed;
     z-index:3;
     height:123px;
+    @include transition(all 0.4s linear);
+    &.fixed{
+    	padding:21px 0 10px;
+    	height:90px;
+    	.main-nav{
+    		padding-top:10px;
+    	}
+    }
     .content{
 		@include bp( xm ){
 			padding:0 14px;
@@ -36,6 +44,7 @@
 }
 .main-nav{
 	float:right;
+	@include transition(all 0.4s linear);
 	@include bp( xl ){
 		display:block!important;
 	}
@@ -45,8 +54,8 @@
 		position:absolute;
 		left:0;
 		right:0;
-		top:calc(100% - 14px);
-		background:#8698a4;
+		top:100%;
+		background:rgba(0,0,0,.5);
 		padding:14px;
 		&:before{
 			position:absolute;
@@ -64,7 +73,7 @@
 		vertical-align:top;
 		position:relative;
 		@include bp( xm ){
-			background:#55626b;
+			background:rgba(0,0,0,.5);
 			display:block;
 		}
 		&:after{
@@ -204,7 +213,7 @@
     width:58px;
     height:44px;
     background:transparent;
-    padding:19px 11px 20px;
+    padding:21px 11px 20px;
     @include appearance(none);
     @include bp( xm ){
 		display:block;
