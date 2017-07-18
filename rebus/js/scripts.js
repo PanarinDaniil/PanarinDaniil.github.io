@@ -44,7 +44,7 @@ $(document).ready(function() {
 //Sticky header
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
-        if (scroll >= 10 ) {
+        if (scroll >= 110 ) {
             $(".header").addClass('fixed');
         } else {
             $(".header").removeClass('fixed');

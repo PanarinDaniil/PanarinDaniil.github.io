@@ -258,6 +258,13 @@ p {
   min-height: 100vh;
   min-width: 320px;
   overflow: hidden;
+  padding-top: 123px;
+}
+.wrapper.index {
+  padding-top: 0;
+}
+.wrapper.index .header {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .main {
@@ -384,8 +391,11 @@ p {
   align-self: flex-start;
   width: 100%;
   padding: 45px 0 17px;
-  background: rgba(0, 0, 0, 0.5);
+  background: #8698a4;
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 3;
   height: 123px;
   -moz-transition: all 0.4s linear;
@@ -396,6 +406,7 @@ p {
 .header.fixed {
   padding: 21px 0 10px;
   height: 90px;
+  background: rgba(0, 0, 0, 0.5);
 }
 .header.fixed .main-nav {
   padding-top: 10px;
@@ -1604,7 +1615,7 @@ p {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 100%;
-  height: calc(100vh - 123px);
+  height: 100vh;
 }
 .index-img .title {
   text-transform: uppercase;

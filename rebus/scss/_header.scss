@@ -2,14 +2,18 @@
 	@include align-self(flex-start);
     width:100%;
 	padding:45px 0 17px;
-	background:rgba(0,0,0,.5);
+	background:#8698a4;
 	position:fixed;
+	top:0;
+	left:0;
+	right:0;
     z-index:3;
     height:123px;
     @include transition(all 0.4s linear);
     &.fixed{
     	padding:21px 0 10px;
     	height:90px;
+    	background:rgba(0,0,0,.5);
     	.main-nav{
     		padding-top:10px;
     	}
