@@ -889,6 +889,71 @@ p {
   margin-bottom: 5px;
 }
 
+/*============= Holiday ===============*/
+.holidays-container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  color: #292929;
+}
+@media (max-width: 1900px) {
+  .holidays-container {
+    width: 80%;
+    margin: 0 auto 30px;
+  }
+}
+@media (max-width: 1600px) {
+  .holidays-container {
+    width: 100%;
+  }
+}
+.holidays-container .holidays-block {
+  border: 1px solid #ccc;
+  width: 295px;
+  height: 295px;
+  margin: 10px;
+  padding: 25px;
+}
+.holidays-container .holidays-block:hover {
+  background-color: #f1f2f2;
+}
+.holidays-container .holidays-block .month {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+.holidays-container .holidays-block .month span {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 400;
+  color: #002653;
+}
+.holidays-container .holidays-block .month .count {
+  font-size: 46px;
+  font-weight: 500;
+  position: absolute;
+  top: -20px;
+  right: -5px;
+  color: #be1621;
+}
+.holidays-container .holidays-block .days {
+  width: 100%;
+  height: 145px;
+  font-size: 14px;
+}
+.holidays-container .holidays-block ul > li {
+  line-height: 20px;
+}
+.holidays-container .holidays-block span {
+  color: #be1621;
+  font-weight: bold;
+}
+
 /*==================== Service page ==================*/
 .service-list {
   text-align: center;
