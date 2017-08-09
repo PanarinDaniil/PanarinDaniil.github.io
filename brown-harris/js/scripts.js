@@ -46,7 +46,7 @@ $(document).ready(function() {
             autoHeight: true,
             padding: 0,
             maxWidth:   1232,
-            beforeShow: function() {
+            /*beforeShow: function() {
                 if ( count == true ) {
                     $('.pop-slider').slick('unslick');
                     count = false;
@@ -79,7 +79,7 @@ $(document).ready(function() {
                     $('.pop-slider').slick('unslick');
                     count = false;
                 }
-            }
+            }*/
         });
     }
 
