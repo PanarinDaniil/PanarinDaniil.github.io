@@ -1,0 +1,345 @@
+/*=========== For White labels just copy this and change it =========*/
+/*========= System files ========*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*======= Main part of the SCSS(used in all blocks) =======*/
+html {
+  min-height: 100%;
+}
+
+body {
+  font: 400 16px/1.1 "Open Sans", Arial, sans-serif;
+  min-height: 100%;
+}
+
+.animate, a {
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+*, *:after, *:before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clear:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+p {
+  font: 400 16px/24px "Open Sans", Arial, sans-serif;
+  color: #7a7a7a;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.wrapper {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  min-height: 100vh;
+  min-width: 320px;
+  overflow: hidden;
+}
+
+.content {
+  max-width: 1128px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.slick-dots li {
+  margin: 0 4px;
+  height: 13px;
+  width: 13px;
+}
+.slick-dots li button {
+  height: 13px;
+  width: 13px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #d3d3d3;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.slick-dots li button:before {
+  display: none;
+}
+.slick-dots li button:hover {
+  background: #7a9bb2;
+}
+.slick-dots li.slick-active button {
+  background: #7a9bb2;
+}
+
+.layout {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: -100px;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 1000px) {
+  .layout {
+    display: none !important;
+  }
+}
+
+/*========= Header =========*/
+.header {
+  padding: 20px 0 30px;
+}
+.header .content {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .header .content {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.header .logo {
+  -webkit-align-items: center;
+  align-items: center;
+  max-width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .header .logo {
+    max-width: 80%;
+    margin: 0 auto 15px;
+  }
+}
+.header .logo img {
+  display: block;
+  max-width: 100%;
+}
+.header .header-info-wrap {
+  width: 30%;
+  padding-left: 10px;
+  border-left: 1px solid #b8b8b9;
+}
+@media screen and (max-width: 768px) {
+  .header .header-info-wrap {
+    width: 90%;
+    border-left: none;
+    padding: 0 15px;
+    text-align: center;
+  }
+}
+.header .title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  color: #7a7a7a;
+}
+
+.header-info {
+  list-style: none;
+}
+.header-info li {
+  color: #7a7a7a;
+}
+.header-info a {
+  color: #7a7a7a;
+}
+.header-info .key {
+  font-weight: 700;
+}
+
+/*========= block-header =========*/
+.block-wrap {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eaedee;
+}
+
+.block-header {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+.block-info {
+  width: 68%;
+  margin-right: 2%;
+}
+
+.block-top {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  background: #eaedee;
+  padding: 15px 10px;
+}
+.block-top .title a {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #0820FF;
+}
+.block-top .title a:hover {
+  color: #000e94;
+}
+.block-top .sub-title {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  color: #177700;
+}
+.block-top .price {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+}
+.block-top .sku {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.block-media {
+  width: 30%;
+}
+
+.photo-slider.slick-slider:focus {
+  outline: none;
+}
+.photo-slider.slick-slider .slick-slide:focus {
+  outline: none;
+}
+.photo-slider.slick-slider img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.photo-slider.slick-slider .fancy {
+  display: block;
+}
+
+.block-main {
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eaedee;
+}
+
+.ui-tabs-nav {
+  border-bottom: 1px solid #eaedee;
+  font-size: 0;
+}
+.ui-tabs-nav * {
+  font-size: 26px;
+}
+.ui-tabs-nav li {
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #eaedee;
+  border-bottom: none;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px;
+  border-radius: 5px 5px 0 0;
+}
+.ui-tabs-nav li.ui-tabs-active {
+  background: #eaedee;
+}
+.ui-tabs-nav li a {
+  display: block;
+  padding: 5px 25px;
+  line-height: 1.2;
+  color: #7a7a7a;
+  text-decoration: none;
+  font-weight: 700;
+}
+.ui-tabs-nav .img-wrap {
+  display: block;
+  margin-bottom: 10px;
+}
+.ui-tabs-nav .img-wrap img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.note p {
+  font-style: italic;
+  font-size: 14px;
+}

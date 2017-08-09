@@ -1,0 +1,38 @@
+.main-slider{
+	img{
+		display:block;
+		width:100%;
+	}
+	.content{
+		position:absolute;
+		left:0;
+		top:0;
+		right:0;
+		bottom:0;
+		color:#fff;
+		padding-top:34px;
+		padding-bottom:35px;
+	}
+	.main-slider-title{
+		text-transform:uppercase;
+		width:65%;
+		font:66px/1 'Pf Med', Arial, sans-serif;
+	}
+	.slick-dots{
+		bottom:16px;
+		width:50%;
+		li{
+			button{
+				background:$hardGreen;
+				&:hover{
+		    		background:$white;
+	    		}
+	    	}
+		    &.slick-active{
+		    	button{
+			    	background:$white;
+		    	}
+		    }
+		}
+	}
+}

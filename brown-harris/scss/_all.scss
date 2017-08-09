@@ -1,0 +1,79 @@
+html{
+	min-height: 100%;
+}
+body{
+	font:400 16px/1.1 "Open Sans", Arial, sans-serif;
+	min-height:100%;
+}
+.animate, a {
+    @include transition($transition);
+}
+*, *:after, *:before {
+    @include box-sizing(border-box);
+}
+.clear:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+p{
+	font:400 16px/24px "Open Sans", Arial, sans-serif;
+	color:$hardGrey;
+}
+.flex{
+    @include flex();
+}
+.wrapper{
+	@include flex-direction(column);
+	@include align-items(flex-start);
+    min-height:100vh;
+	min-width:320px;
+	overflow:hidden;
+}
+.content{
+	max-width:1128px;
+	width:100%;
+	padding:0 15px;
+	margin:0 auto;
+}
+.center{
+	text-align:center;
+}
+.slick-dots{
+	li{
+	    margin:0 4px;
+        height:13px;
+	    width:13px;
+	    button{
+	    	height:13px;
+		    width:13px;
+	    	@include border-radius(50%);
+	    	background:$sliderDots;
+	    	@include transition($transition);
+	    	&:before{
+	    		display:none;
+	    	}
+	    	&:hover{
+	    		background:$sliderDotsHover;
+	    	}
+	    }
+	    &.slick-active{
+	    	button{
+		    	background:$sliderDotsHover;
+	    	}
+	    }
+	}
+}
+.layout {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: -100px;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    background:rgba(0,0,0,.3);
+    @include bp( l ){
+    	display:none!important;
+    }
+}
