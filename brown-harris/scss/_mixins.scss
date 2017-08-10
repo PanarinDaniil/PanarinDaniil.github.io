@@ -1,6 +1,6 @@
 @mixin bp( $point ) {
   @if $point == l {
-    @media screen and (max-width: 1000px) { @content; }
+    @media screen and (max-width: 900px) { @content; }
   }
   @else if $point == m {
     @media screen and (max-width: 768px) { @content; }

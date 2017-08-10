@@ -16,6 +16,10 @@ body{
     content: "";
     clear: both;
 }
+ul, ol{
+	list-style:disc outside;
+	padding-left:30px;
+}
 p{
 	font:400 16px/24px "Open Sans", Arial, sans-serif;
 	color:$hardGrey;
