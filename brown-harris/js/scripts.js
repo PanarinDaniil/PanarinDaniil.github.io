@@ -41,45 +41,10 @@ $(document).ready(function() {
 
     // POPUP slider
     if ( $(".fancy").width() > 0 ) {
-        var count = false;
         $(".fancy").fancybox({
-            autoHeight: true,
-            padding: 0,
-            maxWidth:   1232,
-            /*beforeShow: function() {
-                if ( count == true ) {
-                    $('.pop-slider').slick('unslick');
-                    count = false;
-                }
-            },
-            afterShow: function() {
-                if ( count == false ) {
-                    if ( $('.pop-slider').width() > 0 ) {
-                        $('.pop-slider').slick({
-                            dots: true,
-                            arrows: true,
-                            autoplay: true,
-                            autoplaySpeed: 6000,
-                            infinite: false,
-                            speed: 500,
-                            fade: true,
-                            cssEase: 'linear',
-                            swipe: true,
-                            swipeToSlide: true
-                        });
-                        count = true;   
-                    }
-                } else {
-                    $('.pop-slider').slick('unslick');
-                    count = false;
-                }
-            },
-            afterClose: function() {
-                if ( count == true ) {
-                    $('.pop-slider').slick('unslick');
-                    count = false;
-                }
-            }*/
+            autoHeight:true,
+            padding:0,
+            maxWidth:1232,
         });
     }
 
