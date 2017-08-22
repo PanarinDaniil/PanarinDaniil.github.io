@@ -3,11 +3,33 @@
     width:100%;
 	padding:45px 0 17px;
 	background:#8698a4;
-	position:relative;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
     z-index:3;
     height:123px;
+    @include transition(all 0.4s linear);
+    &.fixed{
+    	padding:21px 0 10px;
+    	height:90px;
+    	background:rgba(0,0,0,.5);
+    	@include bp( xm ){
+    		height:75px;
+    	}
+    	.logo{
+			img{
+				@include bp( xm ){
+					max-width:110px;
+				}
+			}
+		}
+    	.main-nav{
+    		padding-top:10px;
+    	}
+    }
     .content{
-		@include bp( m ){
+		@include bp( xm ){
 			padding:0 14px;
 		}
 	}
@@ -36,18 +58,20 @@
 }
 .main-nav{
 	float:right;
-	@include bp( l ){
+	@include transition(all 0.4s linear);
+	@include bp( xl ){
 		display:block!important;
 	}
-	@include bp( m ){
+	@include bp( xm ){
 		float:none;
 		display:none;
 		position:absolute;
 		left:0;
 		right:0;
-		top:calc(100% - 14px);
-		background:#8698a4;
+		top:100%;
+		background:rgba(0,0,0,.5);
 		padding:14px;
+		@include transition(none);
 		&:before{
 			position:absolute;
 			content:"";
@@ -63,8 +87,8 @@
 		display:inline-block;
 		vertical-align:top;
 		position:relative;
-		@include bp( m ){
-			background:#55626b;
+		@include bp( xm ){
+			background:rgba(0,0,0,.5);
 			display:block;
 		}
 		&:after{
@@ -77,7 +101,7 @@
 			height:0px;
 			background:transparent;
 			@include transition($transition);
-			@include bp( m ){
+			@include bp( xm ){
 				right:100%;
 				height:4px;
 			}
@@ -86,14 +110,14 @@
 			&:after{
 				height:4px;
 				background:$lightGreen;
-				@include bp( m ){
+				@include bp( xm ){
 					right:0;
 				}
 			}
 		}
 		& + li{
 			margin-left:35px;
-			@include bp( m ){
+			@include bp( xm ){
 				margin-left:0px;
 				margin-top:4px;
 			}
@@ -108,7 +132,7 @@
 		text-transform:uppercase;
 		text-decoration:none;
 		padding:3px 0;
-		@include bp( m ){
+		@include bp( xm ){
 			font-size:18px;
 			line-height:40px;
 			padding:2px 13px;
@@ -117,7 +141,7 @@
 	.main-nav-contact{
 		margin-left:16px;
 		position:static;
-		@include bp( m ){
+		@include bp( xm ){
 			text-align:center;
 			position:relative;
 			margin:13px auto 0;
@@ -133,7 +157,7 @@
 		}
 		a{
 			padding:0 14px;
-			@include bp( m ){
+			@include bp( xm ){
 				line-height:29px;
 				display:inline-block;
 				vertical-align:top;
@@ -147,11 +171,11 @@
 	&:hover{
 		.main-nav-sub{
 			display: block;
-			@include bp( m ){
+			@include bp( xm ){
 				display:none;
 			}
 			&.fix{
-				@include bp( m ){
+				@include bp( xm ){
 					display:block;
 				}
 			}
@@ -159,7 +183,7 @@
 	}
 	.main-nav-sub{
 		&.fix{
-			@include bp( m ){
+			@include bp( xm ){
 				display:block;
 				position:static;
 			    padding:0;
@@ -204,10 +228,11 @@
     width:58px;
     height:44px;
     background:transparent;
-    padding:19px 11px 20px;
+    padding:21px 11px 20px;
     @include appearance(none);
-    @include bp( m ){
+    @include bp( xm ){
 		display:block;
+		padding-top:17px;
 	}
     &:hover{
         div{

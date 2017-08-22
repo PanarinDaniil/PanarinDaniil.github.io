@@ -16,14 +16,6 @@ function() {
 	t.parentNode.insertBefore(n,t)
 }();
 
-// function toTop(anchor){
-//     var top = $(anchor).offset().top - 0;
-//     $('html, body').animate({ scrollTop: top }, 1200);
-// }
-// if(document.location.hash.length>1){
-//     toTop(document.location.hash);
-// }
-
 $(document).ready(function() {
 
 //MOBILE MENU
@@ -49,6 +41,16 @@ $(document).ready(function() {
         }
     })();
 
+//Sticky header
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 110 ) {
+            $(".header").addClass('fixed');
+        } else {
+            $(".header").removeClass('fixed');
+        }
+    });
+
 // FAQ TOGGLE (HOME PAGE)
     (function() {
         "use strict";
@@ -73,7 +75,7 @@ $(document).ready(function() {
     })();
 
 // MAIN SLIDER (HOME PAGE)
-    if ( $(".main-slider").width() > 0 ) {
+    /*if ( $(".main-slider").width() > 0 ) {
         $('.main-slider').slick({
             lazyLoad: 'ondemand',
             dots: true,
@@ -87,7 +89,7 @@ $(document).ready(function() {
             swipe: true,
             swipeToSlide: true
         });
-    }
+    }*/
 
 // TESTIMONIAL SLIDER (HOMR PAGE)
     if ( $(".testimonial-slider").width() > 0 ) {
@@ -115,7 +117,7 @@ $(document).ready(function() {
     }
 
 // PORTFOLIO SLIDER
-    var counter = false;
+    /*var counter = false;
     if ( $(".min-carusel").width() > 0 ) {
         if ( window.matchMedia("(max-width:800px)").matches && counter == false ) {
             $('.min-carusel').slick({
@@ -157,7 +159,7 @@ $(document).ready(function() {
                 counter = false;
             }
         });
-    }
+    }*/
 
 // CONTACT FORM
     if ( $(".contact-form").width() > 0 ) {
@@ -212,7 +214,7 @@ $(document).ready(function() {
             autoHeight: true,
             padding: 0,
             maxWidth:   1232,
-            beforeShow: function() {
+            /*beforeShow: function() {
                 if ( count == true ) {
                     $('.pop-slider').slick('unslick');
                     count = false;
@@ -245,15 +247,53 @@ $(document).ready(function() {
                     $('.pop-slider').slick('unslick');
                     count = false;
                 }
-            }
+            }*/
         });
     }
 
-    // $("a[href*='#']").on("click", function (event) {
-    //     var str = document.location.href;
-    //     if ( str == this.href ) {
-    //         event.preventDefault();
-    //         toTop(this.hash);
-    //     }
-    // });
+// SWIPE
+    if ( $(".portfolio-box.inner").width() > 0 ) {
+        $(function() {
+            $(".info-left").swipe( {
+                swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
+                    $('.portfolio-box').removeClass('swiped');
+                    $(this).addClass('swiped');
+                },
+                swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
+                    $('.portfolio-box').removeClass('swiped');
+                },
+                threshold:45
+            });
+            $(".info-right").swipe( {
+                swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
+                    $('.portfolio-box').removeClass('swiped');
+                    $(this).addClass('swiped');
+                },
+                swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
+                    $('.portfolio-box').removeClass('swiped');
+                },
+                threshold:45
+            });
+        });
+
+        $('.image-back').click(function() {
+            $('.portfolio-box').removeClass('swiped');
+            $(this).closest('.portfolio-box').addClass('swiped');
+        });
+
+// Show blocks info on scroll
+        // $(window).scroll(function() {
+        //     var scroll = $(window).scrollTop();
+        //     $('.portfolio-box.inner').each( function () {
+        //         var height = $(this).outerHeight(true) + $(this).position().top + 50;
+        //         if ( ($(this).position().top - 130 )<= scroll && height >= scroll ) {
+        //             $('.portfolio-box.inner').removeClass('swiped');
+        //             $(this).addClass('swiped');
+        //         } else {
+        //             $(this).removeClass('swiped');
+        //         }
+        //     });
+        // });
+    }
+
 });

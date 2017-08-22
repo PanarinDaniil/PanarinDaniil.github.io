@@ -50,6 +50,13 @@ p{
     min-height:100vh;
 	min-width:320px;
 	overflow:hidden;
+	padding-top:123px;
+	&.index{
+		padding-top:0;
+		.header{
+			background:rgba(0,0,0,.5);
+		}
+	}
 }
 .main{
 	width:100%;

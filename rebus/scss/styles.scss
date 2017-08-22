@@ -23,11 +23,11 @@
 /*============= Our Process ===============*/
 @import "_process";
 
+/*============= Holiday ===============*/
+@import "_holiday";
+
 /*==================== Service page ==================*/
 @import "_service";
-
-/*==================== About page ==================*/
-@import "_about";
 
 /*============== Partners Page ================*/
 @import "_partners";
@@ -35,8 +35,11 @@
 /*============ Contacts page =============*/
 @import "_contacts";
 
+/*============== promo image home page ===============*/
+@import "_promo-index";
+
 /*============== main slider ===============*/
-@import "_home-slider";
+/*@import "_home-slider";*/
 
 /*================ Responsive =================*/
 @import "_home-responsive";
@@ -47,8 +50,11 @@
 /*=============== Portfolio main page ==============*/
 @import "_home-portfolio";
 
+/*=============== Portfolio popup ==============*/
+@import "_portfolio-popup";
+
 /*================ Portfolio carusel ================*/
-@import "_portfolio-carusel";
+/*@import "_portfolio-carusel";*/
 
 /*=========== Testimonial home page ===========*/
 @import "_home-testimonial";

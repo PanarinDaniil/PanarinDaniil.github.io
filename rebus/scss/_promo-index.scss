@@ -1,0 +1,28 @@
+.index-img{
+	display:-webkit-box;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display:flex;
+    align-items:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:50% 50%;
+	width:100%;
+	height:100vh;
+	.title{
+		text-transform:uppercase;
+		width:65%;
+		max-width:640px;
+		padding:15px 15px;
+		font:66px/1 'Pf Med', Arial, sans-serif;
+		color:#fff;
+		background:rgba(0,0,0,.5);
+		@include bp( m ){
+			width:90%;
+			margin:0 auto;
+			font-size:45px;
+		    text-align:center;
+		}
+	}
+}

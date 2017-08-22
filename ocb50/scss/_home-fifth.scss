@@ -1,6 +1,7 @@
 .fifth-main-wrap{
     position:relative;
     &.content-wrap{
+<<<<<<< HEAD
         overflow:hidden;
         background:$lightGrey;
         margin:-200px -480px 0;
@@ -16,46 +17,48 @@
         @media (max-width:500px){
             margin-top:-500px;
         }
+=======
+        background:$lightGrey;
+        margin:-140px 0 0;
+        @include skew(9deg);
+>>>>>>> f60460b0ed307dd68a8ba9fc32f32f9aea8828a5
     }
-    .back-img{
+    .fix-moz{
         position:absolute;
         display:block;
         content:"";
-        top:-188px;
+        top:0px;
         left:0;
-        bottom:-10px;
-        width:50.7%;
-        @include transform(rotate(-9deg));
-        background-size:cover;
-        background-repeat:no-repeat;
-        @media (max-width:1000px){
-            width:80%;
+        bottom:-20px;
+        width:100%;
+        overflow:hidden;
+        .back-img{
+            position:absolute;
+            display:block;
+            content:"";
+            top:-188px;
+            left:0;
+            bottom:-10px;
+            width:50.7%;
+            @include skew(-9deg);
+            background-size:cover;
+            background-repeat:no-repeat;
+            @media (max-width:1000px){
+                width:100%;
+            }
         }
     }
     .content-box{
         position:relative;
         z-index:2;
-        @include transform(rotate(-9deg));
+        @include skew(-9deg);
         color:#000;
-        margin:0px 460px 0px 480px;
-        @media (max-width:1500px){
-            margin:0px 466px 0px 495px;
-        }
-        @media (max-width:1000px){
-            margin:0px 473px 0px 495px;
-        }
-        @media (max-width:500px){
-            margin-right:477px;
-        }
     }
     .content{
         position:relative;
-        padding:144px 0 302px;
+        padding:200px 0 220px;
         @media (max-width:1000px){
-            padding:90px 0 238px;
-        }
-        @media (max-width:500px){
-            padding:30px 0 200px;
+            padding:120px 0 190px;
         }
     }
     .right-block{

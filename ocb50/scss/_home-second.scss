@@ -1,5 +1,6 @@
 .second-main-wrap{
     background:$lightGrey;
+<<<<<<< HEAD
     margin:-353px -480px 0;
     -webkit-transform-origin:left center;
     -moz-transform-origin:left center;
@@ -10,15 +11,16 @@
     @media (max-width:1200px){
         margin-top:-130px;
     }
+=======
+    margin:0 0px 0;
+    @include skew(9deg);
+>>>>>>> f60460b0ed307dd68a8ba9fc32f32f9aea8828a5
     .content-box{
-        @include transform(rotate(-9deg));
+        margin:0 0 0;
+        @include skew(-9deg);
         color:#000;
-        margin:20px 480px 20px 520px;
          @media (max-width:1500px) {
           margin-bottom:165px; 
-        }
-        @media (max-width:768px){
-            margin-left:500px;
         }
     }
     .content{
@@ -29,7 +31,7 @@
         }
         @media (max-width:1200px){
             padding-top:30px;
-            padding-bottom:340px;
+            padding-bottom:310px;
         }
         @media (max-width:768px){
             padding-bottom:280px;

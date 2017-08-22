@@ -60,9 +60,10 @@
 	.content{
 		text-align:center;
 		@include justify-content(center);
-		@include bp( m ){
-			@include flex-direction(column);
-		}
+	}
+	.error-img{
+		@include justify-content(flex-end);
+		@include align-content(space-around);
 	}
 	.error-info{
 		@include flex-direction(column);
@@ -70,14 +71,10 @@
 		@include align-content(space-around);
 	}
 	.error-img{
-		width:50%;
+		width:40%;
+		
 		margin-right:1%;
 		text-align:right;
-		@include bp( m ){
-			width:100%;
-			margin:0 0 20px;
-			text-align:center;
-		}
 		img{
 			display:inline-block;
 			vertical-align:top;
@@ -85,15 +82,12 @@
 		}
 	}
 	.error-info{
-		width:49%;
-		@include bp( m ){
-			width:100%;
-		}
 		& > *{
 			@include flex-direction(column);
 			@include justify-content(center);
 			@include align-content(space-around);
 		}
+		width:59%;
 		.title{
 			color:$hardGreen;
 			text-transform:uppercase;

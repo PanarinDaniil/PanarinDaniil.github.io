@@ -1,0 +1,78 @@
+.header{
+    position:fixed;
+    display:block;
+    top:0;
+    left:0;
+    right:0;
+    z-index:5;
+  }
+  .footer{
+    position:fixed;
+    display:block;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:5;
+  }
+  
+  .main {
+    display:table!important;
+    /*padding-top:28mm!important;*/
+  }
+  .main .row{
+  	display:table-row!important;
+	padding-top:29mm!important;
+	width:100%!important;
+  }
+  .main .item{
+    display:table-cell!important;
+    width:50%!important;
+    padding:0 4px 8px;
+  }
+  .main .row:nth-child(1) .item{
+  	padding-top:29mm!important;
+  }
+  .main .row.break .item{
+  	/*page-break-after:always;*/
+    padding-top:76mm;
+  }
+  /*.main .row:nth-child(1) .item{
+  	padding-top:29mm!important;
+  	page-break-after:none!important;
+  }
+  .main .row:nth-child(3n + 1) .item{
+  	page-break-after:always;
+    padding-top:76mm;
+  }
+  .main .item:nth-child(6n + 1),
+  .main .item:nth-child(6n + 2){
+    page-break-after:always;
+    padding-top:76mm!important;
+  }
+  .main .item:first-child,
+  .main .item:nth-child(2){
+    padding-top:29mm!important;
+  }*/
+
+
+  .main .plan{
+  	display:table-cell!important;
+  	page-break-before:always;
+  	padding-top:95mm!important;
+  	vertical-align:bottom;
+  }
+  .main .plan img{
+  	max-height:200mm;
+  	width:auto;
+  }
+
+
+  .item img{
+    display:block;
+    width:90mm;
+    height:auto;
+  }
+  .item .title{
+    color:#404040;
+    background:#fff;
+  }

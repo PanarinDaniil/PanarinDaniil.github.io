@@ -1,0 +1,18 @@
+@mixin bp( $point ) {
+  @if $point == l {
+    @media screen and (max-width: 900px) { @content; }
+  }
+  @else if $point == m {
+    @media screen and (max-width: 768px) { @content; }
+  }
+  @else if $point == xs {
+    @media screen and (max-width: 450px)  { @content; }
+  }
+}
+@mixin flex (){
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
