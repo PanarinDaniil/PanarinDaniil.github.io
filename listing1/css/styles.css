@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic-ext,latin-ext");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font: 300 16px/1.2 'Open Sans', sans-serif; }
+
+p {
+  font: 300 16px/1.2 'Open Sans', sans-serif; }
+
+ul, ol {
+  font: 300 16px/1.2 'Open Sans', sans-serif; }
+
+.wrapper {
+  overflow: hidden;
+  position: relative; }
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.clear:after {
+  display: block;
+  content: "";
+  clear: both; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.content {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto; }
+
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+.header {
+  padding: 0 0 5px;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 5px; }
+  .header .address {
+    font-size: 26px;
+    font-weight: 600;
+    color: #404040;
+    text-decoration: underline;
+    margin-bottom: 4px; }
+  .header .agent span {
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+    color: #404040; }
+  .header .agent .bold {
+    font-weight: 700;
+    font-style: normal; }
+
+.top-header {
+  background: #eee;
+  padding: 3px 0;
+  margin-bottom: 2px; }
+  .top-header .title {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #404040; }
+  .top-header .date span {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #404040; }
+    .top-header .date span + span {
+      margin-left: 5px; }
+  .top-header .date .bold {
+    font-weight: 700; }
+
+.main .content {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center; }
+.main .item {
+  position: relative;
+  overflow: hidden;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: space-around;
+  align-content: space-around;
+  width: calc(50% - 4px);
+  margin: 0 8px 8px 0; }
+  .main .item:nth-child(even) {
+    margin-right: 0; }
+  .main .item:hover .title {
+    color: #404040;
+    background: #eee; }
+    .main .item:hover .title a {
+      color: #404040; }
+  .main .item:hover img {
+    -moz-transition: -moz-transform 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+    -o-transition: -o-transform 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+    -webkit-transition: -webkit-transform 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: transform 1s cubic-bezier(0.39, 0.575, 0.565, 1); }
+.main img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  -moz-transition: opacity 0.35s, -moz-transform 1s;
+  -o-transition: opacity 0.35s, -o-transform 1s;
+  -webkit-transition: opacity 0.35s, -webkit-transform 1s;
+  transition: opacity 0.35s, transform 1s; }
+.main .title {
+  padding: 3px 5px;
+  color: #eee;
+  background: #404040;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+  .main .title a {
+    color: #eee; }
+
+.footer {
+  padding: 10px 0 0;
+  border-top: 2px solid #eee; }
+  .footer .copy-text {
+    margin-bottom: 10px; }
+  .footer .copy-text, .footer p {
+    font-style: italic;
+    font-size: 14px;
+    color: #4040404; }
+  .footer .bottom-footer {
+    padding: 3px 0;
+    background: #eee; }
+  .footer .copy {
+    font-weight: 400;
+    color: #404040; }
+    .footer .copy span {
+      font-weight: 700; }
+
+/*# sourceMappingURL=styles.css.map */
