@@ -4,6 +4,7 @@ $(document).ready(function(){
 	  slidesToScroll: 1,
 	  arrows: true,
 	  fade: true,
+	  infinite: false,
 	  adaptiveHeight: true,
 	  asNavFor: '.slider-nav'
 	});
