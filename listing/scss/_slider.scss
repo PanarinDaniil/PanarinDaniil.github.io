@@ -1,3 +1,27 @@
+.main-info{
+	position:absolute;
+	display:block;
+	top:0;
+	left:0;
+	right:0;
+	padding:10px 20px;
+	background:rgba(0,0,0,.5);
+	z-index:100;
+
+	.title{
+		color:#fff;
+		font-size:2vh;
+		font-weight:700;
+		margin-bottom:10px;
+	}
+	.info{
+		color:#fff;
+		font-size:1.5vh;
+		span{
+			font-weight:700;
+		}
+	}
+}
 .media-wrap{
 	max-height:100vh;
 	overflow:hidden;

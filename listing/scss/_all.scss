@@ -1,8 +1,25 @@
+body{
+	font-family:'Open Sans', sans-serif;
+}
 .wrapper{
 	overflow:hidden;
+	position:relative;
 }
 *, *:after, *:before{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+.clear{
+	&:after{
+		display: block;
+		content: "";
+		clear:both;
+	}
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
 }

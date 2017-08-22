@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700&subset=latin-ext");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -29,13 +30,28 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  font-family: 'Open Sans', sans-serif; }
+
 .wrapper {
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+
+.clear:after {
+  display: block;
+  content: "";
+  clear: both; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
 
 /* Slider */
 .slick-slider {
@@ -238,6 +254,26 @@ table {
     .slick-dots li.slick-active button:before {
       color: black;
       opacity: 0.75; }
+
+.main-info {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100; }
+  .main-info .title {
+    color: #fff;
+    font-size: 2vh;
+    font-weight: 700;
+    margin-bottom: 10px; }
+  .main-info .info {
+    color: #fff;
+    font-size: 1.5vh; }
+    .main-info .info span {
+      font-weight: 700; }
 
 .media-wrap {
   max-height: 100vh;
