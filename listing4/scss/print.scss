@@ -23,8 +23,16 @@
     margin-bottom:4px;
   }
   .content{
-    padding:0;
     margin:0;
+    padding:0;
+    .agent{
+
+    }
+  }
+  .bottom-header{
+    .content{
+      padding:0;
+    }
   }
 }
 .footer{

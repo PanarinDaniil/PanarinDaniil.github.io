@@ -73,9 +73,7 @@ ul, ol {
 .header {
   margin-bottom: 20px; }
   .header .bottom-header .content {
-    padding: 0 0 5px;
-    border-bottom: 2px solid #336184;
-    max-width: 1140px; }
+    padding: 0 30px; }
   .header .address {
     font-size: 26px;
     font-weight: 600;
@@ -83,13 +81,16 @@ ul, ol {
     color: #404040;
     margin-bottom: 8px;
     padding-top: 4px; }
-  .header .agent span {
-    font-size: 16px;
-    font-weight: 700;
-    color: #404040; }
-  .header .agent .bold {
-    font-weight: 700;
-    font-style: normal; }
+  .header .agent {
+    padding: 0 0 5px;
+    border-bottom: 2px solid #336184; }
+    .header .agent span {
+      font-size: 16px;
+      font-weight: 700;
+      color: #404040; }
+    .header .agent .bold {
+      font-weight: 700;
+      font-style: normal; }
 
 .top-header {
   padding: 3px 0;
