@@ -80,7 +80,8 @@ ul, ol {
     color: #336184;
     color: #404040;
     margin-bottom: 8px;
-    padding-top: 4px; }
+    padding-top: 4px;
+    text-align: left; }
   .header .agent {
     padding: 0 0 5px;
     border-bottom: 2px solid #336184; }
