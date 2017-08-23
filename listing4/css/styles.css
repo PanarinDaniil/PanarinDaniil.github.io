@@ -60,7 +60,7 @@ ul, ol {
 
 .content {
   max-width: 1200px;
-  padding: 0 20px;
+  padding: 0 30px;
   margin: 0 auto; }
 
 .flex {
@@ -71,10 +71,11 @@ ul, ol {
   display: flex; }
 
 .header {
-  padding: 0 0 5px;
-  border-bottom: 2px solid #336184;
-  margin-bottom: 5px;
-  background: #eee; }
+  margin-bottom: 20px; }
+  .header .bottom-header .content {
+    padding: 0 0 5px;
+    border-bottom: 2px solid #336184;
+    max-width: 1140px; }
   .header .address {
     font-size: 26px;
     font-weight: 600;
@@ -107,6 +108,8 @@ ul, ol {
     .top-header .date span + span {
       margin-left: 5px; }
 
+.main .content {
+  padding: 0 20px; }
 .main .item {
   position: relative;
   overflow: hidden;
@@ -116,8 +119,8 @@ ul, ol {
   justify-content: center;
   -webkit-align-content: space-around;
   align-content: space-around;
-  width: calc(50% - 8px);
-  margin: 0 4px 8px; }
+  width: calc(50% - 20px);
+  margin: 0 10px 20px; }
 .main .row {
   display: -webkit-box;
   display: -moz-box;
@@ -138,20 +141,6 @@ ul, ol {
   .main .plan img {
     display: block;
     width: 100%; }
-.main .item {
-  		/*position:relative;
-  		overflow:hidden;
-  		-webkit-flex-direction:column;
-  	    flex-direction:column;
-  	    -webkit-justify-content:center;
-  	    justify-content:center;
-  	    -webkit-align-content:space-around;
-  	    align-content:space-around;
-          width:calc(50% - 4px);
-  	    margin:0 8px 8px 0;
-  	    &:nth-child(even){
-  	    	margin-right:0;
-  	    }*/ }
 .main img {
   display: block;
   max-width: 100%;
@@ -175,23 +164,20 @@ ul, ol {
     display: block;
     font-weight: 400; }
 
-.footer {
-  padding: 10px 0 0;
+.footer .copy-text {
   border-top: 2px solid #336184;
-  background: #eee; }
-  .footer .copy-text {
-    margin-bottom: 10px; }
-  .footer .copy-text, .footer p {
-    font-style: italic;
-    font-size: 14px;
-    color: #4040404; }
-  .footer .bottom-footer {
-    padding: 3px 0;
-    background: #eee; }
-  .footer .copy {
-    font-weight: 400;
-    color: #404040; }
-    .footer .copy span {
-      font-weight: 700; }
+  padding-top: 5px;
+  margin-bottom: 5px; }
+.footer .copy-text, .footer p {
+  font-style: italic;
+  font-size: 14px;
+  color: #404040; }
+.footer .bottom-footer {
+  padding: 3px 0; }
+.footer .copy {
+  font-weight: 400;
+  color: #404040; }
+  .footer .copy span {
+    font-weight: 700; }
 
 /*# sourceMappingURL=styles.css.map */

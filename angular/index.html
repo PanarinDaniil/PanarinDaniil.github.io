@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div data-ng-controller="SimpleController">
+		Name: 
+		<br/>
+		<input type="text" data-ng-model="name" /> {{ name }}
+		<ul>
+			<li data-ng-repeat="cust in customers | filter:name | orderBy:'city'">{{ cust.name | uppercase }} - {{ cust.city }}</li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+</html>

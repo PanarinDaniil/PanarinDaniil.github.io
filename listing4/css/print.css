@@ -14,14 +14,34 @@
   right:0;
   z-index:5;
 }*/
-.header .top-header {
-  margin-bottom: 2px; }
-.header .address {
-  margin-bottom: 4px; }
+.header {
+  margin: 0 0 14px; }
+  .header .top-header {
+    margin-bottom: 2px; }
+  .header .address {
+    margin-bottom: 4px; }
+  .header .content {
+    padding: 0;
+    margin: 0; }
+
+.footer {
+  margin: 0; }
+  .footer .content {
+    padding: 0;
+    margin: 0; }
+  .footer .copy-text {
+    margin-bottom: 5px; }
 
 .main {
   display: table !important;
   /*padding-top:28mm!important;*/
+  /*.row:nth-child(1) .item{
+  	padding-top:26mm!important;
+  }
+  .row.break .item{
+  	page-break-after:always;
+    padding-top:76mm;
+  }*/
   /*.main .row:nth-child(1) .item{
   	padding-top:29mm!important;
   	page-break-after:none!important;
@@ -39,6 +59,9 @@
   .main .item:nth-child(2){
     padding-top:29mm!important;
   }*/ }
+  .main .content {
+    padding: 0;
+    margin: 0; }
   .main .row {
     display: table-row !important;
     /*padding-top:29mm!important;*/
@@ -57,17 +80,22 @@
   .main .item {
     display: table-cell !important;
     width: 50% !important;
-    padding: 0 4px 1mm;
+    padding: 0 10px 20px;
     page-break-inside: avoid !important; }
-  .main .row:nth-child(1) .item {
-    /*padding-top:26mm!important;*/ }
-  .main .row.break .item {
-    /*page-break-after:always;*/
-    /*padding-top:76mm;*/ }
+    .main .item:nth-child(odd) {
+      margin-left: 0;
+      padding-left: 0; }
+      .main .item:nth-child(odd) .title {
+        padding-left: 0px; }
+    .main .item:nth-child(even) {
+      margin-right: 0;
+      padding-right: 0; }
+      .main .item:nth-child(even) .title {
+        padding-left: 10px; }
   .main .plan {
     display: table-cell !important;
-    /*page-break-before:always;*/
-    /*padding-top:95mm!important;*/
+    /*page-break-before:always;
+    padding-top:95mm!important;*/
     vertical-align: top; }
     .main .plan .title {
       color: #404040;
@@ -75,15 +103,21 @@
       .main .plan .title a {
         color: #404040; }
     .main .plan img {
-      height: 190mm;
+      height: 170mm;
       width: auto; }
 
-.item img {
-  display: block;
-  width: 90mm;
-  height: auto; }
-.item .title {
-  color: #404040;
-  background: #fff; }
+.item {
+  position: relative; }
+  .item img {
+    display: block; }
+  .item .title {
+    position: absolute;
+    display: block;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding: 3px 5px;
+    color: #404040;
+    background: #fff; }
 
 /*# sourceMappingURL=print.css.map */

@@ -1,14 +1,17 @@
 .header{
-	padding:0 0 5px;
-	border-bottom:2px solid #336184;
-	margin-bottom:5px;
-	background: #eee;
+	margin-bottom:20px;
+	.bottom-header{
+		.content{
+			padding:0 0 5px;
+			border-bottom:2px solid #336184;
+			max-width:1140px;
+		}
+	}
 	.address{
 		font-size:26px;
 		font-weight:600;
 		color:#336184;
 		color:#404040;
-		// text-decoration:underline;
 		margin-bottom:8px;
 		padding-top:4px;
 	}
@@ -16,7 +19,6 @@
 		span{
 			font-size:16px;
 			font-weight:700;
-			// font-style:italic;
 			color:#404040;
 		}
 		.bold{
@@ -26,7 +28,6 @@
 	}
 }
 .top-header{
-	// background:#eee;
 	padding:3px 0;
 	margin-bottom:5px;
 	text-align:right;
@@ -46,8 +47,5 @@
 				margin-left:5px;
 			}
 		}
-		// .bold{
-		// 	font-weight:700;
-		// }
 	}
 }
