@@ -1,20 +1,20 @@
 .footer{
 	.copy-text{
-	    border-top:2px solid #336184;
+	    border-top:2px solid $border;
 	    padding-top:5px;
 		margin-bottom:5px;
 	}
 	.copy-text, p{
 		font-style:italic;
 		font-size:14px;
-		color:#404040;
+		color:$textColor;
 	}
 	.bottom-footer{
 		padding:3px 0;
 	}
 	.copy{
 		font-weight:400;
-		color:#404040;
+		color:$textColor;
 		span{
 			font-weight:700;
 		}

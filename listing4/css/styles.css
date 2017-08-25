@@ -7,7 +7,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline; }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
@@ -29,14 +28,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body, p, ul, ol {
+  font: 300 16px/1.2 'Open Sans', sans-serif; }
+
 body {
-  font: 300 16px/1.2 'Open Sans', sans-serif; }
-
-p {
-  font: 300 16px/1.2 'Open Sans', sans-serif; }
-
-ul, ol {
-  font: 300 16px/1.2 'Open Sans', sans-serif; }
+  min-width: 320px; }
 
 .wrapper {
   overflow: hidden;
@@ -75,13 +71,12 @@ ul, ol {
   .header .bottom-header .content {
     padding: 0 30px; }
   .header .address {
+    text-align: left;
     font-size: 26px;
     font-weight: 600;
-    color: #336184;
     color: #404040;
-    margin-bottom: 8px;
     padding-top: 4px;
-    text-align: left; }
+    margin-bottom: 8px; }
   .header .agent {
     padding: 0 0 5px;
     border-bottom: 2px solid #336184; }
@@ -94,9 +89,9 @@ ul, ol {
       font-style: normal; }
 
 .top-header {
+  text-align: right;
   padding: 3px 0;
-  margin-bottom: 5px;
-  text-align: right; }
+  margin-bottom: 5px; }
   .top-header .title {
     font-size: 16px;
     line-height: 22px;
@@ -111,8 +106,32 @@ ul, ol {
       margin-left: 5px; }
 
 .main .content {
-  padding: 0 20px; }
-.main .item {
+  padding: 0 20px;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center; }
+.main img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto; }
+.main .title {
+  padding: 3px 5px;
+  background: #eee;
+  color: #404040;
+  font-weight: 700; }
+  .main .title a {
+    display: block;
+    font-weight: 400;
+    color: #404040; }
+
+.row {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center; }
+
+.item {
   position: relative;
   overflow: hidden;
   -webkit-flex-direction: column;
@@ -123,48 +142,12 @@ ul, ol {
   align-content: space-around;
   width: calc(50% - 20px);
   margin: 0 10px 20px; }
-.main .row {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: center;
-  justify-content: center; }
-.main .content {
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: center;
-  justify-content: center; }
-.main .plan {
+
+.plan {
   margin-bottom: 10px; }
-  .main .plan img {
+  .plan img {
     display: block;
     width: 100%; }
-.main img {
-  display: block;
-  max-width: 100%;
-  /*width:90mm;*/
-  margin: 0 auto;
-  -moz-transition: opacity 0.35s, -moz-transform 1s;
-  -o-transition: opacity 0.35s, -o-transform 1s;
-  -webkit-transition: opacity 0.35s, -webkit-transform 1s;
-  transition: opacity 0.35s, transform 1s; }
-.main .title {
-  padding: 3px 5px;
-  background: #eee;
-  color: #404040;
-  font-weight: 700;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out; }
-  .main .title a {
-    color: #404040;
-    display: block;
-    font-weight: 400; }
 
 .footer .copy-text {
   border-top: 2px solid #336184;

@@ -6,21 +6,20 @@
 		}
 	}
 	.address{
+		text-align:left;
 		font-size:26px;
 		font-weight:600;
-		color:#336184;
-		color:#404040;
-		margin-bottom:8px;
+		color:$textColor;
 		padding-top:4px;
-		text-align:left;
+		margin-bottom:8px;
 	}
 	.agent{
 		padding:0 0 5px;
-		border-bottom:2px solid #336184;
+		border-bottom:2px solid $border;
 		span{
 			font-size:16px;
 			font-weight:700;
-			color:#404040;
+			color:$textColor;
 		}
 		.bold{
 			font-weight:700;
@@ -29,21 +28,21 @@
 	}
 }
 .top-header{
+	text-align:right;
 	padding:3px 0;
 	margin-bottom:5px;
-	text-align:right;
 	.title{
 		font-size:16px;
 		line-height:22px;
 		font-weight:300;
-		color:#404040;
+		color:$textColor;
 	}
 	.date{
 		span{
 			font-size:16px;
 			line-height:22px;
 			font-weight:300;
-			color:#404040;
+			color:$textColor;
 			& + span{
 				margin-left:5px;
 			}

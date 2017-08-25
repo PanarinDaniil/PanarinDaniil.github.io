@@ -1,25 +1,22 @@
+body, p, ul, ol{
+	font:300 16px/1.2 'Open Sans', sans-serif;
+}
 body{
-	font:300 16px/1.2 'Open Sans', sans-serif;
-}
-p{
-	font:300 16px/1.2 'Open Sans', sans-serif;
-}
-ul, ol{
-	font:300 16px/1.2 'Open Sans', sans-serif;
+	min-width:320px;
 }
 .wrapper{
 	overflow:hidden;
 	position:relative;
 }
 *, *:after, *:before{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
 }
 .clear{
 	&:after{
-		display: block;
-		content: "";
+		display:block;
+		content:"";
 		clear:both;
 	}
 }
