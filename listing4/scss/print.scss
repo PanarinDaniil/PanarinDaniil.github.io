@@ -31,6 +31,16 @@
   	width:100%!important;
     page-break-inside:avoid;
   }
+  .title{
+    a{
+      .print{
+        display:inline;
+      }
+      .desk{
+        display:none;
+      }
+    }
+  }
 }
 .item{
   display:table-cell!important;

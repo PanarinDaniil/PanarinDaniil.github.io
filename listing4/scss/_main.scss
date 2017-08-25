@@ -20,6 +20,13 @@
 			display:block;
 			font-weight:400;
 			color:$textColor;
+			word-wrap:break-word;
+			.print{
+				display:none;
+			}
+			.desk{
+				display:inline;
+			}
 		}
 	}
 }

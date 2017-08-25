@@ -123,7 +123,12 @@ body {
   .main .title a {
     display: block;
     font-weight: 400;
-    color: #404040; }
+    color: #404040;
+    word-wrap: break-word; }
+    .main .title a .print {
+      display: none; }
+    .main .title a .desk {
+      display: inline; }
 
 .row {
   -webkit-flex-wrap: wrap;

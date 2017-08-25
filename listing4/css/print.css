@@ -23,6 +23,10 @@
     display: table-row !important;
     width: 100% !important;
     page-break-inside: avoid; }
+  .main .title a .print {
+    display: inline; }
+  .main .title a .desk {
+    display: none; }
 
 .item {
   display: table-cell !important;
