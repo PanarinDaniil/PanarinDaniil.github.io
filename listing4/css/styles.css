@@ -170,4 +170,77 @@ body {
   .footer .copy span {
     font-weight: 700; }
 
+@page {
+  size: auto;
+  margin: 10mm 15mm 10mm 15mm; }
+@media print {
+  .wrapper {
+    padding: 0 15px;
+    page-break-after: always; }
+
+  .header {
+    margin: 0 0 14px; }
+    .header .top-header {
+      margin-bottom: 2px; }
+    .header .address {
+      margin-bottom: 4px; }
+    .header .content {
+      margin: 0;
+      padding: 0;
+      overflow: hidden; }
+    .header .bottom-header .content {
+      padding: 0; }
+
+  .main {
+    display: table !important; }
+    .main .content {
+      min-height: 210mm;
+      padding: 0;
+      margin: 0; }
+    .main .row {
+      display: table-row !important;
+      width: 100% !important;
+      page-break-inside: avoid; }
+    .main .title a .print {
+      display: inline; }
+    .main .title a .desk {
+      display: none; }
+
+  .item {
+    display: table-cell !important;
+    width: 50% !important;
+    padding: 0 10px 10px;
+    page-break-inside: avoid !important; }
+    .item:nth-child(odd) {
+      margin-left: 0;
+      padding-left: 0; }
+      .item:nth-child(odd) .title {
+        padding-left: 0px; }
+    .item:nth-child(even) {
+      margin-right: 0;
+      padding-right: 0; }
+      .item:nth-child(even) .title {
+        padding-left: 10px; }
+
+  .plan {
+    display: table-cell !important;
+    vertical-align: top; }
+    .plan .title {
+      background: #fff; }
+    .plan img {
+      display: block;
+      max-height: 185mm;
+      width: auto; }
+
+  .footer {
+    margin: 0; }
+    .footer .content {
+      padding: 0;
+      margin: 0; }
+    .footer .copy-text {
+      margin-bottom: 5px; }
+    .footer .copy-text, .footer p {
+      font-size: 12px;
+      line-height: 1; } }
+
 /*# sourceMappingURL=styles.css.map */
