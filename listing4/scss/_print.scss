@@ -25,6 +25,7 @@
   }
   .main{
     display:table!important;
+    vertical-align:top;
     .content{
       // height:192mm;
       min-height:210mm;
@@ -33,6 +34,7 @@
     }
     .row{
     	display:table-row!important;
+      vertical-align:top;
     	width:100%!important;
       page-break-inside:avoid;
     }
@@ -49,9 +51,10 @@
   }
   .item{
     display:table-cell!important;
+    vertical-align:top;
     width:50%!important;
     padding:0 10px 10px;
-    page-break-inside: avoid!important;
+    page-break-inside:avoid!important;
     &:nth-child(odd){
       margin-left:0;
       padding-left:0;
@@ -77,6 +80,7 @@
       display:block;
       max-height:185mm;
       width:auto;
+      margin:0 auto auto;
     }
   }
   .footer{
