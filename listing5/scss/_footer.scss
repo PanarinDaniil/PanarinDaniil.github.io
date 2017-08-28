@@ -1,22 +1,13 @@
 .footer{
-	padding:10px 0 0;
-    border-top:2px solid #33613f;
-    background:#eaffed;
 	.copy-text{
-		margin-bottom:10px;
+	    border-top:1px solid #000000;
+	    padding-top:15px;
 	}
 	.copy-text, p{
-		font-size:14px;
-		color:#33613f;
-	}
-	.bottom-footer{
-		padding:3px 0;
-	}
-	.copy{
-		font-weight:400;
-		color:#33613f;
-		span{
-			font-weight:700;
-		}
+		font-style:italic;
+		font-size:12px;
+		line-height:18px;
+		margin:0;
+		text-align:justify;
 	}
 }

@@ -1,13 +1,7 @@
 @mixin flex (){
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-}
-@mixin transition( $transition ) {
-	-webkit-transition: $transition;
-	   -moz-transition: $transition;
-		 -o-transition: $transition;
-			transition: $transition;
+    display:-webkit-box;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display:flex;
 }

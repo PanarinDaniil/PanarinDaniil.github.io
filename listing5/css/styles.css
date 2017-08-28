@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic-ext,latin-ext");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -7,7 +6,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline; }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
@@ -29,18 +27,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body, p, ul, ol {
+  font: 400 16px/22px Arial, sans-serif;
+  color: #000000; }
+
 body {
-  font: 300 16px/1.2 'Open Sans', sans-serif; }
-
-p {
-  font: 300 16px/1.2 'Open Sans', sans-serif; }
-
-ul, ol {
-  font: 300 16px/1.2 'Open Sans', sans-serif; }
+  min-width: 320px; }
 
 .wrapper {
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  page-break-after: always; }
 
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -60,7 +57,7 @@ ul, ol {
 
 .content {
   max-width: 1200px;
-  padding: 0 20px;
+  padding: 0 30px;
   margin: 0 auto; }
 
 .flex {
@@ -70,111 +67,264 @@ ul, ol {
   display: -webkit-flex;
   display: flex; }
 
+.bold {
+  font-weight: 700; }
+
+.center {
+  text-align: center; }
+
 .header {
-  border-bottom: 2px solid #33613f;
-  margin-bottom: 5px;
-  background: #eaffed; }
-  .header .address {
-    font-size: 26px;
-    font-weight: 600;
-    color: #33613f;
-    margin-bottom: 8px;
-    padding-top: 0px; }
-  .header .agent {
-    padding-top: 14px; }
-    .header .agent span {
-      font-size: 16px;
-      font-weight: 400;
-      color: #33613f; }
+  margin-bottom: 10px; }
 
 .top-header {
-  padding: 3px 0;
-  text-align: right; }
-  .top-header .title {
-    font-size: 12px;
-    line-height: 12px;
-    font-weight: 300;
-    color: #33613f; }
-  .top-header .date span {
-    font-size: 12px;
-    line-height: 12px;
-    font-weight: 300;
-    color: #33613f; }
-    .top-header .date span + span {
-      margin-left: 5px; }
-  .top-header .right {
-    padding-top: 7px; }
-
-.main .item {
-  position: relative;
-  overflow: hidden;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-content: space-around;
-  align-content: space-around;
-  width: calc(50% - 8px);
-  margin: 0 4px 8px; }
-.main .row {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: center;
-  justify-content: center; }
-.main .content {
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: center;
-  justify-content: center; }
-.main .plan {
-  margin-bottom: 10px; }
-  .main .plan img {
-    display: block;
-    width: 100%; }
-.main img {
-  display: block;
-  max-width: 100%;
-  margin: 0 auto;
-  -moz-transition: opacity 0.35s, -moz-transform 1s;
-  -o-transition: opacity 0.35s, -o-transform 1s;
-  -webkit-transition: opacity 0.35s, -webkit-transform 1s;
-  transition: opacity 0.35s, transform 1s; }
-.main .title {
-  text-align: right;
-  padding: 3px 5px;
-  background: #eaffed;
-  border-bottom: 2px solid #33613f;
-  color: #33613f;
-  font-weight: 700;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out; }
-  .main .title a {
-    color: #404040;
-    display: block;
-    font-weight: 400; }
-
-.footer {
-  padding: 10px 0 0;
-  border-top: 2px solid #33613f;
-  background: #eaffed; }
-  .footer .copy-text {
-    margin-bottom: 10px; }
-  .footer .copy-text, .footer p {
+  padding: 0 0 26px;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center; }
+  .top-header .logo {
+    -webkit-align-self: center;
+    align-self: center;
+    width: 70%;
+    max-width: 582px;
+    padding-right: 10px; }
+    .top-header .logo img {
+      display: block;
+      max-width: 100%; }
+  .top-header .info-wrap {
+    padding-left: 25px;
     font-size: 14px;
-    color: #33613f; }
-  .footer .bottom-footer {
-    padding: 3px 0; }
-  .footer .copy {
-    font-weight: 400;
-    color: #33613f; }
-    .footer .copy span {
-      font-weight: 700; }
+    line-height: 16px;
+    width: 30%; }
+    .top-header .info-wrap .phone div {
+      display: inline-block;
+      vertical-align: top; }
+  .top-header .title {
+    font-size: 24px;
+    line-height: 28px; }
+
+.bottom-header {
+  padding: 10px;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center; }
+  .bottom-header .address-wrap .title {
+    text-transform: uppercase; }
+    .bottom-header .address-wrap .title a {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 22px;
+      line-height: 26px;
+      color: #000;
+      text-transform: uppercase; }
+      .bottom-header .address-wrap .title a:hover {
+        text-decoration: none; }
+  .bottom-header .address-wrap .address-info {
+    font-size: 18px;
+    line-height: 1; }
+  .bottom-header .price-wrap {
+    text-align: right;
+    padding-left: 10px; }
+    .bottom-header .price-wrap .price {
+      font-size: 22px;
+      line-height: 1; }
+    .bottom-header .price-wrap .number {
+      font-size: 14px;
+      line-height: 1; }
+
+.main .content {
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 10px; }
+
+.media-wrap {
+  width: 40%;
+  padding-right: 20px; }
+  .media-wrap .link-wrap {
+    margin-bottom: 10px; }
+    .media-wrap .link-wrap a {
+      color: #000;
+      text-decoration: underline; }
+      .media-wrap .link-wrap a:hover {
+        text-decoration: none; }
+
+.media-box {
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+  .media-box .item {
+    margin-bottom: 10px;
+    width: 100%; }
+  .media-box img {
+    display: block;
+    max-width: 100%;
+    height: 245px;
+    margin: 0 auto;
+    object-fit: contain; }
+
+.info-wrap {
+  width: 60%; }
+
+.description {
+  padding-bottom: 16px;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 22px; }
+
+.company-wrap {
+  margin-bottom: 16px; }
+  .company-wrap span {
+    font-size: 14px;
+    line-height: 15px; }
+
+.building-info-list {
+  list-style: none;
+  margin-bottom: 16px;
+  display: table;
+  width: 100%;
+  border-collapse: collapse; }
+  .building-info-list li {
+    display: table-row; }
+  .building-info-list span {
+    display: table-cell;
+    padding: 10px;
+    width: auto;
+    border: 2px solid #d2d9e0;
+    border-left: 0;
+    font-size: 14px;
+    line-height: 16px; }
+    .building-info-list span.item {
+      width: 200px;
+      text-align: right;
+      padding-left: 0px;
+      text-transform: uppercase; }
+    .building-info-list span.option {
+      padding-right: 0px;
+      border-right: 0;
+      border-left: 0; }
+
+.contact {
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  align-items: center; }
+  .contact .img-wrap {
+    width: 20%;
+    padding-right: 10px; }
+    .contact .img-wrap img {
+      display: block;
+      max-width: 100%;
+      margin: 0; }
+  .contact .contact-info {
+    font-size: 12px;
+    line-height: 14px; }
+    .contact .contact-info div {
+      margin-bottom: 5px; }
+      .contact .contact-info div.title {
+        text-transform: uppercase;
+        margin-bottom: 10px; }
+      .contact .contact-info div.contact-mail {
+        margin-bottom: 0; }
+
+.floor-plan-wrap .title {
+  font-size: 20px;
+  line-height: 1.1;
+  letter-spacing: 2px;
+  padding: 10px 0 15px; }
+.floor-plan-wrap .plan {
+  margin-bottom: 26px; }
+  .floor-plan-wrap .plan img {
+    display: block;
+    border: 2px solid #000;
+    max-width: 100%;
+    height: 1200px;
+    margin: 0 auto;
+    object-fit: contain; }
+
+.footer .copy-text {
+  border-top: 1px solid #000000;
+  padding-top: 15px; }
+.footer .copy-text, .footer p {
+  font-style: italic;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0;
+  text-align: justify; }
+
+@page {
+  size: auto;
+  margin: 10mm 10mm 10mm 10mm; }
+@media print {
+  .no-print, .no-print * {
+    display: none !important; }
+
+  .top-header .logo {
+    width: 60%; }
+  .top-header .title {
+    font-size: 18px;
+    line-height: 1; }
+  .top-header .info-wrap {
+    font-size: 12px;
+    line-height: 13px;
+    width: 40%; }
+
+  .bottom-header .address-wrap .title {
+    text-transform: uppercase; }
+    .bottom-header .address-wrap .title a {
+      font-size: 16px;
+      line-height: 1; }
+  .bottom-header .address-wrap .address-info {
+    font-size: 14px; }
+  .bottom-header .price-wrap .price {
+    font-size: 16px; }
+  .bottom-header .price-wrap .number {
+    font-size: 12px; }
+
+  .main {
+    height: 195mm; }
+
+  .media-box img {
+    height: 140px; }
+
+  .description {
+    font-size: 12px;
+    line-height: 1.1;
+    padding-bottom: 10px; }
+
+  .company-wrap {
+    padding-bottom: 5px;
+    font-size: 14px;
+    line-height: 15px; }
+    .company-wrap span {
+      font-size: 12px;
+      line-height: 1; }
+
+  .building-info-list {
+    padding-bottom: 10px; }
+    .building-info-list span {
+      font-size: 12px;
+      line-height: 1; }
+
+  .contact .contact-info {
+    font-size: 12px;
+    line-height: 1.1; }
+    .contact .contact-info div {
+      margin-bottom: 1px; }
+      .contact .contact-info div.title {
+        margin-bottom: 3px; }
+
+  .floor-plan-wrap .title {
+    font-size: 16px;
+    padding: 0 0 5mm; }
+  .floor-plan-wrap .plan {
+    margin-bottom: 10mm; }
+    .floor-plan-wrap .plan img {
+      height: 220mm; }
+
+  .footer .copy-text {
+    padding-top: 5px; }
+  .footer .copy-text, .footer p {
+    font-size: 10px;
+    line-height: 1.1; } }
 
 /*# sourceMappingURL=styles.css.map */
