@@ -44,6 +44,17 @@
     height:195mm;
   }
   .media-box{
+    display:table;
+    width:100%;
+    .item{
+      display:table-row;
+      margin-bottom:0;
+      & > div{
+        display:table-cell;
+        vertical-align:top;
+        padding-bottom:10px;
+      }
+    }
     img{
       height:140px;
     }

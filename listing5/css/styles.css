@@ -170,6 +170,8 @@ body {
 .main .content {
   -webkit-flex-direction: row;
   flex-direction: row;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
   margin-bottom: 10px; }
   @media screen and (max-width: 768px) {
     .main .content {
@@ -193,7 +195,11 @@ body {
 
 .media-box {
   -webkit-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-align-content: flex-start;
+  align-content: flex-start; }
   @media screen and (max-width: 768px) {
     .media-box {
       -webkit-flex-direction: row;
@@ -202,7 +208,9 @@ body {
       flex-wrap: wrap; } }
   .media-box .item {
     margin-bottom: 10px;
-    width: 100%; }
+    width: 100%;
+    -webkit-align-self: flex-start;
+    align-self: flex-start; }
     @media screen and (max-width: 768px) {
       .media-box .item {
         width: 50%;
@@ -404,8 +412,18 @@ body {
   .main {
     height: 195mm; }
 
-  .media-box img {
-    height: 140px; }
+  .media-box {
+    display: table;
+    width: 100%; }
+    .media-box .item {
+      display: table-row;
+      margin-bottom: 0; }
+      .media-box .item > div {
+        display: table-cell;
+        vertical-align: top;
+        padding-bottom: 10px; }
+    .media-box img {
+      height: 140px; }
 
   .description {
     font-size: 12px;

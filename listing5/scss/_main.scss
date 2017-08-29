@@ -2,6 +2,8 @@
 	.content{
 		-webkit-flex-direction:row;
 		flex-direction:row;
+		-webkit-align-items:flex-start;
+		align-items:flex-start;
 		margin-bottom:10px;
 		@media screen and (max-width:768px){
 			-webkit-flex-direction:column;
@@ -30,6 +32,10 @@
 .media-box{
 	-webkit-flex-direction:column;
 	flex-direction:column;
+	-webkit-align-items:flex-start;
+	align-items:flex-start;
+	-webkit-align-content:flex-start;
+	align-content:flex-start;
 	@media screen and (max-width:768px){
 		-webkit-flex-direction:row;
 		flex-direction:row;
@@ -39,6 +45,8 @@
 	.item{
 		margin-bottom:10px;
 		width:100%;
+		-webkit-align-self:flex-start;
+		align-self:flex-start;
 		@media screen and (max-width:768px){
 			width:50%;
 			padding-right:5px;
