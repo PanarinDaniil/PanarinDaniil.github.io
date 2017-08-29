@@ -377,15 +377,17 @@ body {
   .no-print, .no-print * {
     display: none !important; }
 
-  .top-header .logo {
-    width: 60%; }
-  .top-header .title {
-    font-size: 18px;
-    line-height: 1; }
-  .top-header .info-wrap {
-    font-size: 12px;
-    line-height: 13px;
-    width: 40%; }
+  .top-header {
+    padding-bottom: 10px; }
+    .top-header .logo {
+      width: 60%; }
+    .top-header .title {
+      font-size: 18px;
+      line-height: 1; }
+    .top-header .info-wrap {
+      font-size: 12px;
+      line-height: 13px;
+      width: 40%; }
 
   .bottom-header .address-wrap .title {
     text-transform: uppercase; }
