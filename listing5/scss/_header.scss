@@ -1,5 +1,10 @@
 .header{
 	margin-bottom:10px;
+	.content{
+		@media screen and (max-width:468px){
+			padding:0;
+		}
+	}
 }
 .top-header{
 	padding:0 0 26px;
@@ -7,12 +12,23 @@
 	justify-content:space-between;
 	-webkit-align-items:center;
 	align-items:center;
+	@media screen and (max-width:768px){
+		-webkit-flex-direction:column;
+		flex-direction:column;
+	}
+	@media screen and (max-width:468px){
+		padding:0 15px 26px;
+	}
 	.logo{
 		-webkit-align-self:center;
 		align-self:center;
 		width:70%;
 		max-width:582px;
 		padding-right:10px;
+		@media screen and (max-width:768px){
+			width:100%;
+			margin:0 auto 15px;
+		}
 		img{
 			display:block;
 			max-width:100%;
@@ -23,6 +39,12 @@
 		font-size:14px;
 		line-height:16px;
 		width:30%;
+		@media screen and (max-width:768px){
+			width:260px;
+			padding:10px 0 0;
+		    border-left:none!important;
+			margin:0 auto;
+		}
 		.phone div{
 			display:inline-block;
 			vertical-align:top;
@@ -39,7 +61,18 @@
 	justify-content:space-between;
 	-webkit-align-items:center;
 	align-items:center;
+	@media screen and (max-width:768px){
+		-webkit-flex-direction:column;
+		flex-direction:column;
+		text-align:center;
+	}
+	@media screen and (max-width:468px){
+		padding:10px 15px;
+	}
 	.address-wrap{
+		@media screen and (max-width:768px){
+			margin-bottom:10px;
+		}
 		.title{
 			text-transform:uppercase;
 			a{
