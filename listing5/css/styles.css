@@ -229,22 +229,12 @@ body {
   .media-box img {
     display: block;
     max-width: 100%;
-    height: 245px;
+    max-height: 291px;
     margin: 0 auto;
-    object-fit: contain;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out; }
-    @media screen and (max-width: 1024px) {
-      .media-box img {
-        height: 230px; } }
-    @media screen and (max-width: 920px) {
-      .media-box img {
-        height: 175px; } }
-    @media screen and (max-width: 768px) {
-      .media-box img {
-        height: auto; } }
 
 .info-wrap {
   width: 60%; }
@@ -423,7 +413,8 @@ body {
         vertical-align: top;
         padding-bottom: 10px; }
     .media-box img {
-      height: 140px; }
+      object-fit: contain;
+      height: 170px; }
 
   .description {
     font-size: 12px;
