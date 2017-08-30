@@ -1,0 +1,31 @@
+body, p, ul, ol{
+	font:400 16px/22px Arial, sans-serif;
+    color:#000000;
+}
+body{
+	min-width:320px;
+}
+.wrapper{
+	overflow:hidden;
+	position:relative;
+}
+*, *:after, *:before{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+.content{
+	max-width:1200px;
+	padding:0 30px;
+	margin:0 auto;
+	@media screen and (max-width:468px){
+		padding:0 15px;
+	}
+}
+.flex{
+    @include flex();
+}
