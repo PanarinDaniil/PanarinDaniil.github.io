@@ -1,0 +1,112 @@
+.wrapper{
+	.main{
+		display:block;
+	}
+	.top-info{
+		span{
+			color:#697a85;
+			font-size:14px;
+			&:nth-child(2){
+			    margin-left:5px;
+			}
+		}
+	}
+	.main-table{
+		margin-bottom:10px;
+		color:#343434;
+	    font-size:12px;
+	    font-weight:700;
+	    & + .main-table{
+	    	page-break-before:always;
+	    }
+	}
+	.title{
+		font-size:20px;
+	}
+	.head-border{
+		th{
+		    border-bottom:2px solid #8db4e2;
+		}
+	}
+	td, th{
+		padding:5px;
+		&.w2{
+			width:2%;
+		}
+		&.w3{
+			width:3%;
+		}
+		&.w4{
+			width:4%;
+		}
+		&.w5{
+			width:5%;
+		}
+		&.w6{
+			width:6%;
+		}
+		&.w7{
+			width:7%;
+		}
+		&.w8{
+			width:8%;
+		}
+		&.w9{
+			width:9%;
+		}
+		&.w10{
+			width:10%;
+		}
+		&.w11{
+			width:11%;
+		}
+		&.w12{
+			width:12%;
+		}
+		&.w13{
+			width:13%;
+		}
+		&.w14{
+			width:14%;
+		}
+		&.w15{
+			width:15%;
+		}
+	}
+	th{
+		padding:10px 5px;
+		text-align:left;
+	}
+	.table-list{
+		td{
+			color:#343434;
+			padding:5px 5px 2px;
+			&.media{
+				text-align:center;
+			}
+			a{
+				color:#343434;
+				text-transform:uppercase;
+			}
+		}
+	}
+	.editional{
+		&:last-child{
+			td{
+				border-bottom:none;
+			}
+		}
+		td{
+		    padding:0px 5px 5px;
+		    border-bottom:1px solid #343434;
+		}
+		.info{
+		    color:#828282;
+		    text-transform:capitalize;
+		}
+	}
+
+}
+html[data-useragent*='MSIE 10.'],
+html[data-useragent*='rv:11.']{
+}

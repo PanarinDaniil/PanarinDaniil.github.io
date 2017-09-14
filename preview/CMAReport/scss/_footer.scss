@@ -1,0 +1,16 @@
+.wrapper{
+	.footer{
+	    border-top:1px solid #000;
+		.copy-text{
+		    padding-top:5px;
+		}
+		.copy-text, p{
+			color:#53616c;
+			margin:0;
+			font-size:12px;
+			line-height:12px;
+			font-style:italic;
+			text-align:justify;
+		}
+	}
+}

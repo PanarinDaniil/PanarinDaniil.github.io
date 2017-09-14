@@ -1,0 +1,53 @@
+@page{
+  size:letter landscape;
+  margin:0.2in 0.15in 0.4in 0.15in;
+}
+@media print{
+  @page{
+    size:letter landscape;
+    margin:0.2in 0.15in 0.4in 0.15in;
+  }
+  .no-print, .no-print * {
+    display:none!important;
+  }
+  html body{
+    padding:0!important;
+  }
+  .wrapper{
+    padding:0;
+    .clear{
+      overflow:hidden;
+    }
+    .header{
+      padding-bottom:2px;
+      .logo{
+        width:70%;
+        max-width:none;
+      }
+      .title{
+        font-size:18px;
+        line-height:1;
+      }
+      .info-wrap{
+        font-size:12px;
+        line-height:13px;
+        width:30%;
+      }
+    }
+    .main-table{
+      font-size:10px;
+    }
+    .footer{
+      border-top:medium solid #000;
+      .copy-text{
+        padding-top:5px;
+      }
+      .copy-text, p{
+        font-size:6pt;
+      }
+    }
+  }
+  html[data-useragent*='MSIE 10.'],
+  html[data-useragent*='rv:11.']{
+  }
+}
