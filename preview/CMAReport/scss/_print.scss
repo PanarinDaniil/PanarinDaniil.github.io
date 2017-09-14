@@ -46,7 +46,7 @@
       &.last{
         .empty:last-child{
           td{
-            height:15px;
+            height:13px;
           }
         }
       }
@@ -73,12 +73,12 @@
       }
     }
     .summary{
-      margin:0 0 5px;
+      margin:0px;
     }
     .footer{
       border-top:thin solid #000;
       .copy-text{
-        padding-top:5px;
+        padding-top:3px;
       }
       .copy-text, p{
         font-size:9px;

@@ -277,7 +277,7 @@ body {
     .wrapper .fixed-header.fixed {
       display: none; }
     .wrapper .main-table.last .empty:last-child td {
-      height: 15px; }
+      height: 13px; }
     .wrapper .top-info {
       padding-bottom: 5px; }
     .wrapper .table-header.hide {
@@ -289,11 +289,11 @@ body {
     .wrapper .empty td {
       height: 25px; }
     .wrapper .summary {
-      margin: 0 0 5px; }
+      margin: 0px; }
     .wrapper .footer {
       border-top: thin solid #000; }
       .wrapper .footer .copy-text {
-        padding-top: 5px; }
+        padding-top: 3px; }
       .wrapper .footer .copy-text, .wrapper .footer p {
         font-size: 9px;
         line-height: 9px; } }
