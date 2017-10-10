@@ -20,11 +20,10 @@ $(document).ready(function(){
 	  asNavFor: '#slider-nav',
 	});
 	$('#slider-nav').slick({
-	  slidesToShow: 3,
-	  slidesToScroll: 3,
+	  slidesToShow: 10,
+	  slidesToScroll: 1,
 	  asNavFor: '#slider-for',
 	  swipeToSlide: true,
-	  // centerMode: true,
 	  focusOnSelect: true,
 	  arrows: true,
 	  dots: true,
@@ -99,8 +98,6 @@ $(document).ready(function(){
 
 	$("#slider-nav .slick-slide").on("click", function() {
 		var clickedthumb = $(this).attr('aria-describedby').replace('slick-slide1','');
-		// var clickedthumb = $(this).attr('data-slick-index');
-		console.log(clickedthumb);
         $('#slider-nav')[0].slick.slickGoTo(clickedthumb);
 	});
 });

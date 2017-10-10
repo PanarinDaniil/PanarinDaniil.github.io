@@ -1,0 +1,233 @@
+.media-wrap{
+	position:relative;
+	.slider-head{
+		background:#000;
+		padding:10px 0;
+		font-size:18px;
+		.info{
+			max-width:1600px;
+			margin:0 auto;
+			padding:0 15px;
+		}
+		.title{
+			width:50%;
+		}
+		.expand{
+			color:#fff;
+			text-decoration:none;
+			&:hover{
+				span{
+					&:after{
+						right:0;
+						left:0;
+					}
+				}
+			}
+			& + .expand{
+				margin-left:5px;
+			}
+			span{
+				position:relative;
+				&:after{
+					position:absolute;
+					display:block;
+					content:"";
+					bottom:-1px;
+					left:50%;
+					right:50%;
+					height:2px;
+					background:#fff;
+					-webkit-transition:all .2s ease-out;
+				    -moz-transition:all .2s ease-out;
+				    -ms-transition:all .2s ease-out;
+				    -o-transition:all .2s ease-out;
+				    transition:all .2s ease-out;
+				}
+			}
+		}
+	}
+	.slider-pagination{
+		position:absolute;
+		display:inline-block;
+		vertical-align:top;
+		bottom:16vh;
+		right:30px;
+		padding:5px 10px;
+		color:#222;
+		background:rgba(255,255,255,.7);
+		z-index:20;
+		.slide-number{
+			font-size:16px;
+			line-height:22px;
+			&.number-slides{
+				position:relative;
+				margin-left:9px;
+				&:after{
+					position: absolute;
+					display: block;
+					content:"/";
+					left:-10px;
+					top:0;
+					font-size:19px;
+					line-height:22px;
+				}
+			}
+		}
+	}
+	.slides-filter{
+		position:absolute;
+		display:block;
+		top:85vh;
+		left:0;
+		right:0;
+		z-index:20;
+		.filter-list{
+			font-size:0;
+			list-style:none;
+		    max-width:1600px;
+		    margin:0 auto;
+		    padding:0 15px;
+			*{
+				font-size:16px;
+			}
+			li{
+				display:inline-block;
+				vertical-align:top;
+				& + li{
+					margin-left:5px;
+				}
+			}
+			a{
+				display:block;
+				padding: 5px 10px;
+				background:rgba(255,255,255,.5);
+				color:#222;
+				text-decoration:none;
+				-webkit-transition:all .2s ease-out;
+			    -moz-transition:all .2s ease-out;
+			    -ms-transition:all .2s ease-out;
+			    -o-transition:all .2s ease-out;
+			    transition:all .2s ease-out;
+				&.active, &:hover{
+					background:rgba(255,255,255,.8);
+				}
+				i{
+					font-style:normal;
+				}
+			}
+		}
+	}
+	.slick-slide{
+		&, &:hover, &:focus{
+			outline:none;
+		}
+	}
+	.slider-for{
+		padding:0 15px;
+		.slick-prev, .slick-next{
+			top:0;
+			bottom:0;
+			width:100px;
+			height:auto;
+		    -webkit-transform:translate(0);
+		    -ms-transform:translate(0);
+		    transform:translate(0);
+		    z-index:10;
+		    background:rgba(0,0,0,0);
+		    -webkit-transition:all .2s ease-out;
+		    -moz-transition:all .2s ease-out;
+		    -ms-transition:all .2s ease-out;
+		    -o-transition:all .2s ease-out;
+		    transition:all .2s ease-out;
+		    &:hover{
+		    	background:rgba(0,0,0,.15);
+		    }
+		    &.slick-disabled{
+		    	&:hover{
+		    		background:rgba(0,0,0,0);
+		    	}
+		    }
+		}
+		.slick-prev{
+			left:0px;
+		}
+		.slick-next{
+			right:0px;
+		}
+		.slick-slide{
+			position:relative;
+			height:calc(85vh - 50px);
+		}
+		.media-img{
+			position:absolute;
+			display:block;
+			top:5px;
+			right:0;
+			bottom:20px;
+			left:0;
+			background-size:contain;
+			background-position:50% 50%;
+			background-repeat:no-repeat;
+		}
+	}
+	.slider-nav{
+		margin-top:35px;
+		.slick-prev, .slick-next{
+			top:0;
+			bottom:0;
+			width:100px;
+			height:auto;
+		    -webkit-transform:translate(0);
+		    -ms-transform:translate(0);
+		    transform:translate(0);
+		    z-index:10;
+		    background:rgba(0,0,0,0);
+		    -webkit-transition:all .2s ease-out;
+		    -moz-transition:all .2s ease-out;
+		    -ms-transition:all .2s ease-out;
+		    -o-transition:all .2s ease-out;
+		    transition:all .2s ease-out;
+		    &:hover{
+		    	background:rgba(0,0,0,.15);
+		    }
+		    &.slick-disabled{
+		    	&:hover{
+		    		background:rgba(0,0,0,0);
+		    	}
+		    }
+		}
+		.slick-prev{
+			left:0px;
+		}
+		.slick-next{
+			right:0px;
+		}
+		.slick-slide{
+			position:relative;
+			height:calc(15vh - 35px);
+			&.slick-current{
+				.preview{
+					border-color:#000;
+				}
+			}
+		}
+		.preview{
+			position:absolute;
+			display:block;
+			top:5px;
+			right:5px;
+			bottom:5px;
+			left:5px;
+			background-size:contain;
+			background-position:50% 50%;
+			background-repeat:no-repeat;
+			cursor:pointer;
+		    background-color:rgba(0,0,0,.4);
+		    border:1px solid transparent;
+		}
+
+	}
+}
+html[data-useragent*='MSIE 10.'],
+html[data-useragent*='rv:11.']{
+}

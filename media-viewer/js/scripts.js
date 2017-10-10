@@ -40,8 +40,8 @@ $(document).ready(function(){
 	  asNavFor: '#slider-nav',
 	});
 	$('#slider-nav').slick({
-	  slidesToShow: 3,
-	  slidesToScroll: 3,
+	  slidesToShow: 10,
+	  slidesToScroll: 1,
 	  asNavFor: '#slider-for',
 	  swipeToSlide: true,
 	  focusOnSelect: true,
@@ -58,8 +58,8 @@ $(document).ready(function(){
 	  asNavFor: '#slider-nav-building',
 	});
 	$('#slider-nav-building').slick({
-	  slidesToShow: 3,
-	  slidesToScroll: 3,
+	  slidesToShow: 10,
+	  slidesToScroll: 1,
 	  asNavFor: '#slider-for-building',
 	  swipeToSlide: true,
 	  focusOnSelect: true,
@@ -76,8 +76,8 @@ $(document).ready(function(){
 	  asNavFor: '#slider-nav-image',
 	});
 	$('#slider-nav-image').slick({
-	  slidesToShow: 3,
-	  slidesToScroll: 3,
+	  slidesToShow: 10,
+	  slidesToScroll: 1,
 	  asNavFor: '#slider-for-image',
 	  swipeToSlide: true,
 	  focusOnSelect: true,
@@ -94,8 +94,8 @@ $(document).ready(function(){
 	  asNavFor: '#slider-nav-floorplan',
 	});
 	$('#slider-nav-floorplan').slick({
-	  slidesToShow: 3,
-	  slidesToScroll: 3,
+	  slidesToShow: 10,
+	  slidesToScroll: 1,
 	  asNavFor: '#slider-for-floorplan',
 	  swipeToSlide: true,
 	  focusOnSelect: true,
