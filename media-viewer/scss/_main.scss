@@ -8,7 +8,6 @@
 			padding:5px 0;
 		}
 		.info{
-			max-width:1600px;
 			margin:0 auto;
 			padding:0 15px;
 			@include bp(m){
@@ -27,6 +26,10 @@
 				padding:0 20px;
 				font-size:22px;
 				line-height:1.2;
+			}
+			@include bp(xs){
+				text-align:center;
+				font-size:16px;
 			}
 			@include bp(xsl){
 				text-align:center;
@@ -124,8 +127,7 @@
 			bottom:35vh;
 		}
 		@include bp(xsl){
-			bottom:auto;
-			top:calc(74vh);
+			bottom:35vh;
 		}
 		.slide-number{
 			font-size:16px;
@@ -148,36 +150,45 @@
 	.slides-filter{
 		position:absolute;
 		display:block;
-		top:85vh;
+		top:84.5vh;
 		left:0;
 		right:0;
 		z-index:20;
 		@include bp(sl){
 			top:auto;
-			bottom:10px;
+			bottom:5px;
 		}
-		@include bp(xs){
-			top:71.3vh;
+		@include bp(s){
+			top:auto;
+			bottom:5px;
 		}
-		// @include bp(xsl){
-		// 	top:71.3vh;
-		// }
 		.filter-list{
 			font-size:0;
 			list-style:none;
-		    max-width:1600px;
 		    margin:0 auto;
 		    padding:0 15px;
+		    @include bp(s){
+				-webkit-flex-wrap:wrap;
+				flex-wrap:wrap;
+				-webkit-align-items:stretch;
+				align-items:stretch;
+			}
 		    @include bp(sl){
 		    	text-align:center;
+		    	-webkit-flex-wrap:wrap;
+				flex-wrap:wrap;
+				-webkit-align-items:stretch;
+				align-items:stretch;
+		    }
+		    @include bp(xs){
+		    	padding:0;
+		    }
+		    @include bp(xsl){
+		    	padding:0;
 		    }
 			*{
 				font-size:16px;
-				@include bp(s){
-			    	font-size:14px;
-			    	letter-spacing:-0.5px;
-			    }
-			    @include bp(sl){
+				@include bp(m){
 			    	font-size:14px;
 			    	letter-spacing:-0.5px;
 			    }
@@ -185,14 +196,39 @@
 			li{
 				display:inline-block;
 				vertical-align:top;
-				@include bp(xs){
-					width:48%;
+				@include bp(s){
+					width:36%;
 					margin:0 1% 5px;
+					@include flex();
 				}
+				@include bp(sl){
+					width:36%;
+					margin:0 1% 5px;
+					@include flex();
+				}
+				// @include bp(ss){
+				// 	width:48%;
+				// 	margin:0 1% 5px;
+				// 	text-align:center;
+				// }
 				& + li{
 					margin-left:5px;
+					@include bp(s){
+						margin-left:1%;
+					}
+					@include bp(sl){
+						margin-left:1%;
+					}
 					@include bp(xs){
 						margin-left:1%;
+					}
+				}
+				&:nth-child(1), &:nth-child(4){
+					@include bp(s){
+						width:22%;
+					}
+					@include bp(sl){
+						width:22%;
 					}
 				}
 			}
@@ -207,15 +243,20 @@
 			    -ms-transition:all .2s ease-out;
 			    -o-transition:all .2s ease-out;
 			    transition:all .2s ease-out;
-			    @include bp(s){
+			    @include bp(m){
 			    	font-size:14px;
 			    	padding:5px;
 			    	letter-spacing:-0.5px;
 			    }
-			    @include bp(sl){
-			    	font-size:14px;
-			    	padding:5px;
-			    	letter-spacing:-0.5px;
+			    @include bp(s){
+					width:100%;
+				}
+				@include bp(sl){
+					width:100%;
+				}
+			    @include bp(xxs){
+			    	min-height:50px;
+			    	font-size:15px;
 			    }
 				&.active, &:hover{
 					background:rgba(255,255,255,.8);
@@ -264,6 +305,9 @@
 		    		background:rgba(0,0,0,0);
 		    	}
 		    }
+		    &:before{
+		    	font-size:50px;
+		    }
 		}
 		.slick-prev{
 			left:0px;
@@ -278,13 +322,19 @@
 				height:calc(85vh - 65px);
 			}
 			@include bp(sl){
-				height:73vh;
+				height:64vh;
+			}
+			@include bp(s){
+				height:81vh;
 			}
 			@include bp(xs){
-				height:calc(70vh - 65px);
+				height:67vh;
 			}
 			@include bp(xsl){
-				height:77vh;
+				height:62vh;
+			}
+			@include bp(xxs){
+				height:60vh;
 			}
 		}
 		.media-img{
@@ -304,15 +354,24 @@
 	}
 	.slider-nav{
 		margin-top:35px;
+		padding:0 9px;
 		@include bp(sl){
-			opacity:1;
-			visibility:hidden;
+			opacity:0!important;
+			visibility:hidden!important;
+		}
+		@include bp(s){
+			opacity:0!important;
+			visibility:hidden!important;
 		}
 		@include bp(xs){
-			margin-top:12vh;
+			margin-top:16vh;
 		}
 		@include bp(xsl){
-			margin-top:7vh;
+			opacity:0!important;
+			visibility:hidden!important;
+		}
+		&.no-margin{
+			margin:0!important;
 		}
 		.slick-dots{
 			visibility:hidden;
@@ -341,6 +400,9 @@
 		    		background:rgba(0,0,0,0);
 		    	}
 		    }
+		    &:before{
+		    	font-size:35px;
+		    }
 		}
 		.slick-prev{
 			left:0px;
@@ -359,7 +421,9 @@
 			}
 			&.slick-current{
 				.preview{
-					border-color:#000;
+					&:after{
+						background:rgba(42, 121, 222, 0.4);
+					}
 				}
 			}
 		}
@@ -370,14 +434,32 @@
 			right:5px;
 			bottom:5px;
 			left:5px;
-			background-size:contain;
+			background-size:cover;
 			background-position:50% 50%;
 			background-repeat:no-repeat;
 			cursor:pointer;
-		    background-color:rgba(0,0,0,.4);
-		    border:1px solid transparent;
+		    &:after{
+			    position:absolute;
+			    display:block;
+			    content:"";
+			    top:0;
+			    right:0;
+			    left:0;
+			    bottom:0;
+			    background:rgba(42, 121, 222, 0);
+			    z-index:10;
+			    -webkit-transition:all .2s ease-out;
+			    -moz-transition:all .2s ease-out;
+			    -ms-transition:all .2s ease-out;
+			    -o-transition:all .2s ease-out;
+			    transition:all .2s ease-out;
+			}
+			&:hover{
+				&:after{
+					background:rgba(42, 121, 222, 0.4);
+				}
+			}
 		}
-
 	}
 }
 html[data-useragent*='MSIE 10.'],

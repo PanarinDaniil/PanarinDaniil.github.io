@@ -14,11 +14,14 @@
   @else if $point == sl {
     @media screen and (max-width: 768px) and (orientation: landscape) { @content; }
   }
+  @else if $point == ss {
+    @media screen and (max-width: 680px) and (orientation: portrait) { @content; }
+  }
   @else if $point == xs {
-    @media screen and (max-width: 568px) and (orientation:portrait) { @content; }
+    @media screen and (max-width: 572px) and (orientation:portrait) { @content; }
   }
   @else if $point == xsl {
-    @media screen and (max-width: 568px) and (orientation: landscape) { @content; }
+    @media screen and (max-width: 572px) and (orientation: landscape) { @content; }
   }
   @else if $point == xxs {
     @media screen and (max-width: 400px) { @content; }

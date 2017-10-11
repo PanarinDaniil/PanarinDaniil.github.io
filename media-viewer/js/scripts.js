@@ -104,12 +104,10 @@ $(document).ready(function(){
 	// filtering slides
 	$(".slider-pagination").css("visibility", "hidden").css("opacity", "0");
 	$(".slide-0").css("visibility", "visible").css("opacity", "1");
-	$("#slider-1").css("opacity","0").css("visibility","hidden").css("max-height","0").css("margin","0");
-	$("#sliderNav-1").css("opacity","0").css("visibility","hidden").css("max-height","0").css("margin","0");
-	$("#slider-2").css("opacity","0").css("visibility","hidden").css("max-height","0").css("margin","0");
-	$("#sliderNav-2").css("opacity","0").css("visibility","hidden").css("max-height","0").css("margin","0");
-	$("#slider-3").css("opacity","0").css("visibility","hidden").css("max-height","0").css("margin","0");
-	$("#sliderNav-3").css("opacity","0").css("visibility","hidden").css("max-height","0").css("margin","0");
+	$(".slider-for").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
+	$(".slider-nav").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
+	$("#slider-0").css("opacity","1").css("visibility","visible").css("max-height","none");
+	$("#sliderNav-0").css("opacity","1").css("visibility","visible").css("max-height","none").removeClass("no-margin");
 
 	$('.product-button').on('click', function () {
 	    var filterNumber = $(this).attr('data-number');
@@ -120,37 +118,55 @@ $(document).ready(function(){
 	    	$(".slider-nav")[filterNumber].slick.slickGoTo(0);
 	    	$(".slider-pagination").css("visibility", "hidden").css("opacity", "0");
 	    	$(".slide-" + filterNumber).css("visibility", "visible").css("opacity", "1");
-	    	$(".slider-for").css("opacity","0").css("visibility","hidden").css("max-height","0").css("margin","0");
-	    	$(".slider-nav").css("opacity","0").css("visibility","hidden").css("max-height","0").css("margin","0");
+	    	$(".slider-for").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
+	    	$(".slider-nav").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
 	    	$("#slider-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none");
-	    	$("#sliderNav-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none").css("marginTop","35px");
+	    	$("#sliderNav-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none").removeClass("no-margin");
 	    } else if (filterNumber === "2") {
 	    	$('.slider-for')[filterNumber].slick.slickGoTo(0);
 	    	$('.slider-nav')[filterNumber].slick.slickGoTo(0);
 	    	$(".slider-pagination").css("visibility", "hidden").css("opacity", "0");
 	    	$(".slide-" + filterNumber).css("visibility", "visible").css("opacity", "1");
-	    	$(".slider-for").css("opacity","0").css("visibility","hidden").css("max-height","0").css("margin","0");
-	    	$(".slider-nav").css("opacity","0").css("visibility","hidden").css("max-height","0").css("margin","0");
+	    	$(".slider-for").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
+	    	$(".slider-nav").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
 	    	$("#slider-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none");
-	    	$("#sliderNav-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none").css("marginTop","35px");
+	    	$("#sliderNav-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none").removeClass("no-margin");
 	    } else if (filterNumber === "3"){
 	    	$('.slider-for')[filterNumber].slick.slickGoTo(0);
 	    	$('.slider-nav')[filterNumber].slick.slickGoTo(0);
 	    	$(".slider-pagination").css("visibility", "hidden").css("opacity", "0");
 	    	$(".slide-" + filterNumber).css("visibility", "visible").css("opacity", "1");
-	    	$(".slider-for").css("opacity","0").css("visibility","hidden").css("max-height","0").css("margin","0");
-	    	$(".slider-nav").css("opacity","0").css("visibility","hidden").css("max-height","0").css("margin","0");
+	    	$(".slider-for").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
+	    	$(".slider-nav").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
 	    	$("#slider-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none");
-	    	$("#sliderNav-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none").css("marginTop","35px");
+	    	$("#sliderNav-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none").removeClass("no-margin");
+	    } else if (filterNumber === "4"){
+	    	$('.slider-for')[filterNumber].slick.slickGoTo(0);
+	    	$('.slider-nav')[filterNumber].slick.slickGoTo(0);
+	    	$(".slider-pagination").css("visibility", "hidden").css("opacity", "0");
+	    	$(".slide-" + filterNumber).css("visibility", "visible").css("opacity", "1");
+	    	$(".slider-for").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
+	    	$(".slider-nav").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
+	    	$("#slider-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none");
+	    	$("#sliderNav-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none").removeClass("no-margin");
+	    } else if (filterNumber === "5"){
+	    	$('.slider-for')[filterNumber].slick.slickGoTo(0);
+	    	$('.slider-nav')[filterNumber].slick.slickGoTo(0);
+	    	$(".slider-pagination").css("visibility", "hidden").css("opacity", "0");
+	    	$(".slide-" + filterNumber).css("visibility", "visible").css("opacity", "1");
+	    	$(".slider-for").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
+	    	$(".slider-nav").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
+	    	$("#slider-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none");
+	    	$("#sliderNav-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none").removeClass("no-margin");
 	    } else {
 	    	$('.slider-for')[0].slick.slickGoTo(0);
 	    	$('.slider-nav')[0].slick.slickGoTo(0);
 	    	$(".slider-pagination").css("visibility", "hidden").css("opacity", "0");
 	    	$(".slide-0").css("visibility", "visible").css("opacity", "1");
-	    	$(".slider-for").css("opacity","0").css("visibility","hidden").css("max-height","0").css("margin","0");
-	    	$(".slider-nav").css("opacity","0").css("visibility","hidden").css("max-height","0").css("margin","0");
+	    	$(".slider-for").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
+	    	$(".slider-nav").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
 	    	$("#slider-0").css("opacity","1").css("visibility","visible").css("max-height","none");
-	    	$("#sliderNav-0").css("opacity","1").css("visibility","visible").css("max-height","none").css("marginTop","35px");
+	    	$("#sliderNav-0").css("opacity","1").css("visibility","visible").css("max-height","none").removeClass("no-margin");
 	    }
 	});
 	// END filtering slides
