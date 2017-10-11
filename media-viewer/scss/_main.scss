@@ -56,9 +56,9 @@
 		.expand{
 			color:#fff;
 			text-decoration:none;
+			letter-spacing:-0.5px;
 			@include bp(l){
 				font-size:16px;
-				letter-spacing:-0.5px;
 			}
 			@include bp(xsl){
 				display:inline-block;
