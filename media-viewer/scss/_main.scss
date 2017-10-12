@@ -206,11 +206,6 @@
 					margin:0 1% 5px;
 					@include flex();
 				}
-				// @include bp(ss){
-				// 	width:48%;
-				// 	margin:0 1% 5px;
-				// 	text-align:center;
-				// }
 				& + li{
 					margin-left:5px;
 					@include bp(s){
@@ -307,6 +302,9 @@
 		    }
 		    &:before{
 		    	font-size:50px;
+		    	@include bp(xs){
+			    	font-size:35px;
+			    }
 		    }
 		}
 		.slick-prev{

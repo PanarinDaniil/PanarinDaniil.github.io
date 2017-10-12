@@ -186,6 +186,11 @@ $(document).ready(function(){
 			        player[i].pause();
 				}
 		    });
+		    $(".slick-slide").on('click', function(event) {
+				for(var i = 0; i < player.length; i++){
+			        player[i].pause();
+				}
+		    });
 		    $(".product-button").on('click', function(event) {
 				for(var i = 0; i < player.length; i++){
 			        player[i].pause();

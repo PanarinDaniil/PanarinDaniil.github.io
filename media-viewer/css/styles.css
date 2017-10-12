@@ -513,6 +513,9 @@ body {
         background: rgba(0, 0, 0, 0); }
       .media-wrap .slider-for .slick-prev:before, .media-wrap .slider-for .slick-next:before {
         font-size: 50px; }
+        @media screen and (max-width: 572px) and (orientation: portrait) {
+          .media-wrap .slider-for .slick-prev:before, .media-wrap .slider-for .slick-next:before {
+            font-size: 35px; } }
     .media-wrap .slider-for .slick-prev {
       left: 0px; }
     .media-wrap .slider-for .slick-next {
