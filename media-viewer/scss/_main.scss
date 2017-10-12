@@ -117,14 +117,14 @@
 		position:absolute;
 		display:inline-block;
 		vertical-align:top;
-		bottom:16vh;
+		bottom:calc(16vh + 55px);
 		right:30px;
 		padding:5px 10px;
 		color:#222;
 		background:rgba(255,255,255,.7);
 		z-index:20;
 		@include bp(xs){
-			bottom:35vh;
+			bottom:calc(35vh - 40px);
 		}
 		@include bp(xsl){
 			bottom:35vh;
@@ -280,8 +280,8 @@
 	.slider-for{
 		padding:0 15px;
 		.slick-prev, .slick-next{
-			top:0;
-			bottom:0;
+			top:65px;
+			bottom:65px;
 			width:100px;
 			height:auto;
 		    -webkit-transform:translate(0);
@@ -349,6 +349,30 @@
 			background-repeat:no-repeat;
 			@include bp(sl){
 				bottom:5px;
+			}
+			.youtube-player{
+				display:block;
+				margin:0 auto;
+				width:100%!important;
+				height:calc(85vh - 75px);
+				@include bp(m){
+					height:calc(85vh - 90px);
+				}
+				@include bp(sl){
+					height:calc(64vh - 25px);
+				}
+				@include bp(s){
+					height:calc(81vh - 25px);
+				}
+				@include bp(xs){
+					height:calc(67vh - 25px);
+				}
+				@include bp(xsl){
+					height:calc(62vh - 25px);
+				}
+				@include bp(xxs){
+					height:calc(60vh - 25px);
+				}
 			}
 		}
 	}

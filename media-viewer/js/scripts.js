@@ -170,4 +170,28 @@ $(document).ready(function(){
 	    }
 	});
 	// END filtering slides
+
+	// Youtube player
+	var player = [];
+	$('.youtube-player').each(function(key, item) {
+		var youtubeIdName = 'youtubePlayer-' + key;
+		this.id = youtubeIdName;
+		var videoId = $(this).attr("data-youtube-videoid")
+		var numberPlayer = key;
+		var currentPlayer = this;
+		(function() {
+			player[numberPlayer] = youtube({ el:currentPlayer, id:videoId });
+			$(".slick-arrow").on('click', function(event) {
+				for(var i = 0; i < player.length; i++){
+			        player[i].pause();
+				}
+		    });
+		    $(".product-button").on('click', function(event) {
+				for(var i = 0; i < player.length; i++){
+			        player[i].pause();
+				}
+		    });
+	    })();
+	});
+	// END Youtube player
 });

@@ -344,7 +344,7 @@ body {
     position: absolute;
     display: inline-block;
     vertical-align: top;
-    bottom: 16vh;
+    bottom: calc(16vh + 55px);
     right: 30px;
     padding: 5px 10px;
     color: #222;
@@ -352,7 +352,7 @@ body {
     z-index: 20; }
     @media screen and (max-width: 572px) and (orientation: portrait) {
       .media-wrap .slider-pagination {
-        bottom: 35vh; } }
+        bottom: calc(35vh - 40px); } }
     @media screen and (max-width: 572px) and (orientation: landscape) {
       .media-wrap .slider-pagination {
         bottom: 35vh; } }
@@ -490,8 +490,8 @@ body {
   .media-wrap .slider-for {
     padding: 0 15px; }
     .media-wrap .slider-for .slick-prev, .media-wrap .slider-for .slick-next {
-      top: 0;
-      bottom: 0;
+      top: 65px;
+      bottom: 65px;
       width: 100px;
       height: auto;
       -webkit-transform: translate(0);
@@ -551,6 +551,29 @@ body {
       @media screen and (max-width: 768px) and (orientation: landscape) {
         .media-wrap .slider-for .media-img {
           bottom: 5px; } }
+      .media-wrap .slider-for .media-img .youtube-player {
+        display: block;
+        margin: 0 auto;
+        width: 100% !important;
+        height: calc(85vh - 75px); }
+        @media screen and (max-width: 1060px) {
+          .media-wrap .slider-for .media-img .youtube-player {
+            height: calc(85vh - 90px); } }
+        @media screen and (max-width: 768px) and (orientation: landscape) {
+          .media-wrap .slider-for .media-img .youtube-player {
+            height: calc(64vh - 25px); } }
+        @media screen and (max-width: 768px) and (orientation: portrait) {
+          .media-wrap .slider-for .media-img .youtube-player {
+            height: calc(81vh - 25px); } }
+        @media screen and (max-width: 572px) and (orientation: portrait) {
+          .media-wrap .slider-for .media-img .youtube-player {
+            height: calc(67vh - 25px); } }
+        @media screen and (max-width: 572px) and (orientation: landscape) {
+          .media-wrap .slider-for .media-img .youtube-player {
+            height: calc(62vh - 25px); } }
+        @media screen and (max-width: 400px) {
+          .media-wrap .slider-for .media-img .youtube-player {
+            height: calc(60vh - 25px); } }
   .media-wrap .slider-nav {
     margin-top: 35px;
     padding: 0 9px; }
