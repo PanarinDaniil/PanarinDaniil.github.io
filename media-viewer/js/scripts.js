@@ -113,61 +113,14 @@ $(document).ready(function(){
 	    var filterNumber = $(this).attr('data-number');
 	    $('.product-button').removeClass('active');
         $(this).addClass('active');
-        if ( filterNumber === "1" ) {
-	    	$(".slider-for")[filterNumber].slick.slickGoTo(0);
-	    	$(".slider-nav")[filterNumber].slick.slickGoTo(0);
-	    	$(".slider-pagination").css("visibility", "hidden").css("opacity", "0");
-	    	$(".slide-" + filterNumber).css("visibility", "visible").css("opacity", "1");
-	    	$(".slider-for").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
-	    	$(".slider-nav").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
-	    	$("#slider-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none");
-	    	$("#sliderNav-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none").removeClass("no-margin");
-	    } else if (filterNumber === "2") {
-	    	$('.slider-for')[filterNumber].slick.slickGoTo(0);
-	    	$('.slider-nav')[filterNumber].slick.slickGoTo(0);
-	    	$(".slider-pagination").css("visibility", "hidden").css("opacity", "0");
-	    	$(".slide-" + filterNumber).css("visibility", "visible").css("opacity", "1");
-	    	$(".slider-for").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
-	    	$(".slider-nav").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
-	    	$("#slider-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none");
-	    	$("#sliderNav-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none").removeClass("no-margin");
-	    } else if (filterNumber === "3"){
-	    	$('.slider-for')[filterNumber].slick.slickGoTo(0);
-	    	$('.slider-nav')[filterNumber].slick.slickGoTo(0);
-	    	$(".slider-pagination").css("visibility", "hidden").css("opacity", "0");
-	    	$(".slide-" + filterNumber).css("visibility", "visible").css("opacity", "1");
-	    	$(".slider-for").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
-	    	$(".slider-nav").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
-	    	$("#slider-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none");
-	    	$("#sliderNav-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none").removeClass("no-margin");
-	    } else if (filterNumber === "4"){
-	    	$('.slider-for')[filterNumber].slick.slickGoTo(0);
-	    	$('.slider-nav')[filterNumber].slick.slickGoTo(0);
-	    	$(".slider-pagination").css("visibility", "hidden").css("opacity", "0");
-	    	$(".slide-" + filterNumber).css("visibility", "visible").css("opacity", "1");
-	    	$(".slider-for").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
-	    	$(".slider-nav").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
-	    	$("#slider-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none");
-	    	$("#sliderNav-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none").removeClass("no-margin");
-	    } else if (filterNumber === "5"){
-	    	$('.slider-for')[filterNumber].slick.slickGoTo(0);
-	    	$('.slider-nav')[filterNumber].slick.slickGoTo(0);
-	    	$(".slider-pagination").css("visibility", "hidden").css("opacity", "0");
-	    	$(".slide-" + filterNumber).css("visibility", "visible").css("opacity", "1");
-	    	$(".slider-for").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
-	    	$(".slider-nav").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
-	    	$("#slider-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none");
-	    	$("#sliderNav-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none").removeClass("no-margin");
-	    } else {
-	    	$('.slider-for')[0].slick.slickGoTo(0);
-	    	$('.slider-nav')[0].slick.slickGoTo(0);
-	    	$(".slider-pagination").css("visibility", "hidden").css("opacity", "0");
-	    	$(".slide-0").css("visibility", "visible").css("opacity", "1");
-	    	$(".slider-for").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
-	    	$(".slider-nav").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
-	    	$("#slider-0").css("opacity","1").css("visibility","visible").css("max-height","none");
-	    	$("#sliderNav-0").css("opacity","1").css("visibility","visible").css("max-height","none").removeClass("no-margin");
-	    }
+        $(".slider-for")[filterNumber].slick.slickGoTo(0);
+    	$(".slider-nav")[filterNumber].slick.slickGoTo(0);
+    	$(".slider-pagination").css("visibility", "hidden").css("opacity", "0");
+    	$(".slide-" + filterNumber).css("visibility", "visible").css("opacity", "1");
+    	$(".slider-for").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
+    	$(".slider-nav").css("opacity","0").css("visibility","hidden").css("max-height","0").addClass("no-margin");
+    	$("#slider-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none");
+    	$("#sliderNav-" + filterNumber).css("opacity","1").css("visibility","visible").css("max-height","none").removeClass("no-margin");
 	});
 	// END filtering slides
 
@@ -176,7 +129,7 @@ $(document).ready(function(){
 	$('.youtube-player').each(function(key, item) {
 		var youtubeIdName = 'youtubePlayer-' + key;
 		this.id = youtubeIdName;
-		var videoId = $(this).attr("data-youtube-videoid")
+		var videoId = $(this).attr("data-youtube-videoid");
 		var numberPlayer = key;
 		var currentPlayer = this;
 		(function() {
@@ -199,4 +152,26 @@ $(document).ready(function(){
 	    })();
 	});
 	// END Youtube player
+	// Initialization of fancybox for mobile
+	if ( window.matchMedia("(max-width:768px)").matches) {
+        $(".media-img").each(function(key, item) {
+        	var group = $(this).attr("data-mob-group");
+        	var img = $(this).attr("data-full-img");
+        	$(this).attr("href", img);
+        	$(this).attr("data-fancybox", group);
+        });
+        $("[data-fancybox]").fancybox();
+    }
+    $(window).resize(function() {
+        if( window.matchMedia("(max-width:768px)").matches) {
+        	$(".media-img").each(function(key, item) {
+	        	var group = $(this).attr("data-mob-group");
+	        	var img = $(this).attr("data-full-img");
+	        	$(this).attr("href", img);
+	        	$(this).attr("data-fancybox", group);
+	        });
+	        $("[data-fancybox]").fancybox();
+        }
+    });
+	// END Initialization of fancybox for mobile
 });

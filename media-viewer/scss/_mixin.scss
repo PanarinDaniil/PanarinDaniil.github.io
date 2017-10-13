@@ -1,12 +1,12 @@
 @mixin bp( $point ) {
-  @if $point == xl {
-    @media screen and (min-width: 801px) { @content; }
-  }
-  @else if $point == l {
+  @if $point == l {
     @media screen and (max-width: 1150px) { @content; }
   }
   @else if $point == m {
     @media screen and (max-width: 1060px) { @content; }
+  }
+  @else if $point == z {
+    @media screen and (min-width: 769px) { @content; }
   }
   @else if $point == s {
     @media screen and (max-width: 768px) and (orientation:portrait) { @content; }

@@ -345,8 +345,12 @@
 			background-size:contain;
 			background-position:50% 50%;
 			background-repeat:no-repeat;
+			cursor:pointer;
 			@include bp(sl){
 				bottom:5px;
+			}
+			&:hover, &:focus{
+				outline:none;
 			}
 			.youtube-player{
 				display:block;
@@ -482,6 +486,11 @@
 				}
 			}
 		}
+	}
+}
+.fancybox-container{
+	@include bp(z){
+		display:none!important;
 	}
 }
 html[data-useragent*='MSIE 10.'],
