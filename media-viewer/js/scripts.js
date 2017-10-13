@@ -153,25 +153,13 @@ $(document).ready(function(){
 	});
 	// END Youtube player
 	// Initialization of fancybox for mobile
-	if ( window.matchMedia("(max-width:768px)").matches) {
+	if ( window.matchMedia("(max-width:768px)").matches && $(".media-wrap").hasClass("standalone") ) {
         $(".media-img").each(function(key, item) {
-        	var group = $(this).attr("data-mob-group");
         	var img = $(this).attr("data-full-img");
         	$(this).attr("href", img);
-        	$(this).attr("data-fancybox", "");
+        	$(this).attr("data-fancybox","");
         });
         $("[data-fancybox]").fancybox();
     }
-    // $(window).resize(function() {
-    //     if( window.matchMedia("(max-width:768px)").matches) {
-    //     	$(".media-img").each(function(key, item) {
-	   //      	var group = $(this).attr("data-mob-group");
-	   //      	var img = $(this).attr("data-full-img");
-	   //      	$(this).attr("href", img);
-	   //      	$(this).attr("data-fancybox", group);
-	   //      });
-	   //      $("[data-fancybox]").fancybox();
-    //     }
-    // });
 	// END Initialization of fancybox for mobile
 });

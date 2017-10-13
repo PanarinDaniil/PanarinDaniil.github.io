@@ -668,8 +668,4 @@ body {
       .media-wrap .slider-nav .preview:hover:after {
         background: rgba(42, 121, 222, 0.4); }
 
-@media screen and (min-width: 769px) {
-  .fancybox-container {
-    display: none !important; } }
-
 /*# sourceMappingURL=styles.css.map */

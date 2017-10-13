@@ -488,11 +488,6 @@
 		}
 	}
 }
-.fancybox-container{
-	@include bp(z){
-		display:none!important;
-	}
-}
 html[data-useragent*='MSIE 10.'],
 html[data-useragent*='rv:11.']{
 }
