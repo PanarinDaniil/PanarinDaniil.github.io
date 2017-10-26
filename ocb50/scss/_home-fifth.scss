@@ -1,27 +1,9 @@
 .fifth-main-wrap{
     position:relative;
     &.content-wrap{
-<<<<<<< HEAD
-        overflow:hidden;
-        background:$lightGrey;
-        margin:-200px -480px 0;
-        -webkit-transform-origin:left center;
-        -moz-transform-origin:left center;
-        -o-transform-origin:left center;
-        -ms-transform-origin:left center;
-        transform-origin:left center;
-        @include transform(rotate(9deg));
-        @media (max-width:1000px){
-            margin-top:-470px;
-        }
-        @media (max-width:500px){
-            margin-top:-500px;
-        }
-=======
         background:$lightGrey;
         margin:-140px 0 0;
         @include skew(9deg);
->>>>>>> f60460b0ed307dd68a8ba9fc32f32f9aea8828a5
     }
     .fix-moz{
         position:absolute;

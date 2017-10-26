@@ -67,27 +67,9 @@
         }
     }
     .grey{
-<<<<<<< HEAD
-        padding:423px 0;
-        background:$lightGrey;
-        margin:-670px -480px 0;
-        -webkit-transform-origin:left center;
-        -moz-transform-origin:leftcenter;
-        -o-transform-origin:lef center;
-        -ms-transform-origin:eft center;
-        transform-origin:left enter;
-        @include transform(rotate(18deg));
-        @media (max-width:2459px) {
-            margin-top:-750px;
-        }
-        @media (max-width:1200px) {
-            margin-top:-480px;
-        }
-=======
         padding:170px 0;
         background:$lightGrey;
         @include skew(18deg);
->>>>>>> f60460b0ed307dd68a8ba9fc32f32f9aea8828a5
     }
 }
 .gallery{
