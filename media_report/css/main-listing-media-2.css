@@ -1,0 +1,75 @@
+.wrapper.media-report-2 .main .content {
+  min-height: 1058px;
+  padding: 0 30px;
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+.wrapper.media-report-2 .main .title {
+  padding: 3px 5px;
+  background: #eee;
+  color: #404040;
+  font-weight: 700; }
+  .wrapper.media-report-2 .main .title a {
+    display: block;
+    font-weight: 400;
+    color: #404040;
+    word-wrap: break-word; }
+.wrapper.media-report-2 .main .img-box {
+  display: block; }
+  .wrapper.media-report-2 .main .img-box:hover, .wrapper.media-report-2 .main .img-box:focus {
+    outline: none; }
+.wrapper.media-report-2 .item-2 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 0 10px; }
+  .wrapper.media-report-2 .item-2 + .item-2 {
+    margin: 0; }
+  .wrapper.media-report-2 .item-2 img {
+    display: block;
+    object-fit: cover;
+    height: 520px;
+    margin: 0 auto;
+    width: 100%; }
+.wrapper.media-report-2 .plan {
+  margin-bottom: 10px;
+  padding: 0 10px;
+  width: 100%; }
+  .wrapper.media-report-2 .plan img {
+    object-fit: contain;
+    display: block;
+    height: 1045px;
+    margin: 0 auto;
+    width: 100%; }
+
+@media print {
+  .wrapper.media-report-2 .main {
+    display: table !important;
+    vertical-align: top; }
+    .wrapper.media-report-2 .main .content {
+      height: 298mm;
+      max-width: none;
+      padding: 0;
+      margin: 0; }
+  .wrapper.media-report-2 .item-2 {
+    padding: 0 0 5mm;
+    margin: 0;
+    page-break-inside: avoid !important; }
+    .wrapper.media-report-2 .item-2 + .item-2 {
+      padding: 0; }
+    .wrapper.media-report-2 .item-2 img {
+      width: 260mm;
+      max-width: 260mm;
+      height: 145mm;
+      max-height: 145mm;
+      margin: 0 auto; }
+  .wrapper.media-report-2 .plan {
+    display: table-cell !important;
+    vertical-align: top; }
+    .wrapper.media-report-2 .plan img {
+      width: 260mm;
+      max-width: 260mm;
+      height: 297mm;
+      max-height: 297mm;
+      margin: 0 auto; } }
+
+/*# sourceMappingURL=main-listing-media-2.css.map */

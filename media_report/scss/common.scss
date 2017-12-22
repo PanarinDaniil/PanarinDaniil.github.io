@@ -1,0 +1,267 @@
+@import "variables";
+@import "mixin";
+body{
+	background:#eee;
+	margin:0 auto;
+}
+a{
+	&, &:hover, &:focus{
+		outline:none;
+	}
+}
+.print-btn-wrap{
+	text-align:right;
+	margin:0 auto;
+	min-width:937px;
+	padding:0 25px;
+	.print-btn{
+		display:inline-block;
+		vertical-align:top;
+		text-align:center;
+		background:#adc956;
+		border:none;
+		-webkit-border-radius:3px;
+		-moz-border-radius:3px;
+		border-radius:3px;
+		padding:5px 35px;
+		font:400 14px/1 Arial, sans-serif;
+		color:#fff;
+		outline:none!important;
+		margin:10px 0;
+		cursor:pointer;
+	    -webkit-transition: all .2s ease-out;
+	    -moz-transition: all .2s ease-out;
+	    -o-transition: all .2s ease-out;
+	    transition: all .2s ease-out;
+		&:hover{
+			background:#8bc34a;
+		}
+	}
+}
+
+.wrapper{
+	min-width:987px;
+	margin:0 auto;
+	overflow:hidden;
+	position:relative;
+	& + .wrapper{
+      page-break-before:always;
+    }
+	*, *:after, *:before{
+	    -webkit-box-sizing:border-box;
+	    -moz-box-sizing:border-box;
+	    box-sizing:border-box;
+	}
+	.clear{
+		&:after{
+			display:block;
+			content:"";
+			clear:both;
+		}
+	}
+	.left{
+		float:left;
+	}
+	.right{
+		float:right;
+	}
+	.content{
+		// max-width:1000px;
+		padding:0;
+		margin:0 auto;
+	}
+	.flex{
+	    @include flex();
+	}
+	.bold{
+		font-weight:700;
+	}
+	.center{
+		text-align:center;
+	}
+}
+.printbuttonwrap{
+	top:0;
+}
+.wrapper, .wrapper p, .wrapper ul, .wrapper ol{
+	font-weight:300;
+	font-size:16px;
+	line-height:22px;
+	font-family:Arial, sans-serif;
+}
+.wrapper{
+	.header{
+		margin-bottom:5px;
+		.content{
+			padding:0 30px;
+		}
+	}
+	.top-header{
+		padding:0 0 3px;
+		-webkit-justify-content:space-between;
+		justify-content:space-between;
+		-webkit-align-items:center;
+		align-items:center;
+
+		.logo{
+			-webkit-align-self:center;
+			align-self:center;
+			width:50%;
+			max-width:460px;
+			padding-right:10px;
+			img{
+				display:block;
+				max-width:100%;
+			}
+		}
+		.info-wrap{
+			padding-left:15px;
+			font-size:14px;
+			line-height:16px;
+			max-width:50%;
+			.phone div{
+				display:inline-block;
+				vertical-align:top;
+			}
+		}
+		.title{
+			font-size:20px!important;
+			line-height:22px;
+		}
+	}
+	.bottom-header{
+		padding:5px;
+		margin:0 30px 5px;
+		-webkit-justify-content:space-between;
+		justify-content:space-between;
+		-webkit-align-items:center;
+		align-items:center;
+		.address-wrap{
+			.title{
+				text-transform:uppercase;
+				background:transparent!important;
+				a, span{
+					display:inline-block;
+					vertical-align:top;
+					font-size:22px;
+					line-height:26px;
+					color:#000;
+					text-transform:uppercase;
+					text-decoration:underline;
+					&:hover{
+						text-decoration:none;
+					}
+				}
+			}
+			.address-info{
+				font-size:18px;
+				line-height:1;
+			}
+		}
+		.price-wrap{
+			text-align:right;
+			padding-left:10px;
+			.price{
+				font-size:22px;
+				line-height:1;
+			}
+			.number{
+				font-size:14px;
+				line-height:1;
+			}
+		}
+	}
+	.footer{
+		*{
+			font-family:arial, sans-serif!important;
+		}
+		.content{
+			padding:0 30px;
+		}
+		.copy-text{
+		    border-top:1px solid #000000;
+		    padding-top:8px;
+		}
+		.copy-text, p{
+			font-style:italic!important;
+			font-size:12px;
+			line-height:14px;
+			margin:0;
+			text-align:justify;
+		}
+		.bottom-footer{
+			margin-top:5px;
+			.copy{
+				font-size:12px;
+				line-height:1;
+				span{
+					font-weight:500;
+				}
+			}
+		}
+	}
+}
+@media print{
+  .no-print, .no-print * {
+    display: none !important;
+  }
+  html body{
+    padding:0!important;
+    background:#fff;
+  }
+  .wrapper{
+    padding:0!important;
+    margin:0!important;
+    box-shadow:none!important;
+    .header{
+      display:block!important;
+      .content{
+        padding:0!important;
+      }
+    }
+    .top-header{
+      padding-bottom:2px;
+      .logo{
+        
+      }
+      .title{
+        font-size:18px!important;
+        line-height:1;
+      }
+      .info-wrap{
+        font-size:12px;
+        line-height:13px;
+      }
+    }
+    .bottom-header{
+    	margin:0 0 5px;
+      .address-wrap{
+        .title{
+          text-transform:uppercase;
+          padding:0!important;
+          a, span{
+            font-size:18px;
+            line-height:1;
+            display:block;
+          }
+        }
+      }
+    }
+    .footer{
+      display:block!important;
+      .content{
+        padding:0;
+      }
+      .copy-text{
+        padding-top:5px;
+      }
+      .copy-text, p{
+        font-size:10px;
+        line-height:1.1;
+      }
+      .bottom-footer{
+        margin-top:2px!important;
+      }
+    }
+  }
+}

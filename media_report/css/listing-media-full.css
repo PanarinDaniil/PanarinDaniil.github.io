@@ -1,0 +1,136 @@
+body {
+  background: #fff; }
+
+.wrapper.media-report-full .main .content {
+  min-height: 756px;
+  padding: 0 20px;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-align-content: flex-start;
+  align-content: flex-start; }
+.wrapper.media-report-full .main .title {
+  padding: 3px 5px;
+  background: #eee;
+  color: #404040;
+  font-weight: 700; }
+  .wrapper.media-report-full .main .title a {
+    display: block;
+    font-weight: 400;
+    color: #404040;
+    word-wrap: break-word; }
+    .wrapper.media-report-full .main .title a .print {
+      display: none; }
+    .wrapper.media-report-full .main .title a .desk {
+      display: inline; }
+.wrapper.media-report-full .main .img-box {
+  display: block; }
+  .wrapper.media-report-full .main .img-box:hover, .wrapper.media-report-full .main .img-box:focus {
+    outline: none; }
+.wrapper.media-report-full .row {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
+  width: 100%; }
+  .wrapper.media-report-full .row:first-child {
+    margin-top: 10px; }
+.wrapper.media-report-full .item {
+  position: relative;
+  overflow: hidden;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
+  -webkit-align-self: flex-start;
+  align-self: flex-start;
+  width: calc(100% / 3 - 20px);
+  margin: 0 10px 20px; }
+  .wrapper.media-report-full .item img {
+    display: block;
+    object-fit: cover;
+    height: 353px;
+    margin: 0 auto;
+    width: 100%; }
+.wrapper.media-report-full .plan {
+  margin-bottom: 10px;
+  padding: 0 10px;
+  width: 100%; }
+  .wrapper.media-report-full .plan img {
+    display: block;
+    height: 745px;
+    margin: 0 auto;
+    width: 100%;
+    object-fit: contain; }
+
+@page {
+  size: letter landscape;
+  margin: 10mm 10mm 10mm 10mm; }
+@media print {
+  .wrapper.media-report-full {
+    background: #fff;
+    min-width: 1298px;
+    max-width: 1315px;
+    padding: 0 !important;
+    margin: 0 !important; }
+    .wrapper.media-report-full .main {
+      display: table !important;
+      vertical-align: top;
+      width: 100%; }
+      .wrapper.media-report-full .main .content {
+        height: 206mm;
+        max-width: none;
+        padding: 0;
+        margin: 0; }
+      .wrapper.media-report-full .main .row {
+        display: table-row !important;
+        vertical-align: top;
+        width: 100% !important;
+        page-break-inside: avoid; }
+        .wrapper.media-report-full .main .row:first-child {
+          margin-top: 1px; }
+    .wrapper.media-report-full .item {
+      display: table-cell !important;
+      vertical-align: top;
+      width: 33.333333% !important;
+      padding: 0 5px 10px;
+      margin: 0;
+      page-break-inside: avoid !important; }
+      .wrapper.media-report-full .item:nth-child(1) {
+        margin-left: 0;
+        padding-left: 0; }
+      .wrapper.media-report-full .item:nth-child(3) {
+        margin-right: 0;
+        padding-right: 0; }
+      .wrapper.media-report-full .item img {
+        display: block;
+        object-fit: cover;
+        width: 112mm;
+        max-width: 112mm;
+        height: 90mm;
+        max-height: 90mm;
+        margin: 0 auto; }
+    .wrapper.media-report-full .plan {
+      display: table-cell !important;
+      vertical-align: top; }
+      .wrapper.media-report-full .plan .title {
+        background: #fff; }
+      .wrapper.media-report-full .plan img {
+        display: block;
+        object-fit: contain;
+        width: 270mm;
+        max-width: 270mm;
+        height: 205mm;
+        max-height: 205mm;
+        margin: 0 auto; } }
+
+/*# sourceMappingURL=listing-media-full.css.map */

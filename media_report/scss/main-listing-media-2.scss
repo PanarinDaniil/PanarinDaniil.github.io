@@ -2,16 +2,11 @@
 @import "mixin";
 .wrapper.media-report-2{
 	.main{
-		display:table!important;
-		vertical-align:top;
 		.content{
-			// min-height:1058px;
+			min-height:1058px;
+		    padding:0 30px;
 		    -webkit-flex-direction:column;
 			flex-direction:column;
-			height:345mm;
-	        max-width:none;
-	        padding:0;
-	        margin:0;
 		}
 		.title{
 			padding:3px 5px;
@@ -36,40 +31,32 @@
 		position:relative;
 		overflow:hidden;
 		width:100%;
-		padding:0 0 5mm;
-		margin:0;
-		page-break-inside:avoid!important;
+		margin:0 0 10px;
 		& + .item-2{
 			margin:0;
-			padding:0;
 		}
 		img{
 			display:block;
 			object-fit:cover;
-			width:320mm;
-	        max-width:320mm;
-	        height:175mm;
-	        max-height:175mm;
-	        margin:0 auto;
+			height:520px;
+			margin:0 auto;
+			width:100%;
 		}
 	}
 	.plan{
-		display:table-cell!important;
-		vertical-align:top;
 		margin-bottom:10px;
 		padding:0 10px;
 		width:100%;
 		img{
 			object-fit:contain;
 			display:block;
-			width:320mm;
-			max-width:320mm;
-			height:355mm;
-			max-height:355mm;
+			height:1045px;
 			margin:0 auto;
+			width:100%;
 		}
 	}
 }
 html[data-useragent*='MSIE 10.'],
 html[data-useragent*='rv:11.']{
 }
+@import "listing-print-2";
