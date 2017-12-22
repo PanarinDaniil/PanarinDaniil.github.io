@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAQ;EACP,OAAO,EAAC,YAAW;EAClB,MAAM,EAAC,YAAW;EAClB,UAAU,EAAC,eAAc;EAC1B,SAAS,EAAC,MAAM;EAChB,UAAU,EAAC,IAAI;EACf,SAAS,EAAC,MAAM",
+"sources": ["../scss/orientation-landscape.scss"],
+"names": [],
+"file": "orientation-landscape.css"
+}

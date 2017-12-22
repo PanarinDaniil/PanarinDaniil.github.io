@@ -1,0 +1,110 @@
+@import "variables";
+@import "mixin";
+body{
+	background:#fff;
+}
+.wrapper.media-report-full{
+	background:#fff;
+    min-width:1298px;
+    max-width:1315px;
+    padding:0!important;
+    margin:0!important;
+	.main{
+		display:table!important;
+		vertical-align:top;
+		width:100%;
+		.content{
+			height:206mm;
+	        max-width:none;
+	        padding:0;
+	        margin:0;
+			-webkit-flex-wrap:wrap;
+			flex-wrap:wrap;
+			-webkit-justify-content:flex-start;
+			justify-content:flex-start;
+			-webkit-align-items:flex-start;
+			align-items:flex-start;
+			-webkit-align-content:flex-start;
+			align-content:flex-start;
+		}
+		.title{
+			padding:3px 5px;
+			background:$background;
+			color:$textColor;
+			font-weight:700;
+			a{
+				display:block;
+				font-weight:400;
+				color:$textColor;
+				word-wrap:break-word;
+				.print{
+					display:none;
+				}
+				.desk{
+					display:inline;
+				}
+			}
+		}
+		.img-box{
+			display:block;
+			&:hover, &:focus{
+				outline:none;
+			}
+		}
+	}
+	.row{
+		display:table-row!important;
+        vertical-align:top;
+      	width:100%!important;
+        page-break-inside:avoid;
+		&:first-child{
+			margin-top:1px;
+		}
+	}
+	.item{
+		display:table-cell!important;
+		vertical-align:top;
+		width:33.333333%!important;
+		padding:0 5px 10px;
+		margin:0;
+		page-break-inside:avoid!important;
+		position:relative;
+		overflow:hidden;
+		&:nth-child(1){
+			margin-left:0;
+			padding-left:0;
+		}
+		&:nth-child(3){
+			margin-right:0;
+			padding-right:0;
+		}
+		img{
+			display:block;
+			object-fit:cover;
+			width:112mm;
+	        max-width:112mm;
+	        height:90mm;
+	        max-height:90mm;
+			margin:0 auto;
+		}
+	}
+	.plan{
+		display:table-cell!important;
+		vertical-align:top;
+		margin-bottom:10px;
+		padding:0 10px;
+		width:100%;
+		img{
+			display:block;
+			object-fit:contain;
+			margin:0 auto;
+			width:270mm;
+	        max-width:270mm;
+	        height:205mm;
+	        max-height:205mm;
+		}
+	}
+}
+html[data-useragent*='MSIE 10.'],
+html[data-useragent*='rv:11.']{
+}

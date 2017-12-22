@@ -1,0 +1,75 @@
+@import "variables";
+@import "mixin";
+.wrapper.media-report-2{
+	.main{
+		display:table!important;
+		vertical-align:top;
+		.content{
+			// min-height:1058px;
+		    -webkit-flex-direction:column;
+			flex-direction:column;
+			height:345mm;
+	        max-width:none;
+	        padding:0;
+	        margin:0;
+		}
+		.title{
+			padding:3px 5px;
+			background:$background;
+			color:$textColor;
+			font-weight:700;
+			a{
+				display:block;
+				font-weight:400;
+				color:$textColor;
+				word-wrap:break-word;
+			}
+		}
+		.img-box{
+			display:block;
+			&:hover, &:focus{
+				outline:none;
+			}
+		}
+	}
+	.item-2{
+		position:relative;
+		overflow:hidden;
+		width:100%;
+		padding:0 0 5mm;
+		margin:0;
+		page-break-inside:avoid!important;
+		& + .item-2{
+			margin:0;
+			padding:0;
+		}
+		img{
+			display:block;
+			object-fit:cover;
+			width:320mm;
+	        max-width:320mm;
+	        height:175mm;
+	        max-height:175mm;
+	        margin:0 auto;
+		}
+	}
+	.plan{
+		display:table-cell!important;
+		vertical-align:top;
+		margin-bottom:10px;
+		padding:0 10px;
+		width:100%;
+		img{
+			object-fit:contain;
+			display:block;
+			width:320mm;
+			max-width:320mm;
+			height:355mm;
+			max-height:355mm;
+			margin:0 auto;
+		}
+	}
+}
+html[data-useragent*='MSIE 10.'],
+html[data-useragent*='rv:11.']{
+}
