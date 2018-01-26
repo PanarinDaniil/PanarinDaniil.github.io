@@ -1,0 +1,13 @@
+.wrapper.oh-report{
+	&.last{
+		.footer{
+			display:block!important;
+		}
+	}
+	.footer{
+		display:none;
+		.content{
+			padding:0;
+		}
+	}
+}

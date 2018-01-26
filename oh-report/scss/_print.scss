@@ -1,0 +1,49 @@
+@page{
+  size:letter landscape;
+  margin:10mm 10mm 10mm 10mm;
+}
+@media print{
+  @page{
+    size:letter landscape;
+    margin:10mm 10mm 10mm 10mm;
+  }
+  .no-print, .no-print * {
+    display:none!important;
+  }
+  html body{
+    padding:0!important;
+  }
+  .wrapper.oh-report{
+    padding:0;
+    .main{
+      min-height:160mm;
+      .title{
+        font-size:14px;
+        line-height:20px;
+      }
+    }
+    .main-table{
+      font-size:8px;
+      line-height:13px;
+      margin-bottom:0;
+      td, th{
+        .print-w14{
+          width:14%;
+        }
+      }
+      th{
+        padding:1px 5px;
+      }
+      .table-list{
+        td{
+          &.media{
+            display:none;
+          }
+        }
+      }
+    }
+  }
+  html[data-useragent*='MSIE 10.'],
+  html[data-useragent*='rv:11.']{
+  }
+}
