@@ -1,0 +1,175 @@
+.wrapper.cma-grid{
+	padding:0 30px;
+	& + .wrapper{
+		page-break-before:always;
+	}
+	.main{
+		display:block;
+	}
+	.top-info{
+		font-size:12px;
+		span{
+			&:last-child,
+			&:nth-last-child(2){
+				margin-left:9px;
+			}
+			&:nth-child(2){
+				margin-left:5px;
+			}
+		}
+	}
+	.fixed-header{
+		display:none;
+		position:fixed;
+		width:100%;
+		top:0;
+		left:0;
+		right:0;
+		padding:0 25px;
+		color:#fff;
+		font-weight:700;
+		z-index:5;
+		background:#5e6a72;
+		&.fixed{
+		    display:table-row;
+		}
+		td{
+			padding:5px 3px;
+			&:first-child{
+				min-width:150px!important;
+			}
+			& + td{
+				border-left:2px solid #fff;
+			}
+		}
+	}
+	table{
+		font-family:Helvetica, Arial, sans-serif;
+	}
+	.main-table{
+		margin-bottom:35px;
+		*{
+			color:#343434;
+		}
+	}
+	td, th{
+		vertical-align:bottom;
+		text-align:center;
+		line-height:9pt;
+		font-weight:700;
+		padding:5px;
+		&.w2{
+			width:2%;
+		}
+		&.w3{
+			width:3%;
+		}
+		&.w4{
+			width:4%;
+		}
+		&.w5{
+			width:5%;
+		}
+		&.w6{
+			width:6%;
+		}
+		&.w7{
+			width:7%;
+		}
+		&.w8{
+			width:8%;
+		}
+		&.w9{
+			width:9%;
+		}
+		&.w10{
+			width:10%;
+		}
+		&.w11{
+			width:11%;
+		}
+		&.w12{
+			width:12%;
+		}
+		&.w30{
+			width:30%;
+		}
+		&.w35{
+			width:35%;
+		}
+		&.w40{
+			width:40%;
+		}
+		&.w45{
+			width:45%;
+		}
+		&.w50{
+			width:50%;
+		}
+		&.w55{
+			width:55%;
+		}
+		&.w60{
+			width:60%;
+		}
+		&.w65{
+			width:65%;
+		}
+	}
+	th{
+		font-weight:700;
+		&:first-child{
+			min-width:150px!important;
+		}
+	}
+	.item-list{
+	    background:#fff;
+	    &:nth-child(even){
+			background:#e1e5e7;
+		}
+	    td{
+	    	border-bottom:1px solid #000;
+	    	&:first-child{
+	    		text-align:left;
+	    	}
+	    }
+	}
+	.info-table-wrap{
+		width:500px;
+		padding:20px;
+		border:1px solid #000;
+		margin-bottom:15px;
+	}
+	.info-table{
+		page-break-inside:avoid;
+		td{
+			text-align:left;
+			font-weight:400;
+			border:1px solid #000;
+			border-top:none;
+			background:#fff;
+			padding:5px;
+			font-size:12px;
+			&:first-child{
+				border-right:none;
+			}
+			&:last-child{
+				border-left:none;
+				text-align:right;
+			}
+			span{
+				font-size:smaller;
+			}
+		}
+		tr{
+			&:first-child{
+				td{
+					border-top:1px solid #000;
+				}
+			}
+		}
+	}
+}
+html[data-useragent*='MSIE 10.'],
+html[data-useragent*='rv:11.']{
+}

@@ -1,0 +1,48 @@
+@page{
+  size:letter landscape;
+  margin:10mm 10mm 10mm 10mm;
+}
+@media print{
+  @page{
+    size:letter landscape;
+    margin:10mm 10mm 10mm 10mm;
+  }
+  .no-print, .no-print * {
+    display:none!important;
+  }
+  html body{
+    padding:0!important;
+  }
+  .wrapper.cma-grid{
+    padding:0;
+    .main{
+      min-height:212mm;
+    }
+    .top-info{
+      padding-bottom:5px;
+    }
+    .fixed-header{
+      &.fixed{
+        display:none;
+      }
+    }
+    .main-table{
+      &, *{
+        font-size:7pt!important;
+        line-height:9pt!important;
+      }
+      th{
+        border-bottom:1px solid #000;
+      }
+    }
+    .info-table{
+      td{
+        font-size:7pt!important;
+        line-height:9pt!important;
+      }
+    }
+  }
+  html[data-useragent*='MSIE 10.'],
+  html[data-useragent*='rv:11.']{
+  }
+}

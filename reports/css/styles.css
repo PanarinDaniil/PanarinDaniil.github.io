@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin-ext");
+body{
+  margin:0 auto;
+  font:400 3vh/1.2 'Open Sans', sans-serif;
+}
+*, *:after, *:before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.flex{
+  display:-webkit-box;
+  display:-moz-box;
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  display:flex;
+}
+.wrapper{
+	flex-wrap:wrap;
+	align-items:center;
+}
+.wrapper > .flex{
+	width:50%;
+	padding:1vw 2vw;
+	justify-content:center;
+	align-items:center;
+	align-content:center;
+}
+.btn{
+	justify-content:center;
+	align-items:center;
+	align-content:center;
+	background:transparent;
+	border:1px solid #2c752c;
+	color:#2c752c;
+	text-transform:uppercase;
+	text-decoration:none;
+	padding:1vh 2vw;
+	width:46vw;
+	min-height:7vh;
+	text-align:center;
+    -moz-transition:all 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+    -o-transition:all 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+    -webkit-transition:all 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition:all 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.btn:hover{
+	background:#2c752c;
+	color:#fff;
+}

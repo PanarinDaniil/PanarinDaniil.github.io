@@ -1,0 +1,57 @@
+@media print{
+  .wrapper.summary-gallery{
+    .top-header{
+      padding-bottom:10px;
+    }
+    .main{
+      display:table!important;
+      vertical-align:top;
+      .content{
+        min-height:299mm;
+        max-width:none;
+        padding:0;
+        margin:0;
+      }
+    }
+    .item{
+      width:33.3%!important;
+      padding:0 5px 12px;
+      margin:0;
+      page-break-inside:avoid!important;
+      &:nth-child(1){
+        margin-left:0;
+        padding-left:0;
+      }
+      &:nth-child(3){
+        margin-right:0;
+        padding-right:0;
+      }
+      .border{
+        width:85.5mm;
+        max-width:85.5mm;
+      }
+    }
+    .img-box{
+      .icon-list.left{
+        li{
+          .tooltip-link.open-house{
+            color:#000;
+            background:#fff;
+          }
+        }
+      }
+      img{
+        display:block;
+        object-fit:cover;
+        width:85mm;
+        max-width:85mm;
+        height:54mm;
+        max-height:54mm;
+        margin:0 auto;
+      }
+    }
+  }
+  html[data-useragent*='MSIE 10.'],
+  html[data-useragent*='rv:11.']{
+  }
+}

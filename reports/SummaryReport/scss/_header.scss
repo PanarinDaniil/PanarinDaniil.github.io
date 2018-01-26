@@ -1,0 +1,102 @@
+.header{
+	margin-bottom:10px;
+}
+.top-header{
+	padding:0 0 26px;
+	-webkit-justify-content:space-between;
+	justify-content:space-between;
+	-webkit-align-items:center;
+	align-items:center;
+	@media screen and (max-width:768px){
+		-webkit-flex-direction:column;
+		flex-direction:column;
+	}
+	@media screen and (max-width:468px){
+		padding:0 15px 26px;
+	}
+	.logo{
+		-webkit-align-self:center;
+		align-self:center;
+		width:70%;
+		max-width:582px;
+		padding-right:10px;
+		@media screen and (max-width:768px){
+			width:100%;
+			margin:0 auto 15px;
+		}
+		img{
+			display:block;
+			max-width:100%;
+		}
+	}
+	.info-wrap{
+		padding-left:25px;
+		font-size:14px;
+		line-height:16px;
+		width:30%;
+		@media screen and (max-width:768px){
+			width:260px;
+			padding:10px 0 0;
+		    border-left:none!important;
+			margin:0 auto;
+		}
+		.phone div{
+			display:inline-block;
+			vertical-align:top;
+		}
+	}
+	.title{
+		font-size:24px;
+		line-height:28px;
+	}
+}
+.bottom-header{
+	padding:10px;
+	-webkit-justify-content:space-between;
+	justify-content:space-between;
+	-webkit-align-items:center;
+	align-items:center;
+	@media screen and (max-width:768px){
+		-webkit-flex-direction:column;
+		flex-direction:column;
+		text-align:center;
+	}
+	@media screen and (max-width:468px){
+		padding:10px 15px;
+	}
+	.address-wrap{
+		@media screen and (max-width:768px){
+			margin-bottom:10px;
+		}
+		.title{
+			text-transform:uppercase;
+			a{
+				display:inline-block;
+				vertical-align:top;
+				font-size:22px;
+				line-height:26px;
+				color:#000;
+				text-transform:uppercase;
+				&:hover{
+					text-decoration:none;
+				}
+			}
+		}
+		.address-info{
+			font-size:18px;
+			line-height:1;
+		}
+	}
+	.price-wrap{
+		text-align:right;
+		padding-left:10px;
+		.price{
+			font-size:22px;
+			line-height:1;
+		}
+		.number{
+			font-size:14px;
+			line-height:1;
+		}
+	}
+}

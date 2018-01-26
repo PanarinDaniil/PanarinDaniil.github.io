@@ -1,0 +1,26 @@
+@media print{
+  .wrapper.summary-showsheet{
+    .main{
+      font-size:14px;
+      line-height:17px;
+      .content{
+        min-height:221mm;
+        max-width:none;
+        padding:0;
+        margin:0;
+      }
+    }
+    .main-table{
+      &:last-child{
+        border-bottom:none;
+      }
+      .empty-row{
+        font-size:14px!important;
+        line-height:17px!important;
+      }
+    }
+  }
+  html[data-useragent*='MSIE 10.'],
+  html[data-useragent*='rv:11.']{
+  }
+}
