@@ -52,9 +52,15 @@
 			.list {
 				height: 320mm;
 			}
+			@media (orientation: portrait) and (max-width: 599px) {
+				html[data-useragent*='Safari'] .list {
+					height: 320mm;
+				}
+
+			}
 			@media (orientation: landscape) and (min-width: 600px) {
 				.list {
-					height: 185mm;
+					height: 182mm;
 				}
 
 			}
@@ -84,5 +90,9 @@
 			Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Laborum reiciendis libero facilis modi labore excepturi ut quam itaque odio. Cupiditate omnis qui tenetur consequuntur consequatur. Incidunt consequatur fugit quae exercitationem.
 		</div>
 	</div>
+	<script src="https://corcoran-dev.realplusonline.com/ReportTemplatesRazor/Common/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+        document.documentElement.setAttribute('data-useragent', navigator.userAgent);
+    </script>
 </body>
 </html>
