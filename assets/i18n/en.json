@@ -9,6 +9,10 @@
             "fr": "fr"
         }
     },
+    "THEME": {
+        "ENABLE_DARK_THEME": "Enable dark theme",
+        "ENABLE_LIGHT_THEME": "Enable light theme"
+    },
     "SLOGAN": "The Foreign Exchange Clearing House",
     "HEADER": {
         "TITLES": {
