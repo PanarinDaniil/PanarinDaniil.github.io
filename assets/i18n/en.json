@@ -1,0 +1,138 @@
+{
+    "LANGUAGE": {
+        "en": "English",
+        "de": "German",
+        "fr": "French",
+        "SHORT": {
+            "en": "en",
+            "de": "de",
+            "fr": "fr"
+        }
+    },
+    "SLOGAN": "The Foreign Exchange Clearing House",
+    "HEADER": {
+        "TITLES": {
+            "ABOUT": "About us",
+            "HOW_IT_WORKS": "How it works",
+            "OUR_TEAM": "Our team",
+            "NEWS": "News",
+            "MENU": "Menu",
+            "GET_IN_TOUCH": "Get in touch"
+        }
+    },
+    "PROMO": {
+        "TITLES": {
+            "TRADE": "Trade.",
+            "CONFIRM": "Confirm.",
+            "SETTLE": "Settle.",
+            "GET_IN_TOUCH": "Get in touch"
+        },
+        "MAIN_TEXT": "FXCH introduces a novel method for Spot-FX clearing, focusing on simplicity in settlement technology. Our aim is to streamline the trade clearing process, eliminating unnecessary steps and associated costs."
+    },
+    "ABOUT": {
+        "TITLES": {
+            "TITLE_1": "Quick & levereged.",
+            "TITLE_2": "Lower",
+            "TITLE_2_SECOND_LINE": "risk & cost.",
+            "TITLE_3": "Default",
+            "TITLE_3_SECOND_LINE": "safety net."
+        },
+        "TEXT": {
+            "TEXT_1": "We let our members quickly combine their trades and give them the chance to trade more with less money. This makes trading bigger and easier.",
+            "TEXT_2": "We make trading safer and cheaper for our members by handling trades in a way that lowers risks and the need for extra cash. Our methods ensure trades are smooth and secure.",
+            "TEXT_3": "We keep trading safe with a plan and a safety fund for times when someone can't pay. This spreads out the risk, keeping our trading environment stable and reliable for everyone."
+        }
+    },
+    "TECHNOLOGY": {
+        "START_TITLE": "Trading digital assets is risky and complex",
+        "END_TITLE": "FXCH centralizes trading",
+        "START_SUBTITLE": "The problem",
+        "END_SUBTITLE": "Our solution",
+        "START_TEXT": "Trading digital assets is risky and complex for institutions without centralized risk and settlement management.",
+        "END_TEXT": "FXCH centralizes trading by managing risks and streamlining settlements, making it safer and simpler. It's also working on meeting regulatory standards to increase trust.",
+        "ACTION": "Get in touch"
+    },
+    "HORIZONTAL_TEXT": "How Can I Simplify Trading with Blockchain and Streamline FX Clearing?",
+    "BENEFITS": {
+        "TITLE_1": "Establish your", 
+        "TITLE_2": "proof of ownership",
+        "TEXT_1": "Send us your collateral.",
+        "TEXT_2": "It's recorded on a digital ledger, proving your ownership.",
+        "TEXT_3": "Check and manage your balance anytime with digital keys."
+    },
+    "TEAM": {
+        "TITLE": "Our team",
+        "PREV": "Previous",
+        "NEXT": "Next",
+        "TEXT": "A dynamic group of clearing, technology & sell-side industry veterans",
+        "FOUNDER_AND_CEO": "Founder & CEO",
+        "COO": "COO",
+        "CTO": "Chief Technology Officer",
+        "TAGS": {
+            "FIRST": "First",
+            "SECOND": "Second",
+            "THIRD": "Third"
+        }
+    },
+    "PARTNERS": {
+        "TITLE": "Trusted by"
+    },
+    "NEWS": {
+        "TAGS": {
+            "NEWS": "News",
+            "VIDEO": "Video",
+            "ARTICLE": "Article",
+            "MIN_READ": "min read",
+            "MIN_WATCH": "min watch"
+        },
+        "POST_1": {
+            "TITLE": "Self-insurance risk and the demise of FXCM",
+            "TEXT": "Many pundits will offer their views on the reasons of FXCM's unfortunate fate. Focus will incorrectly point to market abuse, misleading customers and despicable FX desk practices."
+        },
+        "POST_2": {
+            "TITLE": "Would you like to know what we do?",
+            "TEXT": "Get to know FXCH in 120 seconds."
+        },
+        "POST_3": {
+            "TITLE": "Invest in FXCH on Seedrs and take advantage of SEIS tax relief!"
+        }
+    },
+    "FOOTER": {
+        "INFO": {
+            "TITLE": "Start Investing today with us",
+            "TEXT": "FXCH Limited is authorised and",
+            "TEXT1": "regulated by the Financial Conduct Authority",
+            "TEXT2": "under FRN 197107 and FRN 836465 respectively."
+        },
+        "COPYRIGHT": "Copyrights",
+        "ALL_RIGHTS_RESERVED": "All Rights Reserved.",
+        "CONTACT": "Contact us",
+        "COPY_PHONE": "Copy phone number",
+        "COPY_EMAIL": "Copy email",
+        "COPIED": "Copied to clipboard"
+    },
+    "404": {
+        "BUTTON_TEXT": "Go home"
+    },
+    "CONTACT": {
+        "INFO": {
+            "TITLE": "Want more information?",
+            "TEXT": "You can contact us by filling the form or sending us a note to:"
+        }
+    },
+    "CONTACT_FORM": {
+        "TITLE": "Contact",
+        "FIRST_NAME": "First Name",
+        "LAST_NAME": "Last Name",
+        "EMAIL": "Email",
+        "COMPANY_NAME": "Company Name",
+        "MESSAGE": "Message",
+        "I_AGREE_FULL": "I agree to the User Agreement, Privacy Policy & Cookie Policy.",
+        "I_AGREE": "I agree to the",
+        "USER_AGREEMENT": "User Agreement",
+        "PRIVACY_POLICY": "Privacy Policy",
+        "COOCKIE_POLICY": "Coocky Policy",
+        "SUBMIT": "Submit"
+    }
+    
+}

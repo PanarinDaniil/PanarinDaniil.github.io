@@ -1,1 +1,0 @@
-# PanarinDaniil.github.io

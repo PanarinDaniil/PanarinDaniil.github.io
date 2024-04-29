@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "imageSrc": "url(/assets/images/team/person/Franck.jpg)",
+        "name": "Frank Mikulecz",
+        "jobTitle": "TEAM.FOUNDER_AND_CEO",
+        "tags": ["TEAM.TAGS.FIRST", "TEAM.TAGS.SECOND"]
+    },
+    {
+        "id": 2,
+        "imageSrc": "",
+        "name": "Nigel Wharton",
+        "jobTitle": "TEAM.COO",
+        "tags": ["TEAM.TAGS.FIRST", "TEAM.TAGS.SECOND", "TEAM.TAGS.THIRD"]
+    },
+    {
+        "id": 3,
+        "imageSrc": "",
+        "name": "Mark Brook",
+        "jobTitle": "TEAM.MANAGING_DIRECTOR",
+        "tags": ["TEAM.TAGS.FIRST", "TEAM.TAGS.THIRD"]
+    },
+    {
+        "id": 4,
+        "imageSrc": "url(/assets/images/team/person/Peter.jpg)",
+        "name": "Peter Kormos",
+        "jobTitle": "TEAM.CTO",
+        "tags": ["TEAM.TAGS.FIRST", "TEAM.TAGS.SECOND"]
+    },
+    {
+        "id": 5,
+        "imageSrc": "url(/assets/images/team/person/Peter.jpg)",
+        "name": "Peter Kormos",
+        "jobTitle": "TEAM.CTO",
+        "tags": ["TEAM.TAGS.THIRD"]
+    },
+    {
+        "id": 6,
+        "imageSrc": "",
+        "name": "Nigel Wharton",
+        "jobTitle": "TEAM.COO",
+        "tags": ["TEAM.TAGS.FIRST", "TEAM.TAGS.SECOND"]
+    },
+    {
+        "id": 7,
+        "imageSrc": "",
+        "name": "Mark Brook",
+        "jobTitle": "TEAM.MANAGING_DIRECTOR",
+        "tags": ["TEAM.TAGS.FIRST", "TEAM.TAGS.SECOND"]
+    },
+    {
+        "id": 8,
+        "imageSrc": "url(/assets/images/team/person/Peter.jpg)",
+        "name": "Peter Kormos",
+        "jobTitle": "TEAM.CTO",
+        "tags": ["TEAM.TAGS.FIRST", "TEAM.TAGS.SECOND"]
+    }
+]
