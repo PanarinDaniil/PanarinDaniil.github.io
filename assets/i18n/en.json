@@ -31,29 +31,27 @@
             "SETTLE": "Settle.",
             "GET_IN_TOUCH": "Get in touch"
         },
-        "MAIN_TEXT": "FXCH introduces a novel method for Spot-FX clearing, focusing on simplicity in settlement technology. Our aim is to streamline the trade clearing process, eliminating unnecessary steps and associated costs."
+        "MAIN_TEXT": "FXCH delivers a turnkey clearinghouse solution for institutions trading in digital assets with direct market access. We're all about mastering multi-counterparty risks and streamlining daily settlements with precision and ease."
     },
     "ABOUT": {
         "TITLES": {
-            "TITLE_1": "Quick & levereged.",
-            "TITLE_2": "Lower",
-            "TITLE_2_SECOND_LINE": "risk & cost.",
-            "TITLE_3": "Default",
-            "TITLE_3_SECOND_LINE": "safety net."
+            "TITLE_1": "Lightning fast!",
+            "TITLE_2": "Safety First: Pre-Trade Collateral ",
+            "TITLE_3": "Vigilant tracking"
         },
         "TEXT": {
-            "TEXT_1": "We let our members quickly combine their trades and give them the chance to trade more with less money. This makes trading bigger and easier.",
-            "TEXT_2": "We make trading safer and cheaper for our members by handling trades in a way that lowers risks and the need for extra cash. Our methods ensure trades are smooth and secure.",
-            "TEXT_3": "We keep trading safe with a plan and a safety fund for times when someone can't pay. This spreads out the risk, keeping our trading environment stable and reliable for everyone."
+            "TEXT_1": "FXCH equips trading firms with real-time netting across all our partner venues. Enjoy real-time trading through direct market access to designated sub-accounts and trade with the freedom of deferred settlements. Every trade is ingested instantly, keeping positions and margins updated on the fly.",
+            "TEXT_2": "Members as well as participating exchanges must pledge fiat or cryptocurrency collateral with the Clearing House before trading. These funds, held as \"security interest\", remain in the user's wallet at all times",
+            "TEXT_3": "FXCH continuously monitors risk across all accounts by revaluing open positions and collateral with several reliable price sources."
         }
     },
     "TECHNOLOGY": {
-        "START_TITLE": "Trading digital assets is risky and complex",
-        "END_TITLE": "FXCH centralizes trading",
+        "START_TITLE": "Trading digital assets is complex",
+        "END_TITLE": "FXCH centralizes trading", 
         "START_SUBTITLE": "The problem",
         "END_SUBTITLE": "Our solution",
         "START_TEXT": "Trading digital assets is risky and complex for institutions without centralized risk and settlement management.",
-        "END_TEXT": "FXCH centralizes trading by managing risks and streamlining settlements, making it safer and simpler. It's also working on meeting regulatory standards to increase trust.",
+         "END_TEXT": "FXCH centralizes trading by managing risks and streamlining settlements, making it safer and simpler. It's also working on meeting regulatory standards to increase trust.",
         "ACTION": "Get in touch"
     },
     "HORIZONTAL_TEXT": "How Can I Simplify Trading with Blockchain and Streamline FX Clearing?",
@@ -102,18 +100,15 @@
         }
     },
     "FOOTER": {
-        "INFO": {
-            "TITLE": "Start Investing today with us",
-            "TEXT": "FXCH Limited is authorised and",
-            "TEXT1": "regulated by the Financial Conduct Authority",
-            "TEXT2": "under FRN 197107 and FRN 836465 respectively."
-        },
-        "COPYRIGHT": "Copyrights",
-        "ALL_RIGHTS_RESERVED": "All Rights Reserved.",
         "CONTACT": "Contact us",
         "COPY_PHONE": "Copy phone number",
         "COPY_EMAIL": "Copy email",
-        "COPIED": "Copied to clipboard"
+        "COPIED": "Copied to clipboard",
+        "SOCIAL": {
+            "TWITTER": "Twitter",
+            "LINKEDIN": "LinkedIn",
+            "TELEGRAM": "Telegram"
+        }
     },
     "404": {
         "BUTTON_TEXT": "Go home"
