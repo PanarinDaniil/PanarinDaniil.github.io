@@ -47,16 +47,16 @@
     },
     "TECHNOLOGY": {
         "START_TITLE": "Trading digital assets is complex",
-        "END_TITLE": "FXCH centralizes trading", 
+        "END_TITLE": "FXCH centralizes trading",
         "START_SUBTITLE": "The problem",
         "END_SUBTITLE": "Our solution",
         "START_TEXT": "Trading digital assets is risky and complex for institutions without centralized risk and settlement management.",
-         "END_TEXT": "FXCH centralizes trading by managing risks and streamlining settlements, making it safer and simpler. It's also working on meeting regulatory standards to increase trust.",
-        "ACTION": "Get in touch"
+        "END_TEXT": "FXCH centralizes trading by managing risks and streamlining settlements, making it safer and simpler. It's also working on meeting regulatory standards to increase trust.",
+        "GET_IN_TOUCH": "Get in touch"
     },
     "HORIZONTAL_TEXT": "How Can I Simplify Trading with Blockchain and Streamline FX Clearing?",
     "BENEFITS": {
-        "TITLE_1": "Establish your", 
+        "TITLE_1": "Establish your",
         "TITLE_2": "proof of ownership",
         "TEXT_1": "Send us your collateral.",
         "TEXT_2": "It's recorded on a digital ledger, proving your ownership.",
@@ -114,6 +114,9 @@
         "BUTTON_TEXT": "Go home"
     },
     "CONTACT": {
+        "TITLES": {
+            "CLOSE": "Close"
+        },
         "INFO": {
             "TITLE": "Want more information?",
             "TEXT": "You can contact us by filling the form or sending us a note to:"
@@ -133,5 +136,4 @@
         "COOCKIE_POLICY": "Coocky Policy",
         "SUBMIT": "Submit"
     }
-    
 }
