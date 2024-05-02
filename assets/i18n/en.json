@@ -66,14 +66,20 @@
         "TITLE": "Our team",
         "PREV": "Previous",
         "NEXT": "Next",
-        "TEXT": "A dynamic group of clearing, technology & sell-side industry veterans",
-        "FOUNDER_AND_CEO": "Founder & CEO",
+        "FOUNDER_AND_CEO": "Founder, CEO",
         "COO": "COO",
-        "CTO": "Chief Technology Officer",
+        "HEAD_OF_LEGAL": "Head of Legal & Compliance",
+        "FINANCE": "Finance",
+        "ONBOARDING": "Onboarding",
+        "BUSINESS_DEVELOPMENT": "Business Development",
+        "TECHNOLOGY": "Technology",
+        "SETTLEMENT_OPERATIONS": "Settlement Operations",
         "TAGS": {
-            "FIRST": "First",
-            "SECOND": "Second",
-            "THIRD": "Third"
+            "NYC": "New York City, USA",
+            "CAPE_TOWN": "Cape Town, South Africa",
+            "DUBLIN": "Dublin, Ireland",
+            "ISTANBUL": "İstanbul, Türkiye",
+            "CHICAGO": "Chicago, USA"
         }
     },
     "PARTNERS": {
@@ -106,34 +112,21 @@
         "COPIED": "Copied to clipboard",
         "SOCIAL": {
             "TWITTER": "Twitter",
-            "LINKEDIN": "LinkedIn",
-            "TELEGRAM": "Telegram"
+            "LINKEDIN": "LinkedIn"
         }
     },
     "404": {
         "BUTTON_TEXT": "Go home"
     },
     "CONTACT": {
-        "TITLES": {
-            "CLOSE": "Close"
-        },
-        "INFO": {
-            "TITLE": "Want more information?",
-            "TEXT": "You can contact us by filling the form or sending us a note to:"
-        }
+        "TITLE": "Let's get in touch!",
+        "CLOSE": "Close"
     },
     "CONTACT_FORM": {
-        "TITLE": "Contact",
-        "FIRST_NAME": "First Name",
-        "LAST_NAME": "Last Name",
-        "EMAIL": "Email",
-        "COMPANY_NAME": "Company Name",
-        "MESSAGE": "Message",
-        "I_AGREE_FULL": "I agree to the User Agreement, Privacy Policy & Cookie Policy.",
-        "I_AGREE": "I agree to the",
-        "USER_AGREEMENT": "User Agreement",
-        "PRIVACY_POLICY": "Privacy Policy",
-        "COOCKIE_POLICY": "Coocky Policy",
+        "NAME": "Your name",
+        "EMAIL": "Your email",
+        "SUBJECT": "Subject",
+        "MESSAGE": "Your message",
         "SUBMIT": "Submit"
     }
 }

@@ -1,58 +1,58 @@
 [
     {
         "id": 1,
-        "imageSrc": "url(/assets/images/team/person/Franck.jpg)",
+        "imageSrc": "",
         "name": "Frank Mikulecz",
         "jobTitle": "TEAM.FOUNDER_AND_CEO",
-        "tags": ["TEAM.TAGS.FIRST", "TEAM.TAGS.SECOND"]
+        "tags": ["TEAM.TAGS.NYC"]
     },
     {
         "id": 2,
         "imageSrc": "",
-        "name": "Nigel Wharton",
+        "name": "Steven Williams",
         "jobTitle": "TEAM.COO",
-        "tags": ["TEAM.TAGS.FIRST", "TEAM.TAGS.SECOND", "TEAM.TAGS.THIRD"]
+        "tags": ["TEAM.TAGS.CAPE_TOWN"]
     },
     {
         "id": 3,
         "imageSrc": "",
-        "name": "Mark Brook",
-        "jobTitle": "TEAM.MANAGING_DIRECTOR",
-        "tags": ["TEAM.TAGS.FIRST", "TEAM.TAGS.THIRD"]
+        "name": "Joseph Shannon",
+        "jobTitle": "TEAM.HEAD_OF_LEGAL",
+        "tags": ["TEAM.TAGS.DUBLIN"]
     },
     {
         "id": 4,
-        "imageSrc": "url(/assets/images/team/person/Peter.jpg)",
-        "name": "Peter Kormos",
-        "jobTitle": "TEAM.CTO",
-        "tags": ["TEAM.TAGS.FIRST", "TEAM.TAGS.SECOND"]
+        "imageSrc": "",
+        "name": "Altan Nar",
+        "jobTitle": "TEAM.FINANCE",
+        "tags": ["TEAM.TAGS.ISTANBUL"]
     },
     {
         "id": 5,
-        "imageSrc": "url(/assets/images/team/person/Peter.jpg)",
-        "name": "Peter Kormos",
-        "jobTitle": "TEAM.CTO",
-        "tags": ["TEAM.TAGS.THIRD"]
+        "imageSrc": "",
+        "name": "Ezgi Durmuş",
+        "jobTitle": "TEAM.ONBOARDING",
+        "tags": ["TEAM.TAGS.ISTANBUL"]
     },
     {
         "id": 6,
         "imageSrc": "",
-        "name": "Nigel Wharton",
-        "jobTitle": "TEAM.COO",
-        "tags": ["TEAM.TAGS.FIRST", "TEAM.TAGS.SECOND"]
+        "name": "Robert de Villiers",
+        "jobTitle": "TEAM.BUSINESS_DEVELOPMENT",
+        "tags": ["TEAM.TAGS.CAPE_TOWN"]
     },
     {
         "id": 7,
         "imageSrc": "",
-        "name": "Mark Brook",
-        "jobTitle": "TEAM.MANAGING_DIRECTOR",
-        "tags": ["TEAM.TAGS.FIRST", "TEAM.TAGS.SECOND"]
+        "name": "Makgera Modise",
+        "jobTitle": "TEAM.TECHNOLOGY",
+        "tags": ["TEAM.TAGS.CAPE_TOWN"]
     },
     {
         "id": 8,
-        "imageSrc": "url(/assets/images/team/person/Peter.jpg)",
-        "name": "Peter Kormos",
-        "jobTitle": "TEAM.CTO",
-        "tags": ["TEAM.TAGS.FIRST", "TEAM.TAGS.SECOND"]
+        "imageSrc": "",
+        "name": "Peter Lemke",
+        "jobTitle": "TEAM.SETTLEMENT_OPERATIONS",
+        "tags": ["TEAM.TAGS.CHICAGO"]
     }
 ]
