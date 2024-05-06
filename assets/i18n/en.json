@@ -50,17 +50,18 @@
         "END_TITLE": "FXCH centralizes trading",
         "START_SUBTITLE": "The problem",
         "END_SUBTITLE": "Our solution",
-        "START_TEXT": "Trading digital assets is risky and complex for institutions without centralized risk and settlement management.",
-        "END_TEXT": "FXCH centralizes trading by managing risks and streamlining settlements, making it safer and simpler. It's also working on meeting regulatory standards to increase trust.",
+        "START_TEXT": "Trading digital assets is inherently complex. Currently, digital asset transactions can be chaotic, with disparate systems and multiple counterparties creating a tangled web that complicates settlements and increases risk.",
+        "END_TEXT": "FXCH streamlines clearing by consolidating it into a single platform, simplifying interactions and enhancing market access. Our integrated model securely manages risks in digital asset trading, ensuring efficient and accurate daily settlements for institutional traders, thereby boosting their confidence.",
         "GET_IN_TOUCH": "Get in touch"
     },
-    "HORIZONTAL_TEXT": "How Can I Simplify Trading with Blockchain and Streamline FX Clearing?",
+    "HORIZONTAL_TEXT": "The FXCH Way: Elevating Your Trading Process",
     "BENEFITS": {
-        "TITLE_1": "Establish your",
-        "TITLE_2": "proof of ownership",
-        "TEXT_1": "Send us your collateral.",
-        "TEXT_2": "It's recorded on a digital ledger, proving your ownership.",
-        "TEXT_3": "Check and manage your balance anytime with digital keys."
+        "TITLE_1": "Collateral Management",
+        "TEXT_1": "FXCH secures trading by requiring collateral pledges from all participants before market activities begin. This is used as the members margin to cover their own risk to FXCH's network",
+        "TITLE_2": "Real-Time Netting",
+        "TEXT_2": "Members are margined in NET. We act as the counterparty for all trades, allowing for instant netting and significant increase in capital efficiency",
+        "TITLE_3": "Daily Settlements",
+        "TEXT_3": "All trades are settled in NET at 5pm New York every business day"
     },
     "TEAM": {
         "TITLE": "Our team",
@@ -127,6 +128,13 @@
         "EMAIL": "Your email",
         "SUBJECT": "Subject",
         "MESSAGE": "Your message",
-        "SUBMIT": "Submit"
+        "SUBMIT": "Submit",
+        "VALIDATORS": {
+            "NAME": "Name is required",
+            "EMAIL": "Email is required",
+            "EMAIL_FORMAT": "Email has wrong format",
+            "SUBJECT": "Subject is required",
+            "MESSAGE": "Maximum length is "
+        }
     }
 }
