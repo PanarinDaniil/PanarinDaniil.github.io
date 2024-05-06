@@ -2347,16 +2347,6 @@ function AboutCardComponent_div_7_Template(rf, ctx) {
 var _c1 = (a0, a1) => [a0, a1];
 var _c2 = ["*"];
 var _AboutCardComponent = class _AboutCardComponent {
-  constructor() {
-    this.aboutTitle = "";
-    this.aboutTitleSecondLine = "";
-    this.text = "";
-    this.type = "first";
-    this.textInner = null;
-    this.isHover = false;
-    this.timer = null;
-    this.defaultTruncateTimeMs = 500;
-  }
   get aboutCardTypeClass() {
     return `fxch-about-card--${this.type}`;
   }
@@ -2367,6 +2357,17 @@ var _AboutCardComponent = class _AboutCardComponent {
       return "";
     }
   }
+  constructor(changeDetectorRef) {
+    this.changeDetectorRef = changeDetectorRef;
+    this.aboutTitle = "";
+    this.aboutTitleSecondLine = "";
+    this.text = "";
+    this.type = "first";
+    this.textInner = null;
+    this.isHover = false;
+    this.timer = null;
+    this.defaultTruncateTimeMs = 500;
+  }
   toggleTap() {
     if (!FxchIsMobileService.any()) {
       return;
@@ -2374,6 +2375,7 @@ var _AboutCardComponent = class _AboutCardComponent {
     this.isHover = !this.isHover;
     this.clearTime();
     this.setClasses();
+    this.changeDetectorRef.detectChanges();
   }
   toggleHover() {
     if (FxchIsMobileService.any()) {
@@ -2382,6 +2384,7 @@ var _AboutCardComponent = class _AboutCardComponent {
     this.isHover = !this.isHover;
     this.clearTime();
     this.setClasses();
+    this.changeDetectorRef.detectChanges();
   }
   setClasses() {
     if (this.isHover) {
@@ -2391,6 +2394,7 @@ var _AboutCardComponent = class _AboutCardComponent {
     this.timer = setTimeout(() => {
       this.clearTime();
       this.textInner?.nativeElement.classList.add("fxch-about-card-body-text-inner--truncated");
+      this.changeDetectorRef.detectChanges();
     }, this.defaultTruncateTimeMs);
   }
   clearTime() {
@@ -2400,7 +2404,7 @@ var _AboutCardComponent = class _AboutCardComponent {
   }
 };
 _AboutCardComponent.\u0275fac = function AboutCardComponent_Factory(t) {
-  return new (t || _AboutCardComponent)();
+  return new (t || _AboutCardComponent)(\u0275\u0275directiveInject(ChangeDetectorRef));
 };
 _AboutCardComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _AboutCardComponent, selectors: [["about-card"]], viewQuery: function AboutCardComponent_Query(rf, ctx) {
   if (rf & 1) {
@@ -5323,4 +5327,4 @@ hammerjs/hammer.js:
    * Copyright (c) 2016 Jorik Tangelder;
    * Licensed under the MIT license *)
 */
-//# sourceMappingURL=main-YJVGNQXV.js.map
+//# sourceMappingURL=main-KD5O2NLH.js.map
