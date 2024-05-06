@@ -4269,7 +4269,7 @@ var _HorizontalTextComponent = class _HorizontalTextComponent {
     if (this.textBlockElement == null || rect.top > -200 || rect.bottom < window.innerHeight + 200) {
       return;
     }
-    const relationAdjustment = FxchIsMobileService.any() ? 300 : 450;
+    const relationAdjustment = FxchIsMobileService.any() ? 350 : 450;
     const relation = (this.textBlockElement.nativeElement.offsetWidth - window.innerWidth + relationAdjustment) / (rect.height - window.innerHeight);
     this.transformWidth = (rect.top + 200) * relation;
     this.changeDetectorRef.detectChanges();
@@ -9449,4 +9449,4 @@ hammerjs/hammer.js:
    * License: MIT
    *)
 */
-//# sourceMappingURL=main-BAT2MNZG.js.map
+//# sourceMappingURL=main-UAGL2IIF.js.map
