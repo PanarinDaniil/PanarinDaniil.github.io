@@ -54,7 +54,6 @@ import {
   __commonJS,
   __toESM,
   bootstrapApplication,
-  enableProdMode,
   filter,
   fromEvent,
   importProvidersFrom,
@@ -113,7 +112,7 @@ import {
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1,
   ɵɵviewQuery
-} from "./chunk-FVYKPPVG.js";
+} from "./chunk-5LPHNMJE.js";
 
 // node_modules/hammerjs/hammer.js
 var require_hammer = __commonJS({
@@ -2174,7 +2173,7 @@ var _ContactModalService = class _ContactModalService {
     this.fxchPopupService = fxchPopupService;
   }
   openContacts() {
-    void import("./chunk-XVFNP2KQ.js").then(({ ContactModalComponent }) => this.fxchPopupService.openDialog(ContactModalComponent, void 0, { customClass: "fxch-contact-dialog" }));
+    void import("./chunk-HJRASTJE.js").then(({ ContactModalComponent }) => this.fxchPopupService.openDialog(ContactModalComponent, void 0, { customClass: "fxch-contact-dialog" }));
   }
 };
 _ContactModalService.\u0275fac = function ContactModalService_Factory(t) {
@@ -9425,15 +9424,7 @@ var AppComponent = _AppComponent;
   (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(AppComponent, { className: "AppComponent", filePath: "src\\app\\app.component.ts", lineNumber: 28 });
 })();
 
-// src/environments/environment.ts
-var environment = {
-  production: true
-};
-
 // src/main.ts
-if (environment.production) {
-  enableProdMode();
-}
 bootstrapApplication(AppComponent, appConfig).catch((err) => console.error(err));
 /*! Bundled license information:
 
@@ -9458,4 +9449,4 @@ hammerjs/hammer.js:
    * License: MIT
    *)
 */
-//# sourceMappingURL=main-4FB2NISN.js.map
+//# sourceMappingURL=main-BAT2MNZG.js.map

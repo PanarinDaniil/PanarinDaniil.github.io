@@ -20048,11 +20048,6 @@ function runPlatformInitializers(injector) {
   const inits = injector.get(PLATFORM_INITIALIZER, null);
   inits?.forEach((init) => init());
 }
-function enableProdMode() {
-  if (typeof ngDevMode === "undefined" || ngDevMode) {
-    _global["ngDevMode"] = false;
-  }
-}
 var platformCore = createPlatformFactory(null, "core", []);
 var _ApplicationModule = class _ApplicationModule {
   // Inject ApplicationRef to make it eager...
@@ -45391,7 +45386,6 @@ export {
   Version,
   APP_INITIALIZER,
   ApplicationRef,
-  enableProdMode,
   booleanAttribute,
   getDOM,
   DOCUMENT2 as DOCUMENT,
@@ -45512,4 +45506,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-FVYKPPVG.js.map
+//# sourceMappingURL=chunk-5LPHNMJE.js.map
