@@ -111,6 +111,7 @@
         "COPY_PHONE": "Copy phone number",
         "COPY_EMAIL": "Copy email",
         "COPIED": "Copied to clipboard",
+        "NOT_COPIED": "Failed to copy to clipboard",
         "SOCIAL": {
             "TWITTER": "Twitter",
             "LINKEDIN": "LinkedIn"
@@ -136,5 +137,12 @@
             "SUBJECT": "Subject is required",
             "MESSAGE": "Maximum length is "
         }
+    },
+    "CONTACT_MODAL": {
+        "SUCCESS": "Email sent successfully",
+        "FAILURE": "Failed to sent email"
+    },
+    "TOASTR": {
+        "CLOSE": "Close"
     }
 }
