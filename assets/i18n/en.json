@@ -110,6 +110,7 @@
         "CONTACT": "Contact us",
         "COPY_PHONE": "Copy phone number",
         "COPY_EMAIL": "Copy email",
+        "GET_IN_TOUCH": "Get in touch",
         "COPIED": "Copied to clipboard",
         "NOT_COPIED": "Failed to copy to clipboard",
         "SOCIAL": {
@@ -139,8 +140,8 @@
         }
     },
     "CONTACT_MODAL": {
-        "SUCCESS": "Email sent successfully",
-        "FAILURE": "Failed to sent email"
+        "SUCCESS": "We'll get back to you soon",
+        "FAILURE": "We couldn't submit your form. Please try again or contact us"
     },
     "TOASTR": {
         "CLOSE": "Close"
