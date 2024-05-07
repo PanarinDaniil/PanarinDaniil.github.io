@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "imageSrc": "",
+        "imageSrc": "https://a.com/1.jpeg",
         "name": "Frank Mikulecz",
         "jobTitle": "TEAM.FOUNDER_AND_CEO",
         "tags": ["TEAM.TAGS.NYC"]
