@@ -50,7 +50,7 @@
     },
     {
         "id": 8,
-        "imageSrc": "",
+        "imageSrc": "/assets/images/team/Peter.jpg",
         "name": "Peter Lemke",
         "jobTitle": "TEAM.SETTLEMENT_OPERATIONS",
         "tags": ["TEAM.TAGS.CHICAGO"]
