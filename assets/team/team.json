@@ -8,28 +8,28 @@
     },
     {
         "id": 2,
-        "imageSrc": "/assets/images/team/Steven.jpeg",
+        "imageSrc": "/assets/images/team/Steven.jpg",
         "name": "Steven Williams",
         "jobTitle": "TEAM.COO",
         "tags": ["TEAM.TAGS.CAPE_TOWN"]
     },
     {
         "id": 3,
-        "imageSrc": "/assets/images/team/Joe.jpeg",
+        "imageSrc": "/assets/images/team/Joe.jpg",
         "name": "Joseph Shannon",
         "jobTitle": "TEAM.HEAD_OF_LEGAL",
         "tags": ["TEAM.TAGS.DUBLIN"]
     },
     {
         "id": 4,
-        "imageSrc": "/assets/images/team/Altan.jpeg",
+        "imageSrc": "/assets/images/team/Altan.jpg",
         "name": "Altan Nar",
         "jobTitle": "TEAM.FINANCE",
         "tags": ["TEAM.TAGS.ISTANBUL"]
     },
     {
         "id": 5,
-        "imageSrc": "/assets/images/team/Ezgi.jpeg",
+        "imageSrc": "/assets/images/team/Ezgi.jpg",
         "name": "Ezgi Durmuş",
         "jobTitle": "TEAM.ONBOARDING",
         "tags": ["TEAM.TAGS.ISTANBUL"]
@@ -43,7 +43,7 @@
     },
     {
         "id": 7,
-        "imageSrc": "/assets/images/team/Makgera.jpeg",
+        "imageSrc": "/assets/images/team/Makgera.jpg",
         "name": "Makgera Modise",
         "jobTitle": "TEAM.TECHNOLOGY",
         "tags": ["TEAM.TAGS.CAPE_TOWN"]
