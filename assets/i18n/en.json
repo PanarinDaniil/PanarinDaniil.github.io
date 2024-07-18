@@ -20,7 +20,7 @@
         "ENABLE_DARK_THEME": "Enable Dark Theme",
         "ENABLE_LIGHT_THEME": "Enable Light Theme"
     },
-    "SLOGAN": "The Foreign Exchange Clearing House",
+    "SLOGAN": "The Multi Currency FX Settlement Coins ",
     "HEADER": {
         "TITLES": {
             "ABOUT": "About",
@@ -49,12 +49,12 @@
             "TITLE_1": "Real Time Reserves Attestation",
             "TITLE_2": "Multi-Currency Interest-Bearing Tokens",
             "TITLE_3": "Regulated in Bermuda",
-            "TITLE_4": "XRPL Blockchain ",
+            "TITLE_4": "XRPL Blockchain ", 
             "TITLE_5": "Tier 1 Custodian Bank",
             "TITLE_6": "Tradeable Interbank FX Liquidity",
             "TEXT_1": "Real-time independant attestation of Reserves from a top 5 Auditor",
             "TEXT_2": "Tokens apreciate following daily money market rates",
-            "TEXT_3": "Unique ISAC & ISA bankruptcy  remote corporate structure",
+            "TEXT_3": "Unique ISAC & ISA bankruptcy remote corporate structure",
             "TEXT_4": "5sec. transfer finality, lowest cost and full transparency",
             "TEXT_5": "Reserves 100% in Fiat, not even goverment securities",
             "TEXT_6": "CRNCY.com members have access to interbank quality FX-t0 pricing"
@@ -76,21 +76,20 @@
         }
     },
     "TECHNOLOGY": {
-        "TITLE_1": "The issuing of Settlement Coins is performed by CRUNCHY under its ",
-        "TITLE_2": "DAB licence",
-        "TITLE_3": ", arranging a sale of tokens versus payment of fiat",
+        "TITLE_1": "The issuing of Settlement Coins is performed by CRNCY under its ",
+        "TITLE_2": "DABA licence",
+        "TITLE_3": ", ar ranging a sale of tokens versus payment of fiat",
         "NEXT": "Next",
         "PREV": "Previous",
         "STRUCTURE": "Structure",
         "CUSTODIAN": "Tier 1 Custodian",
         "CRNCY": "CRNCY.com",
-        "MEMBERS": "Bankruptcy remote structure",
+        "MEMBERS": "Bankruptcy remote",
         "CH": "Clearing House",
         "SLIDE_TITLE": "ISAC & ISAs",
-        "TEXT_1": "The CRNCY legal framework uses the Bermudean ISAC/ISA structure that provides effective segregation of funds between the issuer of the Settlement Coins - a regulated Digital Asset Business - and the Settlement Coins reserve custody.",
+        "TEXT_1": "This separation ensures that the Settlement Coins reserves (ISAs) are immune from risks of CRNCY failures (the ISAC operating company). In the event that CRNCY had to be wound down, the Bermudean courts have the obligation to return funds to all registered Token holders.",
         "TEXT_2": "The issuing of Settlement Coins is performed by CRNCY under its DAB licence, arranging a sale of Tokens versus payment of Fiat. Redeeming is the reverse process when CRNCY arranges to purchase 1:1 the Tokens back from a registered user as agreed in the terms of the CRNCY Settlement Coins agreement.",
-        "TEXT_3": "ISAs are legally segregated and bankruptcy remote single purpose entities that CRNCY set specifically for the custody of Settlement Coins Fiat reserves. Each ISA utilises one (1) disclosed custodian bank, and remains bankruptcy remote from all other ISAs and the CRNCY ISAC itself.",
-        "TEXT_4": "This separation ensures that the Settlement Coins reserves (ISAs) are immune from risks of CRNCY failures (the ISAC operating company). In the event that CRNCY had to be wound down, the Bermudean courts have the obligation to return funds to all registered Token holders."
+        "TEXT_3": "ISAs are legally segregated and bankruptcy remote single purpose entities that CRNCY set specifically for the custody of Settlement Coins Fiat reserves. Each ISA utilises one (1) disclosed custodian bank, and remains bankruptcy remote from all other ISAs and the CRNCY ISAC itself."
     },
     "TEAM": {
         "TITLE": "Our Team",
