@@ -94,14 +94,10 @@
     "TEAM": {
         "TITLE": "Our Team",
         "ACTION": "Get In Touch",
-        "FOUNDER_AND_CEO": "Founder, CEO",
+        "CEO": "CEO",
         "COO": "COO",
-        "HEAD_OF_LEGAL": "Head of Legal & Compliance",
-        "FINANCE": "Finance",
-        "ONBOARDING": "Onboarding",
-        "BUSINESS_DEVELOPMENT": "Business Development",
-        "TECHNOLOGY": "Technology",
-        "SETTLEMENT_OPERATIONS": "Settlement Operations"
+        "HEAD_OF_LEGAL": "Director: Legal & Compliance",
+        "OPERATIONS_MANAGER": "Finance"
     },
     "FAQ": {
         "TITLE": "FAQ",

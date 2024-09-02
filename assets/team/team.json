@@ -1,50 +1,26 @@
 [
     {
         "id": 1,
-        "imageSrc": "/assets/images/team/Franck.jpg",
-        "name": "Franck Mikulecz",
-        "jobTitle": "TEAM.FOUNDER_AND_CEO"
+        "imageSrc": "/assets/images/team/Mark.jpg",
+        "name": "Mark Brook",
+        "jobTitle": "TEAM.CEO"
     },
     {
         "id": 2,
-        "imageSrc": "/assets/images/team/Steven.jpg",
-        "name": "Steven Williams",
+        "imageSrc": "/assets/images/team/Nigel.jpg",
+        "name": "Nigel Wharton",
         "jobTitle": "TEAM.COO"
     },
     {
         "id": 3,
-        "imageSrc": "/assets/images/team/Joe.jpg",
+        "imageSrc": "/assets/images/team/Joseph.jpg",
         "name": "Joseph Shannon",
         "jobTitle": "TEAM.HEAD_OF_LEGAL"
     },
     {
         "id": 4,
-        "imageSrc": "/assets/images/team/Altan.jpg",
-        "name": "Altan Nar",
-        "jobTitle": "TEAM.FINANCE"
-    },
-    {
-        "id": 5,
-        "imageSrc": "/assets/images/team/Ezgi.jpg",
-        "name": "Ezgi Durmuş",
-        "jobTitle": "TEAM.ONBOARDING"
-    },
-    {
-        "id": 6,
-        "imageSrc": "/assets/images/team/Rob.jpg",
-        "name": "Robert de Villiers",
-        "jobTitle": "TEAM.BUSINESS_DEVELOPMENT"
-    },
-    {
-        "id": 7,
-        "imageSrc": "/assets/images/team/Makgera.jpg",
-        "name": "Makgera Modise",
-        "jobTitle": "TEAM.TECHNOLOGY"
-    },
-    {
-        "id": 8,
-        "imageSrc": "/assets/images/team/Peter.jpg",
-        "name": "Peter Lemke",
-        "jobTitle": "TEAM.SETTLEMENT_OPERATIONS"
+        "imageSrc": "/assets/images/team/Steven.jpg",
+        "name": "Steven Williams",
+        "jobTitle": "TEAM.OPERATIONS_MANAGER"
     }
 ]
