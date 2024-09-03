@@ -49,7 +49,7 @@
             "TITLE_1": "Real Time Reserves Attestation",
             "TITLE_2": "Multi-Currency Interest-Bearing Tokens",
             "TITLE_3": "Regulated in Bermuda",
-            "TITLE_4": "XRPL Blockchain ", 
+            "TITLE_4": "XRPL Blockchain ",
             "TITLE_5": "Tier 1 Custodian Bank",
             "TITLE_6": "Tradeable Interbank FX Liquidity",
             "TEXT_1": "Real-time independant attestation of Reserves from a top 5 Auditor",
@@ -97,7 +97,7 @@
         "CEO": "CEO",
         "COO": "COO",
         "HEAD_OF_LEGAL": "Director: Legal & Compliance",
-        "OPERATIONS_MANAGER": "Finance"
+        "OPERATIONS_MANAGER": "Operations Manager"
     },
     "FAQ": {
         "TITLE": "FAQ",
@@ -133,6 +133,7 @@
         "FAQ": "FAQs",
         "SOCIAL": "Social Media",
         "LINKEDIN": "LinkedIn",
+        "X": "X",
         "TERMS": "Terms of Service",
         "PRIVACY": "Privacy Policy"
     },
