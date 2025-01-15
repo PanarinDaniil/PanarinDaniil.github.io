@@ -1,26 +1,58 @@
 [
     {
         "id": 1,
-        "imageSrc": "/assets/images/team/Mark.jpg",
-        "name": "Mark Brook",
-        "jobTitle": "TEAM.CEO"
+        "imageSrc": "/assets/images/team/Franck.jpg",
+        "name": "Franck Mikulecz",
+        "jobTitle": "TEAM.FOUNDER_AND_CEO",
+        "tags": ["TEAM.TAGS.NYC"]
     },
     {
         "id": 2,
-        "imageSrc": "/assets/images/team/Nigel.jpg",
-        "name": "Nigel Wharton",
-        "jobTitle": "TEAM.COO"
+        "imageSrc": "/assets/images/team/Steven.jpg",
+        "name": "Steven Williams",
+        "jobTitle": "TEAM.COO",
+        "tags": ["TEAM.TAGS.CAPE_TOWN"]
     },
     {
         "id": 3,
-        "imageSrc": "/assets/images/team/Joseph.jpg",
+        "imageSrc": "/assets/images/team/Joe.jpg",
         "name": "Joseph Shannon",
-        "jobTitle": "TEAM.HEAD_OF_LEGAL"
+        "jobTitle": "TEAM.HEAD_OF_LEGAL",
+        "tags": ["TEAM.TAGS.DUBLIN"]
     },
     {
         "id": 4,
-        "imageSrc": "/assets/images/team/Steven.jpg",
-        "name": "Steven Williams",
-        "jobTitle": "TEAM.OPERATIONS_MANAGER"
+        "imageSrc": "/assets/images/team/Altan.jpg",
+        "name": "Altan Nar",
+        "jobTitle": "TEAM.FINANCE",
+        "tags": ["TEAM.TAGS.ISTANBUL"]
+    },
+    {
+        "id": 5,
+        "imageSrc": "/assets/images/team/Ezgi.jpg",
+        "name": "Ezgi Durmuş",
+        "jobTitle": "TEAM.ONBOARDING",
+        "tags": ["TEAM.TAGS.ISTANBUL"]
+    },
+    {
+        "id": 6,
+        "imageSrc": "/assets/images/team/Rob.jpg",
+        "name": "Robert de Villiers",
+        "jobTitle": "TEAM.BUSINESS_DEVELOPMENT",
+        "tags": ["TEAM.TAGS.CAPE_TOWN"]
+    },
+    {
+        "id": 7,
+        "imageSrc": "/assets/images/team/Makgera.jpg",
+        "name": "Makgera Modise",
+        "jobTitle": "TEAM.TECHNOLOGY",
+        "tags": ["TEAM.TAGS.CAPE_TOWN"]
+    },
+    {
+        "id": 8,
+        "imageSrc": "/assets/images/team/Peter.jpg",
+        "name": "Peter Lemke",
+        "jobTitle": "TEAM.SETTLEMENT_OPERATIONS",
+        "tags": ["TEAM.TAGS.CHICAGO"]
     }
 ]
