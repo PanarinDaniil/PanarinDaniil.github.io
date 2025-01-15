@@ -1,11 +1,4 @@
 {
-    "PAGE_TITLES": {
-        "DEFAULT": "CRNCY.com",
-        "HOME": "CRNCY.com | The Multi Currency FX Settlement Coins",
-        "PRIVACY": "CRNCY.com | Privacy & Coockie Policy",
-        "TERMS": "CRNCY.com | Terms and Conditions",
-        "NOT_FOUND": "CRNCY.com | 404 Page not Found"
-    },
     "LANGUAGE": {
         "en": "English",
         "de": "German",
@@ -17,222 +10,149 @@
         }
     },
     "THEME": {
-        "ENABLE_DARK_THEME": "Enable Dark Theme",
-        "ENABLE_LIGHT_THEME": "Enable Light Theme"
+        "ENABLE_DARK_THEME": "Enable dark theme",
+        "ENABLE_LIGHT_THEME": "Enable light theme"
     },
-    "SLOGAN": "The Multi Currency FX Settlement Coins ",
+    "SLOGAN": "The Foreign Exchange Clearing House",
     "HEADER": {
         "TITLES": {
-            "ABOUT": "About",
-            "USE_CASES": "Use Cases",
-            "GET_IN_TOUCH": "Get in Touch",
+            "ABOUT": "About us",
+            "HOW_IT_WORKS": "How it works",
+            "OUR_TEAM": "Our team",
+            "NEWS": "News",
             "MENU": "Menu",
-            "CONTACT_US": "Contact us"
+            "GET_IN_TOUCH": "Get in touch"
         }
     },
     "PROMO": {
         "TITLES": {
-            "THE": "The ",
-            "MULTI": "Multi ",
-            "CURRENCY": "Currency FX Settlement Coins",
-            "GET_STARTED": "Get started"
+            "TRADE": "Trade.",
+            "CONFIRM": "Confirm.",
+            "SETTLE": "Settle.",
+            "GET_IN_TOUCH": "Get in touch"
         },
-        "MAIN_TEXT": "Enabling same day \"t0\" settlement of FX trades with our G12 interest-bearing settlement coins"
+        "MAIN_TEXT": "FXCH delivers a turnkey clearinghouse solution for institutions trading in digital assets with direct market access. We're all about mastering multi-counterparty risks and streamlining daily settlements with precision and ease."
     },
     "ABOUT": {
         "TITLES": {
-            "TITLE_1": "Easily convert G12 currencies into tokens and ",
-            "TITLE_2": "retain the benefits ",
-            "TITLE_3": "of your fiat interest"
+            "TITLE_1": "Lightning fast!",
+            "TITLE_2": "Safety First: Pre-Trade Collateral ",
+            "TITLE_3": "Vigilant tracking"
         },
-        "CARDS": {
-            "TITLE_1": "Real Time Reserves Attestation",
-            "TITLE_2": "Multi-Currency Interest-Bearing Tokens",
-            "TITLE_3": "Regulated in Bermuda",
-            "TITLE_4": "XRPL Blockchain ",
-            "TITLE_5": "Tier 1 Custodian Bank",
-            "TITLE_6": "Tradeable Interbank FX Liquidity",
-            "TEXT_1": "Real-time independant attestation of Reserves from a top 5 Auditor",
-            "TEXT_2": "Tokens apreciate following daily money market rates",
-            "TEXT_3": "Unique ISAC & ISA bankruptcy remote corporate structure",
-            "TEXT_4": "5sec. transfer finality, lowest cost and full transparency",
-            "TEXT_5": "Reserves 100% in Fiat, not even goverment securities",
-            "TEXT_6": "CRNCY.com members have access to interbank quality FX-t0 pricing"
-        }
-    },
-    "BENEFITS": {
-        "TITLE": " Benefits of using our platform",
-        "CARDS": {
-            "TITLE_1": "Interest Rates",
-            "TEXT_1": "Nominal value of each Settlement Coin will be adjusted daily at 5pm NY to reflect the accrual of the daily money market interests.",
-            "TITLE_2": "Same-day delivery",
-            "TEXT_2": "Franck is a serial innovator and entrepreneur who moved from a Futures background in France and Italy and embraced the global FX markets.",
-            "TITLE_3": "Inter-Market Arbitrage",
-            "TEXT_3": "Active traders can capture price discrepancies between any markets in different countries. With CRNCY FX-t0, a triangular Arbitrage can be settled same-day in Tokens between any of the G12 currencies.",
-            "TITLE_4": "Simplified Custody",
-            "TEXT_4": "CRNCY enables Fund Managers or Family Offices of any size to custody their funds with the highest-tier Custodian Bank without the need for complex and expensive direct onboarding",
-            "TITLE_5": "Collateral Instrument",
-            "TEXT_5": "CRNCY Tokens are as efficient as Fiat and a superior mobile form of collateral that can be pledged or moved intra-day multiple times. These Settlement Coins can be used for all sorts of trading activities on any asset class."
+        "TEXT": {
+            "TEXT_1": "FXCH equips trading firms with real-time netting across all our partner venues. Enjoy real-time trading through direct market access to designated sub-accounts and trade with the freedom of deferred settlements. Every trade is ingested instantly, keeping positions and margins updated on the fly.",
+            "TEXT_2": "Members as well as participating exchanges must pledge fiat or cryptocurrency collateral with the Clearing House before trading. These funds, held as \"security interest\", remain in the user's wallet at all times",
+            "TEXT_3": "FXCH continuously monitors risk across all accounts by revaluing open positions and collateral with several reliable price sources."
         }
     },
     "TECHNOLOGY": {
-        "TITLE_1": "The issuing of Settlement Coins is performed by CRNCY under its ",
-        "TITLE_2": "DABA licence",
-        "TITLE_3": ", arranging a sale of tokens versus payment of fiat",
-        "NEXT": "Next",
-        "PREV": "Previous",
-        "STRUCTURE": "Structure",
-        "CUSTODIAN": "Tier 1 Custodian",
-        "CRNCY": "CRNCY.com",
-        "MEMBERS": "Bankruptcy remote",
-        "CH": "Clearing House",
-        "SLIDE_TITLE": "ISAC & ISAs",
-        "TEXT_1": "This separation ensures that the Settlement Coins reserves (ISAs) are immune from risks of CRNCY failures (the ISAC operating company). In the event that CRNCY had to be wound down, the Bermudean courts have the obligation to return funds to all registered Token holders.",
-        "TEXT_2": "The issuing of Settlement Coins is performed by CRNCY under its DAB licence, arranging a sale of Tokens versus payment of Fiat. Redeeming is the reverse process when CRNCY arranges to purchase 1:1 the Tokens back from a registered user as agreed in the terms of the CRNCY Settlement Coins agreement.",
-        "TEXT_3": "ISAs are legally segregated and bankruptcy remote single purpose entities that CRNCY set specifically for the custody of Settlement Coins Fiat reserves. Each ISA utilises one (1) disclosed custodian bank, and remains bankruptcy remote from all other ISAs and the CRNCY ISAC itself."
+        "START_TITLE": "Trading digital assets is complex",
+        "END_TITLE": "FXCH centralizes trading",
+        "START_SUBTITLE": "The problem",
+        "END_SUBTITLE": "Our solution",
+        "START_TEXT": "Trading digital assets is inherently complex. Currently, digital asset transactions can be chaotic, with disparate systems and multiple counterparties creating a tangled web that complicates settlements and increases risk.",
+        "END_TEXT": "FXCH streamlines clearing by consolidating it into a single platform, simplifying interactions and enhancing market access. Our integrated model securely manages risks in digital asset trading, ensuring efficient and accurate daily settlements for institutional traders, thereby boosting their confidence.",
+        "GET_IN_TOUCH": "Get in touch"
+    },
+    "HORIZONTAL_TEXT": "The FXCH Way: Elevating Your Trading Process",
+    "BENEFITS": {
+        "TITLE_1": "Collateral Management",
+        "TEXT_1": "FXCH secures trading by requiring collateral pledges from all participants before market activities begin. This is used as the members margin to cover their own risk to FXCH's network",
+        "TITLE_2": "Real-Time Netting",
+        "TEXT_2": "Members are margined in NET. We act as the counterparty for all trades, allowing for instant netting and significant increase in capital efficiency",
+        "TITLE_3": "Daily Settlements",
+        "TEXT_3": "All trades are settled in NET at 5pm New York every business day"
     },
     "TEAM": {
-        "TITLE": "Our Team",
-        "ACTION": "Get In Touch",
-        "CEO": "CEO",
+        "TITLE": "Our team",
+        "PREV": "Previous",
+        "NEXT": "Next",
+        "FOUNDER_AND_CEO": "Founder, CEO",
         "COO": "COO",
-        "HEAD_OF_LEGAL": "Director: Legal & Compliance",
-        "OPERATIONS_MANAGER": "Operations Manager"
+        "HEAD_OF_LEGAL": "Head of Legal & Compliance",
+        "FINANCE": "Finance",
+        "ONBOARDING": "Onboarding",
+        "BUSINESS_DEVELOPMENT": "Business Development",
+        "TECHNOLOGY": "Technology",
+        "SETTLEMENT_OPERATIONS": "Settlement Operations",
+        "TAGS": {
+            "NYC": "New York City, USA",
+            "CAPE_TOWN": "Cape Town, South Africa",
+            "DUBLIN": "Dublin, Ireland",
+            "ISTANBUL": "İstanbul, Türkiye",
+            "CHICAGO": "Chicago, USA"
+        }
     },
-    "FAQ": {
-        "TITLE": "FAQ",
-        "TEXT": "Find answers to common questions about our platform and services. Get the information you need.",
-        "ITEMS": {
-            "TITLE_1": "Are my funds safe?",
-            "TEXT_1": "Yes, your funds are safe with CRNCY.com. Your funds are held in custody by only the most trusted tier 1 custodian banks with a small portion held at rails banks for liquidity purposes.",
-            "TITLE_2": "What stops the token from de-pegging?",
-            "TEXT_2": "All issued tokens are backed by FIAT held within a bankruptcy remote structure at a tier 1 bank(s) and are audited in real time. Members can redeem the tokens at the daily published price which provides the primary value underpin.",
-            "TITLE_3": "How often does interest get paid?",
-            "TEXT_3": "Interest is not paid, but added to the redemption value at the end of every business day (17:00 EST).",
-            "TITLE_4": "How is interest earned?",
-            "TEXT_4": "Our custodian bank sweeps the interest earned on the overnight money market daily to our account. CRNCY.com then adjusts the token redemption value - the value at which we issue and redeem tokens - to capitalise the interest earned (net of a small haircut to cover operating costs).",
-            "TITLE_5": "How does CRNCY.com differ from other stable coin platforms?",
-            "TEXT_5": "CRNCY.com is different from other stablecoin issuers as all of our tokens accrue interest, we also offer interbank FX capabilities with same day settlement in coins.",
-            "TITLE_6": "What happens if CRNCY.com goes out of business?",
-            "TEXT_6": "In the event of CRNCY.com's closure, your assets would be returned, following a formal and secure process. The assets are held in a bankruptcy remote structure which means that the assets are not impacted by the CRNCY.com going out of business.",
-            "TITLE_7": "Is CRNCY.com a regulated platform?",
-            "TEXT_7": "Yes, CRNCY.com is licensed to issue and redeem digital asset settlement coins.. We're committed to maintaining full compliance with all applicable regulations to ensure the highest level of trust and security. Both CRNCY and the related bankruptcy remote vehicle(s) that hold the fiat assets are regulated by the Bermuda Monetary Authority as digital asset businesses.",
-            "TITLE_8": "What currencies does CRNCY.com support?",
-            "TEXT_8": "CRNCY.com plans to support the G12 currencies with future plans to support all of the G20 currencies.",
-            "TITLE_9": "Why does CRNCY.com need my personal information?",
-            "TEXT_9": "As a regulated platform, CRNCY.com is required to collect personal information to comply with KYC (Know Your Customer) and AML (Anti-Money Laundering) and Anti-terror Financing regulations. This also helps us protect our users and maintain a secure platform."
+    "PARTNERS": {
+        "TITLE": "Trusted by"
+    },
+    "NEWS": {
+        "TAGS": {
+            "NEWS": "News",
+            "VIDEO": "Video",
+            "ARTICLE": "Article",
+            "MIN_READ": "min read",
+            "MIN_WATCH": "min watch"
+        },
+        "POST_1": {
+            "TITLE": "Self-insurance risk and the demise of FXCM",
+            "TEXT": "Many pundits will offer their views on the reasons of FXCM's unfortunate fate. Focus will incorrectly point to market abuse, misleading customers and despicable FX desk practices."
+        },
+        "POST_2": {
+            "TITLE": "Would you like to know what we do?",
+            "TEXT": "Get to know FXCH in 120 seconds."
+        },
+        "POST_3": {
+            "TITLE": "Invest in FXCH on Seedrs and take advantage of SEIS tax relief!"
         }
     },
     "FOOTER": {
-        "COMPANY": "Company",
-        "ABOUT": "About us",
-        "JOURNEY": "Our journey",
-        "TEAM": "Team",
-        "SUPPORT": "Support",
-        "CONTACT": "Contact",
-        "FAQ": "FAQs",
-        "SOCIAL": "Social Media",
-        "LINKEDIN": "LinkedIn",
-        "X": "X",
-        "TERMS": "Terms of Service",
-        "PRIVACY": "Privacy Policy"
+        "CONTACT": "Contact us",
+        "COPY_PHONE": "Copy phone number",
+        "COPY_EMAIL": "Copy email",
+        "GET_IN_TOUCH": "Get in touch",
+        "COPIED": "Copied to clipboard",
+        "NOT_COPIED": "Failed to copy to clipboard",
+        "SOCIAL": {
+            "TWITTER": "Twitter",
+            "LINKEDIN": "LinkedIn"
+        }
     },
     "404": {
-        "TITLE": "error",
-        "TEXT": "The page you are looking for might have been removed or is temporarily unavailable",
-        "BUTTON_TEXT": "Go Home"
+        "BUTTON_TEXT": "Go home"
     },
     "CONTACT": {
+        "TITLE": "Let's get in touch!",
         "CLOSE": "Close"
     },
     "CONTACT_FORM": {
-        "NAME": "Your Name*",
-        "EMAIL": "Your Email*",
-        "COMPANY_NAME": "Company Name*",
-        "MESSAGE": "Tell us about your project",
-        "TYPE_HERE": "Type here...",
-        "CHECKBOX_TEXT": "A agree to the User Agreement",
-        "PRIVACY_POLICY": "Privacy Policy & Cookie Policy",
-        "SUBMIT": "Submit Request",
+        "NAME": "Your name",
+        "EMAIL": "Your email",
+        "SUBJECT": "Subject",
+        "MESSAGE": "Your message",
+        "SUBMIT": "Submit",
         "VALIDATORS": {
             "NAME": "Name is required",
             "EMAIL": "Email is required",
             "EMAIL_FORMAT": "Email has wrong format",
-            "COMPANY": "Company is required",
+            "SUBJECT": "Subject is required",
             "MESSAGE": "Maximum length is "
-        },
-        "SUCCESS": "Thank you!",
-        "SUCCESS_1": "Your message has been sent successfully",
-        "FAILURE": "We couldn't submit your form. Please try again or contact us",
-        "BACK": "Back to CRNCY"
+        }
     },
-    "PRIVACY": {
-        "TITLE": "Privacy & Cookie Policy",
-        "TEXT_1": "This website has been provided by CRNCY Ltd. as a general public information. The details given are taking into account present European legislation and standards.",
-        "SUBTITLE_1": "Rights",
-        "TEXT_2": "If not otherwise specifically stated on this website, all rights reserved CRNCY Ltd. Names of companies and products identified on the website may be the trademarks of their owners respectively, of which CRNCY Ltd. does not claim any rights.",
-        "SUBTITLE_2": "Changes",
-        "TEXT_3": "CRNCY Ltd. reserves the right to amend and supplement the website at any time and without prior notice.",
-        "SUBTITLE_3": "Disclaimer",
-        "TEXT_4": "The information of the website is given in good faith but without warranty. All liability for damages of whatever nature that might arise from the use or existence of the website and its information is explicitly excluded to the extent permitted by applicable law.",
-        "SUBTITLE_4": "Information on the use of cookies",
-        "TEXT_5": "Cookies are small text files that contain technical information to facilitate the use of a website. When you visit the site these cookies are added onto your browser. We use two types of cookies:",
-        "SUBTITLE_5": "Temporary cookies",
-        "TEXT_6": "Cookies that keeps track of visitor during the time the visit lasts, e.g. to publish pages in the correct language. These cookies' function cease when the surf's up, which means that nothing is stored. In the browser's list of cookies set out the normal as JSESSIONID.",
-        "SUBTITLE_6": "Cookies that are stored on your computer",
-        "TEXT_7": "This type of cookie is used for statistical tracking and contains information that makes it possible to identify returning visitors, either through the visitor's IP address, or by a unique number. It also makes it possible to evaluate visitors' activities on the site, in order to improve navigation and content. CRNCY Ltd. does not store personally identifiable information about the visitor. However, because we use Google Analytics and other similar services for statistical purposes, data is forwarded to these companies' servers in order to compile statistical data on pages visited, language, country, search terms, operating systems, browsers, etc. In the browser's list of cookies this type of cookies have names as _utma , _utmz , _ga , gs_u_GSN -xxx- J.",
-        "SUBTITLE_7": "You do not want cookies?",
-        "TEXT_8": "The cookies used on CRNCY's website have no functions other than those described above. But if you do not accept the use of cookies when visiting the website you can turn off CRNCY cookies in your browser's security settings. There you can also delete previously stored CRNCY cookies."
+    "CONTACT_MODAL": {
+        "SUCCESS": "We'll get back to you soon",
+        "FAILURE": "We couldn't submit your form. Please try again or contact us"
     },
-    "TERMS": {
-        "TITLE": "Terms and Conditions",
-        "SUBTITLE_1": "Welcome to CRNCY.com!",
-        "TEXT_1": "These terms and conditions outline the rules and regulations for the use of CRNCY Website, located at Welcome to CRNCY.com - High Performance ECN Trading Platform CRNCY.com - Your Exchange Market.",
-        "TEXT_2": "By accessing this website, we assume you accept these terms and conditions. Do not continue to use CRNCY.com if you do not agree to take all of the terms and conditions stated on this page.",
-        "SUBTITLE_2": "Cookies:",
-        "TEXT_3": "The website uses cookies to help personalize your online experience. By accessing CRNCY.com, you agreed to use the required cookies. We may use cookies to collect, store, and track information for statistical or marketing purposes to operate our website. You have the ability to accept or decline optional Cookies. There are some required Cookies that are necessary for the operation of our website. These cookies do not require your consent as they always work. Please keep in mind that by accepting required Cookies, you also accept third-party Cookies, which might be used via third-party provided services if you use such services on our website, for example, a video display window provided by third parties and integrated into our website.",
-        "SUBTITLE_3": "License:",
-        "TEXT_4": "Unless otherwise stated, CRNCY and/or its licensors own the intellectual property rights for all material on CRNCY.com. All intellectual property rights are reserved. You may access this from CRNCY.com for your own personal use subjected to restrictions set in these terms and conditions.",
-        "TEXT_5": "You must not:",
-        "LIST_1": {
-            "TEXT_1": "Copy or republish material from CRNCY.com",
-            "TEXT_2": "Sell, rent, or sub-license material from CRNCY.com",
-            "TEXT_3": "Reproduce, duplicate or copy material from CRNCY.com",
-            "TEXT_4": "Redistribute content from CRNCY.com"
-        },
-        "TEXT_6": "This Agreement shall begin on the date hereof.",
-        "SUBTITLE_4": "Reservation of Rights:",
-        "TEXT_7": "We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amend these terms and conditions and its linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.",
-        "SUBTITLE_5": "Disclaimer:",
-        "TEXT_8": "To the maximum extent permitted by applicable law, we exclude all representations, warranties, and conditions relating to our website and the use of this website. Nothing in this disclaimer will:",
-        "LIST_2": {
-            "TEXT_1": "limit or exclude our or your liability for fraud or fraudulent misrepresentation;",
-            "TEXT_2": "limit any of our or your liabilities in any way that is not permitted under applicable law; or",
-            "TEXT_3": "exclude any of our or your liabilities that may not be excluded under applicable law."
-        },
-        "TEXT_9": "The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort, and for breach of statutory duty.",
-        "TEXT_10": "We may consider and approve other link requests from the following types of organizations:",
-        "LIST_3": {
-            "TEXT_1": "commonly-known consumer and/or business information sources;",
-            "TEXT_2": "Under construction - Awesome site in the making! community sites;",
-            "TEXT_3": "associations or other groups representing charities;",
-            "TEXT_4": "online directory distributors;",
-            "TEXT_5": "internet portals;",
-            "TEXT_6": "accounting, law, and consulting firms; and",
-            "TEXT_7": "educational institutions and trade associations."
-        },
-        "TEXT_11": "We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of CRNCY; and (d) the link is in the context of general resource information.",
-        "TEXT_12": "These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement, or approval of the linking party and its products or services; and (c) fits within the context of the linking party's site.",
-        "TEXT_13": "If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to CRNCY. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.",
-        "TEXT_14": "Approved organizations may hyperlink to our Website as follows:",
-        "LIST_4": {
-            "TEXT_1": "By use of our corporate name; or",
-            "TEXT_2": "By use of the uniform resource locator being linked to; or",
-            "TEXT_3": "Using any other description of our Website being linked to that makes sense within the context and format of content on the linking party's site.",
-            "TEXT_4": "No use of CRNCY's logo or other artwork will be allowed for linking absent a trademark license agreement."
-        },
-        "SUBTITLE_6": "Content Liability:",
-        "TEXT_15": "We shall not be held responsible for any content that appears on your Website. You agree to protect and defend us against all claims that are raised on your Website. No link(s) should appear on any Website that may be interpreted as libelous, obscene, or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.",
-        "TEXT_16": "As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature."
+    "DISCLAIMER": {
+        "TITLE": "FXCH does not",
+        "TITLE2": "solicit EU customers",
+        "CLOSE": "Close",
+        "SUBTITLE": "Disclaimer",
+        "TEXT": "FXCH Ltd does not actively market or solicit customers within the European Union. This contact form is intended for informational purposes only. Any services provided to EU residents are offered solely upon the customer's own exclusive initiative in compliance with MiCA reverse solicitation regulations.",
+        "I_CONFIRM": "I confirm that I am contacting FXCH Ltd on my own exclisive initiative and have not been solicited, approached, or advertised to by FXCH Ltd.",
+        "GET_IN_TOUCH": "Get in touch"
+    },
+    "TOASTR": {
+        "CLOSE": "Close"
     }
 }
