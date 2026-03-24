@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117 157" fill="none">
+    <path d="M20 111.962V9.4624H54V93.9624L20 111.962Z" fill="#0057B8"/>
+    <path d="M90 111.962V9.4624H54V93.9624L90 111.962Z" fill="white"/>
+    <path d="M20 111.962V9.4624H90V111.962L54 93.9624L20 111.962Z" stroke="#0057B8" shape-rendering="crispEdges"/>
+</svg>
