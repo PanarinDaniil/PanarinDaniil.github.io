@@ -1,1 +1,0 @@
-import{g as e,a as r}from"./kantons.Cz6CtE9W.js";function a(){const n=document.querySelector(".kantonsbanner");if(!n)return;const t=e();if(!t)return;const o=r(t);o&&(n.style.backgroundColor=o.color,n.classList.add("kantonsbanner--visible"))}a();
