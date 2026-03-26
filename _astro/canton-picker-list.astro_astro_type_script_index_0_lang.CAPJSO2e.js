@@ -1,0 +1,1 @@
+import{s as n}from"./canton-store.DxrwDbOQ.js";function o(){document.querySelectorAll(".canton-picker-list-item").forEach(t=>{t.addEventListener("click",()=>{const e=t.dataset.canton;e&&(n(e),window.location.href="/home")})})}o();
