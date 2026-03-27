@@ -1,0 +1,1 @@
+import{a as r}from"./canton-store.BT6wCtUi.js";import{g as e}from"./index.Ul0ILQEc.js";function a(){const n=document.querySelector(".kantonsbanner");if(!n||n.classList.contains("kantonsbanner--visible"))return;const t=r();if(!t)return;const o=e(t);o&&(n.style.backgroundColor=o.color,n.classList.add("kantonsbanner--visible"))}a();

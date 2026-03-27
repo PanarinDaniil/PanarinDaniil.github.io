@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://panarindaniil.github.io/de/</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/" />
+      <xhtml:link rel="alternate" hreflang="it-CH" href="https://panarindaniil.github.io/it/" />
+      <xhtml:link rel="alternate" hreflang="en-CH" href="https://panarindaniil.github.io/en/" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/" />
+      <xhtml:link rel="alternate" hreflang="it-CH" href="https://panarindaniil.github.io/it/" />
+      <xhtml:link rel="alternate" hreflang="en-CH" href="https://panarindaniil.github.io/en/" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/it/</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/" />
+      <xhtml:link rel="alternate" hreflang="it-CH" href="https://panarindaniil.github.io/it/" />
+      <xhtml:link rel="alternate" hreflang="en-CH" href="https://panarindaniil.github.io/en/" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/en/</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/" />
+      <xhtml:link rel="alternate" hreflang="it-CH" href="https://panarindaniil.github.io/it/" />
+      <xhtml:link rel="alternate" hreflang="en-CH" href="https://panarindaniil.github.io/en/" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/zuerich/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/zuerich/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/zuerich/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/zuerich/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/zuerich/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/zuerich/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/zuerich/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/zuerich/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/zuerich/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/zuerich/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/zuerich/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/zuerich/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/zuerich/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/zuerich/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/zuerich/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/bern/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/bern/home" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/bern/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/bern/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/bern/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/bern/home" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/bern/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/bern/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/bern/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/bern/agb" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/bern/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/bern/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/bern/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/bern/agb" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/bern/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/bern/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/bern/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/bern/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/bern/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/bern/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/bern/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/bern/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/bern/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/bern/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/bern/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/bern/impressum" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/bern/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/bern/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/bern/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/bern/impressum" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/bern/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/bern/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/bern/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/bern/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/bern/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/bern/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/bern/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/bern/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/bern/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/bern/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/luzern/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/luzern/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/luzern/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/luzern/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/luzern/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/luzern/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/luzern/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/luzern/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/luzern/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/luzern/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/luzern/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/luzern/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/luzern/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/luzern/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/luzern/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/uri/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/uri/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/uri/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/uri/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/uri/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/uri/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/uri/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/uri/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/uri/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/uri/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/uri/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/uri/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/uri/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/uri/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/uri/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/schwyz/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/schwyz/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/schwyz/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/schwyz/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/schwyz/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/schwyz/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/schwyz/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/schwyz/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/schwyz/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/schwyz/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/schwyz/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/schwyz/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/schwyz/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/schwyz/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/schwyz/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/obwalden/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/obwalden/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/obwalden/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/obwalden/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/obwalden/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/obwalden/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/obwalden/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/obwalden/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/obwalden/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/obwalden/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/obwalden/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/obwalden/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/obwalden/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/obwalden/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/obwalden/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/nidwalden/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/nidwalden/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/nidwalden/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/nidwalden/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/nidwalden/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/nidwalden/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/nidwalden/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/nidwalden/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/nidwalden/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/nidwalden/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/nidwalden/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/nidwalden/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/nidwalden/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/nidwalden/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/nidwalden/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/glarus/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/glarus/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/glarus/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/glarus/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/glarus/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/glarus/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/glarus/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/glarus/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/glarus/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/glarus/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/glarus/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/glarus/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/glarus/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/glarus/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/glarus/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/zug/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/zug/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/zug/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/zug/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/zug/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/zug/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/zug/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/zug/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/zug/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/zug/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/zug/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/zug/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/zug/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/zug/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/zug/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/freiburg/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/freiburg/home" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/freiburg/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/freiburg/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/freiburg/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/freiburg/home" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/freiburg/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/freiburg/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/freiburg/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/freiburg/agb" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/freiburg/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/freiburg/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/freiburg/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/freiburg/agb" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/freiburg/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/freiburg/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/freiburg/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/freiburg/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/freiburg/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/freiburg/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/freiburg/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/freiburg/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/freiburg/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/freiburg/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/freiburg/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/freiburg/impressum" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/freiburg/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/freiburg/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/freiburg/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/freiburg/impressum" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/freiburg/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/freiburg/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/freiburg/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/freiburg/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/freiburg/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/freiburg/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/freiburg/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/freiburg/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/freiburg/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/freiburg/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/solothurn/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/solothurn/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/solothurn/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/solothurn/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/solothurn/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/solothurn/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/solothurn/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/solothurn/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/solothurn/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/solothurn/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/solothurn/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/solothurn/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/solothurn/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/solothurn/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/solothurn/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/basel-stadt/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/basel-stadt/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/basel-stadt/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/basel-stadt/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/basel-stadt/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/basel-stadt/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/basel-stadt/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/basel-stadt/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/basel-stadt/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/basel-stadt/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/basel-stadt/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/basel-stadt/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/basel-stadt/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/basel-stadt/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/basel-stadt/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/basel-landschaft/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/basel-landschaft/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/basel-landschaft/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/basel-landschaft/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/basel-landschaft/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/basel-landschaft/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/basel-landschaft/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/basel-landschaft/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/basel-landschaft/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/basel-landschaft/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/basel-landschaft/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/basel-landschaft/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/basel-landschaft/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/basel-landschaft/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/basel-landschaft/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/schaffhausen/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/schaffhausen/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/schaffhausen/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/schaffhausen/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/schaffhausen/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/schaffhausen/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/schaffhausen/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/schaffhausen/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/schaffhausen/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/schaffhausen/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/schaffhausen/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/schaffhausen/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/schaffhausen/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/schaffhausen/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/schaffhausen/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/appenzell-ausserrhoden/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/appenzell-ausserrhoden/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/appenzell-ausserrhoden/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/appenzell-ausserrhoden/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/appenzell-ausserrhoden/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/appenzell-ausserrhoden/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/appenzell-ausserrhoden/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/appenzell-ausserrhoden/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/appenzell-ausserrhoden/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/appenzell-ausserrhoden/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/appenzell-ausserrhoden/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/appenzell-ausserrhoden/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/appenzell-ausserrhoden/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/appenzell-ausserrhoden/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/appenzell-ausserrhoden/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/appenzell-innerrhoden/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/appenzell-innerrhoden/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/appenzell-innerrhoden/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/appenzell-innerrhoden/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/appenzell-innerrhoden/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/appenzell-innerrhoden/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/appenzell-innerrhoden/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/appenzell-innerrhoden/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/appenzell-innerrhoden/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/appenzell-innerrhoden/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/appenzell-innerrhoden/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/appenzell-innerrhoden/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/appenzell-innerrhoden/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/appenzell-innerrhoden/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/appenzell-innerrhoden/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/st-gallen/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/st-gallen/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/st-gallen/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/st-gallen/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/st-gallen/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/st-gallen/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/st-gallen/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/st-gallen/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/st-gallen/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/st-gallen/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/st-gallen/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/st-gallen/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/st-gallen/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/st-gallen/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/st-gallen/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/graubuenden/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/graubuenden/home" />
+      <xhtml:link rel="alternate" hreflang="it-CH" href="https://panarindaniil.github.io/it/graubuenden/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/graubuenden/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/it/graubuenden/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/graubuenden/home" />
+      <xhtml:link rel="alternate" hreflang="it-CH" href="https://panarindaniil.github.io/it/graubuenden/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/graubuenden/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/graubuenden/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/graubuenden/agb" />
+      <xhtml:link rel="alternate" hreflang="it-CH" href="https://panarindaniil.github.io/it/graubuenden/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/graubuenden/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/it/graubuenden/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/graubuenden/agb" />
+      <xhtml:link rel="alternate" hreflang="it-CH" href="https://panarindaniil.github.io/it/graubuenden/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/graubuenden/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/graubuenden/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/graubuenden/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="it-CH" href="https://panarindaniil.github.io/it/graubuenden/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/graubuenden/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/it/graubuenden/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/graubuenden/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="it-CH" href="https://panarindaniil.github.io/it/graubuenden/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/graubuenden/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/graubuenden/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/graubuenden/impressum" />
+      <xhtml:link rel="alternate" hreflang="it-CH" href="https://panarindaniil.github.io/it/graubuenden/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/graubuenden/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/it/graubuenden/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/graubuenden/impressum" />
+      <xhtml:link rel="alternate" hreflang="it-CH" href="https://panarindaniil.github.io/it/graubuenden/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/graubuenden/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/graubuenden/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/graubuenden/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="it-CH" href="https://panarindaniil.github.io/it/graubuenden/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/graubuenden/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/it/graubuenden/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/graubuenden/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="it-CH" href="https://panarindaniil.github.io/it/graubuenden/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/graubuenden/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/aargau/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/aargau/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/aargau/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/aargau/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/aargau/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/aargau/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/aargau/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/aargau/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/aargau/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/aargau/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/aargau/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/aargau/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/aargau/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/aargau/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/aargau/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/thurgau/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/thurgau/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/thurgau/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/thurgau/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/thurgau/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/thurgau/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/thurgau/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/thurgau/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/thurgau/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/thurgau/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/thurgau/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/thurgau/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/thurgau/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/thurgau/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/thurgau/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/it/tessin/home</loc>
+      <xhtml:link rel="alternate" hreflang="it-CH" href="https://panarindaniil.github.io/it/tessin/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/it/tessin/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/it/tessin/agb</loc>
+      <xhtml:link rel="alternate" hreflang="it-CH" href="https://panarindaniil.github.io/it/tessin/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/it/tessin/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/it/tessin/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="it-CH" href="https://panarindaniil.github.io/it/tessin/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/it/tessin/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/it/tessin/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="it-CH" href="https://panarindaniil.github.io/it/tessin/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/it/tessin/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/it/tessin/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="it-CH" href="https://panarindaniil.github.io/it/tessin/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/it/tessin/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/waadt/home</loc>
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/waadt/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/fr/waadt/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/waadt/agb</loc>
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/waadt/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/fr/waadt/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/waadt/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/waadt/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/fr/waadt/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/waadt/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/waadt/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/fr/waadt/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/waadt/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/waadt/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/fr/waadt/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/wallis/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/wallis/home" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/wallis/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/wallis/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/wallis/home</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/wallis/home" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/wallis/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/wallis/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/wallis/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/wallis/agb" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/wallis/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/wallis/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/wallis/agb</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/wallis/agb" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/wallis/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/wallis/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/wallis/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/wallis/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/wallis/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/wallis/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/wallis/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/wallis/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/wallis/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/wallis/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/wallis/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/wallis/impressum" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/wallis/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/wallis/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/wallis/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/wallis/impressum" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/wallis/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/wallis/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/de/wallis/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/wallis/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/wallis/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/wallis/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/wallis/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="de-CH" href="https://panarindaniil.github.io/de/wallis/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/wallis/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/de/wallis/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/neuenburg/home</loc>
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/neuenburg/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/fr/neuenburg/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/neuenburg/agb</loc>
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/neuenburg/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/fr/neuenburg/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/neuenburg/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/neuenburg/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/fr/neuenburg/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/neuenburg/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/neuenburg/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/fr/neuenburg/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/neuenburg/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/neuenburg/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/fr/neuenburg/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/genf/home</loc>
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/genf/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/fr/genf/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/genf/agb</loc>
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/genf/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/fr/genf/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/genf/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/genf/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/fr/genf/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/genf/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/genf/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/fr/genf/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/genf/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/genf/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/fr/genf/ueber-uns" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/jura/home</loc>
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/jura/home" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/fr/jura/home" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/jura/agb</loc>
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/jura/agb" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/fr/jura/agb" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/jura/datenschutz</loc>
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/jura/datenschutz" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/fr/jura/datenschutz" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/jura/impressum</loc>
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/jura/impressum" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/fr/jura/impressum" />
+  </url>
+  <url>
+    <loc>https://panarindaniil.github.io/fr/jura/ueber-uns</loc>
+      <xhtml:link rel="alternate" hreflang="fr-CH" href="https://panarindaniil.github.io/fr/jura/ueber-uns" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://panarindaniil.github.io/fr/jura/ueber-uns" />
+  </url>
+</urlset>
