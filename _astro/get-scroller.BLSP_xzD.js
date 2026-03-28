@@ -1,0 +1,1 @@
+let e=null;function n(){return e||(e=document.querySelector(".js-base-main")),e}function t(){e=null,document.addEventListener("astro:before-swap",t,{once:!0})}document.addEventListener("astro:before-swap",t,{once:!0});export{n as g};
