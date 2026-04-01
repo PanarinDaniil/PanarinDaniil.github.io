@@ -1,0 +1,1 @@
+import{r as o,i as e,a as t}from"./base.BcOenJxe.js";const i={main:[{fromSection:0,toSection:1,x:30,y:10,opacity:.6,ease:"power2.inOut"},{fromSection:1,toSection:2,x:100,y:60,opacity:0,ease:"power2.inOut"}],secondary:[{fromSection:0,toSection:1,x:0,y:-40,ease:"power2.inOut"},{fromSection:1,toSection:2,x:-80,y:-60,opacity:0,ease:"power2.inOut"}]};o(i);e();t();
