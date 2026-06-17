@@ -1,0 +1,1 @@
+import{g as c}from"./gsap-setup.y6gSuWEG.js";const P=.14,h=2.4,u=.3,E=.08;function f(i,{delay:r=1.1}={}){const e=c.timeline({delay:r});let o=0;return i.forEach(t=>{c.set(t,{clipPath:"inset(0% 0% 100% 0%)"});const n=Math.min(P,h/t.length);t.forEach((a,s)=>{e.to(a,{clipPath:"inset(0% 0% 0% 0%)",duration:n+E,ease:"power1.inOut"},o+s*n)}),o+=t.length*n+u}),e}export{f as c};
